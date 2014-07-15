@@ -1,20 +1,18 @@
 ---
 layout: default
 ---
+<p><strong><span style="font-size:1.2em">Neatline </span> allows scholars, students, and curators to tell stories with maps and timelines.</strong> As a suite of add-on tools for <a href="http://omeka.org">Omeka</a>, it opens new possibilities for hand-crafted, interactive spatial and temporal interpretation.</p>
 
-<div class="home">
+<a href="http://hotchkiss.scholarslab.org/neatline-exhibits/show/battle-of-chancellorsville/fullscreen" target="_blank" class="splash-link">
+  <div class="splash homepage">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<ul id="neatline-meta-links">
+  <li id="neatline-download"><a href="http://omeka.org/add-ons/plugins/neatline/" title="Download the Neatline plugin.">Download</a></li>
+  <li id="neatline-learn-more"><a href="http://docs.neatline.org" title="Learn more about Neatline.">Documentation</a></li>
+  <li id="neatline-see-it"><a href="/neatline-in-action/" title="See Neatline in action.">Demos</a></li>
+</ul>
