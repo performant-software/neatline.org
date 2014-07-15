@@ -1,9 +1,8 @@
 # Site settings
 title: Neatline
 email: your-email@domain.com
-description: ""
-baseurl: ""
-url: ""
+description: "Neatline is..."
+baseurl: "http://localhost:4000"
 
 # Build settings
 markdown: kramdown
