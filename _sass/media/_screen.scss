@@ -1,0 +1,603 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@include establish-baseline;
+
+html {
+  background: #f9f9f9 url(images/bg_wrapper.jpg);
+  border-top: 10px solid #573D56;
+}
+
+body {
+  @include background-image(
+    linear-gradient(rgba(0,0,0,0.1) 0px, rgba(0,0,0,0) 200px),
+    url('images/neatline-mark-tan.png')
+  );
+  background-position: top left, 50% 300px;
+  background-repeat: no-repeat;
+  border-top:2px solid rgba(255,255,255,0.75);
+  color: $default-color;
+  @include serif;
+
+}
+
+form {
+  @include adjust-font-size-to(12px);
+  @include adjust-leading-to(1);
+
+}
+textarea {
+  width:100%;
+}
+
+nav {
+  ul,
+  ol {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+  }
+}
+
+h1 {
+  @include adjust-font-size-to(30px);
+  @include adjust-leading-to(0.75);
+  text-shadow: rgba(255,255,255,0.5) -1px 0;
+}
+
+h2 {
+  color: $default-color-light;
+  @include adjust-font-size-to(18px);
+  @include adjust-leading-to(1);
+
+}
+
+article {
+  margin: rhythm(1) 0;
+
+  .blog &,
+  .article & {
+    h1 {
+      @include adjust-font-size-to(24px);
+    }
+
+    p {
+      @include adjust-font-size-to(16px);
+      @include adjust-leading-to(0.8);
+    }
+  }
+  .single &,
+  .page & {
+
+    h1 {
+      margin-bottom:0;
+    }
+  }
+
+  ul li {
+    margin-bottom:1em;
+  }
+
+  .secondary {
+    ul li {
+      margin-bottom:0;
+    }
+  }
+
+  .author-info {
+    @include clearfix;
+    border-top:1px dotted rgba(0,0,0,0.1);
+    padding-top:rhythm(1);
+
+    p {
+      margin:0;
+    }
+
+    img {
+      float:left;
+      margin-right: rhythm(0.5);
+    }
+
+    .author-name {
+      font-weight:bold;
+      margin-bottom: rhythm(0.5);
+    }
+
+    .author-description,
+    .all-posts {
+      @include adjust-font-size-to(12px);
+      @include adjust-leading-to(0.75);
+    }
+
+  }
+}
+
+/* Links */
+a {
+  &:link {
+    color: $link-color;
+  }
+
+  &:visited {
+    color: $link-color-light;
+  }
+
+  &:hover,
+  &:active {
+    color:$link-color-alternate;
+  }
+
+  &.button {
+    padding: 0.25em 0.5em;
+
+    &:link,
+    &:visited {
+      color:#fff;
+      background-color: $link-color;
+    }
+
+    &:hover,
+    &:active {
+      color:#fff;
+      background-color: darken($link-color, 10%);
+    }
+  }
+}
+
+#{headings(1,3)} {
+  a {
+    text-decoration:none;
+  }
+}
+
+figure {
+  margin-bottom: rhythm(1);
+}
+
+figcaption {
+  font-style:italic;
+  font-size: 0.85em;
+  color: rgba(0,0,0,0.5);
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+code {
+  color: rgba(0,0,0,0.75);
+  @include adjust-font-size-to(14px);
+}
+/* Buttons */
+
+input {
+  &[type=submit],
+  &[type=button] {
+    @include button;
+  }
+}
+
+button,
+.button {
+  @include button;
+}
+
+.kicker {
+  @include kicker;
+  margin-bottom:0.5em;
+}
+
+/* Utility Classes */
+.container {
+  @include clearfix;
+}
+
+.alignleft {
+  float:left;
+  margin-right: rhythm(1);
+}
+
+.alignright {
+  float:right;
+  margin-left: rhythm(1);
+}
+
+.wp-caption-text {
+  color: $default-color-light;
+  font-size: 0.6em;
+}
+
+.pager {
+  @include clearfix;
+  border-top: 1px solid rgba(0,0,0,0.125);
+  padding-top:rhythm(1);
+  a {
+    display:block;
+    float:left;
+    width: 48%;
+    text-decoration:none;
+  }
+
+  .newer {
+    float:right;
+    text-align:right;
+  }
+}
+
+/**
+ * Banner Header
+ */
+header[role=banner] {
+  width: 90%;
+  margin: 0 auto;
+  padding: rhythm(1) 0 0;
+}
+
+#search {
+  font-size: 70%;
+  position:relative;
+  width: 200px;
+  margin: 0 auto rhythm(1);
+
+  * {
+    margin:0;
+  }
+
+  input[type=search] {
+    border:1px solid rgba(0,0,0,0.1);
+    padding: 5px 2em 5px 5px;
+    margin:0;
+    @include border-radius(4px);
+    width: 150px;
+  }
+
+  input[type=submit] {
+    position:absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1em;
+    content: "";
+    text-indent: -9999px;
+    background-image:url("images/magnifying-glass.png");
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size: 70% 70%;
+    width: 2em;
+    height: 2em;
+    line-height:0;
+    border: none !important;
+    background-color: rgba(120,120,120, 0.7);
+    border-radius: 0 4px 4px 0;
+
+    &:hover,
+    &:active {
+      background-color: rgba(120,120,120,0.9);
+    }
+  }
+}
+
+#sitenav {
+  margin:0;
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  @include adjust-font-size-to(12px);
+  @include adjust-leading-to(2);
+  @include beveled-line;
+  @include horizontal-nav;
+}
+
+#logo {
+  margin:0;
+  padding:0;
+  text-align:center;
+  @include adjust-font-size-to(12px);
+}
+
+/**
+ * Main Content
+ */
+#content {
+  clear:both;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+
+  @include beveled-line;
+
+  a.splash-link {
+    text-decoration: none;
+
+    div.splash {
+      @include background-size(cover);
+      background-repeat:no-repeat;
+      height: 420px;
+      border: 5px solid #584561;
+      border-radius: 2px;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
+      cursor: pointer;
+
+      div.launch-overlay {
+        display: none;
+        background-color: rgba(0,0,0,0.3);
+        text-align: center;
+        height: 100%;
+
+        div.launch-button {
+          position: relative;
+          color: white;
+          font-size: 2em;
+          font-style: italic;
+          text-decoration: none;
+          top: 200px;
+        }
+
+      }
+
+      &:hover {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.50);
+
+        div.launch-overlay {
+          display: block;
+        }
+
+      }
+
+      &.homepage {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/06/neatline-splash.jpg');
+      }
+      &.hotchkiss {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/chancellorsville.jpg');
+      }
+      &.nelly {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/nelly.jpg');
+      }
+      &.num132 {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/132.jpg');
+      }
+      &.num138 {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/138.jpg');
+      }
+      &.uva {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/uva.jpg');
+      }
+      &.tech {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/tech.jpg');
+      }
+      &.anie {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/anie.jpg');
+      }
+      &.henshaw {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/henshaw1.jpg');
+      }
+      &.lovecraft {
+        background-image: url('http://neatline.scholarslab.org/wp-content/uploads/2012/07/lovecraft.jpg');
+      }
+
+    }
+
+  }
+
+}
+
+/* Homepage Styles */
+#pitch {
+  @include serif;
+}
+
+#screenshots {
+  img {
+    max-width: 94%;
+    padding:2%;
+    background: #fff;
+  }
+
+  a {
+    text-decoration:none;
+    border:none;
+  }
+}
+
+.screenshot {
+  &:first-child {
+    h2,
+    .description {
+      display:none;
+    }
+  }
+}
+
+#neatline-meta-links {
+  list-style:none;
+  padding-left:0;
+  text-align:center;
+  margin: rhythm(1) 0;
+
+  li {
+    display:inline;
+  }
+
+  a {
+    @include splash-button;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#separate-components-note {
+  clear:both;
+  font-style:italic;
+  text-align:center;
+  font-weight:normal;
+  @include adjust-font-size-to(18px);
+  @include adjust-leading-to(1);
+  color: $default-color-light;
+  // @include beveled-line;
+}
+
+.plugin-links {
+  @include serif;
+  font-size: 0.6em;
+  color: $default-color-light;
+
+  span:not(:first-child):before {
+    content: " | ";
+    color: $default-color-light;
+  }
+}
+
+#plugin-meta {
+  p {
+    color: rgba(0,0,0,0.5);
+  }
+}
+
+/* Neatline in Action content styles. */
+.neatline-in-action {
+
+  p {
+    margin: 1em;
+    font-size: 18px;
+  }
+
+  div.exhibit {
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(60, 60, 60, 0.25);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+}
+
+#comments {
+  border-top: 1px dotted rgba(0,0,0,0.1);
+}
+
+.commentlist {
+  list-style:none;
+  margin: 0;
+  padding:0;
+
+  @include adjust-font-size-to(12px);
+  @include adjust-leading-to(1);
+
+  li {
+    margin-bottom: rhythm(2);
+
+    ul {
+      list-style:none;
+      margin:0;
+      padding:0 0 0 rhythm(1);
+
+      li.comment {
+        border-left: 1px dotted rgba(0,0,0,0.1);
+        padding-left: rhythm(1);
+        margin: rhythm(2) 0;
+      }
+    }
+  }
+
+  article {
+    margin:0;
+  }
+
+  .comment-meta {
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:table;
+
+    li {
+      display:table-cell;
+      vertical-align:middle;
+
+      &:not(:last-child):after {
+        color: $default-color-lighter;
+        content: " · ";
+        padding: 0 0.5em;
+      }
+
+      &:first-child:after {
+        content:"" !important;
+        padding:0 1em 0 0;
+      }
+      .image {
+        width: 40px;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      a {
+        text-decoration:none;
+      }
+    }
+
+  }
+}
+
+#respond {
+  border-top: 1px dotted rgba(0,0,0,0.1);
+  input,
+  textarea {
+    display:block;
+  }
+}
+
+/* Footer
+----------------------------------------------------------------------------*/
+footer[role="contentinfo"] {
+  width: 90%;
+  margin:0 auto;
+  clear:both;
+  @include sans-serif;
+  @include beveled-line;
+  &:before {
+    margin-bottom: rhythm(1);
+  }
+  .textwidget {
+    color: #777;
+    @include adjust-font-size-to(11px);
+    @include adjust-leading-to(1);
+    h4 {
+      display:none;
+    }
+  }
+}
+
+#slab-info {
+  ul {
+    margin:0 0 rhythm(1);
+    padding:0;
+    list-style:none;
+    @include adjust-font-size-to(11px);
+    @include adjust-leading-to(1);
+    float:left;
+  }
+}
+
+#slab-logo {
+  opacity: 0.5;
+  float:right;
+}
+
+.not-yet {
+  padding: 100px 20px 0;
+  background-image:none;
+  .message,
+  h1 {
+    margin: 0 auto 100px;
+    max-width: 400px;
+    text-align:center;
+  }
+}
+

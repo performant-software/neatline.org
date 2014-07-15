@@ -1,0 +1,1575 @@
+@charset "UTF-8";
+/*
+Theme Name: Neatline
+Theme URI: http://neatline.org
+Description: A theme for the Neatline website.
+Version: 1.0
+Author: Scholars' Lab
+Author URI: http://scholarslab.org
+*/
+/*! normalize.css 2011-08-31T22:02 UTC · http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 11, ../_sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 28, ../_sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+/* line 40, ../_sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 49, ../_sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* line 66, ../_sass/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  overflow-y: scroll;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 77, ../_sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 85, ../_sass/_normalize.scss */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/* line 98, ../_sass/_normalize.scss */
+a {
+  color: #00e;
+}
+
+/* line 102, ../_sass/_normalize.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 110, ../_sass/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 119, ../_sass/_normalize.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 133, ../_sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3/4, S4/5, Chrome
+*/
+/* line 141, ../_sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 146, ../_sass/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 154, ../_sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 162, ../_sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 172, ../_sass/_normalize.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 185, ../_sass/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 198, ../_sass/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 204, ../_sass/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 210, ../_sass/_normalize.scss */
+small {
+  font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 219, ../_sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 227, ../_sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 231, ../_sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 240, ../_sass/_normalize.scss */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 246, ../_sass/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 250, ../_sass/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, F3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 267, ../_sass/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+/* line 276, ../_sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 289, ../_sass/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 302, ../_sass/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent margin and padding
+ */
+/* line 310, ../_sass/_normalize.scss */
+fieldset {
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 320, ../_sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  *margin-left: -7px;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, F3/4, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 331, ../_sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses FF3/4 setting line-height using !important in the UA stylesheet
+ * 2. Corrects inner spacing displayed oddly in IE6/7
+ */
+/* line 346, ../_sass/_normalize.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+  *overflow: visible;
+  /* 2 */
+}
+
+/*
+ * Corrects overlap and whitespace issue for buttons and inputs in IE6/7
+ * Known issue: reintroduces inner spacing
+ */
+/* line 357, ../_sass/_normalize.scss */
+table button,
+table input {
+  *overflow: auto;
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ */
+/* line 367, ../_sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Addresses excess padding in IE8/9
+ */
+/* line 380, ../_sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 391, ../_sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Corrects inner padding displayed oddly in S5, Chrome on OSX
+ */
+/* line 402, ../_sass/_normalize.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Corrects inner padding and border displayed oddly in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 411, ../_sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 422, ../_sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells
+ */
+/* line 436, ../_sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media screen {
+  /* line 1, ../_sass/media/_screen.scss */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 106, ../../../.rvm/gems/ruby-2.1.2@neatline.org/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/typography/_vertical_rhythm.scss */
+  html {
+    font-size: 100%;
+    line-height: 1.75em;
+  }
+
+  /* line 9, ../_sass/media/_screen.scss */
+  html {
+    background: #f9f9f9 url(images/bg_wrapper.jpg);
+    border-top: 10px solid #573D56;
+  }
+
+  /* line 14, ../_sass/media/_screen.scss */
+  body {
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("images/neatline-mark-tan.png");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("images/neatline-mark-tan.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("images/neatline-mark-tan.png");
+    background-position: top left, 50% 300px;
+    background-repeat: no-repeat;
+    border-top: 2px solid rgba(255, 255, 255, 0.75);
+    color: #3c3c3c;
+    font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+  }
+
+  /* line 27, ../_sass/media/_screen.scss */
+  form {
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    line-height: 1.75em;
+  }
+
+  /* line 32, ../_sass/media/_screen.scss */
+  textarea {
+    width: 100%;
+  }
+
+  /* line 37, ../_sass/media/_screen.scss */
+  nav ul,
+  nav ol {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  /* line 45, ../_sass/media/_screen.scss */
+  h1 {
+    font-size: 1.875em;
+    line-height: 1.86667em;
+    line-height: 1.3125em;
+    text-shadow: rgba(255, 255, 255, 0.5) -1px 0;
+  }
+
+  /* line 51, ../_sass/media/_screen.scss */
+  h2 {
+    color: rgba(60, 60, 60, 0.75);
+    font-size: 1.125em;
+    line-height: 1.55556em;
+    line-height: 1.75em;
+  }
+
+  /* line 58, ../_sass/media/_screen.scss */
+  article {
+    margin: 1.75em 0;
+  }
+  /* line 63, ../_sass/media/_screen.scss */
+  .blog article h1, .article article h1 {
+    font-size: 1.5em;
+    line-height: 1.16667em;
+  }
+  /* line 67, ../_sass/media/_screen.scss */
+  .blog article p, .article article p {
+    font-size: 1em;
+    line-height: 1.75em;
+    line-height: 1.4em;
+  }
+  /* line 75, ../_sass/media/_screen.scss */
+  .single article h1, .page article h1 {
+    margin-bottom: 0;
+  }
+  /* line 80, ../_sass/media/_screen.scss */
+  article ul li {
+    margin-bottom: 1em;
+  }
+  /* line 85, ../_sass/media/_screen.scss */
+  article .secondary ul li {
+    margin-bottom: 0;
+  }
+  /* line 90, ../_sass/media/_screen.scss */
+  article .author-info {
+    border-top: 1px dotted rgba(0, 0, 0, 0.1);
+    padding-top: 1.75em;
+  }
+  /* line 94, ../_sass/_mixins.scss */
+  article .author-info:before, article .author-info:after {
+    content: "";
+    display: table;
+  }
+  /* line 99, ../_sass/_mixins.scss */
+  article .author-info:after {
+    clear: both;
+  }
+  /* line 103, ../_sass/_mixins.scss */
+  article .author-info, .ie article .author-info {
+    *zoom: 1;
+  }
+  /* line 95, ../_sass/media/_screen.scss */
+  article .author-info p {
+    margin: 0;
+  }
+  /* line 99, ../_sass/media/_screen.scss */
+  article .author-info img {
+    float: left;
+    margin-right: 0.875em;
+  }
+  /* line 104, ../_sass/media/_screen.scss */
+  article .author-info .author-name {
+    font-weight: bold;
+    margin-bottom: 0.875em;
+  }
+  /* line 109, ../_sass/media/_screen.scss */
+  article .author-info .author-description,
+  article .author-info .all-posts {
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    line-height: 1.3125em;
+  }
+
+  /* Links */
+  /* line 120, ../_sass/media/_screen.scss */
+  a:link {
+    color: #5a3c6e;
+  }
+  /* line 124, ../_sass/media/_screen.scss */
+  a:visited {
+    color: #754e8f;
+  }
+  /* line 128, ../_sass/media/_screen.scss */
+  a:hover, a:active {
+    color: #ba9e06;
+  }
+  /* line 133, ../_sass/media/_screen.scss */
+  a.button {
+    padding: 0.25em 0.5em;
+  }
+  /* line 136, ../_sass/media/_screen.scss */
+  a.button:link, a.button:visited {
+    color: #fff;
+    background-color: #5a3c6e;
+  }
+  /* line 142, ../_sass/media/_screen.scss */
+  a.button:hover, a.button:active {
+    color: #fff;
+    background-color: #3f2a4d;
+  }
+
+  /* line 151, ../_sass/media/_screen.scss */
+  h1 a, h2 a, h3 a {
+    text-decoration: none;
+  }
+
+  /* line 156, ../_sass/media/_screen.scss */
+  figure {
+    margin-bottom: 1.75em;
+  }
+
+  /* line 160, ../_sass/media/_screen.scss */
+  figcaption {
+    font-style: italic;
+    font-size: 0.85em;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* line 166, ../_sass/media/_screen.scss */
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  /* line 172, ../_sass/media/_screen.scss */
+  code {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 0.875em;
+    line-height: 2em;
+  }
+
+  /* Buttons */
+  /* line 179, ../_sass/media/_screen.scss */
+  input[type=submit], input[type=button] {
+    font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #3c3c3c;
+    color: #fff;
+    background-color: #73239b;
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    -moz-box-shadow: rgba(255, 255, 255, 0.375) 0 1px 0 0 inset;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.375) 0 1px 0 0 inset;
+    box-shadow: rgba(255, 255, 255, 0.375) 0 1px 0 0 inset;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  /* line 185, ../_sass/media/_screen.scss */
+  button,
+  .button {
+    font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #3c3c3c;
+    color: #fff;
+    background-color: #73239b;
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    -moz-box-shadow: rgba(255, 255, 255, 0.375) 0 1px 0 0 inset;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.375) 0 1px 0 0 inset;
+    box-shadow: rgba(255, 255, 255, 0.375) 0 1px 0 0 inset;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  /* line 190, ../_sass/media/_screen.scss */
+  .kicker {
+    font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
+    font-size: 12px !important;
+    line-height: 1;
+    margin-bottom: 0;
+    color: rgba(60, 60, 60, 0.5);
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  /* line 9, ../_sass/_mixins.scss */
+  .kicker + * {
+    margin-top: 0;
+  }
+
+  /* Utility Classes */
+  /* line 94, ../_sass/_mixins.scss */
+  .container:before, .container:after {
+    content: "";
+    display: table;
+  }
+  /* line 99, ../_sass/_mixins.scss */
+  .container:after {
+    clear: both;
+  }
+  /* line 103, ../_sass/_mixins.scss */
+  .container, .ie .container {
+    *zoom: 1;
+  }
+
+  /* line 200, ../_sass/media/_screen.scss */
+  .alignleft {
+    float: left;
+    margin-right: 1.75em;
+  }
+
+  /* line 205, ../_sass/media/_screen.scss */
+  .alignright {
+    float: right;
+    margin-left: 1.75em;
+  }
+
+  /* line 210, ../_sass/media/_screen.scss */
+  .wp-caption-text {
+    color: rgba(60, 60, 60, 0.75);
+    font-size: 0.6em;
+  }
+
+  /* line 215, ../_sass/media/_screen.scss */
+  .pager {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    padding-top: 1.75em;
+  }
+  /* line 94, ../_sass/_mixins.scss */
+  .pager:before, .pager:after {
+    content: "";
+    display: table;
+  }
+  /* line 99, ../_sass/_mixins.scss */
+  .pager:after {
+    clear: both;
+  }
+  /* line 103, ../_sass/_mixins.scss */
+  .pager, .ie .pager {
+    *zoom: 1;
+  }
+  /* line 219, ../_sass/media/_screen.scss */
+  .pager a {
+    display: block;
+    float: left;
+    width: 48%;
+    text-decoration: none;
+  }
+  /* line 226, ../_sass/media/_screen.scss */
+  .pager .newer {
+    float: right;
+    text-align: right;
+  }
+
+  /**
+   * Banner Header
+   */
+  /* line 235, ../_sass/media/_screen.scss */
+  header[role=banner] {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.75em 0 0;
+  }
+
+  /* line 241, ../_sass/media/_screen.scss */
+  #search {
+    font-size: 70%;
+    position: relative;
+    width: 200px;
+    margin: 0 auto 1.75em;
+  }
+  /* line 247, ../_sass/media/_screen.scss */
+  #search * {
+    margin: 0;
+  }
+  /* line 251, ../_sass/media/_screen.scss */
+  #search input[type=search] {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 2em 5px 5px;
+    margin: 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 150px;
+  }
+  /* line 259, ../_sass/media/_screen.scss */
+  #search input[type=submit] {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1em;
+    content: "";
+    text-indent: -9999px;
+    background-image: url("images/magnifying-glass.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    width: 2em;
+    height: 2em;
+    line-height: 0;
+    border: none !important;
+    background-color: rgba(120, 120, 120, 0.7);
+    border-radius: 0 4px 4px 0;
+  }
+  /* line 277, ../_sass/media/_screen.scss */
+  #search input[type=submit]:hover, #search input[type=submit]:active {
+    background-color: rgba(120, 120, 120, 0.9);
+  }
+
+  /* line 284, ../_sass/media/_screen.scss */
+  #sitenav {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    line-height: 3.5em;
+  }
+  /* line 109, ../_sass/_mixins.scss */
+  #sitenav:before {
+    display: block;
+    content: "";
+    height: 0;
+    border-top: 1px solid rgba(60, 60, 60, 0.25);
+    border-bottom: 1px solid #fff;
+  }
+  /* line 45, ../_sass/_mixins.scss */
+  #sitenav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 50, ../_sass/_mixins.scss */
+  #sitenav ul li {
+    display: inline;
+  }
+  /* line 53, ../_sass/_mixins.scss */
+  #sitenav ul li:not(:first-child):before {
+    color: rgba(60, 60, 60, 0.5);
+    content: " · ";
+    padding: 0 4px;
+  }
+  /* line 59, ../_sass/_mixins.scss */
+  #sitenav ul li a {
+    text-decoration: none;
+  }
+
+  /* line 295, ../_sass/media/_screen.scss */
+  #logo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 2.33333em;
+  }
+
+  /**
+   * Main Content
+   */
+  /* line 305, ../_sass/media/_screen.scss */
+  #content {
+    clear: both;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  /* line 109, ../_sass/_mixins.scss */
+  #content:before {
+    display: block;
+    content: "";
+    height: 0;
+    border-top: 1px solid rgba(60, 60, 60, 0.25);
+    border-bottom: 1px solid #fff;
+  }
+  /* line 313, ../_sass/media/_screen.scss */
+  #content a.splash-link {
+    text-decoration: none;
+  }
+  /* line 316, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash {
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 420px;
+    border: 5px solid #584561;
+    border-radius: 2px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+  }
+  /* line 325, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash div.launch-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 100%;
+  }
+  /* line 331, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash div.launch-overlay div.launch-button {
+    position: relative;
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    text-decoration: none;
+    top: 200px;
+  }
+  /* line 342, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  }
+  /* line 345, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash:hover div.launch-overlay {
+    display: block;
+  }
+  /* line 351, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.homepage {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/06/neatline-splash.jpg");
+  }
+  /* line 354, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.hotchkiss {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/chancellorsville.jpg");
+  }
+  /* line 357, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.nelly {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/nelly.jpg");
+  }
+  /* line 360, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.num132 {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/132.jpg");
+  }
+  /* line 363, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.num138 {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/138.jpg");
+  }
+  /* line 366, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.uva {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/uva.jpg");
+  }
+  /* line 369, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.tech {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/tech.jpg");
+  }
+  /* line 372, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.anie {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/anie.jpg");
+  }
+  /* line 375, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.henshaw {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/henshaw1.jpg");
+  }
+  /* line 378, ../_sass/media/_screen.scss */
+  #content a.splash-link div.splash.lovecraft {
+    background-image: url("http://neatline.scholarslab.org/wp-content/uploads/2012/07/lovecraft.jpg");
+  }
+
+  /* Homepage Styles */
+  /* line 389, ../_sass/media/_screen.scss */
+  #pitch {
+    font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+  }
+
+  /* line 394, ../_sass/media/_screen.scss */
+  #screenshots img {
+    max-width: 94%;
+    padding: 2%;
+    background: #fff;
+  }
+  /* line 400, ../_sass/media/_screen.scss */
+  #screenshots a {
+    text-decoration: none;
+    border: none;
+  }
+
+  /* line 408, ../_sass/media/_screen.scss */
+  .screenshot:first-child h2,
+  .screenshot:first-child .description {
+    display: none;
+  }
+
+  /* line 415, ../_sass/media/_screen.scss */
+  #neatline-meta-links {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin: 1.75em 0;
+  }
+  /* line 421, ../_sass/media/_screen.scss */
+  #neatline-meta-links li {
+    display: inline;
+  }
+  /* line 425, ../_sass/media/_screen.scss */
+  #neatline-meta-links a {
+    padding: 0 1em;
+    margin: 0.5em 0.6em;
+    line-height: 1em;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 1.25em;
+    line-height: 1.4em;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: #533b54 !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#644765", endColorstr="#533b53");
+    background-image: -khtml-gradient(linear, left top, left bottom, left, right);
+    background-image: -moz-linear-gradient(top, #644765, #533b53);
+    background-image: -ms-linear-gradient(top, #644765, #533b53);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #644765), color-stop(100%, #533b53));
+    background-image: -webkit-linear-gradient(top, #644765, #533b53);
+    background-image: -o-linear-gradient(top, #644765, #533b53);
+    background-image: linear-gradient(#644765, #533b53);
+    border-color: #533b53 #533b53 #4f384f;
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.09);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* line 427, ../_sass/media/_screen.scss */
+  #neatline-meta-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* line 433, ../_sass/media/_screen.scss */
+  #separate-components-note {
+    clear: both;
+    font-style: italic;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.125em;
+    line-height: 1.55556em;
+    line-height: 1.75em;
+    color: rgba(60, 60, 60, 0.75);
+  }
+
+  /* line 444, ../_sass/media/_screen.scss */
+  .plugin-links {
+    font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+    font-size: 0.6em;
+    color: rgba(60, 60, 60, 0.75);
+  }
+  /* line 449, ../_sass/media/_screen.scss */
+  .plugin-links span:not(:first-child):before {
+    content: " | ";
+    color: rgba(60, 60, 60, 0.75);
+  }
+
+  /* line 456, ../_sass/media/_screen.scss */
+  #plugin-meta p {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Neatline in Action content styles. */
+  /* line 464, ../_sass/media/_screen.scss */
+  .neatline-in-action p {
+    margin: 1em;
+    font-size: 18px;
+  }
+  /* line 469, ../_sass/media/_screen.scss */
+  .neatline-in-action div.exhibit {
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(60, 60, 60, 0.25);
+  }
+  /* line 472, ../_sass/media/_screen.scss */
+  .neatline-in-action div.exhibit:last-child {
+    border-bottom: none;
+  }
+
+  /* line 479, ../_sass/media/_screen.scss */
+  #comments {
+    border-top: 1px dotted rgba(0, 0, 0, 0.1);
+  }
+
+  /* line 483, ../_sass/media/_screen.scss */
+  .commentlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    line-height: 1.75em;
+  }
+  /* line 491, ../_sass/media/_screen.scss */
+  .commentlist li {
+    margin-bottom: 3.5em;
+  }
+  /* line 494, ../_sass/media/_screen.scss */
+  .commentlist li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 1.75em;
+  }
+  /* line 499, ../_sass/media/_screen.scss */
+  .commentlist li ul li.comment {
+    border-left: 1px dotted rgba(0, 0, 0, 0.1);
+    padding-left: 1.75em;
+    margin: 3.5em 0;
+  }
+  /* line 507, ../_sass/media/_screen.scss */
+  .commentlist article {
+    margin: 0;
+  }
+  /* line 511, ../_sass/media/_screen.scss */
+  .commentlist .comment-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: table;
+  }
+  /* line 517, ../_sass/media/_screen.scss */
+  .commentlist .comment-meta li {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /* line 521, ../_sass/media/_screen.scss */
+  .commentlist .comment-meta li:not(:last-child):after {
+    color: rgba(60, 60, 60, 0.5);
+    content: " · ";
+    padding: 0 0.5em;
+  }
+  /* line 527, ../_sass/media/_screen.scss */
+  .commentlist .comment-meta li:first-child:after {
+    content: "" !important;
+    padding: 0 1em 0 0;
+  }
+  /* line 531, ../_sass/media/_screen.scss */
+  .commentlist .comment-meta li .image {
+    width: 40px;
+  }
+  /* line 535, ../_sass/media/_screen.scss */
+  .commentlist .comment-meta li img {
+    width: 40px;
+    height: 40px;
+  }
+  /* line 540, ../_sass/media/_screen.scss */
+  .commentlist .comment-meta li a {
+    text-decoration: none;
+  }
+
+  /* line 548, ../_sass/media/_screen.scss */
+  #respond {
+    border-top: 1px dotted rgba(0, 0, 0, 0.1);
+  }
+  /* line 550, ../_sass/media/_screen.scss */
+  #respond input,
+  #respond textarea {
+    display: block;
+  }
+
+  /* Footer
+  ----------------------------------------------------------------------------*/
+  /* line 558, ../_sass/media/_screen.scss */
+  footer[role="contentinfo"] {
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+    font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
+  }
+  /* line 109, ../_sass/_mixins.scss */
+  footer[role="contentinfo"]:before {
+    display: block;
+    content: "";
+    height: 0;
+    border-top: 1px solid rgba(60, 60, 60, 0.25);
+    border-bottom: 1px solid #fff;
+  }
+  /* line 564, ../_sass/media/_screen.scss */
+  footer[role="contentinfo"]:before {
+    margin-bottom: 1.75em;
+  }
+  /* line 567, ../_sass/media/_screen.scss */
+  footer[role="contentinfo"] .textwidget {
+    color: #777;
+    font-size: 0.6875em;
+    line-height: 2.54545em;
+    line-height: 1.75em;
+  }
+  /* line 571, ../_sass/media/_screen.scss */
+  footer[role="contentinfo"] .textwidget h4 {
+    display: none;
+  }
+
+  /* line 578, ../_sass/media/_screen.scss */
+  #slab-info ul {
+    margin: 0 0 1.75em;
+    padding: 0;
+    list-style: none;
+    font-size: 0.6875em;
+    line-height: 2.54545em;
+    line-height: 1.75em;
+    float: left;
+  }
+
+  /* line 588, ../_sass/media/_screen.scss */
+  #slab-logo {
+    opacity: 0.5;
+    float: right;
+  }
+
+  /* line 593, ../_sass/media/_screen.scss */
+  .not-yet {
+    padding: 100px 20px 0;
+    background-image: none;
+  }
+  /* line 596, ../_sass/media/_screen.scss */
+  .not-yet .message,
+  .not-yet h1 {
+    margin: 0 auto 100px;
+    max-width: 400px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  /* line 106, ../../../.rvm/gems/ruby-2.1.2@neatline.org/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/typography/_vertical_rhythm.scss */
+  html {
+    font-size: 125%;
+    line-height: 1.75em;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../_sass/media/_screen_768.scss */
+  header[role=banner],
+  #content,
+  footer {
+    max-width: 980px;
+  }
+
+  /* line 7, ../_sass/media/_screen_768.scss */
+  header[role=banner] {
+    position: relative;
+    padding: 1.75em 0 0;
+  }
+
+  /* line 12, ../_sass/media/_screen_768.scss */
+  #logo {
+    float: left;
+    text-align: left;
+    max-width: 300px;
+    line-height: 0;
+    margin-bottom: 1.75em;
+  }
+
+  /* line 20, ../_sass/media/_screen_768.scss */
+  #sitenav {
+    position: absolute;
+    bottom: 1.75em;
+    right: 0;
+    float: right;
+    clear: right;
+    border: none;
+    text-align: right;
+    line-height: 1.75em;
+  }
+  /* line 30, ../_sass/media/_screen_768.scss */
+  #sitenav:before {
+    display: none;
+  }
+  /* line 34, ../_sass/media/_screen_768.scss */
+  #sitenav ul {
+    border: none;
+  }
+
+  /* line 42, ../_sass/media/_screen_768.scss */
+  form#search {
+    float: right;
+  }
+
+  /* line 47, ../_sass/media/_screen_768.scss */
+  #screenshots .screenshot {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 0;
+    display: block;
+    padding: 0 2% 2%;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  /* line 57, ../_sass/media/_screen_768.scss */
+  #screenshots .screenshot:hover {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  /* line 62, ../_sass/media/_screen_768.scss */
+  #screenshots .screenshot:first-child {
+    float: left;
+    width: 74%;
+    padding: 2% 2% 0;
+    margin-bottom: 2em;
+  }
+  /* line 69, ../_sass/media/_screen_768.scss */
+  #screenshots .screenshot:last-child {
+    margin-right: 0 !important;
+  }
+  /* line 73, ../_sass/media/_screen_768.scss */
+  #screenshots .screenshot img {
+    padding: 0;
+    margin-bottom: 1em;
+    max-width: 100%;
+    background: transparent;
+  }
+
+  /* line 82, ../_sass/media/_screen_768.scss */
+  #neatline-meta-links {
+    margin: 2em 0 0 0;
+    clear: none;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.75em;
+  }
+  /* line 88, ../_sass/media/_screen_768.scss */
+  #neatline-meta-links li {
+    display: inline;
+    margin-bottom: 2em;
+  }
+  /* line 91, ../_sass/media/_screen_768.scss */
+  #neatline-meta-links li:before {
+    content: "" !important;
+    padding: 0 !important;
+  }
+  /* line 96, ../_sass/media/_screen_768.scss */
+  #neatline-meta-links li a {
+    padding: 0 1em;
+    margin: 0.5em 0.6em;
+    line-height: 1em;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 1.25em;
+    line-height: 1.4em;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: #533b54 !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#644765", endColorstr="#533b53");
+    background-image: -khtml-gradient(linear, left top, left bottom, left, right);
+    background-image: -moz-linear-gradient(top, #644765, #533b53);
+    background-image: -ms-linear-gradient(top, #644765, #533b53);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #644765), color-stop(100%, #533b53));
+    background-image: -webkit-linear-gradient(top, #644765, #533b53);
+    background-image: -o-linear-gradient(top, #644765, #533b53);
+    background-image: linear-gradient(#644765, #533b53);
+    border-color: #533b53 #533b53 #4f384f;
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.09);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* line 98, ../_sass/media/_screen_768.scss */
+  #neatline-meta-links li a:hover {
+    text-decoration: underline;
+  }
+
+  /* line 106, ../_sass/media/_screen_768.scss */
+  #separate-components-note {
+    clear: both;
+    font-style: italic;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.25em;
+    line-height: 1.4em;
+  }
+
+  /* line 114, ../_sass/media/_screen_768.scss */
+  #primary,
+  .primary {
+    float: left;
+    width: 70%;
+  }
+
+  /* line 120, ../_sass/media/_screen_768.scss */
+  .single-post #primary {
+    float: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 127, ../_sass/media/_screen_768.scss */
+  #secondary,
+  .secondary {
+    float: right;
+    width: 25%;
+    font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
+    font-size: 0.75em;
+    color: #777;
+  }
+
+  /* line 137, ../_sass/media/_screen_768.scss */
+  #secondary {
+    padding-top: 3em;
+  }
+
+  /* line 141, ../_sass/media/_screen_768.scss */
+  #secondary h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 146, ../_sass/media/_screen_768.scss */
+  #secondary ul,
+  .secondary ul {
+    padding-left: 0;
+    margin-left: 1.5em;
+  }
+
+  /* line 152, ../_sass/media/_screen_768.scss */
+  #secondary ul:not(:last-child):after,
+  .secondary ul:not(:last-child):after {
+    margin: 1em 0 1em -1.5em;
+    display: block;
+    content: "";
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid white;
+    padding: 0;
+  }
+
+  /* line 163, ../_sass/media/_screen_768.scss */
+  #plugin-meta .button {
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+
+  /* Plugin List */
+  /* line 174, ../_sass/media/_screen_768.scss */
+  .archive article.plugins {
+    float: left;
+    clear: left;
+  }
+  /* line 178, ../_sass/media/_screen_768.scss */
+  .archive article.plugins .plugin-screen {
+    display: block;
+    float: left;
+    width: 48%;
+    border: 17px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  /* line 184, ../_sass/media/_screen_768.scss */
+  .archive article.plugins .plugin-screen:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  /* line 189, ../_sass/media/_screen_768.scss */
+  .archive article.plugins .content {
+    float: right;
+    width: 48%;
+  }
+
+  /* line 197, ../_sass/media/_screen_768.scss */
+  .credits-and-history #primary {
+    width: auto;
+  }
+  /* line 202, ../_sass/media/_screen_768.scss */
+  .credits-and-history article h2 {
+    clear: both !important;
+    padding-top: 2em;
+  }
+  /* line 206, ../_sass/media/_screen_768.scss */
+  .credits-and-history article h2:before {
+    display: block;
+    content: "";
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid white;
+    margin-bottom: 0.5em;
+  }
+  /* line 217, ../_sass/media/_screen_768.scss */
+  .credits-and-history .primary * {
+    margin: 0 0 1em;
+  }
+  /* line 221, ../_sass/media/_screen_768.scss */
+  .credits-and-history .secondary {
+    padding-top: 0.75em;
+  }
+  /* line 225, ../_sass/media/_screen_768.scss */
+  .credits-and-history #secondary {
+    display: none;
+  }
+
+  /* line 230, ../_sass/media/_screen_768.scss */
+  footer .widget {
+    float: left;
+    width: 48%;
+  }
+
+  /* line 235, ../_sass/media/_screen_768.scss */
+  #slab-info {
+    float: right;
+    width: 48%;
+    display: table;
+  }
+  /* line 240, ../_sass/media/_screen_768.scss */
+  #slab-info ul,
+  #slab-info #slab-logo {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+  }
+  /* line 247, ../_sass/media/_screen_768.scss */
+  #slab-info #slab-logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    float: none;
+  }
+}
+@media print {
+  /* line 1, ../_sass/media/_print.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* line 9, ../_sass/media/_print.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 14, ../_sass/media/_print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 18, ../_sass/media/_print.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: .5cm;
+  }
+  /* line 26, ../_sass/media/_print.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 31, ../_sass/media/_print.scss */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 35, ../_sass/media/_print.scss */
+  nav {
+    display: none;
+  }
+}

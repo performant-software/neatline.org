@@ -1,0 +1,12 @@
+# Site settings
+title: Neatline
+email: your-email@domain.com
+description: ""
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
