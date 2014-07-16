@@ -527,28 +527,41 @@ table {
     line-height: 1.75em;
   }
 
-  /* line 58, ../_sass/media/_screen.scss */
+  /* line 57, ../_sass/media/_screen.scss */
   article {
     margin: 1.75em 0;
   }
-  /* line 63, ../_sass/media/_screen.scss */
+  /* line 62, ../_sass/media/_screen.scss */
   .blog article h1, .article article h1 {
     font-size: 1.5em;
     line-height: 1.16667em;
   }
-  /* line 67, ../_sass/media/_screen.scss */
+  /* line 66, ../_sass/media/_screen.scss */
   .blog article p, .article article p {
     font-size: 1em;
     line-height: 1.75em;
     line-height: 1.4em;
   }
-  /* line 75, ../_sass/media/_screen.scss */
+  /* line 74, ../_sass/media/_screen.scss */
   .single article h1, .page article h1 {
     margin-bottom: 0;
   }
-  /* line 80, ../_sass/media/_screen.scss */
+  /* line 79, ../_sass/media/_screen.scss */
   article ul li {
     margin-bottom: 1em;
+  }
+  /* line 94, ../_sass/_mixins.scss */
+  article .secondary:before, article .secondary:after {
+    content: "";
+    display: table;
+  }
+  /* line 99, ../_sass/_mixins.scss */
+  article .secondary:after {
+    clear: both;
+  }
+  /* line 103, ../_sass/_mixins.scss */
+  article .secondary, .ie article .secondary {
+    *zoom: 1;
   }
   /* line 85, ../_sass/media/_screen.scss */
   article .secondary ul li {
@@ -1470,16 +1483,16 @@ table {
   }
 
   /* line 197, ../_sass/media/_screen_768.scss */
-  .credits-and-history #primary {
+  article #primary {
     width: auto;
   }
   /* line 202, ../_sass/media/_screen_768.scss */
-  .credits-and-history article h2 {
+  article .credits-and-history h2 {
     clear: both !important;
     padding-top: 2em;
   }
   /* line 206, ../_sass/media/_screen_768.scss */
-  .credits-and-history article h2:before {
+  article .credits-and-history h2:before {
     display: block;
     content: "";
     height: 0px;
@@ -1488,15 +1501,15 @@ table {
     margin-bottom: 0.5em;
   }
   /* line 217, ../_sass/media/_screen_768.scss */
-  .credits-and-history .primary * {
+  article .primary * {
     margin: 0 0 1em;
   }
   /* line 221, ../_sass/media/_screen_768.scss */
-  .credits-and-history .secondary {
+  article .secondary {
     padding-top: 0.75em;
   }
   /* line 225, ../_sass/media/_screen_768.scss */
-  .credits-and-history #secondary {
+  article #secondary {
     display: none;
   }
 

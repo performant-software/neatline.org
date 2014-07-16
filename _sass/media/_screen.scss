@@ -52,7 +52,6 @@ h2 {
   color: $default-color-light;
   @include adjust-font-size-to(18px);
   @include adjust-leading-to(1);
-
 }
 
 article {
@@ -82,6 +81,7 @@ article {
   }
 
   .secondary {
+    @include clearfix;
     ul li {
       margin-bottom:0;
     }
