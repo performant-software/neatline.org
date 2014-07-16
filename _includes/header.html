@@ -6,14 +6,34 @@
     </a>
   </h1>
 
-<!-- add google custom search here -->
+<!-- Google Search Box -->
+
+<div id="custom_search">
+        <script>
+        (function() {
+        var cx = '009145345920904867543:1jiuohixchs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+        })();
+        </script>
+        <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
+</div>
+
+<!-- end Google Search Box -->
 
     <nav id="sitenav">
       <div class="trigger">
         <ul>
-          {% for page in site.pages %}
-            <li><a class="page-link" href="{{ page.url | prepend: site.url }}">{{ page.title }}</a></li>
-          {% endfor %}
+            <li><a href="{{ "/about/" | prepend: site.url }}" class="page-link">About</a></li>
+            <li><a href="http://docs.neatline.org/" class="page-link">Documentation</a></li>
+            <li><a href="{{ "/demos/" | prepend: site.url }}" class="page-link">Demos</a></li>
+            <li><a href="{{ "/news/" | prepend: site.url }}" class="page-link">News</a></li>
+            <li><a href="{{ "/credits/" | prepend: site.url }}" class="page-link">Credits</a></li>
         </ul>
       </div>
     </nav>
