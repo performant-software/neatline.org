@@ -475,15 +475,15 @@ table {
 
   /* line 9, ../_sass/media/_screen.scss */
   html {
-    background: #f9f9f9 url(images/bg_wrapper.jpg);
+    background: #f9f9f9 url(../images/bg_wrapper.jpg);
     border-top: 10px solid #573D56;
   }
 
   /* line 14, ../_sass/media/_screen.scss */
   body {
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("images/neatline-mark-tan.png");
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("images/neatline-mark-tan.png");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("images/neatline-mark-tan.png");
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("../images/neatline-mark-tan.png");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("../images/neatline-mark-tan.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0) 200px), url("../images/neatline-mark-tan.png");
     background-position: top left, 50% 300px;
     background-repeat: no-repeat;
     border-top: 2px solid rgba(255, 255, 255, 0.75);

@@ -23,3 +23,8 @@ input.gsc-search-button-v2 {
 .gsc-orderby-label {
     visibility: hidden;
 }
+
+a.gs-title {
+    height: 2em;
+}
+
