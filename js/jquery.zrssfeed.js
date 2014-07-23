@@ -118,7 +118,6 @@
     // Add body
     // html += '<div class="rssBody">' +
     //   '<ul>';
-    html += '<article>';
 
     // Add feeds
     for (var i=0; i<feeds.entries.length; i++) {
@@ -130,13 +129,17 @@
       // Format published date
       if (entry.publishedDate) {
         var entryDate = new Date(entry.publishedDate);
-        var pubDate = entryDate.toLocaleDateString() + ' ' + entryDate.toLocaleTimeString();
+        var pubDate = entryDate.toLocaleDateString();
       }
 
       // Add feed row
       //html += '<li class="rssRow '+row+'">' +
-        html += '<'+ options.titletag +'><a href="'+ entry.link +'" title="View this feed at '+ feeds.title +'" target="'+ options.linktarget +'">'+ entry.title +'</a></'+ options.titletag +'>'
-      if (options.date && pubDate) html += '<div>'+ pubDate +'</div>'
+        html += '<div class="blog">'
+        html += '<article>';
+        html += '<header>';
+        if (options.date && pubDate) html += '<p class="kicker">'+ pubDate +'</p>'
+        html += '<'+ options.titletag +'><a href="'+ entry.link +'" title="View this feed at '+ feeds.title +'" target="'+ options.linktarget +'">'+ entry.title +'</a></'+ options.titletag +'>';
+      html += '</header>'
       if (options.content) {
 
         // Use feed snippet if available and optioned
@@ -146,8 +149,11 @@
           var content = entry.content;
         }
 
-        html += '<p>'+ content + '</p>'
+        html += '<div class="entry"><p>'+ content + '</p></div>'
       }
+
+        html += '</article>'
+        html += '</div>'
 
 
             // Alternate row classes
@@ -159,11 +165,10 @@
     }
 
     if (options.more) {
-        html += '<div class="rss_more"><a href="' + feeds.link + '/tag/praxis-program/">more posts &raquo;</a></div>';
+        html += '<div class="rss_more"><a href="' + feeds.link + '/tag/neatline/">more posts &raquo;</a></div>';
       }
 
     // '</div>'
-    html += '</article>';
 
     $(e).html(html);
   };
