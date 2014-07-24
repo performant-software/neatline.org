@@ -3,7 +3,7 @@ title: Demos
 author: admin
 layout: page
 ---
-We've prepared a number of sample Neatline exhibits to help stretch your imagination. Look below for projects in history, literature, and contemporary space and place -- and come back soon to for examples of how Neatline can be used to annotate documents without reference to geography.
+We've gathered a number of sample Neatline exhibits to help stretch your imagination. Look below for projects in history, literature, and contemporary space and place.
 
 <div class="exhibit">
 <h3>"My Dear Little Nelly": Hotchkiss Maps the Battle of Fredericksburg for his Child</h3>
@@ -41,38 +41,6 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 <p>Fought about six months after the disastrous Union defeat at the Battle of Fredericksburg, Chancellorsville was one of a series of stringing defeats that rocked the Union army in 1862 and 1863. Hotchkiss played a critical role in one of the most well-known tactical maneuvers of the war: Lee and Jackson used his sketches of the roads and logging trails in the dense forest around Chancellorsville to plan a risky, 14-mile flanking march that put Jackson into position to launch a devastating attack on the right wing of Hooker's army.</p>
 <p>Hotchkiss made dozens of maps of the area, and continued to revise and annotate them throughout his life. UVa's Small Special Collections Library holds a series of three identical printings of the map that Hotchkiss marked with colored pencils to indicate troop movements over the course of the three-day battle.</p>
 <p>Each of the maps has been georeferenced, tagged with temporal visibility intervals, and annotated with a complex series of illustrations and waypoints. Follow the numbered locations to read a detailed description of the battle, and click on geometric vector shapes for information about Hotchkiss's markings and specific events in the battle. Drag the timeline back and forth to switch contexts between May 2nd, 3rd, and 4th. On the right of the screen, an ordered series of timestamped labels provides a high-level overview of the narrative.</p>
-</div>
-
-<div class="exhibit">
-<h3>Hotchkiss Collection #132: Pencil-Annotated Map of Chancellorsville, May 2</h3>
-<a href="http://hotchkiss.neatline.org/neatline-exhibits/show/chancellorsville-may-2-1863-132/fullscreen" target="_blank" class="splash-link">
-  <div class="splash num132">
-    <div class="launch-overlay">
-      <div class="launch-button">Launch Exhibit</div>
-    </div>
-  </div>
-</a>
-
-<small>By <strong>David McClure</strong> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. | Maps from the <a href="http://memory.loc.gov/ammem/collections/maps/hotchkiss/">Hotchkiss Map Collection</a> at the Library of Congress.</small>
-
-<p>Hotchkiss made a number of maps showing the action of May 2 at the Battle of Chancellorsville, the day of the famous flanking march that set the stage for Lee's victory and for Jackson's death. In this map, <a href="http://hdl.loc.gov/loc.gmd/g3884c.cwh00132">#132</a> in the <a href="http://memory.loc.gov/ammem/collections/maps/hotchkiss/">Hotchkiss Map Collection</a> at the Library of Congress, Hothchkiss sketches the positions of the divisions that stayed behind with Lee on the east side of the Chancellorsville crossroads while the Second Corps marched west.</p>
-<p>In the right margin of the document, Hotchkiss penciled in a numbered list of divisions lined up along the eastern stretch of Furnace Road. Hover over the pencil markings to see a transcription of the list and an illustration showing the corresponding position of the division on the map; click on the listings for more information about the individual generals. At the bottom right of the exhibit, click on the large red dot next to the title of the map to see the full Dublin Core metadata for the map, which held as an item in the Omeka collection underlying this exhibit.</p>
-</div>
-
-<div class="exhibit">
-<h3>Hotchkiss Collection #138: Pencil-Annotated Map of Chancellorsville, May 3-4</h3>
-<a href="http://hotchkiss.neatline.org/neatline-exhibits/show/chancellorsville-may-3-4-1863-138/fullscreen" target="_blank" class="splash-link">
-  <div class="splash num138">
-    <div class="launch-overlay">
-      <div class="launch-button">Launch Exhibit</div>
-    </div>
-  </div>
-</a>
-
-<small>By <strong>David McClure</strong> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. | Maps from the <a href="http://memory.loc.gov/ammem/collections/maps/hotchkiss/">Hotchkiss Map Collection</a> at the Library of Congress.</small>
-
-<p>An interactive edition of map #138 in the Library of Congress Hotchkiss Collection, this exhibit shows the position of Lee's army on the evening of May 3 and throughout most of the following day. On the morning of the 3rd, in the aftermath of Jackson's attack, Lee and Stuart resumed pressure on Hooker's position at the Chancellorsville crossroads. The Union force mounted a fierce defense of the position, but eventually succumbed to punishing artillery fire from Confederate batteries on a bluff over the town and retreated north towards the river.</p>
-<p>The exhibit transcribes the marginalia at the bottom of the map and connects listed divisions with the corresponding numbers that Hotchkiss penciled onto the map. Vector illustrations show the shape of Hooker's defensive position south of the Rappahannock and the general trajectory of the troop movements that preceded and followed the positions displayed on the sketch.</p>
 </div>
 
 <div class="exhibit">
@@ -135,21 +103,6 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 
 <p>Pic d'Anie (2,507 m) is the first non-trivial climbing target on a eastbound traverse of the Pyrenees along the Pyrenean High Route, a walking route that follows the center ridgeline between France and Spain. Just a few miles into the Parc National des Pyrénées, Anie benefits aesthetically from contrast with the rolling gentle, hills of the Basque country to the east. Although not particularly large or technically challenging, Anie is an understated, beautiful mountain with a strikingly symmetrical summit cone, tucked into a jagged ring of secondary peaks that can obscure its summit from the surrounding valleys.</p>
 <p>This exhibit plots a series of photographs taken during an ascent of the mountain from the small hamlet of Lescun, which sits on a broad, sloping mountainside about five miles to the east. The approach route and climbing line are plotted in detail, and each photograph is represented by a dot and a thin line, indicating both the direction that the camera was pointing and offering a rough, interpretive approximation of the photographer's range of view.</p>
-</div>
-
-<div class="exhibit">
-<h3>Technology Companies in Silicon Valley and San Francisco</h3>
-<a href="http://sandbox.neatline.org/webservice/david/tech-companies-in-silicon-valley" target="_blank" class="splash-link">
-  <div class="splash tech">
-    <div class="launch-overlay">
-      <div class="launch-button">Launch Exhibit</div>
-    </div>
-  </div>
-</a>
-
-<small>By <strong>David McClure</strong></small>
-
-<p>Another straightforward use of Neatline for modern content, this is a mapping of the office locations of 60 technology firms in Silicon Valley and San Francisco. Descriptions of the companies are taken from Wikipedia.</p>
 </div>
 
 <div class="exhibit">
