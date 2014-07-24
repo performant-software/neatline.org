@@ -192,7 +192,7 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
   </div>
 </a>
 
-<small>By <strong>Virginia Harness, Jody Lahendro, Kelly Schantz, and David Sherdil</strong> | Map: Google, Imagery: NASA, Terrametrics | Link provided with the permission of the authors.</small>
+<small>By <strong>Virginia Harness, Jody Lahendro, Kelly Schantz, and David Sherdil</strong> | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a> | Link provided with the permission of the authors.</small>
 
 <p>"Perspectives on the Haram" is an exhibit created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly. The exhibit uses images and texts from travel accounts to details the changes of the Haram Mosque over a thousand years.</p>
 </div>
@@ -207,7 +207,7 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
   </div>
 </a>
 
-<small>By <strong>Deniz Berk, Maggie Friedman, Blake McDonald</strong> | Map: Google, Imagery: NASA, Terrametrics | Link provided with the permission of the authors.</small>
+<small>By <strong>Deniz Berk, Maggie Friedman, Blake McDonald</strong> | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a> | Link provided with the permission of the authors.</small>
 
 <p>"Jeddah: Gateway to the Hajj" is an exhibit created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly. The exhibit uses first hand accounts to depict the experience of the Hajj as it has been shaped by changing modes of travel in three different time periods.</p>
 
