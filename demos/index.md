@@ -151,3 +151,77 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 
 <p>Another straightforward use of Neatline for modern content, this is a mapping of the office locations of 60 technology firms in Silicon Valley and San Francisco. Descriptions of the companies are taken from Wikipedia.</p>
 </div>
+
+<div class="exhibit">
+<h3>A Sentimental Journey</h3>
+<a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" target="_blank" class="splash-link">
+  <div class="splash sentimental">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Kurt Jensen</strong> | Map Tiles by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. Link provided with the permission of the author.</small>
+
+<p>In this exhibit, University of Virginia undergraduate Kurt Jensen uses Neatline to spatially and temporally visualize the travels of Yorick in Laurence Sterne's <i>A Sentimental Journey Through France and Italy</i>. In doing so, he draws attention to the ambiguous relation between the narrative and the actual course of travel. </p>
+</div>
+
+<div class="exhibit">
+<h3>"One Boston": Messages from The Copley Square Memorial</h3>
+<a href="http://marathon.neu.edu/neatline/show/one-fund-poster" target="_blank" class="splash-link">
+  <div class="splash boston">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Nate Rehm-Daly</strong> | Link provided with the permission of <a href="http://marathon.neu.edu/">Our Marathon</a>.</small>
+
+<p>"One Boston" uses Neatline to show the variety of messages left on a large poster at the Boston Marathon bombing memorial. It uses highlighting to group together types of messages, such as non-English messages, references to Biblical passages, and references to other countries.</p>
+</div>
+
+<div class="exhibit">
+<h3>Perspectives on the Haram</h3>
+<a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/perspectives-on-the-haram" target="_blank" class="splash-link">
+  <div class="splash haram">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Virginia Harness, Jody Lahendro, Kelly Schantz, and David Sherdil</strong> | Map: Google, Imagery: NASA, Terrametrics | Link provided with the permission of the authors.</small>
+
+<p>"Perspectives on the Haram" is an exhibit created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly. The exhibit uses images and texts from travel accounts to details the changes of the Haram Mosque over a thousand years.</p>
+</div>
+
+<div class="exhibit">
+<h3>Jeddah: Gateway to the Hajj</h3>
+<a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" target="_blank" class="splash-link">
+  <div class="splash transportation">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Deniz Berk, Maggie Friedman, Blake McDonald</strong> | Map: Google, Imagery: NASA, Terrametrics | Link provided with the permission of the authors.</small>
+
+<p>"Jeddah: Gateway to the Hajj" is an exhibit created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly. The exhibit uses first hand accounts to depict the experience of the Hajj as it has been shaped by changing modes of travel in three different time periods.</p>
+
+<div class="exhibit">
+<h3>Project Gemini over Baja California Sur</h3>
+<a href="http://neatline.dclure.org/neatline/show/gemini-over-baja-california" target="_blank" class="splash-link">
+  <div class="splash gemini">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>David McClure</strong> | Map tiles by <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | Link provided with the permission of the author.</small>
+
+<p>In this exhibit, David McClure sets side by side contemporary satellite imagery and two images taken by the Gemini missions of Baja California Sur. The positioning of the images, in combination with McClure's own annotations and vector graphics, highlights the remarkably different orientations evident in the images and the effects of each on the appearance of Baja California Sur.</p>
+</div>
