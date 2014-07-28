@@ -12,20 +12,20 @@ header[role=banner] {
 #logo {
   float:left;
   text-align:left;
+  width: 40%;
   max-width: 300px;
   line-height:0;
   margin-bottom:rhythm(1);
 }
 
 #sitenav {
-  position:absolute;
-  bottom:rhythm(1);
-  right:0;
+  width: 60%;
   float:right;
   clear:right;
   border:none;
   text-align:right;
-  @include adjust-leading-to(1);
+  @include adjust-font-size-to(10px);
+  @include adjust-leading-to(1,10px);
 
   &:before {
     display:none;
@@ -35,11 +35,9 @@ header[role=banner] {
     border:none;
   }
 
-  a {
-  }
 }
 
-form#search {
+#custom_search {
   float:right;
 }
 

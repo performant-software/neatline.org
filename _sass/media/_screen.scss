@@ -238,45 +238,33 @@ header[role=banner] {
   padding: rhythm(1) 0 0;
 }
 
-#search {
+#custom_search {
   font-size: 70%;
-  position:relative;
-  width: 200px;
+  width: 250px;
   margin: 0 auto rhythm(1);
+  @include sans-serif;
 
-  * {
-    margin:0;
+  td {
+      padding:0;
+      &.gsc-clear-button {
+          display:none;
+      }
   }
 
-  input[type=search] {
-    border:1px solid rgba(0,0,0,0.1);
-    padding: 5px 2em 5px 5px;
-    margin:0;
-    @include border-radius(4px);
-    width: 150px;
+  input[type=text] {
+    background-image:none !important;
   }
 
-  input[type=submit] {
-    position:absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -1em;
-    content: "";
-    text-indent: -9999px;
-    background-image:url("images/magnifying-glass.png");
-    background-position: 50% 50%;
-    background-repeat:no-repeat;
-    background-size: 70% 70%;
-    width: 2em;
-    height: 2em;
-    line-height:0;
-    border: none !important;
-    background-color: rgba(120,120,120, 0.7);
-    border-radius: 0 4px 4px 0;
-
+  input[type=button] {
+    background-color: $link-color;
+    font-weight:normal;
     &:hover,
+    &:focus {
+        background-color: $link-color-light;
+    }
+
     &:active {
-      background-color: rgba(120,120,120,0.9);
+        background-color: $link-color;
     }
   }
 }
@@ -287,7 +275,7 @@ header[role=banner] {
   text-transform:uppercase;
   letter-spacing: 1px;
   @include adjust-font-size-to(12px);
-  @include adjust-leading-to(2);
+  @include adjust-leading-to(1,12px);
   @include beveled-line;
   @include horizontal-nav;
 }
