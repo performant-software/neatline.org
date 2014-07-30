@@ -1030,7 +1030,7 @@ table {
   }
   /* line 424, ../_sass/media/_screen.scss */
   #neatline-meta-links li {
-    display: inline;
+    margin: 1.75em 0;
   }
   /* line 428, ../_sass/media/_screen.scss */
   #neatline-meta-links a {
@@ -1258,6 +1258,16 @@ table {
   html {
     font-size: 125%;
     line-height: 1.75em;
+  }
+
+  /* line 3, ../_sass/media/_screen_480.scss */
+  #neatline-meta-links {
+    line-height: 3;
+  }
+  /* line 6, ../_sass/media/_screen_480.scss */
+  #neatline-meta-links li {
+    margin: 0;
+    display: inline;
   }
 }
 @media screen and (min-width: 768px) {
