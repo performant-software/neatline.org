@@ -906,7 +906,7 @@ table {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 420px;
+    height: auto;
     border: 5px solid #584561;
     border-radius: 2px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
