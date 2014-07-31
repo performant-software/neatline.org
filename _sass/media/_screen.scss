@@ -310,6 +310,10 @@ header[role=banner] {
       box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
       cursor: pointer;
 
+      img {
+        vertical-align:bottom;
+      }
+
       div.launch-overlay {
         display: none;
         background-color: rgba(0,0,0,0.3);
