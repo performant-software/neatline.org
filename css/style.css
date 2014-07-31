@@ -899,7 +899,7 @@ table {
   /* line 301, ../_sass/media/_screen.scss */
   #content .carousel-caption {
     background: #222;
-    background: rgba(34, 34, 34, 0.9);
+    background: rgba(34, 34, 34, 0.3);
   }
   /* line 304, ../_sass/media/_screen.scss */
   #content .carousel-caption * {
