@@ -298,6 +298,14 @@ header[role=banner] {
 
   @include beveled-line;
 
+  .carousel-caption {
+    background: #222;
+    background: rgba(#222, .9);
+    * {
+        @include text-shadow(none);
+    }
+  }
+
   a.splash-link {
     text-decoration: none;
 
