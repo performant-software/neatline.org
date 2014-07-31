@@ -1265,6 +1265,11 @@ table {
     max-width: 400px;
     text-align: center;
   }
+
+  /* line 619, ../_sass/media/_screen.scss */
+  .demo {
+    height: 420px !important;
+  }
 }
 @media screen and (min-width: 480px) {
   /* line 106, ../../../.rvm/gems/ruby-2.1.2@neatline-migration/gems/compass-core-1.0.0.alpha.20/stylesheets/compass/typography/_vertical_rhythm.scss */

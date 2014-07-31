@@ -9,7 +9,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <h3>"My Dear Little Nelly": Hotchkiss Maps the Battle of Fredericksburg for his Child</h3>
 <figure>
 <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen" target="_blank" class="splash-link">
-  <div class="splash nelly">
+  <div class="splash nelly demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -27,7 +27,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>Project Gemini over Baja California Sur</h3>
 <a href="http://neatline.dclure.org/neatline/show/gemini-over-baja-california" target="_blank" class="splash-link">
-  <div class="splash gemini">
+  <div class="splash gemini demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -42,7 +42,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>Perspectives on the Haram</h3>
 <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/perspectives-on-the-haram" target="_blank" class="splash-link">
-  <div class="splash haram">
+  <div class="splash haram demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -58,7 +58,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <h3>Jedediah Hotchkiss and The Battle of Chancellorsville</h3>
 <figure>
 <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/battle-of-chancellorsville/fullscreen" target="_blank" class="splash-link">
-  <div class="splash hotchkiss">
+  <div class="splash hotchkiss demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -76,7 +76,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>"One Boston": Messages from The Copley Square Memorial</h3>
 <a href="http://marathon.neu.edu/neatline/show/one-fund-poster" target="_blank" class="splash-link">
-  <div class="splash boston">
+  <div class="splash boston demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -91,7 +91,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>"Inventing the Map": Frances Henshaw's Book of Penmanship</h3>
 <a href="http://henshaw.neatline.org/" target="_blank" class="splash-link">
-  <div class="splash henshaw">
+  <div class="splash henshaw demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -107,7 +107,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>A Sentimental Journey</h3>
 <a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" target="_blank" class="splash-link">
-  <div class="splash sentimental">
+  <div class="splash sentimental demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -122,7 +122,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>"I am It, and It is I": Lovecraft in Providence</h3>
 <a href="http://lovecraft.neatline.org/neatline-exhibits/show/lovecraft-in-providence/fullscreen" target="_blank" class="splash-link">
-  <div class="splash lovecraft">
+  <div class="splash lovecraft demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -137,7 +137,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>Jeddah: Gateway to the Hajj</h3>
 <a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" target="_blank" class="splash-link">
-  <div class="splash transportation">
+  <div class="splash transportation demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -151,7 +151,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>University of Virginia Campus Map</h3>
 <a href="http://sandbox.neatline.org/webservice/david/university-of-virginia-campus" target="_blank" class="splash-link">
-  <div class="splash uva">
+  <div class="splash uva demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -166,7 +166,7 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>Pic d'Anie via Lescun</h3>
 <a href="http://sandbox.neatline.org/webservice/david/climbing-pic-danie" target="_blank" class="splash-link">
-  <div class="splash anie">
+  <div class="splash anie demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
