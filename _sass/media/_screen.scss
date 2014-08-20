@@ -6,6 +6,14 @@
 
 @include establish-baseline;
 
+/*bootstrap override*/
+
+a.carousel-control {
+  color: #fff;
+
+  &:visited { color: #fff; }
+}
+
 html {
   background: #f9f9f9 url(../images/bg_wrapper.jpg);
   border-top: 10px solid #573D56;

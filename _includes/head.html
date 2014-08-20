@@ -6,12 +6,12 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
-    <link rel="icon" type="image/png" href="{{ "images/favicon.png" | prepend: site.url }}" >
+    <link rel="icon" type="image/png" href="{{ "/images/favicon.png" | prepend: site.url }}" >
 
-    <link rel="apple-touch-icon" type="image/png" href="{{ "images/apple-touch-icon.png" | prepend: site.url }}">
+    <link rel="apple-touch-icon" type="image/png" href="{{ "/images/apple-touch-icon.png" | prepend: site.url }}">
 
     <!-- Style sheets -->
-    <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ "/css/carousel.min.css" | prepend: site.url }}">
@@ -31,7 +31,17 @@
                       '{{ '/js/selectivizr.min.js' | prepend: site.url }}'
                     ]
                 }
-            ]);
+                ]);
+          (function() {
+          var cx = '009145345920904867543:1jiuohixchs';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+          })();
     </script>
 
 </head>
