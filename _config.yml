@@ -1,11 +1,14 @@
 # Site settings
 title: Neatline
 email: your-email@domain.com
-description: "Neatline is..."
-url: "http://localhost:4000"
+description: "Neatline allows scholars, students, and curators to tell stories with maps and timelines."
+url: ""
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 highlighter: pygments
 
+exclude: ["README.md", "Gruntfile.js", "changelog.md", "Gemfile", "Gemfile.lock", "node_modules", "bower_components", "scss", "config.rb", "package.json", "LICENSE", "bower.json"]
+gems:
+  - jekyll-sitemap
