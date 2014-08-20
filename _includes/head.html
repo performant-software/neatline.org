@@ -26,11 +26,12 @@
         Modernizr.load([
                 {
                     test: Modernizr.mq(),
-                    nope: ['{{ '/js/respond.min.js' | prepend: site.url }}',
-                                '{{ '/js/selectivizr.min.js' | prepend: site.url }}'
+                    nope: [
+                      '{{ '/js/respond.min.js' | prepend: site.url }}',
+                      '{{ '/js/selectivizr.min.js' | prepend: site.url }}'
                     ]
                 }
-            ])
+            ]);
     </script>
 
 </head>
