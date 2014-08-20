@@ -24,24 +24,24 @@
     <script src="{{ "/js/modernizr.min.js" | prepend: site.url }}"></script>
     <script>
         Modernizr.load([
-                {
-                    test: Modernizr.mq(),
-                    nope: [
-                      '{{ '/js/respond.min.js' | prepend: site.url }}',
-                      '{{ '/js/selectivizr.min.js' | prepend: site.url }}'
-                    ]
-                }
-                ]);
-          (function() {
-          var cx = '009145345920904867543:1jiuohixchs';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-          '//www.google.com/cse/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-          })();
+            {
+                test: Modernizr.mq(),
+                nope: [
+                  '{{ '/js/respond.min.js' | prepend: site.url }}',
+                  '{{ '/js/selectivizr.min.js' | prepend: site.url }}'
+                ]
+            }
+        ]);
+        (function() {
+            var cx = '009145345920904867543:1jiuohixchs';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
     </script>
 
 </head>
