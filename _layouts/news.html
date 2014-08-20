@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +18,7 @@
     <link rel="stylesheet" href="{{ "/css/carousel.min.css" | prepend: site.url }}">
     <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.url }}">
 
+
     <!-- Feeds and Pingbacks -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href=" {{ "/feed.xml" | prepend: site.url }}">
 
@@ -24,12 +28,40 @@
         Modernizr.load([
                 {
                     test: Modernizr.mq(),
-                    nope: [
-                      '{{ '/js/respond.min.js' | prepend: site.url }}',
-                      '{{ '/js/selectivizr.min.js' | prepend: site.url }}'
+                    nope: ['{{ '/js/respond.min.js' | prepend: site.url }}',
+                                '{{ '/js/selectivizr.min.js' | prepend: site.url }}'
                     ]
                 }
-            ]);
+            ])
+    </script>
+
+    <!-- Neatline feed from scholarslab.org -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.zrssfeed.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+               $('#feed').rssfeed('https://www.scholarslab.org/tag/neatline/feed/', {
+                    limit: 5,
+                    titletag: 'h1',
+                    snippet: true,
+                    more: true,
+                    header: false,
+                  });
+        });
     </script>
 
 </head>
+
+
+    <body>
+
+    {% include header.html %}
+
+    <div id="content" role="main" class="container">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    </body>
+</html>

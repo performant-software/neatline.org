@@ -3,13 +3,13 @@ title: Demos
 author: admin
 layout: page
 ---
-We've prepared a number of sample Neatline exhibits to help stretch your imagination. Look below for projects in history, literature, and contemporary space and place -- and come back soon to for examples of how Neatline can be used to annotate documents without reference to geography.
+We've gathered a number of sample Neatline exhibits to help stretch your imagination. Look below for projects in history, literature, and contemporary space and place.
 
 <div class="exhibit">
 <h3>"My Dear Little Nelly": Hotchkiss Maps the Battle of Fredericksburg for his Child</h3>
 <figure>
 <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen" target="_blank" class="splash-link">
-  <div class="splash nelly">
+  <div class="splash nelly demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -25,10 +25,40 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
+<h3>Project Gemini over Baja California Sur</h3>
+<a href="http://neatline.dclure.org/neatline/show/gemini-over-baja-california" target="_blank" class="splash-link">
+  <div class="splash gemini demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>David McClure</strong> | Map tiles by <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | Link provided with the permission of the author.</small>
+
+<p>In this exhibit, David McClure sets side by side contemporary satellite imagery and two images taken by the Gemini missions of Baja California Sur. The positioning of the images, in combination with McClure's own annotations and vector graphics, highlights the remarkably different orientations evident in the images and the effects of each on the appearance of Baja California Sur.</p>
+</div>
+
+<div class="exhibit">
+<h3>Perspectives on the Haram</h3>
+<a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/perspectives-on-the-haram" target="_blank" class="splash-link">
+  <div class="splash haram demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Virginia Harness, Jody Lahendro, Kelly Schantz, and David Sherdil</strong> | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a> | Link provided with the permission of the authors.</small>
+
+<p>"Perspectives on the Haram" is an exhibit created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly. The exhibit uses images and texts from travel accounts to details the changes of the Haram Mosque over a thousand years.</p>
+</div>
+
+<div class="exhibit">
 <h3>Jedediah Hotchkiss and The Battle of Chancellorsville</h3>
 <figure>
 <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/battle-of-chancellorsville/fullscreen" target="_blank" class="splash-link">
-  <div class="splash hotchkiss">
+  <div class="splash hotchkiss demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -44,41 +74,24 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
-<h3>Hotchkiss Collection #132: Pencil-Annotated Map of Chancellorsville, May 2</h3>
-<a href="http://hotchkiss.neatline.org/neatline-exhibits/show/chancellorsville-may-2-1863-132/fullscreen" target="_blank" class="splash-link">
-  <div class="splash num132">
+<h3>"One Boston": Messages from The Copley Square Memorial</h3>
+<a href="http://marathon.neu.edu/neatline/show/one-fund-poster" target="_blank" class="splash-link">
+  <div class="splash boston demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
   </div>
 </a>
 
-<small>By <strong>David McClure</strong> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. | Maps from the <a href="http://memory.loc.gov/ammem/collections/maps/hotchkiss/">Hotchkiss Map Collection</a> at the Library of Congress.</small>
+<small>By <strong>Nate Rehm-Daly</strong> | Link provided with the permission of <a href="http://marathon.neu.edu/">Our Marathon</a>.</small>
 
-<p>Hotchkiss made a number of maps showing the action of May 2 at the Battle of Chancellorsville, the day of the famous flanking march that set the stage for Lee's victory and for Jackson's death. In this map, <a href="http://hdl.loc.gov/loc.gmd/g3884c.cwh00132">#132</a> in the <a href="http://memory.loc.gov/ammem/collections/maps/hotchkiss/">Hotchkiss Map Collection</a> at the Library of Congress, Hothchkiss sketches the positions of the divisions that stayed behind with Lee on the east side of the Chancellorsville crossroads while the Second Corps marched west.</p>
-<p>In the right margin of the document, Hotchkiss penciled in a numbered list of divisions lined up along the eastern stretch of Furnace Road. Hover over the pencil markings to see a transcription of the list and an illustration showing the corresponding position of the division on the map; click on the listings for more information about the individual generals. At the bottom right of the exhibit, click on the large red dot next to the title of the map to see the full Dublin Core metadata for the map, which held as an item in the Omeka collection underlying this exhibit.</p>
-</div>
-
-<div class="exhibit">
-<h3>Hotchkiss Collection #138: Pencil-Annotated Map of Chancellorsville, May 3-4</h3>
-<a href="http://hotchkiss.neatline.org/neatline-exhibits/show/chancellorsville-may-3-4-1863-138/fullscreen" target="_blank" class="splash-link">
-  <div class="splash num138">
-    <div class="launch-overlay">
-      <div class="launch-button">Launch Exhibit</div>
-    </div>
-  </div>
-</a>
-
-<small>By <strong>David McClure</strong> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. | Maps from the <a href="http://memory.loc.gov/ammem/collections/maps/hotchkiss/">Hotchkiss Map Collection</a> at the Library of Congress.</small>
-
-<p>An interactive edition of map #138 in the Library of Congress Hotchkiss Collection, this exhibit shows the position of Lee's army on the evening of May 3 and throughout most of the following day. On the morning of the 3rd, in the aftermath of Jackson's attack, Lee and Stuart resumed pressure on Hooker's position at the Chancellorsville crossroads. The Union force mounted a fierce defense of the position, but eventually succumbed to punishing artillery fire from Confederate batteries on a bluff over the town and retreated north towards the river.</p>
-<p>The exhibit transcribes the marginalia at the bottom of the map and connects listed divisions with the corresponding numbers that Hotchkiss penciled onto the map. Vector illustrations show the shape of Hooker's defensive position south of the Rappahannock and the general trajectory of the troop movements that preceded and followed the positions displayed on the sketch.</p>
+<p>"One Boston" uses Neatline to show the variety of messages left on a large poster at the Boston Marathon bombing memorial. It uses highlighting to group together types of messages, such as non-English messages, references to Biblical passages, and references to other countries.</p>
 </div>
 
 <div class="exhibit">
 <h3>"Inventing the Map": Frances Henshaw's Book of Penmanship</h3>
 <a href="http://henshaw.neatline.org/" target="_blank" class="splash-link">
-  <div class="splash henshaw">
+  <div class="splash henshaw demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -92,9 +105,24 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
+<h3>A Sentimental Journey</h3>
+<a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" target="_blank" class="splash-link">
+  <div class="splash sentimental demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Kurt Jensen</strong> | Map Tiles by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. Link provided with the permission of the author.</small>
+
+<p>In this exhibit, University of Virginia undergraduate Kurt Jensen uses Neatline to spatially and temporally visualize the travels of Yorick in Laurence Sterne's <i>A Sentimental Journey Through France and Italy</i>. In doing so, he draws attention to the ambiguous relation between the narrative and the actual course of travel. </p>
+</div>
+
+<div class="exhibit">
 <h3>"I am It, and It is I": Lovecraft in Providence</h3>
 <a href="http://lovecraft.neatline.org/neatline-exhibits/show/lovecraft-in-providence/fullscreen" target="_blank" class="splash-link">
-  <div class="splash lovecraft">
+  <div class="splash lovecraft demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -107,9 +135,23 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
+<h3>Jeddah: Gateway to the Hajj</h3>
+<a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" target="_blank" class="splash-link">
+  <div class="splash transportation demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Deniz Berk, Maggie Friedman, Blake McDonald</strong> | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a> | Link provided with the permission of the authors.</small>
+
+<p>"Jeddah: Gateway to the Hajj" is an exhibit created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly. The exhibit uses first hand accounts to depict the experience of the Hajj as it has been shaped by changing modes of travel in three different time periods.</p>
+
+<div class="exhibit">
 <h3>University of Virginia Campus Map</h3>
 <a href="http://sandbox.neatline.org/webservice/david/university-of-virginia-campus" target="_blank" class="splash-link">
-  <div class="splash uva">
+  <div class="splash uva demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -124,7 +166,7 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 <div class="exhibit">
 <h3>Pic d'Anie via Lescun</h3>
 <a href="http://sandbox.neatline.org/webservice/david/climbing-pic-danie" target="_blank" class="splash-link">
-  <div class="splash anie">
+  <div class="splash anie demo">
     <div class="launch-overlay">
       <div class="launch-button">Launch Exhibit</div>
     </div>
@@ -135,19 +177,4 @@ We've prepared a number of sample Neatline exhibits to help stretch your imagina
 
 <p>Pic d'Anie (2,507 m) is the first non-trivial climbing target on a eastbound traverse of the Pyrenees along the Pyrenean High Route, a walking route that follows the center ridgeline between France and Spain. Just a few miles into the Parc National des Pyrénées, Anie benefits aesthetically from contrast with the rolling gentle, hills of the Basque country to the east. Although not particularly large or technically challenging, Anie is an understated, beautiful mountain with a strikingly symmetrical summit cone, tucked into a jagged ring of secondary peaks that can obscure its summit from the surrounding valleys.</p>
 <p>This exhibit plots a series of photographs taken during an ascent of the mountain from the small hamlet of Lescun, which sits on a broad, sloping mountainside about five miles to the east. The approach route and climbing line are plotted in detail, and each photograph is represented by a dot and a thin line, indicating both the direction that the camera was pointing and offering a rough, interpretive approximation of the photographer's range of view.</p>
-</div>
-
-<div class="exhibit">
-<h3>Technology Companies in Silicon Valley and San Francisco</h3>
-<a href="http://sandbox.neatline.org/webservice/david/tech-companies-in-silicon-valley" target="_blank" class="splash-link">
-  <div class="splash tech">
-    <div class="launch-overlay">
-      <div class="launch-button">Launch Exhibit</div>
-    </div>
-  </div>
-</a>
-
-<small>By <strong>David McClure</strong></small>
-
-<p>Another straightforward use of Neatline for modern content, this is a mapping of the office locations of 60 technology firms in Silicon Valley and San Francisco. Descriptions of the companies are taken from Wikipedia.</p>
 </div>

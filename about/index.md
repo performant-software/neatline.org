@@ -43,6 +43,6 @@ or go straight to [the source][8].
  [4]: ../neatline-in-action/
  [5]: http://maps.google.com/help/maps/education/
  [6]: http://docs.neatline.org/
- [7]: /neatline-in-action/
+ [7]: /demos/
  [8]: https://github.com/scholarslab/Neatline
  [9]: http://sandbox.neatline.org

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+
+    <div id="content" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <footer role="contentinfo" class="container">
+
+  <div class="attribution" >
+      <div class="widget_text widget clearfloat">
+      <div class="textwidget">
+        Neatline is a project of the <a href="http://www.scholarslab.org/">Scholars' Lab</a> at the University of Virginia Library. It has benefited from the generous support of the <a href="http://lib.virginia.edu">UVa Library</a>, the <a href="http://neh.gov">National Endowment for the Humanities</a>, the <a href="http://imls.gov">Institute of Museum and Library Services</a>, and the <a href="http://loc.gov">Library of Congress</a>.
+      </div>
+      </div>
+  </div>
+
+  <div id="slab-info">
+      <ul>
+        <li><a rel="license" class="license" href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a></li>
+
+        <li><a href="{{ "/feed.xml" | prepend: site.url }}" class="feed">RSS</a>
+
+        {% comment %} neatline@collab.itc.virginia.edu {% endcomment %}
+        <li><a class="email" href="mailto:&#110;&#101;&#097;&#116;&#108;&#105;&#110;&#101;&#064;&#099;&#111;&#108;&#108;&#097;&#098;&#046;&#105;&#116;&#099;&#046;&#118;&#105;&#114;&#103;&#105;&#110;&#105;&#097;&#046;&#101;&#100;&#117;">Contact Us</a></li>
+
+      </ul>
+      <a id="slab-logo" href="http://www.scholarslab.org/"><img src="http://static.scholarslab.org/images/logos/slab/slab-logo-black-200px.png" title="Scholars' Lab" alt="Scholars' Lab"/></a>
+    </div>
+
+<!-- JQuery and Bootstrap JS for Carousel -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready({
+      $('.carousel').carousel({
+        interval: 5000
+      });
+    });
+    </script>
+
+</footer>
+
+
+    </body>
+</html>
