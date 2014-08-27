@@ -156,6 +156,9 @@
 .carousel-caption .btn {
   text-shadow: none;
 }
+.carousel-caption h3 {
+  font-size: 100%;
+}
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
