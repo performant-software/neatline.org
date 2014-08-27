@@ -1,7 +1,7 @@
 <header role="banner" class="container">
 
   <h1 id="logo">
-    <a href="{{ site.url }}" title="{{ site.title }}">
+    <a href="{{ site.url | prepend: "/" }}" title="{{ site.title }}">
       <img src="{{ "/images/neatline-logo-rgb.png" | prepend: site.url }}" alt="{{ site.title }}" />
     </a>
   </h1>
