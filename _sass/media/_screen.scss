@@ -20,12 +20,10 @@ html {
 }
 
 body {
-  @include background-image(
-    linear-gradient(rgba(0,0,0,0.1) 0px, rgba(0,0,0,0) 200px),
-    url('../images/neatline-mark-tan.png')
+  @include background(
+    linear-gradient(rgba(0,0,0,0.1) 0px, rgba(0,0,0,0) 200px) top left no-repeat,
+    url('../images/neatline-mark-tan.png') 50% 300px no-repeat
   );
-  background-position: top left, 50% 300px;
-  background-repeat: no-repeat;
   border-top:2px solid rgba(255,255,255,0.75);
   color: $default-color;
   @include serif;
