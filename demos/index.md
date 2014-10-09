@@ -135,6 +135,21 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
+<h3>The Possibility of an Island</h3>
+<a href="http://digihum.mcgill.ca/omeka/neatline/fullscreen/the-possibility-of-an-island---daniel1s-life" target="_blank" class="splash-link">
+  <div class="splash mcgill demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Stephanie Posthumus and Amy Goh</strong> | Maps: <a href="http://www.google.com/maps/about/">Google Physical and Streets</a></small>
+
+<p>Stephanie Posthumus and Amy Goh, of McGill University, use Neatline to map the life of one of the characters from Michel Houellebecq's novel, <i>The Possibility of an Island</i>, in this exhibit, making impressive use of custom point images.</p>
+</div>
+
+<div class="exhibit">
 <h3>Jeddah: Gateway to the Hajj</h3>
 <a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" target="_blank" class="splash-link">
   <div class="splash transportation demo">
