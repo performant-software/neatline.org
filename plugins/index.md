@@ -23,7 +23,7 @@ layout: default
             <a href="http://omeka.org/add-ons/plugins/neatlinetext/">NeatlineText</a>
         </h2>
         <a href="http://neatline.dclure.org/neatline/show/gettysburg-address" class="plugin-screen">
-                <img src="/wp-content/uploads/2014/07/neatlinetext.png" alt="NeatlineText">
+                <img src="/wp-content/uploads/2014/plugins/neatline_text.png" alt="NeatlineText">
         </a>
         <div class="content">
             <p><strong>Connect text documents to Neatline exibits.</strong></p>
@@ -36,7 +36,7 @@ layout: default
             <a href="http://omeka.org/add-ons/plugins/neatlinesimile/">NeatlineSimile</a>
         </h2>
         <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" class="plugin-screen">
-                <img src="/wp-content/uploads/2014/07/simile.png" alt="Neatline">
+                <img src="/wp-content/uploads/2014/plugins/neatline_simile.png" alt="Neatline">
         </a>
         <div class="content">
             <p><strong>Add SIMILE Timeline to Neatline exhibits.</strong></p>
@@ -49,7 +49,7 @@ layout: default
             <a href="http://omeka.org/add-ons/plugins/neatlinewaypoints/">NeatlineWaypoints</a>
         </h2>
         <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/perspectives-on-the-haram" class="plugin-screen">
-                <img src="/wp-content/uploads/2014/07/waypoints.png" alt="Neatline">
+                <img src="/wp-content/uploads/2014/plugins/neatline_waypoints.png" alt="Neatline">
         </a>
         <div class="content">
             <p><strong>Adds a list of waypoints to Neatline exhibits.</strong></p>
