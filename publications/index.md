@@ -16,5 +16,9 @@ Evans, Courtney and Ben Jasnow. "Mapping Homer's Catalogue of Ships." *Literary 
 
 ***
 
-Nowviskie, Bethany, David McClure, Wayne Graham, Adam Soroka, Jeremy Boggs, and Eric Rochester. "Geo-Temporal Interpretation of Archival Collections with Neatline." *Literary and Linguistic Computer* 28:4 (2013): 692-699.
+Nowviskie, Bethany, David McClure, Wayne Graham, Adam Soroka, Jeremy Boggs, and Eric Rochester. "Geo-Temporal Interpretation of Archival Collections with Neatline." *Literary and Linguistic Computing* 28:4 (2013): 692-699.
+
+***
+
+Posthumus, Stephanie and Stéfan Sinclair. "Reading environment(s): digital humanities meets ecocriticism." *Green Letters: Studies in Ecocriticism* 18:3 (2014): 254-273.
 
