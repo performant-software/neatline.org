@@ -22,3 +22,4 @@ Nowviskie, Bethany, David McClure, Wayne Graham, Adam Soroka, Jeremy Boggs, and 
 
 Posthumus, Stephanie and Stéfan Sinclair. "Reading environment(s): digital humanities meets ecocriticism." *Green Letters: Studies in Ecocriticism* 18:3 (2014): 254-273. Online [here.](http://www.tandfonline.com/eprint/ADF8WrrzqQG3si2C2S5h/full)
 
+Fischer, Susanne. "[Once Upon a Place: Telling Stories with Maps](http://www.theatlantic.com/technology/archive/2012/07/once-upon-a-place-telling-stories-with-maps/259787/)", *The Atlantic*, July 2012.
