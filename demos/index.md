@@ -150,6 +150,21 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
+<h3>Mapping the Catalogue of Ships</h3>
+<a href="http://ships.lib.virginia.edu/" target="_blank" class="splash-link">
+  <div class="splash ships demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Jenny Strauss Clay, Courtney Evans, and Ben Jasnow</strong> | Maps: <a href="http://www.google.com/maps/about/">Google Physical</a></small>
+
+<p>In collaboration with the Scholars' Lab, Jenny Strauss Clay, Courtney Evans, and Ben Jasnow created "Mapping the Catalogue of Ships" to visually demonstrate the link between the Catalogue of Ships in Homer's <i>Iliad</i> and the natural geography of Greece.</p>
+</div>
+
+<div class="exhibit">
 <h3>Jeddah: Gateway to the Hajj</h3>
 <a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" target="_blank" class="splash-link">
   <div class="splash transportation demo">
