@@ -74,6 +74,21 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
+<h3>Black Liberation 1969 Archive</h3>
+<a href="http://blacklib1969.swarthmore.edu/neatline/fullscreen/sit-in-map" target="_blank" class="splash-link">
+  <div class="splash blacklib demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Nabil Kashyap, Alison Roseberry-Polier, John Gagnon, and Maria Mejia</strong> | Link with permission of <a href="http://blacklib1969.swarthmore.edu/"> the Black Liberation 1969 Archive</a>. | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a></small>
+
+<p>The Black Liberation 1969 Archive is an Omeka archive "designed in support of Black Liberation 1969: Black Studies in History Theory and Praxis taught at Swarthmore College by Professor Allison Dorsey," and produced through the joint efforts of Nabil Kashyap, a librarian, and several students. This Neatline exhibit, a part of the larger archive, maps the 1969 sit-ins at Swarthmore, creatively using custom annotations to provide a timeline for the events.</p>
+</div>
+
+<div class="exhibit">
 <h3>"One Boston": Messages from The Copley Square Memorial</h3>
 <a href="http://marathon.neu.edu/neatline/show/one-fund-poster" target="_blank" class="splash-link">
   <div class="splash boston demo">
