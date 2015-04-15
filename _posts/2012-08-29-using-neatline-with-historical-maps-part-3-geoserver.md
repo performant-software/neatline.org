@@ -6,6 +6,9 @@ permalink: /2012/08/29/using-neatline-with-historical-maps-part-3-geoserver/
 categories:
   - Tutorials
 ---
+
+**Note** This is specifically for Omeka/Neatline 1.x. If you are using Omeka/Neatline 2.x, you can upload your maps to Geoserver with Option 2 below. Follow [Editing Record Imagery](http://docs.neatline.org/style-tab-imagery.html) for working with the WMS layers.
+
 *[Cross-posted with <a href="http://dclure.org/tutorials/neatline-maps-geoserver/" target="_blank">dclure.org</a> and <a href="http://www.scholarslab.org/geospatial-and-temporal/using-neatline-with-historical-maps-geoserver/" target="_blank">scholarslab.org</a>]*
 
 <small><em>This is part 3 of a 3-post tutorial that walks through process of georeferencing a historical map and using it in GeoServer and Neatline.</em></small>
@@ -57,26 +60,26 @@ If your file is small enough to be uploaded through Omeka, the Neatline Maps plu
     
     Now, with the layer created, we can associate the new web map service with an item in your Omeka collection by manually filling in the two fields in the &#8220;Web Map Services&#8221; tab:
     
-    1.  Go back the Omeka administrative interface and find the item that you want to associate the map with (or just create a new item). Open up the edit form for the item.</li> 
+    1.  Go back the Omeka administrative interface and find the item that you want to associate the map with (or just create a new item). Open up the edit form for the item. 
         *   Click the &#8220;Web Map Services&#8221; tab. Fill in the the top-level WMS address for the GeoServer installation (this always ends with `/wms`, and might look something like `localhost:8080/GeoServer/wms`) and enter the list of comma-delimited layers that you want to be associated with the item. For example, if you have a workspace called &#8220;hotchkiss&#8221; with layers &#8220;chancellorsville&#8221; and &#8220;fredericksburg,&#8221; you could enter:
             
             `hotchkiss:chancellorsville,hotchkiss:fredericksburg`.
             
             <a href="http://www.scholarslab.org/wp-content/uploads/2012/07/wms-tab.jpg" rel="attachment wp-att-5189"><img src="http://www.scholarslab.org/wp-content/uploads/2012/07/wms-tab-300x181.jpg" alt="" title="wms-tab" width="300" height="181" class="alignnone size-medium wp-image-5189" /></a>
         
-        *   Save the item.</ol> 
-        
-        **Use the map in a Neatline exhibit**
-        
-        The two methods both have the end result of filling in the two fields in the &#8220;Web Map Services&#8221; tab. The only difference is in whether the .tif file is uploaded through Omeka or directly into GeoServer.
-        
-        Once an item is linked to a web map service, Neatline automatically detects the map and loads it into an exhibit when the item is activated on the map. With the item queried into the editing environment for an exhibit, just check the middle of the three checkboxes next to the listing for the item in the content management panel:
-        
-        [<img src="http://www.scholarslab.org/wp-content/uploads/2012/08/map-activation-300x178.jpg" alt="" title="map-activation" width="300" height="178" class="alignnone size-medium wp-image-5780" />][5]
-        
-        &#8230;and the WMS layer will appear on the map:
-        
-        [<img src="http://www.scholarslab.org/wp-content/uploads/2012/08/map-in-exhibit-300x195.jpg" alt="" title="map-in-exhibit" width="300" height="195" class="alignnone size-medium wp-image-5781" />][6]
+        *   Save the item 
+
+## Use the map in a Neatline exhibit
+
+The two methods both have the end result of filling in the two fields in the &#8220;Web Map Services&#8221; tab. The only difference is in whether the .tif file is uploaded through Omeka or directly into GeoServer.
+
+Once an item is linked to a web map service, Neatline automatically detects the map and loads it into an exhibit when the item is activated on the map. With the item queried into the editing environment for an exhibit, just check the middle of the three checkboxes next to the listing for the item in the content management panel:
+
+[<img src="http://www.scholarslab.org/wp-content/uploads/2012/08/map-activation-300x178.jpg" alt="" title="map-activation" width="300" height="178" class="alignnone size-medium wp-image-5780" />][5]
+
+&#8230;and the WMS layer will appear on the map:
+
+[<img src="http://www.scholarslab.org/wp-content/uploads/2012/08/map-in-exhibit-300x195.jpg" alt="" title="map-in-exhibit" width="300" height="195" class="alignnone size-medium wp-image-5781" />][6]
 
  [1]: http://neatline.org/2012/08/20/using-neatline-with-historical-maps-part-1-georeferencing/
  [2]: http://neatline.org/2012/08/23/using-neatline-with-historical-maps-part-2-transparency/
