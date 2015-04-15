@@ -74,6 +74,21 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
+<h3>Black Liberation 1969 Archive</h3>
+<a href="http://blacklib1969.swarthmore.edu/neatline/fullscreen/sit-in-map" target="_blank" class="splash-link">
+  <div class="splash blacklib demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Nabil Kashyap, Alison Roseberry-Polier, John Gagnon, and Maria Mejia</strong> | Link with permission of <a href="http://blacklib1969.swarthmore.edu/"> the Black Liberation 1969 Archive</a>. | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a></small>
+
+<p>The Black Liberation 1969 Archive is an Omeka archive "designed in support of Black Liberation 1969: Black Studies in History Theory and Praxis taught at Swarthmore College by Professor Allison Dorsey," and produced through the joint efforts of Nabil Kashyap, a librarian, and several students. This Neatline exhibit, a part of the larger archive, maps the 1969 sit-ins at Swarthmore, creatively using custom annotations to provide a timeline for the events.</p>
+</div>
+
+<div class="exhibit">
 <h3>"One Boston": Messages from The Copley Square Memorial</h3>
 <a href="http://marathon.neu.edu/neatline/show/one-fund-poster" target="_blank" class="splash-link">
   <div class="splash boston demo">
@@ -147,6 +162,21 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 <small>By <strong>Stephanie Posthumus and Amy Goh</strong> | Maps: <a href="http://www.google.com/maps/about/">Google Physical and Streets</a></small>
 
 <p>Stephanie Posthumus and Amy Goh, of McGill University, use Neatline to map the life of one of the characters from Michel Houellebecq's novel, <i>The Possibility of an Island</i>, in this exhibit, making impressive use of custom point images.</p>
+</div>
+
+<div class="exhibit">
+<h3>Mapping the Catalogue of Ships</h3>
+<a href="http://ships.lib.virginia.edu/" target="_blank" class="splash-link">
+  <div class="splash ships demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Jenny Strauss Clay, Courtney Evans, and Ben Jasnow</strong> | Maps: <a href="http://www.google.com/maps/about/">Google Physical</a></small>
+
+<p>In collaboration with the Scholars' Lab, Jenny Strauss Clay, Courtney Evans, and Ben Jasnow created "Mapping the Catalogue of Ships" to visually demonstrate the link between the Catalogue of Ships in Homer's <i>Iliad</i> and the natural geography of Greece.</p>
 </div>
 
 <div class="exhibit">
