@@ -25,3 +25,7 @@ Nowviskie, Bethany, David McClure, Wayne Graham, Adam Soroka, Jeremy Boggs, and 
 ***
 
 Posthumus, Stephanie and Stéfan Sinclair. "[Reading environment(s): digital humanities meets ecocriticism.](http://www.tandfonline.com/eprint/ADF8WrrzqQG3si2C2S5h/full)" *Green Letters: Studies in Ecocriticism* 18:3 (2014): 254-273.
+
+***
+
+Van Remoortel, Marianne. "[A Poem's Flight: Reprints of Dante Gabriel Rossetti's 'Sunset Wings' in the American Newspaper Press.](http://www.scholarlyediting.org/2013/editions/intro.sunsetwings.html)" *Scholarly Editing*, 34 (2013).
