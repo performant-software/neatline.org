@@ -40,7 +40,7 @@ or go straight to [the source][8].
  [1]: /
  [2]: http://omeka.org
  [3]: http://scholarslab.org
- [4]: ../neatline-in-action/
+ [4]: ../demos/index.html
  [5]: http://maps.google.com/help/maps/education/
  [6]: http://docs.neatline.org/
  [7]: /demos/
