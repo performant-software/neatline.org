@@ -6,6 +6,10 @@ layout: page
 
 ##Publications related to Neatline:
 
+Bruzelius, Caroline and Hannah Jacobs. "[Wired! Full Immersion: Neatline and the Digital Syllabus.](https://www.academia.edu/12328761/Wired_Full_Immersion_Neatline_and_the_Digital_Syllabus)" *Duke Media Arts + Sciences Rendezvous*, March 19, 2015.
+
+***
+
 Evans, Courtney and Ben Jasnow. "[Mapping Homer's Catalogue of Ships.](http://llc.oxfordjournals.org/content/29/3/317.full.pdf+html)" *Literary and Linguistic Computing* 29:3 (2014): 317-325.
 
 ***
