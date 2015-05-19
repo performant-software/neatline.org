@@ -18,6 +18,10 @@ Fischer, Susanne. "[Once Upon a Place: Telling Stories with Maps](http://www.the
 
 ***
 
+Jentleson, Katherine. "['Not as rewarding as the North:' Holger Cahill's Southern Folk Art Expedition.](http://www.aaa.si.edu/essay/katherine-jentleson?hootPostID=6a731b4353ca988ce572fe2213b7b7fc)" *Smithsonian Achives of American Art*, 2013 Archives of American Art Graduate Research Essay Prize winner.
+
+***
+
 Musacchio, Jacqueline Marie, Jenifer Bartle, David McClure, Kalyani Bhatt. "[Mapping the “White, Marmorean Flock”: Anne Whitney Abroad, 1867–1868.](http://www.19thc-artworldwide.org/index.php/autumn14/musacchio-introduction)" *Nineteenth-Century Art Worldwide* 13:2 (Autumn 2014). Web.
 
 This article features two Neatline exhibits, which can be accessed, along with instructions for use, [here](http://www.19thc-artworldwide.org/index.php/autumn14/musacchio-mapping-a-member-of-the-white-marmorean-flock).
