@@ -89,6 +89,21 @@ We've gathered a number of sample Neatline exhibits to help stretch your imagina
 </div>
 
 <div class="exhibit">
+<h3>The Whiskey Rebellion: An Interactive Mapping Project</h3>
+<a href="http://omeka.digitalpubs.nyu.edu/whiskeyrebellion/" target="_blank" class="splash-link">
+  <div class="splash whiskey demo">
+    <div class="launch-overlay">
+      <div class="launch-button">Launch Exhibit</div>
+    </div>
+  </div>
+</a>
+
+<small>By <strong>Stephanie Krom</strong> | Link with permission of <a href="http://omeka.digitalpubs.nyu.edu/whiskeyrebellion/"> Stephanie Krom</a>. | Map: <a href="http://openstreetmap.org">OpenStreetMap</a></small>
+
+<p>"This digital history project, built by Stephanie Krom at New York University, aims to explore the Whiskey Rebellion (1791-1794) in time and space through an interactive map, a responsive timeline, and a heritage audio tour designed to be played in a vehicle while exploring the present-day sites of the Whiskey Rebellion in western Pennsylvania" (text from the project's "<a href="http://omeka.digitalpubs.nyu.edu/whiskeyrebellion/about-the-project">About</a>" page.</p>
+</div>
+
+<div class="exhibit">
 <h3>"One Boston": Messages from The Copley Square Memorial</h3>
 <a href="http://marathon.neu.edu/neatline/show/one-fund-poster" target="_blank" class="splash-link">
   <div class="splash boston demo">
