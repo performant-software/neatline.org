@@ -25,3 +25,7 @@ Nowviskie, Bethany, David McClure, Wayne Graham, Adam Soroka, Jeremy Boggs, and 
 ***
 
 Posthumus, Stephanie and Stéfan Sinclair. "[Reading environment(s): digital humanities meets ecocriticism.](http://www.tandfonline.com/eprint/ADF8WrrzqQG3si2C2S5h/full)" *Green Letters: Studies in Ecocriticism* 18:3 (2014): 254-273.
+
+***
+
+Reilly, Lisa A. "[Change over Time: Neatline and the Study of Architectural History](http://docs.lib.purdue.edu/artlas/vol4/iss1/2/)." *Artl@s Bulletin* 4, no. 1 (2015): Article 2.

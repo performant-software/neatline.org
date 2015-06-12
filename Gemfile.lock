@@ -86,3 +86,6 @@ DEPENDENCIES
   foreman
   jekyll (~> 2.0.3)
   susy (~> 2.1.2)
+
+BUNDLED WITH
+   1.10.3
