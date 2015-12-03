@@ -38,12 +38,16 @@
     <!-- Neatline feed from scholarslab.org -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.rss.js"></script>
+    <script type="text/javascript" src="/js/feedek.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-               $('#feed').rss('http://www.scholarslab.org/tag/neatline/feed/', {
-                    limit: 5
-                  });
+         $('#feed').FeedEk({
+            FeedUrl: 'http://www.scholarslab.org/tag/neatline/feed/',
+            MaxCount: 5,
+            ShowDesc: true,
+            ShowPubDate: false,
+            DescCharacterLimit: 200
+          });
         });
     </script>
 
