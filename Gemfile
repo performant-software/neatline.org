@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
-gem "jekyll", "~> 2.0.3"
-gem "susy", "~> 2.1.2"
-gem 'compass', '~> 1.0.1'
+gem "jekyll", "~> 3.8"
+gem "susy"
+gem 'compass'
 
 gem "foreman"
