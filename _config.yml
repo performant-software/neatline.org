@@ -2,7 +2,7 @@
 title: Neatline
 email: neatline@collab.itc.virginia.edu
 description: "Neatline allows scholars, students, and curators to tell stories with maps and timelines."
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/neatline.org-new" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
