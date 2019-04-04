@@ -1,5 +1,6 @@
 ---
 layout: docs
+title: Neatline for Omeka Classic
 nav_exclude: true
 ---
 # Welcome to Neatline!

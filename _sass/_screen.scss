@@ -18,6 +18,7 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   text-rendering: optimizeLegibility;
+  background-color: #f8f9fa;
 }
 
 body,
@@ -78,7 +79,7 @@ a {
 }
 
 #main {
-  background-color: #f8f9fa !important;
+  background-color: #ffffff  !important; //#f8f9fa
   padding-bottom: 2em;
 }
 #main h1 {
@@ -86,7 +87,7 @@ a {
   // color: $secondary-text-color;
   font-family: $font-family-title;
   font-weight: $font-weight-medium; 
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 #main h2 {
   font-size: $base-font-size * 1.875;
@@ -110,17 +111,102 @@ a {
   font-size: $base-font-size * 1.2; 
   font-weight: $font-weight-medium; 
   margin: 0.67em;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   // text-decoration: underline;
 }
-#main p, #main ul, #main li  { 
-  margin-bottom: 1em;
+// #main p, #main ul, #main li  { 
+//   margin-bottom: 1em;
+// }
+
+.container{
+  padding:1rem;
+}
+.primary {
+  ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+  }
+  li {
+    margin-bottom: 0 !important;
+    strong {
+      font-weight: $font-weight-demi !important;
+    }
+  }
+
+}
+.secondary {
+  margin-top: 3rem;
+  padding:1rem;
+  h3 {
+    font-size: $base-font-size * 1.2 !important;
+    font-weight: $font-weight-medium !important; 
+    color:rgba(60,60,60,0.75);
+    font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
+  }
+  ul {
+    list-style-type: disc;
+    font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: $base-font-size * 0.9;
+    color: #777;
+  }
+  li {
+    margin-bottom: 0 !important;
+    strong {
+      font-weight: $font-weight-demi !important;
+    }
+  }
 }
 
+.post-content {
+  ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+  }
+  li {
+    strong {
+      font-weight: $font-weight-demi !important;
+    }
+  }
+
+}
 
 /* !---------- Header ---------- */
 header {
   padding: 0;
+  // &:after {
+  //   display:block;
+  //   content:"";
+  //   height:0px;
+  //   border-top: 1px solid rgba(0,0,0,0.1);
+  //   border-bottom: 1px solid rgba(255,255,255,1);
+  // }
+}
+.post-header {
+  color: $link-color;
+  text-align: center;
+  &:after {
+  display: block;
+  content: " ";
+  height: .25rem;
+  width: 50px;
+  background: rgba(255, 128, 0, 0.75);
+  margin: 1.5rem auto;
+  }
 }
 
 .topnav {
@@ -143,7 +229,7 @@ header {
 }
 
 #custom_search {
-  width: 250px;
+  // width: 250px;
   margin:1rem;
   padding:1rem;
   td {
@@ -187,6 +273,16 @@ header {
  background-image: -webkit-linear-gradient(top,#333333,#333333);
 }
 
+.fa-search {
+    color: $link-color;
+   
+}
+.fa-search:hover,
+.fa-search:active,
+.fa-search:focus {
+  color: $link-color-alternate;
+}
+
 /* !---------- Primary Nav Bar ---------- */
 .navigation {
   list-style: none;
@@ -210,7 +306,13 @@ header {
   }
 }
 
-@media all and (max-width: 850px) {
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: underline;
+  background-color: #f8f9fa;
+}
+
+@media all and (max-width: 900px) {
   .navigation, .topnav {
     @include flex-flow(row wrap);
     @include justify-content(center);
@@ -247,13 +349,17 @@ header {
   // z-index: 10;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #fff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  h3 {
+    color: #fff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6) !important;
+
+  }
 }
 
 // .carousel-indicators,
 .carousel-caption {
+  display: block;
   background: #222;
   background: rgba(#222, .3);
   * {
@@ -261,6 +367,9 @@ header {
   }
 }
 
+.carousel-indicators {
+  display: block;
+}
 
 /* Declare heights because of positioning of img element */
 // .carousel-item {
@@ -359,3 +468,108 @@ footer {
     }
   }
 }
+
+a.splash-link {
+  text-decoration: none;
+
+  div.splash {
+    @include background-size(cover);
+    background-repeat:no-repeat;
+    height: auto;
+    border: 5px solid #584561;
+    border-radius: 2px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+
+    img {
+      vertical-align:bottom;
+    }
+
+    div.launch-overlay {
+      display: none;
+      background-color: rgba(0,0,0,0.3);
+      text-align: center;
+      height: 100%;
+
+      div.launch-button {
+        position: relative;
+        color: white;
+        font-size: 2em;
+        font-style: italic;
+        text-decoration: none;
+        top: 200px;
+      }
+
+    }
+
+    &:hover {
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.50);
+
+      div.launch-overlay {
+        display: block;
+      }
+
+    }
+
+    &.homepage {
+      background-image: url('../wp-content/uploads/2012/06/neatline-splash.jpg');
+    }
+    &.hotchkiss {
+      background-image: url('../wp-content/uploads/2012/07/chancellorsville.jpg');
+    }
+    &.nelly {
+      background-image: url('../wp-content/uploads/2012/07/nelly.jpg');
+    }
+    &.num132 {
+      background-image: url('../wp-content/uploads/2012/07/132.jpg');
+    }
+    &.num138 {
+      background-image: url('../wp-content/uploads/2012/07/138.jpg');
+    }
+    &.uva {
+      background-image: url('../wp-content/uploads/2012/07/uva.jpg');
+    }
+    &.tech {
+      background-image: url('../wp-content/uploads/2012/07/tech.jpg');
+    }
+    &.anie {
+      background-image: url('../wp-content/uploads/2012/07/anie.jpg');
+    }
+    &.henshaw {
+      background-image: url('../wp-content/uploads/2012/07/henshaw1.jpg');
+    }
+    &.lovecraft {
+      background-image: url('../wp-content/uploads/2012/07/lovecraft.jpg');
+    }
+    &.sentimental {
+      background-image: url('../wp-content/uploads/2014/07/sentimentaljourney.png');
+    }
+    &.boston {
+      background-image: url('../wp-content/uploads/2014/07/boston.png');
+    }
+    &.haram {
+      background-image: url('../wp-content/uploads/2014/07/perspectives.png');
+    }
+    &.transportation {
+      background-image: url('../wp-content/uploads/2014/07/jeddah_transportation.png');
+    }
+    &.gemini {
+      background-image: url('../wp-content/uploads/2014/07/gemini.png');
+    }
+    &.mcgill {
+      background-image: url('../wp-content/uploads/2014/07/mcgill.png');
+    }
+    &.ships {
+      background-image: url('../wp-content/uploads/2014/07/ships.png');
+    }
+    &.blacklib {
+      background-image: url('../wp-content/uploads/2014/07/blacklib.png');
+    }
+    &.whiskey {
+      background-image: url('../wp-content/uploads/2014/07/whiskey.png');
+    }
+
+  }
+
+}
+

@@ -3,8 +3,6 @@ title: About
 author: Bethany Nowviskie
 layout: about
 ---
-What do you get when you cross archives and artifacts with timelines, modern and historical maps, and an appreciation for the interpretive aims of humanities scholarship? Neatline!
-
 ### What is Neatline?
 
 [Neatline][1] is a geotemporal exhibit-builder that allows you to create beautiful, complex maps, image annotations, and narrative sequences from [Omeka][2] collections of archives and artifacts, and to connect your maps and narratives with timelines that are more-than-usually sensitive to ambiguity and nuance. Neatline lets you make hand-crafted, interactive stories as interpretive expressions of a single document or a whole archival or cultural heritage collection. You can import these documents (georeferenced historical maps, manuscripts, high-res photographs, etc.) from an existing collection, or create a new digital archive, yourself. Every Neatline exhibit is your contribution to humanities scholarship, in the visual vernacular.

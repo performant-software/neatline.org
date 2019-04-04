@@ -1,7 +1,7 @@
 ---
 title: Plugins
 author: admin
-layout: default
+layout: page
 ---
 <div class="archive">
     <article class="plugins" >

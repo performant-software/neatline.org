@@ -14,13 +14,14 @@
 
 <!-- Style sheets -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <!-- <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 <!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/carousel.css"> -->
 <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
-
+<link rel="stylesheet" href="http://localhost:4000/assets/css/docs.css">
 
 <!-- Feeds and Pingbacks -->
 <link rel="alternate" type="application/rss+xml" title="Neatline" href=" http://localhost:4000/feed.xml">
@@ -48,6 +49,7 @@
         s.parentNode.insertBefore(gcse, s);
     })();
 </script>
+
 
 
 
@@ -90,18 +92,22 @@
               <a href="http://localhost:4000/credits/" class="nav-link">Credits</a>
             </li>
           </ul>
-          <div id="custom_search">
-              <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle Search">
+              <i class="fas fa-search"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample01">
+            <div id="custom_search">
+                <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
+            </div>
           </div>
-
         </div>
       </nav>
     
 </header>
 
     <div class="wrapper">
-    <main id="main" class="main-content" role="main" >
-      <div class="post">
+    <main id="main" class="main-content container" role="main" >
+      <div class="container px-lg-5">
 
   <header class="post-header">
     <h1>Neatline notes</h1>

@@ -14,13 +14,14 @@
 
 <!-- Style sheets -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <!-- <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 <!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/carousel.css"> -->
 <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
-
+<link rel="stylesheet" href="http://localhost:4000/assets/css/docs.css">
 
 <!-- Feeds and Pingbacks -->
 <link rel="alternate" type="application/rss+xml" title="Neatline" href=" http://localhost:4000/feed.xml">
@@ -48,6 +49,7 @@
         s.parentNode.insertBefore(gcse, s);
     })();
 </script>
+
 
 
 
@@ -90,28 +92,37 @@
               <a href="http://localhost:4000/credits/" class="nav-link">Credits</a>
             </li>
           </ul>
-          <div id="custom_search">
-              <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle Search">
+              <i class="fas fa-search"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample01">
+            <div id="custom_search">
+                <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
+            </div>
           </div>
-
         </div>
       </nav>
     
 </header>
 
     <div class="wrapper">
-    <main id="main" class="main-content" role="main" >
-      <div id="primary">
-    <div class="post">
+    <main id="main" class="main-content container" role="main" >
+      <div class="container px-lg-5">
+        <div class="col-md-12">
 
-      <header class="post-header">
+    <header class="post-header">
         <h1>About</h1>
-      </header>
-
-      <article class="post-content">
-      <p>What do you get when you cross archives and artifacts with timelines, modern and historical maps, and an appreciation for the interpretive aims of humanities scholarship? Neatline!</p>
-
-<h3 id="what-is-neatline">What is Neatline?</h3>
+        </header>
+        <div class="primary">
+            <p>
+            What do you get when you cross archives and artifacts with timelines, modern and historical maps, and an appreciation for the interpretive aims of humanities scholarship? Neatline!
+            </p>
+        </div>
+    </div>
+<div class="row mb-3 mx-lg-n5">
+        <div class="col-md-8 px-lg-5">
+        <article class="post-content">
+        <h3 id="what-is-neatline">What is Neatline?</h3>
 
 <p><a href="/">Neatline</a> is a geotemporal exhibit-builder that allows you to create beautiful, complex maps, image annotations, and narrative sequences from <a href="http://omeka.org">Omeka</a> collections of archives and artifacts, and to connect your maps and narratives with timelines that are more-than-usually sensitive to ambiguity and nuance. Neatline lets you make hand-crafted, interactive stories as interpretive expressions of a single document or a whole archival or cultural heritage collection. You can import these documents (georeferenced historical maps, manuscripts, high-res photographs, etc.) from an existing collection, or create a new digital archive, yourself. Every Neatline exhibit is your contribution to humanities scholarship, in the visual vernacular.</p>
 
@@ -145,14 +156,11 @@
 <p>or go straight to <a href="https://github.com/scholarslab/Neatline">the source</a>.</p>
 
 
-      </article>
-
+        </article>
     </div>
-</div>
-
-<div id="secondary">
-    <div class="textwidget">
-        <h2>Current Neatline Team</h2>
+    <div class="col-md-4 px-lg-5">
+        <div class="secondary">
+        <h3>Current Neatline Team</h3>
             <ul>
                 <li><a href="http://jeremyboggs.net/">Jeremy Boggs</a></li>
                 <li><a href="http://scholarslab.org/people/ronda-grizzle/">Ronda Grizzle</li>
@@ -160,18 +168,18 @@
                 <li><a href="http://scholarslab.org/people/shane-lin/">Shane Lin</a></li>
                 <li><a href="http://scholarslab.org/people/elizabeth-mitchell">Elizabeth Mitchell</a></li>
             </ul>
-        <h2>Funders</h2>
+        <h3>Funders</h3>
            <ul>
                <li><a href="http://odh.neh.gov">NEH Office of Digital Humanities</a></li>
                <li><a href="http://imls.gov">Institute for Museum and Library Services</a></li>
                <li><a href="http://loc.gov">Library of Congress</a></li>
            </ul>
-        <h2>Partners</h2>
+        <h3>Partners</h3>
             <ul>
                 <li><a href="http://www.performantsoftware.com/">Performant Software Solutions, LLC</a></li>
 				<li><a href="http://chnm.gmu.edu">Roy Rosenzweig Center for History and New Media</a></li>
             </ul>
-        <h2>Special Thanks</h2>
+        <h3>Special Thanks</h3>
            <ul>
                <li><a href="http://lib.virginia.edu">University of Virginia Library</a></li>
 			   <li>Bethany Nowviskie</li>
@@ -182,7 +190,7 @@
                <li><a href="http://www.davidrumsey.com/">David Rumsey</a></li>
                
            </ul>
-        <h2>Past Advisors</h2>
+        <h3>Past Advisors</h3>
             <ul>
                 <li><strong>Ellen Dunlap</strong>. President, American Antiquarian Society</li>
                 <li><strong>N. Turk McCleskey</strong>. Professor of History, Virginia Military Institute</li>
@@ -190,9 +198,10 @@
                 <li><strong>Michael Plunkett</strong>. Director Emeritus of Special Collections, University of Virginia Library</li>
                 <li><strong>Daniel Pitti</strong>. Associate Director, Institute for Advanced Technology in the Humanities</li>
             </ul>
+        </div>
     </div>
 </div>
-
+</div>
     </main>
     </div>
 
