@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Geocoding for Neatline – Part I</title>
+<script src="https://cdn.levelaccess.net/accessjs/YW1wX3V2YTExMDA/access.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Neatline allows scholars, students, and curators to tell stories with maps and timelines.">
+<link rel="canonical" href="http://localhost:4000/2012/09/10/geocoding-for-neatline-part-i-2/">
+
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon.png" >
+<link rel="apple-touch-icon" type="image/png" href="http://localhost:4000/assets/images/apple-touch-icon.png">
+
+<!-- Style sheets -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+<!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/carousel.css"> -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+
+
+<!-- Feeds and Pingbacks -->
+<link rel="alternate" type="application/rss+xml" title="Neatline" href=" http://localhost:4000/feed.xml">
+
+<!-- Modernizr and Friends -->
+<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+<script>
+    Modernizr.load([
+        {
+            test: Modernizr.mq(),
+            nope: [
+                'http://localhost:4000/assets/js/respond.min.js',
+                'http://localhost:4000/assets/js/selectivizr.min.js'
+            ]
+        }
+    ]);
+    (function() {
+        var cx = '009145345920904867543:1jiuohixchs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+
+
+
+  </head>
+  
+  <body>
+
+    <header role="banner">
+    <nav class="navbar-light bg-light">
+      <div class="topnav">
+            <a href="/http://localhost:4000" title="Neatline">
+              <img class="logo" src="http://localhost:4000/assets/images/neatline-logo-rgb.png" alt="Neatline"/>
+            </a>  
+          <ul class="nav navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/about/">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Documentation
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
+                  <a class="dropdown-item" href="#">Neatline for Omeka S</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=http://localhost:4000/demos/>Demos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/plugins/">Plugins</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/news/">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://localhost:4000/credits/" class="nav-link">Credits</a>
+            </li>
+          </ul>
+          <div id="custom_search">
+              <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
+          </div>
+
+        </div>
+      </nav>
+    
+</header>
+
+    <div class="wrapper">
+    <main id="main" class="main-content" role="main" >
+      <div class="post">
+
+  <header class="post-header">
+    <h1>Geocoding for Neatline – Part I</h1>
+    <p class="meta">Sep 10, 2012 • Wayne Graham</p>
+  </header>
+
+  <article class="post-content">
+  <p>Recently I was asked if there was a way to <a href="https://twitter.com/S_moores/status/222369341390331904">import place names in connection with lat/lon points</a>. Twitter’s character limitation does’t provide an adequate format to respond, and this technique can be quite useful outside of Neatline too, so I thought I would dive in a bit and explain a method to can get prepare place names for use in Omeka and beyond. This will be a two part series where I cover the basics of geocoding locations in a CSV file, then move to using these points with the <a href="http://omeka.org/add-ons/plugins/neatlinefeatures/">NeatlineFeatures</a> and <a href="http://omeka.org/add-ons/plugins/neatline/">Neatline</a> plugins for <a href="http://omeka.org/">Omeka</a>.</p>
+
+<h1 id="geocoding">Geocoding</h1>
+
+<p>Geocoding is a method of deriving geographic descriptions (a latitude/longitude point or series of points) from geographic data like an address (or portion of an address) or place name. The more granular the geographic data, the more accurate the location information. For example, Charlottesville, Virginia is far more accurate than Virginia, and the center point that a geocoder would return would use different points to represent this data. As you can see, the red marker is the center point for geocoding ‘<strong>Virginia</strong>,’ where the blue marker codes the center of ‘<strong>Charlottesville, Virginia</strong>.’</p>
+
+<!-- iframe plugin v.2.7 wordpress.org/plugins/iframe/ -->
+
+<p>There are some complexities, as data can be a bit ambiguous (e.g. W Jefferson St. vs Jefferson St.), but clever engineers have been working on issues like that and (generally) do a good job figuring out what is intended from partial address information. It is also worth noting that different services have different algorithms for calculating the result from a partial address (center of a county, city, state, country, etc.), so be sure to check your results to make sure they’re what you are expecing!</p>
+
+<h2 id="web-services">Web Services</h2>
+
+<p>With the growth of different mapping services over the last several years, getting access to geographic information has become pretty straight forward thanks to a lot of really smart engineers working on the problem of providing location-based information. Most likely you’ve consumed these services (even if you didn’t realize) and you’ve probably heard of some of the big companies that provide <a href="http://en.wikipedia.org/wiki/Application_programming_interface">APIs</a> to their Geocoding services like <a href="https://developers.google.com/maps/documentation/geocoding/">Google</a>, <a href="http://developer.yahoo.com/maps/rest/V1/geocode.html">Yahoo!</a>, and <a href="https://www.microsoft.com/maps/developers/web.aspx">Microsoft</a>. These are great resources, and provide well documented access to their data, but do place some restrictions on the use of the data retrieved from their system. Generally these restrictions are on the commercial re-use of the information, but do read and understand the Terms of Service to make sure your intended use is in compliance with the Terms of Service for the geocoding service you use for your project.</p>
+
+<p>While these companies provide access to their information, I did want to take a moment to highlight some other services that are not backed by large corporate entities. <a href="http://geocoder.us/">Geocoder.us</a> is a service that has good coverage if you’re data is in the US (<a href="http://geocoder.ca/">Geocoder.ca</a> provides a service for Canadian addresses) and allows up to 50,000 requests per day. <a href="https://webgis.usc.edu/Services/Geocode/Default.aspx">USC’s GIS Research Laboratory</a> provides a service for up to 2,500 addresses per day, with very few restrictions on its use. The last one I’ll mention (and there are many more of these services), <a href="http://www.geonames.org/">Geonames.org</a> has world-wide coverage, with more than 8 million place names. This service is particularly useful for things you don’t have a street address for (e.g. <a href="http://www.geonames.org/search.html?q=eiffel+tower&amp;country=">Eiffel Tower</a>).</p>
+
+<h1 id="first-steps">First Steps</h1>
+
+<p>I’ll start out by saying it’s not necessary for you to do any coding whatsoever to do geocoding. However, this is a good programming exercise, allowing you to work with a number of technologies. If you have no interest in writing custom code for this, you can check out <a href="http://support.google.com/fusiontables/bin/answer.py?hl=en&amp;answer=1012281">Google’s Fusion Tables</a> to do something similar to what I will explain here.</p>
+
+<p>The examples in this exercise will be written in Ruby, but the concept can be ported to just about any language (<a href="http://search.npmjs.org/#/wheredat">node</a>, <a href="http://code.google.com/p/geopy/">Python</a>, <a href="http://geocoder-php.org/">PHP</a>, <a href="https://github.com/mrd/geocode-google">Haskell</a>, <a href="https://github.com/tristandunn/jquery-auto-geocoder">jQuery</a>, …).</p>
+
+<p>If you don’t have Ruby (use a 1.9 version) installed on your computer, you will need that (<a href="http://railsinstaller.org/">Windows</a>, <a href="https://rvm.io/">OS X</a>, <a href="https://rvm.io/">Linux</a>). I’ll also be using the <a href="http://www.rubygeocoder.com/">Geocoder</a> gem as well as the built-in Ruby libraries for working with spreadsheets (specifically <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a>, comma-separated values).</p>
+
+<h2 id="project-setup">Project Setup</h2>
+
+<p>The basic approach for this project will be to create a project directory, install the necessary libraries, create a spreadsheet of the addresses we want to look up, write a short program that will retrieve the latitude/longitude points (and other information) we need, then write those back this information to a new spreadsheet we can use later on.</p>
+
+<p>Assuming you have Ruby (and <a href="http://rubygems.org/">rubygems</a>) properly installed, all you will need to get going is set up a new project space. A few simple commands will get this project going in your <strong>terminal</strong>:</p>
+
+<pre class="brush: bash; title: ; notranslate">mkdir -p ~/projects/geocode
+gem install geocoder
+touch ~/projects/geocode/locations.csv
+touch ~/projects/geocode/geocoder.rb
+cd ~/projects/geocode/
+</pre>
+
+<p>This set of commands commands created a new directory (<code class="highlighter-rouge">~/projects/geocode</code>) for the project if it does not exist, installed the <strong>geocoder</strong> library, and created a couple of empty files to store our locations and our program logic. Lastly, we change the current directory (<code class="highlighter-rouge">cd ~/projects/geocode</code> for the terminal to be the project directory containing the files.</p>
+
+<h2 id="the-datasource">The Datasource</h2>
+
+<p>In order to explore this technique, we need some data. A really easy format for working with text is the CSV format, or comma separated values. For the purposes of this exercise, paste the following in to a file named <code class="highlighter-rouge">locations.csv</code>.</p>
+
+<pre class="brush: plain; title: ; notranslate">Address,City,State
+"1600 Pennsylvania Ave",Washington,DC
+"931 Thomas Jefferson Parkway",Charlottesville,VA
+"Eiffel Tower"
+</pre>
+
+<p>The CSV format is pretty straight forward; you literally separate the values (columns) with commas. The one gotcha is that if you have something with a comma in it, you will need to escape the comma with a backslash (e.g. “Charlottesville, VA” as a single field).</p>
+
+<h2 id="reading-the-file">Reading the File</h2>
+
+<p>Now with a little bit of data, we can turn our attention to reading the values out of the CSV file with an actual program. This is done with the <a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/csv/rdoc/CSV.html">Ruby CSV class</a>, which provides methods to read and manipulate the contents of CSV data. Our program for this exercise will go in the <code class="highlighter-rouge">geocoder.rb</code> file. With your favorite text editor, open the <code class="highlighter-rouge">geocoder.rb</code> file and add the following:</p>
+
+<pre class="brush: ruby; title: ; notranslate">require 'csv'
+
+LOCATIONS = './locations.csv'
+
+CSV.foreach(LOCATIONS, :headers =&gt; true, :header_converters =&gt; :symbol) do |line|
+  p line[:address]
+  p line[:city]
+  p line[:state]
+end
+</pre>
+
+<p>This code reads the CSV file, converts each header value in to a symbol (for easy reference) then steps over each line in the file and prints the <code class="highlighter-rouge">address</code>, <code class="highlighter-rouge">city</code>, and <code class="highlighter-rouge">state</code> fields on a new line in the terminal. You can run this program in the terminal by executing the Ruby script with <code class="highlighter-rouge">ruby geocoder.rb</code>. When you do, you should see output along these lines:</p>
+
+<pre class="brush: plain; title: ; notranslate">○ → ruby geocoder.rb
+"1600 Pensylvania Ave"
+"Washington"
+"DC"
+"931 Thomas Jefferson Parkway"
+"Charlottesville"
+"VA"
+</pre>
+
+<h2 id="adding-geocoding">Adding Geocoding</h2>
+
+<p>Now that we can read the data, we can change (or refactor) the program to use the geocoder gem and write logic to look up location information. At this point, we need to <em>include the Geocoder library</em>, concatenate the address fields together, then retrieve the location information.</p>
+
+<pre class="brush: ruby; title: ; notranslate">require 'csv'
+require 'geocoder'
+LOCATIONS = './locations.csv'
+
+CSV.foreach(LOCATIONS, :headers =&gt; true, :header_converters =&gt; :symbol) do |line|
+  address_string = "#{line[:address]}, #{line[:city]}, #{line[:state]}"
+  result = Geocoder.search(address_string)
+  p result
+end
+
+</pre>
+
+<p>Now when you run the program (<code class="highlighter-rouge">ruby geocoder.rb</code>), you’ll see that there is a lot more information returned from the geocoding web service. To make this a bit more useful for our purposes here, we can use the <code class="highlighter-rouge">latitude</code> and <code class="highlighter-rouge">longitude</code> convenience methods to display the latitude and longitude coordinates.</p>
+
+<pre class="brush: ruby; title: ; notranslate">require 'csv'
+require 'geocoder'
+
+LOCATIONS = './locations.csv'
+
+CSV.foreach(LOCATIONS, :headers =&gt; true, :header_converters =&gt; :symbol) do |line|
+  address_string = "#{line[:address]}, #{line[:city]}, #{line[:state]}"
+  result = Geocoder.search(address_string).first
+  lat = result.latitude
+  lon = result.longitude
+
+  puts "#{lat}, #{lon}"
+end
+
+</pre>
+
+<p>Now when you run the program, you should see that the program prints the latitude and longitude for the address line.</p>
+
+<pre class="brush: bash; title: ; notranslate">○ → ruby geocoder.rb
+38.8976777, -77.03651700000002
+38.0054041, -78.4563433
+48.858278, 2.294254
+</pre>
+
+<p>This is great, but what we really want to do is write this back to a CSV file in a format that we can use in Omeka. The Neatline plugins currently use a format called <a href="http://en.wikipedia.org/wiki/Well-known_text">WKT format</a> to describe geographic information, so we need to get our results in this format using the WKT ** “Point”** data definition. If you can remember any of your middle school algebra, a point is a set of coordinates (typically X and Y). The Earth’s X axis is longitude, and the Y axis latitude, so we just use this format and wrap the coordinates with “<strong>POINT()</strong>:</p>
+
+<pre class="brush: ruby; title: ; notranslate">require 'csv'
+require 'geocoder'
+
+LOCATIONS = './locations.csv'
+
+puts "address,city,state,point,lat,lon"
+
+CSV.foreach(LOCATIONS, :headers =&gt;
+ true, :header_converters =&gt;
+ :symbol) do |line|
+    address_string = "#{line[:address]}, #{line[:city]}, #{line[:state]}"
+    result = Geocoder.search(address_string).first
+    lat = result.latitude
+    lon = result.longitude
+
+    point = "POINT(#{lon} #{lat})"
+
+    puts "#{address_string}, #{point}, #{lat}, #{lon}"
+
+end
+</pre>
+
+<p>Notice I <strong>removed the comma in the POINT value</strong>; this is important as this is specified in the WKT format. Now with a shell trick (<a href="http://blog.affiliatetip.com/wp-content/uploads/2011/02/iStock_000000395946XSmall.jpg">not this kind</a>), we can run the program and generate a file that contains the new data. The trick is actually the <a href="http://tldp.org/LDP/abs/html/io-redirection.html">I/O redirection command</a> (<code class="highlighter-rouge">&lt;</code>) which can takes the output of one command and redirects it to a file. I generally prefer (when possible) to generate new files when dealing with massaging data. I’ve just deleted too many files accidentally in code.</p>
+
+<pre class="brush: bash; title: ; notranslate">ruby geocoder.rb &gt; geocoded.csv
+</pre>
+
+<p>This command will run the file, but redirect the content that was being shown on the screen in to a file named ‘<code class="highlighter-rouge">geocoded.csv</code>.’</p>
+
+<h2 id="coordinate-systems">Coordinate Systems</h2>
+
+<p>Did you know that there were a lot of different ways to actually define latitude and longitude? Before taking this job I had only really seen coordinates expressed in either in the degrees, minutes, seconds format (e.g. 38° 1′ 48″ N, 78° 28′ 44″ W) or it’s decimal equivalent (e.g. 38.03, -78.478889). Turns out there are a lot different ways to actually describe these coordinates because our maps are flat, and our planet is not. If the world was actually a real sphere, this wouldn’t be a difficult problem, but the Earth’s shape actually what is referred to as an <a href="http://en.wikipedia.org/wiki/Oblate_spheroid">oblate spheroid</a>, which makes getting precise locations on from the curved Earth to a flat map problematic. How you deal with the conversion of points on the spheroid (Earth) to a map is a projection. This conversion can introduce distortion, like the maps I remember in school growing up where Greenland is larger than Africa. Projections are chosen according to the purpose of the map to preserve qualities like shape, area, distance, or direction. The European Petroleum Survey Group (EPSG) maintains a database of all the myriad projections and datums. After a while, you start to know the more regularly used projections, and the results we got back from the Geocoder gem are in a projection for the <a href="http://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a> coded <a href="http://spatialreference.org/ref/epsg/4326/">EPSG:4326</a>. (<strong>Note:</strong> for a nice piece on projections, check out <a href="http://www.scholarslab.org/geospatial-and-temporal/projection-lessons-in-maps/">Projection Lessons in Maps</a>.)</p>
+
+<p>But what does this have to do with the coordinates? In Neatline we are using a different coordinate system to make some of the conversions in using Google base maps a bit easier. Basically we need to take the decimal degrees and covert them to meters. For example, the coordinates of the White House, this:</p>
+
+<pre class="brush: plain; title: ; notranslate">POINT(-77.03651700000002 38.8976777)
+</pre>
+
+<p>Which uses a spherical interpretation of the globe becomes the following when converted to meters.</p>
+
+<pre class="brush: plain; title: ; notranslate">POINT(-8575665.843733624 4707025.360473459)
+</pre>
+
+<p>These are the same points, just described differently. So how can we handle this in the code? There are services that you can go out and use to re-project your data, but this one is pretty straight forward with a little trigonometry (didn’t think you’d read that today, did you). With a little mathematical hand-waving, I wrote the following method to convert degrees to meters:</p>
+
+<pre class="brush: ruby; title: ; notranslate">def degrees_to_meters(lon, lat)
+    half_circumference = 20037508.34
+    x = lon * half_circumference / 180
+    y = Math.log(Math.tan((90 + lat) * Math::PI / 360)) / (Math::PI / 180)
+
+    y = y * half_circumference / 180
+
+    return [x, y]
+end
+</pre>
+
+<p>The <code class="highlighter-rouge">20037508.34</code> the the above code is half the circumference of the earth in meters (I looked it up), and there are some math tricks to account for a generalized flattening of the earth. Now we can call this function and calculate the projected coordinates to use in a Neatline exhibit.</p>
+
+<pre class="brush: ruby; title: ; notranslate">require 'csv'
+require 'geocoder'
+
+LOCATIONS = './locations.csv'
+
+def degrees_to_meters(lon, lat)
+    half_circumference = 20037508.34
+    x = lon * half_circumference / 180
+    y = Math.log(Math.tan((90 + lat) * Math::PI / 360)) / (Math::PI / 180)
+
+    y = y * half_circumference / 180
+
+    return [x, y]
+end
+
+puts 'address,city,state,point,lat,lon'
+CSV.foreach(LOCATIONS, :headers =&gt; true, :header_converters =&gt; :symbol) do |line|
+    address_string = "#{line[:address]}, #{line[:city]}, #{line[:state]}"
+    result = Geocoder.search(address_string).first
+
+    lat = result.latitude
+    lon = result.longitude
+
+    #point = "POINT(#{lon} #{lat})"
+    projected = degrees_to_meters(lon, lat)
+    point = "POINT(#{projected[0]} #{projected[1]})"
+
+    puts "#{address_string}, #{point}, #{lat}, #{lon}"
+end
+</pre>
+
+<p>When you run the program as described above, you will get results similar to this:</p>
+
+<pre class="brush: plain; title: ; notranslate">address,city,state,point,lat,lon
+1600 Pennsylvania Ave, Washington, DC, POINT(-8575665.843733624 4707025.360473459), 4707025.360473459, -8575665.843733624
+931 Thomas Jefferson Parkway, Charlottesville, VA, POINT(-8733720.184442518 4580189.258447956), 4580189.258447956, -8733720.184442518
+Eiffel Tower, , , POINT(255395.18699487977 6250848.2584100235), 6250848.2584100235, 255395.18699487977
+</pre>
+
+<p>Now you can regenerate your CSV file of the properly formatted location information from the terminal:</p>
+
+<pre class="brush: bash; title: ; notranslate">ruby geocoder.rb &gt; geocoded.csv
+</pre>
+
+<p>If you’ve already created a <code class="highlighter-rouge">geocoded.csv</code> file, the above command will overwrite the file. If you’re wanting to append similar content to the same file, you can use the <code class="highlighter-rouge">&gt;&gt;</code> operator which will add the output to the end of the file.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p>In this post I covered the basics of using geocoding services through a programming API, as well as reading CSV files, and redirecting output to a new file. I waved my hands with a little magic (some math, some programming, some Unix commands), but there are a lot of techniques here you can use in a variety of scenarious. In my next post, I will cover how to automate populating this information in an Omeka instance, automating the population of this information in new items, then them in a Neatline exhibit.</p>
+
+
+  </article>
+
+</div>
+    </main>
+    </div>
+
+    <footer role="contentinfo">
+      
+<ul class="navigation">
+    <li class="list-group-item">
+        Neatline is a project of the <a href="http://www.scholarslab.org/">Scholars' Lab</a> at the University of Virginia Library. It has benefited from the generous support of the <a href="http://lib.virginia.edu">UVa Library</a>, the <a href="http://neh.gov">National Endowment for the Humanities</a>, the <a href="http://imls.gov">Institute of Museum and Library Services</a>, and the <a href="http://loc.gov">Library of Congress</a>.
+    </li>
+    <li class="list-group-item"><a rel="license" class="license" href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a></li>
+    <li class="list-group-item"><a href="https://forum.omeka.org/">Contact Us</a></li>
+    <li class="list-group-item">
+        <a href="http://scholarslab.org" class="align-self-center ml-3" id="slab-link">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="438.94" height="87.75" viewBox="0 0 438.94 87.75" enable-background="new 0 0 438.938 87.75" xml:space="preserve">
+          <path d="M29.33 63.06c0 12.25-7.7 20.45-23.11 24.62l-5.13-11c4.75-1.37 8.21-2.8 10.36-4.29 3.36-2.37 5.04-5.47 5.04-9.33 0-2.92-1.43-6.49-4.28-10.72 -2.6-3.85-5.2-7.74-7.8-11.65 -2.85-5.03-4.28-9.95-4.28-14.73 0-6.15 2.54-11.71 7.61-16.69 4.63-4.66 10.27-7.74 16.92-9.23l3.8 11.8c-10.33 2.8-15.49 7.49-15.49 14.08 0 3.5 1.4 7.5 4.3 11.84 2.6 3.8 5.2 7.6 7.8 11.4C27.91 54 29.3 58.6 29.3 63.06z"/>
+          <path d="M61.16 85.1c-3.6 1.11-6.19 1.67-7.77 1.67 -7.2 0-12.8-3.4-16.81-10.22 -4.01-6.81-6.02-16.38-6.02-28.7 0-12.32 2.01-21.89 6.02-28.7 4.01-6.81 9.61-10.22 16.81-10.22 1.58 0 4.2 0.6 7.8 1.67l-3.22 9.1c-1.58-0.56-3.1-0.84-4.55-0.84 -7.58 0-11.37 9.66-11.37 29 0 19.3 3.8 29 11.4 28.98 1.45 0 2.97-0.28 4.55-0.84L61.16 85.1z"/>
+          <path d="M100.15 85.93h-11.46V55.28H77.61v30.65H66.15V55.28h-3.88v-9.94h3.88V9.76h11.46v35.58h11.08V9.76h11.46V85.93z"/>
+          <path d="M140.41 47.85c0 25.95-5.84 38.92-17.52 38.92 -11.74 0-17.62-12.97-17.62-38.92 0-12.57 1.1-21.83 3.32-27.77 2.71-7.43 7.49-11.15 14.3-11.15 6.57 0 11.3 3.7 14.1 11.1C139.27 26.1 140.4 35.4 140.4 47.85zM129.05 47.85c0-19.32-2.05-28.98-6.16-28.98 -4.1 0-6.15 9.66-6.15 28.98 0 19.3 2 29 6.2 28.98C126.99 76.8 129 67.2 129 47.85z"/>
+          <path d="M169.45 85.93h-23.11V9.76h11.46v66.23h11.65V85.93z"/>
+          <path d="M213.17 85.93h-11.94l-1.32-6.78h-10.89l-1.32 6.78h-11.94l1.52-6.78h-4.55l2.27-9.94h4.36l13.45-61.12h3.32L213.17 85.93zM198.02 69.21l-3.51-18.86 -3.69 18.86H198.02z"/>
+          <path d="M248.45 83.7l-11.18 3.44 -10.61-31.21v30h-11.46V9.76h11.46c6.69 0 11.8 2.5 15.3 7.4 3.16 4.5 4.7 10.5 4.7 18.13 0 8.06-2.53 14.73-7.58 20L248.45 83.7zM234.81 35.3c0-10.4-2.72-15.6-8.15-15.6v32.6c2.4 0 4.36-1.58 5.87-4.74C234.05 44.4 234.8 40.3 234.8 35.3z"/>
+          <path d="M276.04 64.94c0 10.84-6.85 18.11-20.56 21.83l-4.55-9.75c4.23-1.24 7.29-2.54 9.19-3.9 3.03-2.04 4.55-4.77 4.55-8.18 0-2.6-1.26-5.76-3.79-9.47 -2.34-3.47-4.67-6.93-7.01-10.4 -2.52-4.46-3.79-8.82-3.79-13.1 0-5.51 2.24-10.46 6.73-14.86 4.17-4.15 9.19-6.87 15.06-8.17l3.41 10.5c-9.16 2.54-13.73 6.72-13.73 12.54 0 3.1 1.2 6.6 3.7 10.5 2.33 3.3 4.7 6.7 7 10.1C274.77 56.8 276 60.9 276 64.94z"/>
+          <path d="M298.87 3.7l-12.22 29.82 -6.82-2.04 6.82-31.4L298.87 3.7z"/>
+          <path d="M357.1 85.93H331.15V0.47h12.79v74.31h13.17V85.93z"/>
+          <path d="M401.6 85.93h-11.93l-1.33-6.78h-10.89l-1.33 6.78h-11.93l1.52-6.78h-4.55l2.27-9.94h4.36l13.45-61.12h3.31L401.6 85.93zM386.44 69.21l-3.5-18.86 -3.69 18.86H386.44z"/>
+          <path d="M438.87 66.05c0 6.26-1.67 11.12-5.02 14.59 -3.54 3.53-8.62 5.29-15.25 5.29h-11.46V9.76H418.6c6.63 0 11.7 2 15.3 6.04 3.35 3.8 5 9.2 5 15.98 0 8.61-2.24 14.4-6.73 17.4C436.63 52.9 438.9 58.6 438.9 66.05zM427.79 31.78c0-8.05-3.06-12.07-9.19-12.07v25.64c3.15 0 5.48-1.04 6.96-3.11C427.04 40.2 427.8 36.7 427.8 31.78zM427.79 66.1c0-7.18-3.06-10.77-9.19-10.77v20.71C424.72 76 427.8 72.7 427.8 66.05z"/>
+          </svg>
+        </a>
+    </li>
+  </ul>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

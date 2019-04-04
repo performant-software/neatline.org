@@ -1,0 +1,16 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  - title: "Documentation"
+    url: /docs/
+  - title: "Demos"
+    url: /demos/
+  - title: "News"
+    url: /news/
+  - title: "Plugins"
+    url: /plugins/
+  - title: "Publications"
+    url: /publications/
+  - title: "Credits"
+    url: /credits/

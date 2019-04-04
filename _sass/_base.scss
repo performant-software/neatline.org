@@ -1,0 +1,65 @@
+// Imports -------------------------------------------------------------------
+@import "compass/reset";
+@import "compass/css3";
+
+// @import "compass";
+// @import "susy";
+// @import "mixins";
+// @import "normalize";
+
+// Susy Variables ------------------------------------------------------------
+
+// $legacy-support-for-ie6         : false;
+// $legacy-support-for-ie7         : false !default;
+// $legacy-support-for-ie8         : false !default;
+// $ie                             : false !default;
+
+// $show-column-grid-backgrounds   : false;
+// $show-baseline-grid-backgrounds : false;
+// $show-grid-backgrounds          : false;
+
+// Compass Variables ---------------------------------------------------------
+
+$base-font-size                 : 16px;
+$base-line-height               : 28px;
+
+// Colors --------------------------------------------------------------------
+
+$default-color                  : rgb(60,60,60);
+$default-color-light            : rgba($default-color, 0.75);
+$default-color-lighter          : rgba($default-color, 0.5);
+$default-color-lightest         : rgba($default-color, 0.25);
+
+$link-color                     : rgb(90,60,110);
+$link-color-light               : lighten($link-color, 10%);
+$link-color-alternate           : rgb(186, 158, 6);
+$link-color-alternate-light     : lighten($link-color-alternate, 10%);
+
+$link-visited-color             : $link-color;
+$link-hover-color               : $link-color-alternate; //darken($link-color, 30%)
+$link-focus-color               : $link-hover-color;
+$link-active-color              : darken($link-color, 30%);
+
+
+// ---------------------------------------------------------------------------
+
+// Typography
+
+$font-family-main: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif !default;
+$font-secondary: 'franklingothic-demi', sans-serif;
+$font-family-condensed: 'franklin-gothic-urw-cond',arial narrow,sans-serif;
+$font-family-compressed: 'franklin-gothic-urw-comp',arial narrow,sans-serif;
+// $base-font-size: 16px;
+// $base-line-height: 24px;
+$font-family-title: 'franklin-gothic-urw',arial,sans-serif; //'Open Sans', sans-serif
+// 'Libre Franklin',arial,sans-serif;
+
+$spacing-unit: $base-line-height;
+
+$default-font: $font-family-main;
+// 'Roboto', sans-serif;
+// 'Libre Franklin',arial,sans-serif;
+
+$font-weight-main: 400;
+$font-weight-medium: 500;
+$font-weight-demi: 700;

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Installing Neatline</title>
+<script src="https://cdn.levelaccess.net/accessjs/YW1wX3V2YTExMDA/access.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Neatline allows scholars, students, and curators to tell stories with maps and timelines.">
+<link rel="canonical" href="http://localhost:4000/docs/getting-started/installing-neatline.html">
+
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon.png" >
+<link rel="apple-touch-icon" type="image/png" href="http://localhost:4000/assets/images/apple-touch-icon.png">
+
+<!-- Style sheets -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+<!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/carousel.css"> -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+
+
+<!-- Feeds and Pingbacks -->
+<link rel="alternate" type="application/rss+xml" title="Neatline" href=" http://localhost:4000/feed.xml">
+
+<!-- Modernizr and Friends -->
+<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+<script>
+    Modernizr.load([
+        {
+            test: Modernizr.mq(),
+            nope: [
+                'http://localhost:4000/assets/js/respond.min.js',
+                'http://localhost:4000/assets/js/selectivizr.min.js'
+            ]
+        }
+    ]);
+    (function() {
+        var cx = '009145345920904867543:1jiuohixchs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+
+
+
+  </head>
+
+  <body>
+      <header role="banner">
+    <nav class="navbar-light bg-light">
+      <div class="topnav">
+            <a href="/http://localhost:4000" title="Neatline">
+              <img class="logo" src="http://localhost:4000/assets/images/neatline-logo-rgb.png" alt="Neatline"/>
+            </a>  
+          <ul class="nav navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/about/">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Documentation
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
+                  <a class="dropdown-item" href="#">Neatline for Omeka S</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=http://localhost:4000/demos/>Demos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/plugins/">Plugins</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/news/">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://localhost:4000/credits/" class="nav-link">Credits</a>
+            </li>
+          </ul>
+          <div id="custom_search">
+              <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
+          </div>
+
+        </div>
+      </nav>
+    
+</header>
+
+
+    <div class="wrapper">
+        <main id="main" class="main-content" role="main" >
+            <h1 class="no_toc" id="installing-neatline">Installing Neatline</h1>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+
+<ol id="markdown-toc">
+  <li><a href="#at-a-glance" id="markdown-toc-at-a-glance">At a glance</a></li>
+  <li><a href="#before-you-start" id="markdown-toc-before-you-start">Before you start</a></li>
+  <li><a href="#installing-omeka" id="markdown-toc-installing-omeka">Installing Omeka</a></li>
+  <li><a href="#installing-nl" id="markdown-toc-installing-nl">Installing Neatline</a>    <ol>
+      <li><a href="#new-for-neatline-252" id="markdown-toc-new-for-neatline-252">NEW for Neatline 2.5.2:</a></li>
+      <li><a href="#configuring-nlplugin" id="markdown-toc-configuring-nlplugin">Configuring the Neatline Plugin (for version 2.5.2)</a></li>
+    </ol>
+  </li>
+  <li><a href="#installing-geoserver" id="markdown-toc-installing-geoserver">Installing Geoserver</a></li>
+</ol>
+
+<hr />
+
+<h2 id="at-a-glance">At a glance</h2>
+
+<ul>
+  <li>Installing Neatline is a two-step process - first install Omeka, then install Neatline as a plugin for Omeka.
+    <ul>
+      <li><a href="#before-you-start">Before you start</a></li>
+      <li><a href="#installing-omeka">Installing Omeka</a></li>
+      <li><a href="#installing-nl">Installing Neatline</a>
+        <ul>
+          <li><a href="#new-for-neatline-252">NEW for Neatline 2.5.2</a></li>
+          <li><a href="#configuring-nlplugin">Configuring the Neatline Plugin (for version 2.5.2)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>For projects that incorporate custom imagery, a third piece of software called <a href="http://geoserver.org/" title="GeoServer">Geoserver</a> is necessary.
+    <ul>
+      <li><a href="#installing-geoserver">Installing Geoserver</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="before-you-start">Before you start</h2>
+
+<p>Omeka is a web application written with PHP and MySQL that runs on the “<a href="http://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP stack</a>” (Linux, Apache, MySQL, and PHP), a ubiquitous set of technologies supported by almost any commercial or institutional hosting provider - many web hosts even provide an automatic “one-click” installer.  See the <a href="http://omeka.org/codex/Hosting_Suggestions" title="Omeka Hosting Suggestions">Hosting Suggestions</a> guide in the Omeka documentation for a list of recommended providers. Alternatively, if you just want to experiment with Neatline in an offline setting, your can also install Omeka on a sandbox server environment running on your own computer using software packages like <a href="http://www.mamp.info/en/index.html">MAMP</a>, <a href="http://www.wampserver.com/en/">WampServer</a>, or <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>, with the option of migrating the site to a public-facing web host at any point in the future.</p>
+
+<p>Either way, you’ll need the following:</p>
+
+<ul>
+  <li>A server environment with <a href="http://us.php.net/">PHP</a> (5.2.11 or greater), <a href="https://www.mysql.com/">MySQL</a> (5.0 or greater), and Apache.</li>
+  <li>Credentials for a MySQL user and the name of a database for the Omeka installation.</li>
+  <li>Permission to add and edit files to the server.</li>
+</ul>
+
+<p>For more detailed system requirements, see the <a href="http://omeka.org/codex/Preparing_to_Install">Preparing to Install</a> guide in the Omeka documentation.</p>
+
+<h2 id="installing-omeka">Installing Omeka</h2>
+
+<p>First, install Omeka by following the instructions in the <a href="http://omeka.org/codex/Installation" title="Install Omeka">Installation</a> guide.</p>
+
+<h2 id="installing-nl">Installing Neatline</h2>
+
+<p>Once Omeka is up and running, install the Neatline plugin:</p>
+
+<ol>
+  <li>
+    <p>Download the most recent version of <a href="http://omeka.org/addons/neatline" title="Neatline Plugin">Neatline</a>, unpack the <code class="highlighter-rouge">.zip</code> archive, and move the <code class="highlighter-rouge">Neatline</code> folder into <code class="highlighter-rouge">/plugins</code>.</p>
+  </li>
+  <li>
+    <p>In the Omeka administrative interface, click on the <strong>Plugins</strong> link on the top navigation bar and find the listing for Neatline.</p>
+  </li>
+  <li>
+    <p>Click the <strong>Install</strong> button.</p>
+  </li>
+</ol>
+
+<p>You’ll be redirected back to the list of plugins and see a notification saying that “The Neatline plugin was successfully installed.” Over in the main vertical navigation on the left side of the screen, you’ll see a new listing for <strong>Neatline</strong> - click there to get started.</p>
+
+<h3 id="new-for-neatline-252">NEW for Neatline 2.5.2:</h3>
+
+<p>Neatline users must now specify a Google Maps API Key as a configuration step after installing the <strong>Neatline</strong> plugin.</p>
+
+<h3 id="configuring-nlplugin">Configuring the Neatline Plugin (for version 2.5.2)</h3>
+
+<ol>
+  <li>
+    <p>On the Plugins Screen, click the <strong>Configure</strong> button. <img src="http://scholarslab.org/wp-content/uploads/2017/06/configurebutton.png" alt="Screenshot of Configure Button" /></p>
+  </li>
+  <li>
+    <p>Click the link to open the Google Maps Developer’s page, and then click the <strong>Get a Key</strong> button. <img src="http://scholarslab.org/wp-content/uploads/2017/06/linktogoogle.png" alt="Screenshot of Get A Key Button" /></p>
+  </li>
+  <li>
+    <p>On the Enable Maps Web APIs popup, enter a project name or click the down arrow to select the default name, <em>My Project</em>. <img src="http://scholarslab.org/wp-content/uploads/2017/06/clicktoselectMyProject.png" alt="Screenshot of Down Arrow Button" /></p>
+  </li>
+  <li>
+    <p>Once your Project Name has been entered, or the default <em>My Project</em> has been selected, click the <strong>Enable API</strong> button to generate your API key. <img src="http://scholarslab.org/wp-content/uploads/2017/06/enableAPIbutton.png" alt="Screenshot of Enable API Button" /></p>
+  </li>
+  <li>
+    <p>Copy the API Key and paste it into the <strong>Neatline</strong> plugin configuration text box. <img src="http://scholarslab.org/wp-content/uploads/2017/06/apifilledin.png" alt="Screenshot of Pasted API Key" /></p>
+  </li>
+  <li>
+    <p>Click the green <strong>Save Changes</strong> button. Your installation is now properly configured to use any of the Google base maps that are packaged with the <strong>Neatline</strong> plugin.</p>
+  </li>
+</ol>
+
+<h2 id="installing-geoserver">Installing Geoserver</h2>
+
+<p>With Omeka and Neatline installed, you can get started building exhibits on top of modern-geography base layers (OpenStreetMap, Google Maps, and Stamen Maps). For many use-cases, the default layers are more than sufficient, and no other action is necessary.</p>
+
+<p>For projects that need to incorporate custom imagery - for example, historical projects that want to overlay georeferenced maps on top of the default layers, or art history projects that need to use scans of paintings as base layers in exhibits - a third piece of software called <a href="http://geoserver.org/" title="GeoServer">Geoserver</a> is necessary.</p>
+
+<p>Geoserver is a high-performance, open-source geospatial server that runs in a Java Servlet Container like <a href="https://tomcat.apache.org/">Tomcat</a>, <a href="http://www.eclipse.org/jetty/">Jetty</a>, or <a href="https://www.jboss.org/overview/">JBoss</a>. Basically, Geoserver is responsible for taking high-resolution GeoTIFF’s - images that are keyed onto spatial coordinates - and selectively doling out just the section of the image that’s necessary to fill the viewport as a user pans and zooms the map in Neatline. This is such a computationally-intensive task that it requires a separate, standalone piece of software.</p>
+
+<p>The <a href="http://opengeo.org/products/suite/community/">OpenGeo Suite</a> (community edition) maintains packages for several of the more popular operating systems to ease the management of upgrading and configuring GeoServer. That said, the process of installing and maintaining a Java server environment generally requires quite a bit more technical expertise than what’s needed to get up and running with Omeka and Neatline. Geoserver is built on top of a more complicated suite of technologies, and tends to need a higher level of ongoing maintenance.</p>
+
+<p>If you don’t have the resources to manage your own installation, there are a couple of options. First, if you’re associated with a a college or university, check to see if your institution could provide assistance - managing complex software like Geoserver is often the sort of thing that falls under the purview of central IT services. Second, you can always purchase Geoserver hosting from a commercial provider - we’ve had good experiences with <a href="http://www.acugis.com/neatline-hosting.htm">AcuGIS</a>, which actually provides all-in-one Geoserver, Omeka, and Neatline hosting (they have a one-click Neatline installer, and offer discounts for academic users). Check out their <a href="http://www.acugis.com/neatline-faq.html">FAQ</a> for more information.</p>
+
+
+        </main>
+    </div>
+  <footer role="contentinfo">
+      
+<ul class="navigation">
+    <li class="list-group-item">
+        Neatline is a project of the <a href="http://www.scholarslab.org/">Scholars' Lab</a> at the University of Virginia Library. It has benefited from the generous support of the <a href="http://lib.virginia.edu">UVa Library</a>, the <a href="http://neh.gov">National Endowment for the Humanities</a>, the <a href="http://imls.gov">Institute of Museum and Library Services</a>, and the <a href="http://loc.gov">Library of Congress</a>.
+    </li>
+    <li class="list-group-item"><a rel="license" class="license" href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a></li>
+    <li class="list-group-item"><a href="https://forum.omeka.org/">Contact Us</a></li>
+    <li class="list-group-item">
+        <a href="http://scholarslab.org" class="align-self-center ml-3" id="slab-link">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" width="438.94" height="87.75" viewBox="0 0 438.94 87.75" enable-background="new 0 0 438.938 87.75" xml:space="preserve">
+          <path d="M29.33 63.06c0 12.25-7.7 20.45-23.11 24.62l-5.13-11c4.75-1.37 8.21-2.8 10.36-4.29 3.36-2.37 5.04-5.47 5.04-9.33 0-2.92-1.43-6.49-4.28-10.72 -2.6-3.85-5.2-7.74-7.8-11.65 -2.85-5.03-4.28-9.95-4.28-14.73 0-6.15 2.54-11.71 7.61-16.69 4.63-4.66 10.27-7.74 16.92-9.23l3.8 11.8c-10.33 2.8-15.49 7.49-15.49 14.08 0 3.5 1.4 7.5 4.3 11.84 2.6 3.8 5.2 7.6 7.8 11.4C27.91 54 29.3 58.6 29.3 63.06z"/>
+          <path d="M61.16 85.1c-3.6 1.11-6.19 1.67-7.77 1.67 -7.2 0-12.8-3.4-16.81-10.22 -4.01-6.81-6.02-16.38-6.02-28.7 0-12.32 2.01-21.89 6.02-28.7 4.01-6.81 9.61-10.22 16.81-10.22 1.58 0 4.2 0.6 7.8 1.67l-3.22 9.1c-1.58-0.56-3.1-0.84-4.55-0.84 -7.58 0-11.37 9.66-11.37 29 0 19.3 3.8 29 11.4 28.98 1.45 0 2.97-0.28 4.55-0.84L61.16 85.1z"/>
+          <path d="M100.15 85.93h-11.46V55.28H77.61v30.65H66.15V55.28h-3.88v-9.94h3.88V9.76h11.46v35.58h11.08V9.76h11.46V85.93z"/>
+          <path d="M140.41 47.85c0 25.95-5.84 38.92-17.52 38.92 -11.74 0-17.62-12.97-17.62-38.92 0-12.57 1.1-21.83 3.32-27.77 2.71-7.43 7.49-11.15 14.3-11.15 6.57 0 11.3 3.7 14.1 11.1C139.27 26.1 140.4 35.4 140.4 47.85zM129.05 47.85c0-19.32-2.05-28.98-6.16-28.98 -4.1 0-6.15 9.66-6.15 28.98 0 19.3 2 29 6.2 28.98C126.99 76.8 129 67.2 129 47.85z"/>
+          <path d="M169.45 85.93h-23.11V9.76h11.46v66.23h11.65V85.93z"/>
+          <path d="M213.17 85.93h-11.94l-1.32-6.78h-10.89l-1.32 6.78h-11.94l1.52-6.78h-4.55l2.27-9.94h4.36l13.45-61.12h3.32L213.17 85.93zM198.02 69.21l-3.51-18.86 -3.69 18.86H198.02z"/>
+          <path d="M248.45 83.7l-11.18 3.44 -10.61-31.21v30h-11.46V9.76h11.46c6.69 0 11.8 2.5 15.3 7.4 3.16 4.5 4.7 10.5 4.7 18.13 0 8.06-2.53 14.73-7.58 20L248.45 83.7zM234.81 35.3c0-10.4-2.72-15.6-8.15-15.6v32.6c2.4 0 4.36-1.58 5.87-4.74C234.05 44.4 234.8 40.3 234.8 35.3z"/>
+          <path d="M276.04 64.94c0 10.84-6.85 18.11-20.56 21.83l-4.55-9.75c4.23-1.24 7.29-2.54 9.19-3.9 3.03-2.04 4.55-4.77 4.55-8.18 0-2.6-1.26-5.76-3.79-9.47 -2.34-3.47-4.67-6.93-7.01-10.4 -2.52-4.46-3.79-8.82-3.79-13.1 0-5.51 2.24-10.46 6.73-14.86 4.17-4.15 9.19-6.87 15.06-8.17l3.41 10.5c-9.16 2.54-13.73 6.72-13.73 12.54 0 3.1 1.2 6.6 3.7 10.5 2.33 3.3 4.7 6.7 7 10.1C274.77 56.8 276 60.9 276 64.94z"/>
+          <path d="M298.87 3.7l-12.22 29.82 -6.82-2.04 6.82-31.4L298.87 3.7z"/>
+          <path d="M357.1 85.93H331.15V0.47h12.79v74.31h13.17V85.93z"/>
+          <path d="M401.6 85.93h-11.93l-1.33-6.78h-10.89l-1.33 6.78h-11.93l1.52-6.78h-4.55l2.27-9.94h4.36l13.45-61.12h3.31L401.6 85.93zM386.44 69.21l-3.5-18.86 -3.69 18.86H386.44z"/>
+          <path d="M438.87 66.05c0 6.26-1.67 11.12-5.02 14.59 -3.54 3.53-8.62 5.29-15.25 5.29h-11.46V9.76H418.6c6.63 0 11.7 2 15.3 6.04 3.35 3.8 5 9.2 5 15.98 0 8.61-2.24 14.4-6.73 17.4C436.63 52.9 438.9 58.6 438.9 66.05zM427.79 31.78c0-8.05-3.06-12.07-9.19-12.07v25.64c3.15 0 5.48-1.04 6.96-3.11C427.04 40.2 427.8 36.7 427.8 31.78zM427.79 66.1c0-7.18-3.06-10.77-9.19-10.77v20.71C424.72 76 427.8 72.7 427.8 66.05z"/>
+          </svg>
+        </a>
+    </li>
+  </ul>
+
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

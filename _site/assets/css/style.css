@@ -1,0 +1,1035 @@
+@charset "UTF-8";
+/*
+Theme Name: Neatline
+Theme URI: http://neatline.org
+Description: A theme for the Neatline website.
+Version: 1.0
+Author: Scholars' Lab
+Author URI: http://scholarslab.org
+*/
+/* line 5, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*! normalize.css 2011-08-31T22:02 UTC · http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 11, ../../_sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 28, ../../_sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+/* line 40, ../../_sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 49, ../../_sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* line 66, ../../_sass/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  overflow-y: scroll;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 77, ../../_sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 85, ../../_sass/_normalize.scss */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/* line 98, ../../_sass/_normalize.scss */
+a {
+  color: #00e;
+}
+
+/* line 102, ../../_sass/_normalize.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 110, ../../_sass/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 119, ../../_sass/_normalize.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 133, ../../_sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3/4, S4/5, Chrome
+*/
+/* line 141, ../../_sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 146, ../../_sass/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 154, ../../_sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 162, ../../_sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 172, ../../_sass/_normalize.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 185, ../../_sass/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 198, ../../_sass/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 204, ../../_sass/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 210, ../../_sass/_normalize.scss */
+small {
+  font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 219, ../../_sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 227, ../../_sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 231, ../../_sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 240, ../../_sass/_normalize.scss */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 246, ../../_sass/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 250, ../../_sass/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, F3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 267, ../../_sass/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+/* line 276, ../../_sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 289, ../../_sass/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 302, ../../_sass/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent margin and padding
+ */
+/* line 310, ../../_sass/_normalize.scss */
+fieldset {
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 320, ../../_sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  *margin-left: -7px;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, F3/4, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 331, ../../_sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses FF3/4 setting line-height using !important in the UA stylesheet
+ * 2. Corrects inner spacing displayed oddly in IE6/7
+ */
+/* line 346, ../../_sass/_normalize.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+  *overflow: visible;
+  /* 2 */
+}
+
+/*
+ * Corrects overlap and whitespace issue for buttons and inputs in IE6/7
+ * Known issue: reintroduces inner spacing
+ */
+/* line 357, ../../_sass/_normalize.scss */
+table button,
+table input {
+  *overflow: auto;
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ */
+/* line 367, ../../_sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Addresses excess padding in IE8/9
+ */
+/* line 380, ../../_sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 391, ../../_sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Corrects inner padding displayed oddly in S5, Chrome on OSX
+ */
+/* line 402, ../../_sass/_normalize.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Corrects inner padding and border displayed oddly in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 411, ../../_sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 422, ../../_sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells
+ */
+/* line 436, ../../_sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* !---------- General Styles ------ */
+/* line 2, ../../_sass/_screen.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../../_sass/_screen.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../../_sass/_screen.scss */
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 23, ../../_sass/_screen.scss */
+body,
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 29, ../../_sass/_screen.scss */
+.wrapper {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 32, ../../_sass/_screen.scss */
+.wrapper > * {
+  padding: 0px;
+  -webkit-box-flex: 1 100%;
+  -moz-box-flex: 1 100%;
+  -webkit-flex: 1 100%;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+}
+
+/* line 37, ../../_sass/_screen.scss */
+.main-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media all and (min-width: 600px) {
+  /* line 43, ../../_sass/_screen.scss */
+  .wrapper {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+@media all and (max-width: 650px) {
+  /* line 49, ../../_sass/_screen.scss */
+  .main-content {
+    -webkit-box-flex: 1 100%;
+    -moz-box-flex: 1 100%;
+    -webkit-flex: 1 100%;
+    -ms-flex: 1 100%;
+    flex: 1 100%;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+}
+/* line 56, ../../_sass/_screen.scss */
+a:link {
+  color: #5a3c6e;
+  text-decoration: underline;
+}
+/* line 60, ../../_sass/_screen.scss */
+a:visited {
+  color: #5a3c6e;
+}
+/* line 63, ../../_sass/_screen.scss */
+a:hover {
+  color: #ba9e06;
+  text-decoration: none;
+}
+/* line 67, ../../_sass/_screen.scss */
+a:focus {
+  color: #ba9e06;
+}
+/* line 70, ../../_sass/_screen.scss */
+a:active {
+  color: #09060b;
+}
+/* line 73, ../../_sass/_screen.scss */
+h1 a, h2 a, h3 a {
+  text-decoration: none;
+}
+
+/* line 80, ../../_sass/_screen.scss */
+#main {
+  background-color: #f8f9fa !important;
+  padding-bottom: 2em;
+}
+
+/* line 84, ../../_sass/_screen.scss */
+#main h1 {
+  font-size: 32px;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+/* line 91, ../../_sass/_screen.scss */
+#main h2 {
+  font-size: 30px;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 0.67em 0 0.67em;
+}
+
+/* line 99, ../../_sass/_screen.scss */
+#main h3 {
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0.67em 0 0.67em;
+  -webkit-margin-before: 0;
+}
+
+/* line 107, ../../_sass/_screen.scss */
+#main h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+  font-size: 19.2px;
+  font-weight: 500;
+  margin: 0.67em;
+  text-transform: uppercase;
+}
+
+/* line 116, ../../_sass/_screen.scss */
+#main p, #main ul, #main li {
+  margin-bottom: 1em;
+}
+
+/* !---------- Header ---------- */
+/* line 122, ../../_sass/_screen.scss */
+header {
+  padding: 0;
+}
+
+/* line 126, ../../_sass/_screen.scss */
+.topnav {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+/* line 135, ../../_sass/_screen.scss */
+.logo {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  max-width: 300px;
+  float: left;
+  text-align: left;
+  line-height: 0;
+}
+
+/* line 145, ../../_sass/_screen.scss */
+#custom_search {
+  width: 250px;
+  margin: 1rem;
+  padding: 1rem;
+}
+/* line 149, ../../_sass/_screen.scss */
+#custom_search td {
+  padding: 0;
+}
+/* line 151, ../../_sass/_screen.scss */
+#custom_search td.gsc-clear-button {
+  display: none;
+}
+/* line 155, ../../_sass/_screen.scss */
+#custom_search input[type=text] {
+  background-image: none !important;
+  text-indent: 5px !important;
+  font-size: 12px !important;
+}
+/* line 161, ../../_sass/_screen.scss */
+#custom_search input[type=button] {
+  background-color: #5a3c6e !important;
+  font-weight: normal;
+}
+/* line 164, ../../_sass/_screen.scss */
+#custom_search input[type=button]:hover, #custom_search input[type=button]:focus {
+  background-color: #754e8f;
+}
+/* line 168, ../../_sass/_screen.scss */
+#custom_search input[type=button]:active {
+  background-color: #5a3c6e;
+}
+
+/* line 173, ../../_sass/_screen.scss */
+.gsc-search-button,
+.gsc-search-button-v2 {
+  font-size: 0px;
+  padding: 0;
+  width: auto;
+  vertical-align: middle;
+  border: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  margin-top: 0;
+  border-color: #f8f9fa;
+  background-color: #f8f9fa;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#333333));
+  background-image: -webkit-linear-gradient(top, #333333, #333333);
+}
+
+/* !---------- Primary Nav Bar ---------- */
+/* line 191, ../../_sass/_screen.scss */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+/* line 199, ../../_sass/_screen.scss */
+.navigation a {
+  text-decoration: none;
+  color: #5a3c6e;
+}
+/* line 207, ../../_sass/_screen.scss */
+.navigation a:hover {
+  text-decoration: underline;
+  color: #5a3c6e;
+}
+
+@media all and (max-width: 850px) {
+  /* line 214, ../../_sass/_screen.scss */
+  .navigation, .topnav {
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 220, ../../_sass/_screen.scss */
+  .navigation, .topnav {
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    padding: 0;
+  }
+
+  /* line 225, ../../_sass/_screen.scss */
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+  }
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+/* Since positioning the image, we need to help out the caption */
+/* line 240, ../../_sass/_screen.scss */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* line 256, ../../_sass/_screen.scss */
+.carousel-caption {
+  background: #222;
+  background: rgba(34, 34, 34, 0.3);
+}
+/* line 259, ../../_sass/_screen.scss */
+.carousel-caption * {
+  text-shadow: none;
+}
+
+/* Declare heights because of positioning of img element */
+/* line 269, ../../_sass/_screen.scss */
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* line 277, ../../_sass/_screen.scss */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* line 292, ../../_sass/_screen.scss */
+.carousel-control-prev {
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+/* line 300, ../../_sass/_screen.scss */
+.carousel-control-next {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+/* line 309, ../../_sass/_screen.scss */
+.intro-text {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  text-align: center;
+}
+
+/* line 316, ../../_sass/_screen.scss */
+footer {
+  background-color: #f8f9fa;
+  padding: 2rem 4rem;
+}
+
+/* line 321, ../../_sass/_screen.scss */
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #f8f9fa;
+  border: none;
+  font-size: 14.4px;
+}
+/* line 330, ../../_sass/_screen.scss */
+.list-group-item a:hover {
+  text-decoration: underline;
+  color: #ba9e06;
+}
+
+/* line 337, ../../_sass/_screen.scss */
+#slab-link {
+  max-width: 350px;
+}
+/* line 346, ../../_sass/_screen.scss */
+#slab-link svg {
+  max-height: 28px;
+}
+/* line 350, ../../_sass/_screen.scss */
+#slab-link svg path {
+  fill: #5a3c6e;
+  fill: rgba(90, 60, 110, 0.75);
+}
+/* line 357, ../../_sass/_screen.scss */
+#slab-link:hover path {
+  fill: #ba9e06;
+}
