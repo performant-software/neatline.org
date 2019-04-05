@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'fs-8'.
-        on line 8 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/typography.scss, in `fs-8'
-        from line 8 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/typography.scss
+        on line 8 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/typography.scss, in `fs-8'
+        from line 8 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/typography.scss
 
 3: //
 4: // stylelint-disable primer/selector-no-utility, selector-no-type, selector-max-type
@@ -16,8 +16,8 @@ Error: Undefined mixin 'fs-8'.
 13: .text-beta {
 
 Backtrace:
-/Users/eam5hc/projects/neatline-org-new/_sass/docs/typography.scss:8:in `fs-8'
-/Users/eam5hc/projects/neatline-org-new/_sass/docs/typography.scss:8
+/Users/eam5hc/projects/neatline.org-new/_sass/docs/typography.scss:8:in `fs-8'
+/Users/eam5hc/projects/neatline.org-new/_sass/docs/typography.scss:8
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'fs-8'.\A         on line 8 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/typography.scss, in `fs-8'\A         from line 8 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/typography.scss\A \A 3: //\A 4: // stylelint-disable primer/selector-no-utility, selector-no-type, selector-max-type\A 5: \A 6: h1,\A 7: .text-alpha {\A 8:   @include fs-8;\A 9:   font-weight: 300;\A 10: }\A 11: \A 12: h2,\A 13: .text-beta {"; }
+  content: "Error: Undefined mixin 'fs-8'.\A         on line 8 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/typography.scss, in `fs-8'\A         from line 8 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/typography.scss\A \A 3: //\A 4: // stylelint-disable primer/selector-no-utility, selector-no-type, selector-max-type\A 5: \A 6: h1,\A 7: .text-alpha {\A 8:   @include fs-8;\A 9:   font-weight: 300;\A 10: }\A 11: \A 12: h2,\A 13: .text-beta {"; }

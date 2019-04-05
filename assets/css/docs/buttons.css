@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$link-color".
-        on line 18 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/buttons.scss
+        on line 18 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/buttons.scss
 
 13:   margin: 0;
 14:   font-family: inherit;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$link-color".
 23:   border-width: 0;
 
 Backtrace:
-/Users/eam5hc/projects/neatline-org-new/_sass/docs/buttons.scss:18
+/Users/eam5hc/projects/neatline.org-new/_sass/docs/buttons.scss:18
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -69,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$link-color\".\A         on line 18 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/buttons.scss\A \A 13:   margin: 0;\A 14:   font-family: inherit;\A 15:   font-size: inherit;\A 16:   font-weight: 500;\A 17:   line-height: 1.5;\A 18:   color: $link-color;\A 19:   text-decoration: none;\A 20:   vertical-align: baseline;\A 21:   cursor: pointer;\A 22:   background-color: $base-button-color;\A 23:   border-width: 0;"; }
+  content: "Error: Undefined variable: \"$link-color\".\A         on line 18 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/buttons.scss\A \A 13:   margin: 0;\A 14:   font-family: inherit;\A 15:   font-size: inherit;\A 16:   font-weight: 500;\A 17:   line-height: 1.5;\A 18:   color: $link-color;\A 19:   text-decoration: none;\A 20:   vertical-align: baseline;\A 21:   cursor: pointer;\A 22:   background-color: $base-button-color;\A 23:   border-width: 0;"; }

@@ -424,21 +424,17 @@ header {
 //foooter
 footer {
   background-color: #f8f9fa; 
-  padding: 2rem 4rem;
-}
-
-.list-group-item {
-  position: relative;
-  display: block;
-  padding: .75rem 1.25rem;
-  margin-bottom: -1px;
-  background-color: #f8f9fa;
-  border: none;
+  max-width: 100vw;
   font-size: $base-font-size * .9;
- 
-  & a:hover {
-    text-decoration: underline;
-    color: $link-hover-color;
+  padding: .75rem 1.25rem;
+
+
+  .col, .col-6 {
+    margin: 0 20px 0 0;
+  }
+
+  .col {
+    text-align:center;
   }
 }
 
@@ -448,7 +444,7 @@ footer {
   // display:block;
   // text-align:center;
   // vertical-align:middle;
-  max-width: 350px;
+  // max-width: 350px;
   // margin:2rem auto;
   // padding: 5px 10px;
 
@@ -573,3 +569,27 @@ a.splash-link {
 
 }
 
+
+.archive {
+
+  article.plugins {
+    float:left;
+    clear:left;
+
+    .plugin-screen {
+      display:block;
+      float:left;
+      width: 48%;
+      border: 17px solid white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .content {
+      float:right;
+      width: 48%;
+    }
+  }
+}

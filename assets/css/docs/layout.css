@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'mq'.
-        on line 6 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/layout.scss, in `mq'
-        from line 6 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/layout.scss
+        on line 6 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/layout.scss, in `mq'
+        from line 6 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/layout.scss
 
 1: //
 2: // The basic two column layout
@@ -16,8 +16,8 @@ Error: Undefined mixin 'mq'.
 11:     width: 100%;
 
 Backtrace:
-/Users/eam5hc/projects/neatline-org-new/_sass/docs/layout.scss:6:in `mq'
-/Users/eam5hc/projects/neatline-org-new/_sass/docs/layout.scss:6
+/Users/eam5hc/projects/neatline.org-new/_sass/docs/layout.scss:6:in `mq'
+/Users/eam5hc/projects/neatline.org-new/_sass/docs/layout.scss:6
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/eam5hc/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
@@ -73,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'mq'.\A         on line 6 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/layout.scss, in `mq'\A         from line 6 of /Users/eam5hc/projects/neatline-org-new/_sass/docs/layout.scss\A \A 1: //\A 2: // The basic two column layout\A 3: //\A 4: \A 5: .page-wrap {\A 6:   @include mq(md) {\A 7:     position: absolute;\A 8:     top: 0;\A 9:     left: 0;\A 10:     display: flex;\A 11:     width: 100%;"; }
+  content: "Error: Undefined mixin 'mq'.\A         on line 6 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/layout.scss, in `mq'\A         from line 6 of /Users/eam5hc/projects/neatline.org-new/_sass/docs/layout.scss\A \A 1: //\A 2: // The basic two column layout\A 3: //\A 4: \A 5: .page-wrap {\A 6:   @include mq(md) {\A 7:     position: absolute;\A 8:     top: 0;\A 9:     left: 0;\A 10:     display: flex;\A 11:     width: 100%;"; }
