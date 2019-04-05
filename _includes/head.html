@@ -6,8 +6,8 @@
 <meta name="description" content="{{ site.description }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
-<link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | prepend: site.url }}" >
-<link rel="apple-touch-icon" type="image/png" href="{{ "/assets/images/apple-touch-icon.png" | prepend: site.url }}">
+<link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | absolute_url }}" >
+<link rel="apple-touch-icon" type="image/png" href="{{ "/assets/images/apple-touch-icon.png" | absolute_url }}">
 
 <!-- Style sheets -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,21 +17,21 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 <!-- <link rel="stylesheet" href="{{ "/assets/css/carousel.css" | prepend: site.url }}"> -->
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.url }}">
-<link rel="stylesheet" href="{{ "/assets/css/docs.css" | prepend: site.url }}">
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/docs.css" | absolute_url }}">
 
 <!-- Feeds and Pingbacks -->
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href=" {{ "/feed.xml" | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href=" {{ "/feed.xml" | absolute_url }}">
 
 <!-- Modernizr and Friends -->
-<script src="{{ "/assets/js/modernizr.min.js" | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/modernizr.min.js" | absolute_url }}"></script>
 <script>
     Modernizr.load([
         {
             test: Modernizr.mq(),
             nope: [
-                '{{ '/assets/js/respond.min.js' | prepend: site.url }}',
-                '{{ '/assets/js/selectivizr.min.js' | prepend: site.url }}'
+                '{{ '/assets/js/respond.min.js' | absolute_url }}',
+                '{{ '/assets/js/selectivizr.min.js' | absolute_url }}'
             ]
         }
     ]);

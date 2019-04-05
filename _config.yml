@@ -5,11 +5,16 @@ description: "Neatline allows scholars, students, and curators to tell stories w
 baseurl: "/neatline-org-new" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+sass:
+  sass_dir: _sass
+  style: expanded
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+
+exclude: ["README.md", "Procfile", "Gruntfile.js", "changelog.md", "Gemfile", "Gemfile.lock", "node_modules", "bower_components", "scss", "config.rb", "package.json", "LICENSE", "bower.json"]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
