@@ -7828,15 +7828,28 @@ li .highlight {
 .content-section {
   min-height: 100vh;
 }
+/* line 27, ../../_sass/docs.scss */
+.content-section strong {
+  font-weight: 700 !important;
+}
+/* line 31, ../../_sass/docs.scss */
+.content-section ul {
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 
-/* line 28, ../../_sass/docs.scss */
+/* line 43, ../../_sass/docs.scss */
 .sidebar-section {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
-/* line 34, ../../_sass/docs.scss */
+/* line 49, ../../_sass/docs.scss */
 .sidebar-item {
   position: absolute;
   top: 0;
@@ -7846,7 +7859,7 @@ li .highlight {
   /* Position the items */
 }
 
-/* line 48, ../../_sass/docs.scss */
+/* line 63, ../../_sass/docs.scss */
 .make-me-sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -7854,12 +7867,12 @@ li .highlight {
   padding: 0 15px;
 }
 
-/* line 56, ../../_sass/docs.scss */
+/* line 71, ../../_sass/docs.scss */
 .content-section {
   background: #fff;
 }
 
-/* line 62, ../../_sass/docs.scss */
+/* line 77, ../../_sass/docs.scss */
 .sidebar-item {
   max-width: 100%;
   margin: 0 auto;

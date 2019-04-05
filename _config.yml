@@ -5,9 +5,10 @@ description: "Neatline allows scholars, students, and curators to tell stories w
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+
 sass:
   sass_dir: _sass
-  style: expanded
+  style: compressed
 
 # Build settings
 markdown: kramdown
@@ -27,3 +28,9 @@ exclude: ["README.md", "Procfile", "Gruntfile.js", "changelog.md", "Gemfile", "G
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections_dir: collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
