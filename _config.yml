@@ -34,3 +34,38 @@ collections:
   docs:
     output: true
     permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "docs"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+  - scope:
+      path: "assets/images/docs"
+    values:
+      image: true
+  - scope:
+      path: "assets/wp-images/uploads/2014/01"
+    values:
+      image: true
+  - scope:
+      path: "pages"
+    values:
+      order: 10
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      is_post: true
+      og_type: "article"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      is_page: true
+      og_type: "website"

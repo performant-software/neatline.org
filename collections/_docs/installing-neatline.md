@@ -58,15 +58,15 @@ Neatline users must now specify a Google Maps API Key as a configuration step af
 
 ### Configuring the Neatline Plugin (for version 2.5.2) {#configuring-nlplugin}
 
-1. On the Plugins Screen, click the **Configure** button. ![Screenshot of Configure Button](http://scholarslab.org/wp-content/uploads/2017/06/configurebutton.png)
+1. On the Plugins Screen, click the **Configure** button. ![Screenshot of Configure Button](/assets/images/wp-content/uploads/2017/06/configurebutton.png)
 
-1. Click the link to open the Google Maps Developer's page, and then click the **Get a Key** button. ![Screenshot of Get A Key Button](http://scholarslab.org/wp-content/uploads/2017/06/linktogoogle.png)
+1. Click the link to open the Google Maps Developer's page, and then click the **Get a Key** button. ![Screenshot of Get A Key Button](/assets/images/wp-content/uploads/2017/06/linktogoogle.png)
 
-3. On the Enable Maps Web APIs popup, enter a project name or click the down arrow to select the default name, *My Project*. ![Screenshot of Down Arrow Button](http://scholarslab.org/wp-content/uploads/2017/06/clicktoselectMyProject.png)
+3. On the Enable Maps Web APIs popup, enter a project name or click the down arrow to select the default name, *My Project*. ![Screenshot of Down Arrow Button](/assets/images/wp-content/uploads/2017/06/clicktoselectMyProject.png)
 
-4. Once your Project Name has been entered, or the default *My Project* has been selected, click the **Enable API** button to generate your API key. ![Screenshot of Enable API Button](http://scholarslab.org/wp-content/uploads/2017/06/enableAPIbutton.png)
+4. Once your Project Name has been entered, or the default *My Project* has been selected, click the **Enable API** button to generate your API key. ![Screenshot of Enable API Button](/assets/images/wp-content/uploads/2017/06/enableAPIbutton.png)
 
-5. Copy the API Key and paste it into the **Neatline** plugin configuration text box. ![Screenshot of Pasted API Key](http://scholarslab.org/wp-content/uploads/2017/06/apifilledin.png)
+5. Copy the API Key and paste it into the **Neatline** plugin configuration text box. ![Screenshot of Pasted API Key](/assets/images/wp-content/uploads/2017/06/apifilledin.png)
 
 
 6. Click the green **Save Changes** button. Your installation is now properly configured to use any of the Google base maps that are packaged with the **Neatline** plugin.

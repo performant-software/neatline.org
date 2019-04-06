@@ -27,7 +27,7 @@ Omeka makes it posible to create and curate a collection of "items" (the rough e
 
 ## Neatline: Interactive Map-making Environment
 
-Building on the foundation provided by Omeka, Neatline is a plugin that grafts new functionality onto the core Omeka feature set. Neatline adds an interactive map-making environment that makes it possible to create Neatline [_exhibits_](exhibits-overview.html), each of which is populated with its own collection of [_records_](records-overview.html), which can optionally be synchronized with items in the underlying Omeka collection.
+Building on the foundation provided by Omeka, Neatline is a plugin that grafts new functionality onto the core Omeka feature set. Neatline adds an interactive map-making environment that makes it possible to create Neatline [_exhibits_](/docs/exhibits-overview), each of which is populated with its own collection of [_records_](/docs/records-overview), which can optionally be synchronized with items in the underlying Omeka collection.
 
 Think of exhibits as the "canvas" for a project, records as the "paint strokes." Exhibit-level settings control basic defaults like the starting base layer, the focus location of the map, and which of the mix-and-match UI widgets are enabled for the exhibit. Meanwhile, content inside the exhibits is represented as a collection of records, each of which corresponds to some kind of visual or textual entity in the environment - vector annotations on the map, events on the timeline, overlayed historical maps, textual annotations in the exhibit narrative, or clickable waypoints.
 
@@ -37,7 +37,7 @@ Out of the box, Neatline can be used to build exhibits on top of a collection of
 
 If you want to use Neatline with georectified historical maps or custom base layers, you'll need to publish the layers to the web using a third piece of software called [Geoserver][geoserver], an open-source geospatial server that does the computationally-intensive work of piping the georeferenced image tiles into the Neatline exhibits.
 
-For more, see [Installing Geoserver](installing-neatline.html#installing-geoserver).
+For more, see [Installing Geoserver](/docs/installing-neatline#installing-geoserver).
 
 
 [omeka]: http://omeka.org/

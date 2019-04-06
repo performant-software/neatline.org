@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 ---
 
 # Neatline Editor: Styles Tab
@@ -21,11 +21,11 @@ layout: default
 
 ## Stylesheet Overview
 
-![Screenshot of stylesheet](images/stylesheet.png)
+![Screenshot of stylesheet](/assets/images/docs/stylesheet.png)
 
-The Neatline Stylesheet is a code editor that uses a simplified, Neatline-inflected dialect of CSS to perform bulk updates on large groups of related records clustered together by tags (see [Editing Record Groups](style-tab-groups.html)). Instead of manually changing individual records, one by one, the stylesheet allows for updates to made automatically to grouped records. Neatline CSS treats [record tags](style-tab-groups.html) as "classes", which allows for the use of a set of style properties to be defined in the stylesheet. 
+The Neatline Stylesheet is a code editor that uses a simplified, Neatline-inflected dialect of CSS to perform bulk updates on large groups of related records clustered together by tags (see [Editing Record Groups](/docs/style-tab-groups)). Instead of manually changing individual records, one by one, the stylesheet allows for updates to made automatically to grouped records. Neatline CSS treats [record tags](/docs/style-tab-groups) as "classes", which allows for the use of a set of style properties to be defined in the stylesheet. 
 
-For example, if you have a set of records tagged with the year `2012`, and want to make changes to their [fill color](style-tab-colors.html), include the following in the stylesheet:
+For example, if you have a set of records tagged with the year `2012`, and want to make changes to their [fill color](/docs/style-tab-colors), include the following in the stylesheet:
 
 {% highlight css %}
 .2012 {
@@ -60,15 +60,15 @@ Instead of regular CSS rules, the Neatline stylesheet uses a specific set of rul
 - `map-focus`
 - `map-zoom`
 
-For a more detailed information, see [Using Neatline Stylesheets](neatline-stylesheets.html).
+For a more detailed information, see [Using Neatline Stylesheets](/docs/neatline-stylesheets).
 
 ## Default Map Focus and Default Map Zoom {#default-map-focus}
 
-The **Default Map Focus** and the **Default Map Zoom** are the settings that determine the initial view of your exhibit, that is, the view seen when first opening the exhibit (in both the editor and in the [Public View](managing-exhibits.html#public-view)).
+The **Default Map Focus** and the **Default Map Zoom** are the settings that determine the initial view of your exhibit, that is, the view seen when first opening the exhibit (in both the editor and in the [Public View](/docs/managing-exhibits#public-view)).
 
 A simple way to use this setting is to move the map to the exact location and zoom level, using your mouse to drag and zoom, or by using the navigation icons in the left-top corner of the map. Once you find your view, click "Use Current Viewport as Default" and the data will auto-fill. Click the blue "Save" button at the bottom of the panel to save the settings. 
 
-![Screenschot of default map zoom and focus](images/editor-map-focus.png)
+![Screenschot of default map zoom and focus](/assets/images/docs/editor-map-focus.png)
 
 ## Restricted Map Extent
 
@@ -76,7 +76,7 @@ This setting controls how far your map or image extends, effectively restricting
 
 Like the **Default Map Focus** and **Default Map Zoom**, this setting can be auto-filled by clicking "Use Current Map Bounds as Max Extent," creating set boundaries for your exhibit. Click the blue "Save" button at the bottom of the panel to save the setting.
 
-![Screenshot of Restricted Map Extent Field](images/editor-map-extent.png)
+![Screenshot of Restricted Map Extent Field](/assets/images/docs/editor-map-extent.png)
 
 ## Minimum Map Zoom
 
@@ -84,12 +84,12 @@ This setting controls how far you can "zoom out" in your exhibit. Like the **Res
 
 Adjust your map to the furthest zoom level you want a viewer to experience, and click "Set Minimum Zoom to Current" to set. Click the blue "Save" button at the bottom of the panel to save the setting.
 
-![Screenshot of Minimum Map Zoom Field](images/editor-min-zoom.png)
+![Screenshot of Minimum Map Zoom Field](/assets/images/docs/editor-min-zoom.png)
 
 ## Maximum Map Zoom
 
 Similar to **Minimum Map Zoom**, this setting controls how far a viewer can "zoom in" on your exhibit. To set, adjust your map to the closest, "zoomed-in" view you want a viewer to experience, and click "Set Maximum Zoom to Current." Click the blue "Save" button at the bottom of the panel to save the setting.
 
-![Screenshot of Max Map Zoom Field](images/editor-max-zoom.png)
+![Screenshot of Max Map Zoom Field](/assets/images/docs/editor-max-zoom.png)
 
-**Related:** [Editor Overview](editor-overview.html), [Using Neatline Stylesheets](neatline-stylesheets.html), [Editing Record Groups](style-tab-groups.html), [Editing Record Visibility](style-tab-visibility.html)
+**Related:** [Editor Overview](/docs/editor-overview), [Using Neatline Stylesheets](/docs/neatline-stylesheets), [Editing Record Groups](/docs/style-tab-groups), [Editing Record Visibility](/docs//docs/style-tab-visibility)

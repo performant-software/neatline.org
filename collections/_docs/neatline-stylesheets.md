@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 ---
 # Styling Exhibits with Neatline-Flavored CSS
 

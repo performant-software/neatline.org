@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 ---
 # Working with the SIMILE Timeline Plugin
 
@@ -58,7 +58,7 @@ To include a Neatline item on the timeline, on the Style tab in the Neatline Ite
 
 ## Dates
 
-### ## Start and End Dates
+### Start and End Dates
 The dates that mark the beginning and end of an event, a person's life, the existence of a building or structure.
 
 To render an event as a single point on the timeline, fill in only the Start Date.

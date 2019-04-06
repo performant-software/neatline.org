@@ -5,27 +5,27 @@ title: Table of Contents - Neatline for Omeka Classic
 
 ## Getting Started
 
-- [What is Neatline?]({{ "docs/getting-started/what-is-neatline" | absolute_url }})
-    * [What makes it different?]({{ "docs/getting-started/what-is-neatline#what-makes-it-different" | absolute_url }})
-    * [Neatline Project Examples]({{ "docs/getting-started/what-is-neatline#neatline-project-examples" | absolute_url }})
+- [What is Neatline?]({{ "docs/what-is-neatline" | absolute_url }})
+    * [What makes it different?]({{ "docs/what-is-neatline#what-makes-it-different" | absolute_url }})
+    * [Neatline Project Examples]({{ "docs/what-is-neatline#neatline-project-examples" | absolute_url }})
 
-- [Neatline Architecture]({{ "docs/getting-started/neatline-from-10000-meters" | absolute_url }})
-    * [Omeka: Standards-compliant Metadata]({{ "docs/getting-started/neatline-from-10000-meters#omeka-standards-compliant-metadata" | absolute_url }})
-    * [Neatline: Interactive Map-making Environment]({{ "docs/getting-started/neatline-from-10000-meters#neatline-interactive-map-making-environment" | absolute_url }})
-    * [Geoserver: High-performance Map Server]({{ "docs/getting-started/neatline-from-10000-meters#geoserver-high-performance-map-server" | absolute_url }})
+- [Neatline Architecture]({{ "docs/neatline-from-10000-meters" | absolute_url }})
+    * [Omeka: Standards-compliant Metadata]({{ "docs/neatline-from-10000-meters#omeka-standards-compliant-metadata" | absolute_url }})
+    * [Neatline: Interactive Map-making Environment]({{ "docs/neatline-from-10000-meters#neatline-interactive-map-making-environment" | absolute_url }})
+    * [Geoserver: High-performance Map Server]({{ "docs/neatline-from-10000-meters#geoserver-high-performance-map-server" | absolute_url }})
     
-- [Installing Neatline]({{ "docs/getting-started/installing-neatline" | absolute_url }})
-    * [Before you start]({{ "docs/getting-started/installing-neatline#before-you-start" | absolute_url }})
-    * [Installing Omeka]({{ "docs/getting-started/installing-neatline#installing-omeka" | absolute_url }})
-    * [Installing Neatline]({{ "docs/getting-started/installing-neatline#installing-nl" | absolute_url }})
-        + [NEW for Neatline 2.5.2]({{ "docs/getting-started/installing-neatline#new-for-neatline-252" | absolute_url }})
-        + [Configuring the Neatline Plugin (for version 2.5.2)]({{ "docs/getting-started/installing-neatline#configuring-nlplugin" | absolute_url }})
-    * [Installing Geoserver]({{ "docs/getting-started/installing-neatline#installing-geoserver" | absolute_url }})
+- [Installing Neatline]({{ "docs/installing-neatline" | absolute_url }})
+    * [Before you start]({{ "docs/installing-neatline#before-you-start" | absolute_url }})
+    * [Installing Omeka]({{ "docs/installing-neatline#installing-omeka" | absolute_url }})
+    * [Installing Neatline]({{ "docs/installing-neatline#installing-nl" | absolute_url }})
+        + [NEW for Neatline 2.5.2]({{ "docs/installing-neatline#new-for-neatline-252" | absolute_url }})
+        + [Configuring the Neatline Plugin (for version 2.5.2)]({{ "docs/installing-neatline#configuring-nlplugin" | absolute_url }})
+    * [Installing Geoserver]({{ "docs/installing-neatline#installing-geoserver" | absolute_url }})
 
-- [Upgrading Neatline to 2.0]({{ "docs/getting-started/upgrading-to-v2" | absolute_url }})
-    * [What’s new]({{ "docs/getting-started/upgrading-to-v2#whats-new" | absolute_url }})
-    * [What’s different]({{ "docs/getting-started/upgrading-to-v2#whats-different" | absolute_url }})
-    * [Upgrading]({{ "docs/getting-started/upgrading-to-v2#upgrading" | absolute_url }})
+- [Upgrading Neatline to 2.0]({{ "docs/upgrading-to-v2" | absolute_url }})
+    * [What’s new]({{ "docs/upgrading-to-v2#whats-new" | absolute_url }})
+    * [What’s different]({{ "docs/upgrading-to-v2#whats-different" | absolute_url }})
+    * [Upgrading]({{ "docs/upgrading-to-v2#upgrading" | absolute_url }})
 
 ## Working with Exhibits
 

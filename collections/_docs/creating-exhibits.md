@@ -53,7 +53,7 @@ If needed, you can click on the 'Source' button in the formatting box to view an
 
 ![Screenshot of Narrative field html source code](/assets/images/docs/settings-narr-html.png)
 
-**Tip**: The "Narrative" field integrates tightly with the [NeatlineText](working-with-the-text-widget.html) widget, which makes it possible to connect individual paragraphs, sentences, and words in the "Narrative" content with records in the exhibit. For example, if "Narrative" contained markup like this:
+**Tip**: The "Narrative" field integrates tightly with the [NeatlineText](/docs/working-with-the-text-widget) widget, which makes it possible to connect individual paragraphs, sentences, and words in the "Narrative" content with records in the exhibit. For example, if "Narrative" contained markup like this:
 
 ```html
 ... <span data-neatline-slug="paris">Paris</span> ...
@@ -73,7 +73,7 @@ The combination of user-interface widgets that are "activated" for the exhibit. 
 
 ![Screenshot of Widgets field](/assets/images/docs/settings-widgets.png)
 
-For more, see Working with Neatline Plugins: [SIMILE Timeline](working-with-the-simile-timeline-widget.html), [Waypoints](working-with-the-waypoints-plugin.html), [Neatline Text](working-with-the-text-widget.html)
+For more, see Working with Neatline Plugins: [SIMILE Timeline](/docs/working-with-the-simile-timeline-widget), [Waypoints](/docs/working-with-the-waypoints-plugin), [Neatline Text](/docs/working-with-the-text-widget)
 
 ## Enabled Spatial Layers
 
@@ -87,17 +87,17 @@ The default base layer that's displayed when an exhibit is first accessed. This 
 
 ![Screenshot of selecting Default Spatial Layer](/assets/images/docs/settings-default-sp-layer.png)
 
-For more details on creating map-based exhibits, see [here](map-based-exhibits.html).
+For more details on creating map-based exhibits, see [here](/docs/map-based-exhibits).
 
 ## Image Layer
 
-The image url for a static image background layer. For more details on creating image-based exhibits, see [here](image-based-exhibits.html).
+The image url for a static image background layer. For more details on creating image-based exhibits, see [here](/docs/image-based-exhibits).
 
 ![Screenshot using static image](/assets/images/docs/image-layer.JPG)
 
 ## Zoom Levels
 
-The total number of available zoom levels for your exhibit when using a static image background layer. The default zoom level is 20. You can further adjust related exhibit view settings from the [**Styles Tab**](exhibit-styles-tab.html) within the **Exhibit Editor**. 
+The total number of available zoom levels for your exhibit when using a static image background layer. The default zoom level is 20. You can further adjust related exhibit view settings from the [**Styles Tab**](/docs/exhibit-styles-tab) within the **Exhibit Editor**. 
 
 ![Screenshot of Zoom Levels field](/assets/images/docs/settings-zoom.png)
 
@@ -109,7 +109,7 @@ The location of a web-accessible Web Map Service server like Geoserver. This fie
 
 `http://libsvr35.lib.virginia.edu/geoserver/hotchkiss/wms`
 
-**Note:** When using the **WMS Address** and **WMS Layer** fields, select the option 'None (Image or WMS as Deafult)’ for the "Default Spatial Layer." For more details on using these settings to create a custom map default layer, see [here](map-based-exhibits.html#using-a-custom-map-default-layer).
+**Note:** When using the **WMS Address** and **WMS Layer** fields, select the option 'None (Image or WMS as Deafult)’ for the "Default Spatial Layer." For more details on using these settings to create a custom map default layer, see [here](/docs/map-based-exhibits#using-a-custom-map-default-layer).
 
 ## WMS Layers
 
@@ -117,7 +117,7 @@ The specific WMS layer that you want assigned as the exhibit default spatial lay
 
 ![Screenshot of WMS Address and Layers fields](/assets/images/docs/WMS-fields.JPG)
 
-**Note:** Only one WMS Layer can be included in the **Exhibit Settings**, see [Editing Imagery](style-tab-imagery.html) for including multiple custom map layers in your exhibit.
+**Note:** Only one WMS Layer can be included in the **Exhibit Settings**, see [Editing Imagery](/docs/style-tab-imagery) for including multiple custom map layers in your exhibit.
 
 ## Spatial Querying
 
@@ -127,8 +127,8 @@ This is selected by default, to continually render you map orientation and visib
 
 ## Public
 
-If left unchecked, the exhibit will be visible in the Omeka administrative interface, but not on the public site. Check the box to publish the exhibit to the web. This selection is unchecked (not public) by default. For more, see [Publishing Exhibits](publishing-exhibits.html).
+If left unchecked, the exhibit will be visible in the Omeka administrative interface, but not on the public site. Check the box to publish the exhibit to the web. This selection is unchecked (not public) by default. For more, see [Publishing Exhibits](/docs/publishing-exhibits).
 
 ![Screenshot of public field](/assets/images/docs/settings-public.png)
 
-**Related:** [Map-based Exhibits](map-based-exhibits.html), [Image-based Exhibits](image-based-exhibits.html), [Managing Exhibits](managing-exhibits.html), [Managing User Permissions](user-permissions.html), [Publishing Exhibits](publishing-exhibits.html)
+**Related:** [Map-based Exhibits](/docs/map-based-exhibits), [Image-based Exhibits](/docs/image-based-exhibits), [Managing Exhibits](/docs/managing-exhibits), [Managing User Permissions](/docs/user-permissions), [Publishing Exhibits](/docs/publishing-exhibits)

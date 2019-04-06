@@ -46,7 +46,7 @@
       margin-top: 0.3em;
       margin-left: -0.8em;
       color: rgba($body-text-color, 0.3);
-      // content: "- ";
+      content: "- ";
     }
 
     &.active  {
@@ -58,15 +58,18 @@
 }
 
 .navigation-list-item {
-  @include fs-5; //fs-4
+  @include fs-4;
   margin: 0;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 20px;
 
   @include mq(md) {
-    @include fs-4; //fs-3
+    @include fs-3;
   }
 
   .navigation-list-child-list {
-    display: block; //none
+    display: none;
   }
 
   &.active {
@@ -78,30 +81,29 @@
 
 .navigation-list-link {
   display: block;
-  padding-top: $sp-1;
+  // padding-top: $sp-1;
   padding-bottom: $sp-1;
   // color: $grey-dk-300;
   
 
-  &.active { //, &.hover
+  &.active {
     font-weight: 500;
     color: $body-heading-color;
     text-decoration: none;
   }
 
   &:hover {
-    font-weight: 500;
-    color: $body-heading-color;
+    // font-weight: 500;
+    // color: $body-heading-color;
     text-decoration: none;
   }
+  &::before {
+    position: absolute;
+    margin-left: -0.8em;
+    color: rgba($body-text-color, 0.3);
+    content: "- ";
+  }
 }
-
-// .dropdown{
-//   background-image: url(../images/select_arrow.gif);
-//   background-repeat: no-repeat;
-//   background-position: right center;
-// }
-
 
 // Small screen nav
 

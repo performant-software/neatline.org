@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: docs
+title: Image-based Exhibits
 ---
 
 # Image-based Exhibits
@@ -18,30 +19,30 @@ There are two methods of creating image-based exhibits, depending on your needs:
 
 ## Creating an Image-based Exhibit
 
-To create an exhibit using an image base layer, follow the instructions for [Creating New Exhibits](creating-exhibits.html), using the following **Exhibit Settings**:
+To create an exhibit using an image base layer, follow the instructions for [Creating New Exhibits](/docs/creating-exhibits), using the following **Exhibit Settings**:
 
 ### Spatial Layers
 
 Leave the **Enabled Spatial Layers** selection empty, and select the option 'None (Image or WMS as Deafult)' for the **Default Spatial Layer**:
 
-![Screenshot of Spatial Layers example](images/base-layer-for-image.JPG)
+![Screenshot of Spatial Layers example](/assets/images/docs/base-layer-for-image.JPG)
 
 ### Method 1: Using a Static Image {#static-image}
 
 To use a static image background layer, your image must be web-accessible. If you need a place to host an image file, add it as an item within your Omeka collection. Enter your image url into the **Image Layer** field:
 
-![Screenshot using static image](images/image-layer.JPG)
+![Screenshot using static image](/assets/images/docs/image-layer.JPG)
 
 Provide a value for **Zoom Levels**. Consider the size of your static image file when determining zoom levels, as your image may appear pixelated if more zoom levels are provided than the image can handle. The default zoom level is 20.
 
-![Screenshot of Zoom Levels field](images/settings-zoom.png)
+![Screenshot of Zoom Levels field](/assets/images/docs/settings-zoom.png)
 
 ### Method 2: Using WMS Layers {#wms-layers}
 
 Load your "faux-georeferenced" static image into Geoserver as a WMS (Web Map Services) layer. In the Neatline **Exhibit Settings**, fill in the the top-level **WMS address** for the GeoServer installation (this always ends with /wms, and might look something like localhost:8080/GeoServer/wms). In the field for **WMS Layers**, enter the layer that you want assigned as the exhibit base layer:
 
-![Screenshot using faux-georeferenced image](images/WMS-fields.JPG)
+![Screenshot using faux-georeferenced image](/assets/images/docs/WMS-fields.JPG)
 
-**Related:** [Creating New Exhibits](creating-exhibits.html), [Editing Record Imagery](style-tab-imagery.html), [Editing Record Visibility](style-tab-visibility.html), [Installing Geoserver](installing-neatline.html#installing-geoserver)
+**Related:** [Creating New Exhibits](/docs/creating-exhibits), [Editing Record Imagery](/docs/style-tab-imagery), [Editing Record Visibility](/docs/style-tab-visibility), [Installing Geoserver](/docs/installing-neatline#installing-geoserver)
 
 [geoserver]: http://geoserver.org/ "GeoServer"

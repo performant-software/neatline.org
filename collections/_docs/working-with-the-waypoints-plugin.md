@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 ---
 # Working with the Waypoints Plugin
 

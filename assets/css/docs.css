@@ -283,6 +283,7 @@ hr {
   margin-top: 0.3em;
   margin-left: -0.8em;
   color: rgba(89, 89, 89, 0.3);
+  content: "- ";
 }
 /* line 53, ../../_sass/docs/navigation.scss */
 .navigation-list-child-list .navigation-list-item.active::before {
@@ -291,116 +292,123 @@ hr {
 
 /* line 60, ../../_sass/docs/navigation.scss */
 .navigation-list-item {
-  font-size: 16px !important;
+  font-size: 14px !important;
   margin: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
 }
 @media (min-width: 31.25rem) {
-  /* line 60, ../../_sass/docs/navigation.scss */
-  .navigation-list-item {
-    font-size: 18px !important;
-  }
-}
-@media (min-width: 46.25rem) {
-  /* line 60, ../../_sass/docs/navigation.scss */
-  .navigation-list-item {
-    font-size: 14px !important;
-  }
-}
-@media (min-width: 46.25rem) and (min-width: 31.25rem) {
   /* line 60, ../../_sass/docs/navigation.scss */
   .navigation-list-item {
     font-size: 16px !important;
   }
 }
-
-/* line 68, ../../_sass/docs/navigation.scss */
-.navigation-list-item .navigation-list-child-list {
-  display: block;
+@media (min-width: 46.25rem) {
+  /* line 60, ../../_sass/docs/navigation.scss */
+  .navigation-list-item {
+    font-size: 12px !important;
+  }
 }
-/* line 73, ../../_sass/docs/navigation.scss */
+@media (min-width: 46.25rem) and (min-width: 31.25rem) {
+  /* line 60, ../../_sass/docs/navigation.scss */
+  .navigation-list-item {
+    font-size: 14px !important;
+  }
+}
+
+/* line 71, ../../_sass/docs/navigation.scss */
+.navigation-list-item .navigation-list-child-list {
+  display: none;
+}
+/* line 76, ../../_sass/docs/navigation.scss */
 .navigation-list-item.active .navigation-list-child-list {
   display: block;
 }
 
-/* line 79, ../../_sass/docs/navigation.scss */
+/* line 82, ../../_sass/docs/navigation.scss */
 .navigation-list-link {
   display: block;
-  padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
-/* line 86, ../../_sass/docs/navigation.scss */
+/* line 89, ../../_sass/docs/navigation.scss */
 .navigation-list-link.active {
   font-weight: 500;
   color: #5a3c6e;
   text-decoration: none;
 }
-/* line 92, ../../_sass/docs/navigation.scss */
+/* line 95, ../../_sass/docs/navigation.scss */
 .navigation-list-link:hover {
-  font-weight: 500;
-  color: #5a3c6e;
   text-decoration: none;
 }
+/* line 100, ../../_sass/docs/navigation.scss */
+.navigation-list-link::before {
+  position: absolute;
+  margin-left: -0.8em;
+  color: rgba(89, 89, 89, 0.3);
+  content: "- ";
+}
 
-/* line 108, ../../_sass/docs/navigation.scss */
+/* line 110, ../../_sass/docs/navigation.scss */
 .main-nav,
 .aux-nav {
   display: none;
 }
-/* line 112, ../../_sass/docs/navigation.scss */
+/* line 114, ../../_sass/docs/navigation.scss */
 .main-nav.nav-open,
 .aux-nav.nav-open {
   display: block;
 }
 @media (min-width: 46.25rem) {
-  /* line 108, ../../_sass/docs/navigation.scss */
+  /* line 110, ../../_sass/docs/navigation.scss */
   .main-nav,
   .aux-nav {
     display: block;
   }
 }
 
-/* line 120, ../../_sass/docs/navigation.scss */
+/* line 122, ../../_sass/docs/navigation.scss */
 .navigation-list-toggle {
   position: absolute;
   right: 1rem;
 }
 @media (min-width: 46.25rem) {
-  /* line 120, ../../_sass/docs/navigation.scss */
+  /* line 122, ../../_sass/docs/navigation.scss */
   .navigation-list-toggle {
     display: none !important;
   }
 }
 
 @media (min-width: 46.25rem) {
-  /* line 130, ../../_sass/docs/navigation.scss */
+  /* line 132, ../../_sass/docs/navigation.scss */
   .breadcrumb-nav {
     margin-top: -1rem;
   }
 }
 
-/* line 136, ../../_sass/docs/navigation.scss */
+/* line 138, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list {
   padding-left: 0;
   margin-bottom: 0.75rem;
   list-style: none;
 }
 
-/* line 142, ../../_sass/docs/navigation.scss */
+/* line 144, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list-item {
   display: table-cell;
   font-size: 12px !important;
 }
 @media (min-width: 31.25rem) {
-  /* line 142, ../../_sass/docs/navigation.scss */
+  /* line 144, ../../_sass/docs/navigation.scss */
   .breadcrumb-nav-list-item {
     font-size: 14px !important;
   }
 }
-/* line 146, ../../_sass/docs/navigation.scss */
+/* line 148, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list-item::before {
   display: none;
 }
-/* line 150, ../../_sass/docs/navigation.scss */
+/* line 152, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list-item::after {
   display: inline-block;
   margin-right: 0.5rem;
@@ -408,7 +416,7 @@ hr {
   color: #959396;
   content: "/";
 }
-/* line 159, ../../_sass/docs/navigation.scss */
+/* line 161, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list-item:last-child::after {
   content: "";
 }
@@ -521,6 +529,187 @@ li .highlight {
 /* line 56, ../../_sass/docs/typography.scss */
 .text-center {
   text-align: center !important;
+}
+
+/* line 6, ../../_sass/docs/buttons.scss */
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 0.3em;
+  padding-right: 1em;
+  padding-bottom: 0.3em;
+  padding-left: 1em;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #5a3c6e;
+  text-decoration: none;
+  vertical-align: baseline;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  border-width: 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+  appearance: none;
+}
+/* line 28, ../../_sass/docs/buttons.scss */
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.25);
+}
+/* line 34, ../../_sass/docs/buttons.scss */
+.btn:focus:hover, .btn.selected:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.25);
+}
+/* line 39, ../../_sass/docs/buttons.scss */
+.btn:hover, .btn.zeroclipboard-is-hover {
+  color: #553867;
+}
+/* line 44, ../../_sass/docs/buttons.scss */
+.btn:hover, .btn:active, .btn.zeroclipboard-is-hover, .btn.zeroclipboard-is-active {
+  text-decoration: none;
+  background-color: #f4f4f4;
+}
+/* line 52, ../../_sass/docs/buttons.scss */
+.btn:active, .btn.selected, .btn.zeroclipboard-is-active {
+  background-color: #efefef;
+  background-image: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+/* line 60, ../../_sass/docs/buttons.scss */
+.btn.selected:hover {
+  background-color: #cfcfcf;
+}
+/* line 66, ../../_sass/docs/buttons.scss */
+.btn:disabled, .btn:disabled:hover, .btn.disabled, .btn.disabled:hover {
+  color: rgba(102, 102, 102, 0.5);
+  cursor: default;
+  background-color: rgba(229, 229, 229, 0.5);
+  background-image: none;
+  box-shadow: none;
+}
+
+/* line 77, ../../_sass/docs/buttons.scss */
+.btn-outline {
+  color: #5a3c6e;
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #e6e1e8;
+}
+/* line 82, ../../_sass/docs/buttons.scss */
+.btn-outline:hover, .btn-outline:active, .btn-outline.zeroclipboard-is-hover, .btn-outline.zeroclipboard-is-active {
+  color: #4f3561;
+  text-decoration: none;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px #e6e1e8;
+}
+/* line 92, ../../_sass/docs/buttons.scss */
+.btn-outline:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: inset 0 0 0 2px #5c5962, 0 0 0 3px rgba(0, 0, 255, 0.25);
+}
+/* line 98, ../../_sass/docs/buttons.scss */
+.btn-outline:focus:hover, .btn-outline.selected:focus {
+  box-shadow: inset 0 0 0 2px #5c5962;
+}
+
+/* line 104, ../../_sass/docs/buttons.scss */
+.btn-primary {
+  color: #fff;
+  background-color: #1f63e5;
+  background-image: linear-gradient(#3f79e9, #1f63e5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+/* line 9, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-primary:hover, .btn-primary.zeroclipboard-is-hover {
+  color: #fff;
+  background-color: #1a5ee0;
+  background-image: linear-gradient(#316fe7, #1a5ee0);
+}
+/* line 16, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-primary:active, .btn-primary.selected, .btn-primary.zeroclipboard-is-active {
+  background-color: #195cdb;
+  background-image: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+/* line 24, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-primary.selected:hover {
+  background-color: #1752c4;
+}
+
+/* line 108, ../../_sass/docs/buttons.scss */
+.btn-purple {
+  color: #fff;
+  background-color: #5739ce;
+  background-image: linear-gradient(#6f55d5, #5739ce);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+/* line 9, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-purple:hover, .btn-purple.zeroclipboard-is-hover {
+  color: #fff;
+  background-color: #5132cb;
+  background-image: linear-gradient(#6549d2, #5132cb);
+}
+/* line 16, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-purple:active, .btn-purple.selected, .btn-purple.zeroclipboard-is-active {
+  background-color: #4f31c6;
+  background-image: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+/* line 24, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-purple.selected:hover {
+  background-color: #472cb2;
+}
+
+/* line 112, ../../_sass/docs/buttons.scss */
+.btn-blue {
+  color: #fff;
+  background-color: #227efa;
+  background-image: linear-gradient(#4593fb, #227efa);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+/* line 9, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-blue:hover, .btn-blue.zeroclipboard-is-hover {
+  color: #fff;
+  background-color: #1878fa;
+  background-image: linear-gradient(#368afa, #1878fa);
+}
+/* line 16, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-blue:active, .btn-blue.selected, .btn-blue.zeroclipboard-is-active {
+  background-color: #1375f9;
+  background-image: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+/* line 24, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-blue.selected:hover {
+  background-color: #0669ed;
+}
+
+/* line 116, ../../_sass/docs/buttons.scss */
+.btn-green {
+  color: #fff;
+  background-color: #10ac7d;
+  background-image: linear-gradient(#13cc95, #10ac7d);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+/* line 9, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-green:hover, .btn-green.zeroclipboard-is-hover {
+  color: #fff;
+  background-color: #0fa276;
+  background-image: linear-gradient(#12be8b, #0fa276);
+}
+/* line 16, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-green:active, .btn-green.selected, .btn-green.zeroclipboard-is-active {
+  background-color: #0f9e73;
+  background-image: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+/* line 24, ../../_sass/docs/support/mixins/_buttons.scss */
+.btn-green.selected:hover {
+  background-color: #0d8662;
 }
 
 /* line 7, ../../_sass/docs/utilities/_colors.scss */
@@ -7851,32 +8040,90 @@ li .highlight {
 
 /* line 49, ../../_sass/docs.scss */
 .sidebar-item {
-  position: absolute;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 1rem !important;
+  border-bottom: solid 1px #fff;
+  background-color: rgba(90, 60, 110, 0.25);
+  position: absolute !important;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-y: scroll !important;
   /* Position the items */
 }
+/* line 68, ../../_sass/docs.scss */
+.sidebar-item h2 {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: rgba(60, 60, 60, 0.75);
+  font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
+}
 
-/* line 63, ../../_sass/docs.scss */
+/* line 89, ../../_sass/docs.scss */
 .make-me-sticky {
-  position: -webkit-sticky;
-  position: sticky;
+  position: -webkit-sticky !important;
+  position: sticky !important;
   top: 0;
   padding: 0 15px;
 }
 
-/* line 71, ../../_sass/docs.scss */
+/* line 97, ../../_sass/docs.scss */
 .content-section {
   background: #fff;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@media (min-width: 46.25rem) {
+  /* line 97, ../../_sass/docs.scss */
+  .content-section {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 46.25rem) {
+  /* line 97, ../../_sass/docs.scss */
+  .content-section {
+    position: relative;
+    max-width: 800px;
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 70rem) {
+  /* line 97, ../../_sass/docs.scss */
+  .content-section {
+    padding-left: 2rem;
+  }
 }
 
-/* line 77, ../../_sass/docs.scss */
-.sidebar-item {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 1rem;
-  border-bottom: solid 1px #fff;
-  background-color: rgba(90, 60, 110, 0.25);
+/* line 131, ../../_sass/docs.scss */
+nav[data-toggle="toc"] {
+  padding-top: 1rem;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  /* line 142, ../../_sass/docs.scss */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+    margin-left: 10px;
+    display: none;
+  }
+
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  /* line 151, ../../_sass/docs.scss */
+  nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  }
+
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  /*
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+  */
 }

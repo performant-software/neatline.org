@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 ---
 # Drawing Geometry on the Map
 

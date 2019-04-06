@@ -64,13 +64,13 @@
     max-width: $content-width;
     padding-top: $gutter-spacing;
     padding-bottom: $gutter-spacing;
-    padding-left: $gutter-spacing * 1.5;
-    margin-left: $nav-width;
+    // padding-left: $gutter-spacing * 1.5;
+    // margin-left: $nav-width;
   }
 
   @include mq(lg) {
     padding-left: $gutter-spacing;
-    margin-left: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+    // margin-left: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
   }
 }
 

@@ -15,6 +15,8 @@
 <!-- Style sheets -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+
 
 <!-- <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -53,8 +55,9 @@
 
 
 
+
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
 <article>
     <div class="container-fluid">
         <div class="row">
@@ -110,10 +113,104 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <div class="sidebar-item">
+            <div class="col-sm-3">
+                <div class="sidebar-item sticky-top">
                 <div class="make-me-sticky">
                         <nav role="navigation" aria-label="Main navigation">
+
+  <h2 data-toc-skip>Getting Started</h2>
+
+  <ul class="navigation-list">
+    <li class="navigation-list-item">
+      <a class="navigation-list-link" href="http://localhost:4000/docs/what-is-neatline">What is Neatline?</a>
+    </li>
+    <li class="navigation-list-item">
+      <a class="navigation-list-link" href="http://localhost:4000/docs/neatline-from-10000-meters">Neatline Architecture</a>
+    </li>
+    <li class="navigation-list-item">
+      <a class="navigation-list-link" href="http://localhost:4000/docs/installing-neatline">Installing Neatline</a>
+    </li>
+    <li class="navigation-list-item">
+      <a class="navigation-list-link" href="http://localhost:4000/docs/upgrading-to-v2">Upgrading Neatline to 2.0</a>
+    </li>
+  </ul>
+  
+  <h2 data-toc-skip>Working with Exhibits</h2>
+  
+  <ul>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/exhibits-overview">Exhibits Overview</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/creating-exhibits">Creating New Exhibits</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/map-based-exhibits">Map-based Exhibits</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/image-based-exhibits">Image-based Exhibits</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/managing-exhibits">Managing Exhibits</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/user-permissions">Managing User Permissions</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/publishing-exhibits">Publishing Exhibits</a></li>
+  </ul>
+  
+  <h2 data-toc-skip>Working with Neatline Plugins</h2>
+  
+  <ul>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/working-with-the-simile-timeline-widget">SIMILE Timeline</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/working-with-the-waypoints-plugin">Waypoints</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/working-with-the-text-widget">Neatline Text</a>
+    </li>
+  </ul>
+  
+  <h2 data-toc-skip>Working with the Neatline Editor</h2>
+  
+  <ul>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/editor-overview">Editor Overview</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/exhibit-styles-tab">Exhibit Styles Tab</a>
+    </li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/neatline-stylesheets">Using Neatline Stylesheets</a>
+    </li>
+  </ul>
+  
+  <h2 data-toc-skip>Working With Records</h2>
+  
+  <ul>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/records-overview">Records Overview</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/creating-records">Creating New Records</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/importing-omeka-items">Importing Omeka Items</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/searching-records">Searching Records</a></li>
+  </ul>
+  
+  <h2 data-toc-skip>Editing Neatline Records</h2>
+  <h2 data-toc-skip>Text Tab</h2>
+  
+  <ul>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/text-tab">Adding Text Content</a></li>
+  </ul>
+  
+  <h2 data-toc-skip>Map Tab</h2>
+  
+  <ul>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/map-tab-drawing-geometry">Drawing Vector Annotations</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/map-tab-editing-geometry">Editing Vector Annotations</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/map-tab-importing-svg">Importing SVG Documents</a></li>
+  </ul>
+  
+  <h2 data-toc-skip>Style Tab</h2>
+  
+  <ul>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/style-tab-groups">Editing Groups</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/style-tab-colors">Editing Colors</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/style-tab-opacities">Editing Opacities</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/style-tab-dimensions">Editing Dimensions</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/style-tab-dates">Editing Dates</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/style-tab-imagery">Editing Imagery</a></li>
+    <li class="navigation-list-item"><a class="navigation-list-link" href="http://localhost:4000/docs/style-tab-visibility">Editing Visibility</a></li>
+  </ul>
+
 
 
 </nav>
@@ -121,44 +218,43 @@
                 </div>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-sm-7">
                 <div class="content-section">
                     <main id="main" class="main-content container" role="main" >
-                        
                         <h2 id="getting-started">Getting Started</h2>
 
 <ul>
-  <li><a href="http://localhost:4000/docs/getting-started/what-is-neatline">What is Neatline?</a>
+  <li><a href="http://localhost:4000/docs/what-is-neatline">What is Neatline?</a>
     <ul>
-      <li><a href="http://localhost:4000/docs/getting-started/what-is-neatline#what-makes-it-different">What makes it different?</a></li>
-      <li><a href="http://localhost:4000/docs/getting-started/what-is-neatline#neatline-project-examples">Neatline Project Examples</a></li>
+      <li><a href="http://localhost:4000/docs/what-is-neatline#what-makes-it-different">What makes it different?</a></li>
+      <li><a href="http://localhost:4000/docs/what-is-neatline#neatline-project-examples">Neatline Project Examples</a></li>
     </ul>
   </li>
-  <li><a href="http://localhost:4000/docs/getting-started/neatline-from-10000-meters">Neatline Architecture</a>
+  <li><a href="http://localhost:4000/docs/neatline-from-10000-meters">Neatline Architecture</a>
     <ul>
-      <li><a href="http://localhost:4000/docs/getting-started/neatline-from-10000-meters#omeka-standards-compliant-metadata">Omeka: Standards-compliant Metadata</a></li>
-      <li><a href="http://localhost:4000/docs/getting-started/neatline-from-10000-meters#neatline-interactive-map-making-environment">Neatline: Interactive Map-making Environment</a></li>
-      <li><a href="http://localhost:4000/docs/getting-started/neatline-from-10000-meters#geoserver-high-performance-map-server">Geoserver: High-performance Map Server</a></li>
+      <li><a href="http://localhost:4000/docs/neatline-from-10000-meters#omeka-standards-compliant-metadata">Omeka: Standards-compliant Metadata</a></li>
+      <li><a href="http://localhost:4000/docs/neatline-from-10000-meters#neatline-interactive-map-making-environment">Neatline: Interactive Map-making Environment</a></li>
+      <li><a href="http://localhost:4000/docs/neatline-from-10000-meters#geoserver-high-performance-map-server">Geoserver: High-performance Map Server</a></li>
     </ul>
   </li>
-  <li><a href="http://localhost:4000/docs/getting-started/installing-neatline">Installing Neatline</a>
+  <li><a href="http://localhost:4000/docs/installing-neatline">Installing Neatline</a>
     <ul>
-      <li><a href="http://localhost:4000/docs/getting-started/installing-neatline#before-you-start">Before you start</a></li>
-      <li><a href="http://localhost:4000/docs/getting-started/installing-neatline#installing-omeka">Installing Omeka</a></li>
-      <li><a href="http://localhost:4000/docs/getting-started/installing-neatline#installing-nl">Installing Neatline</a>
+      <li><a href="http://localhost:4000/docs/installing-neatline#before-you-start">Before you start</a></li>
+      <li><a href="http://localhost:4000/docs/installing-neatline#installing-omeka">Installing Omeka</a></li>
+      <li><a href="http://localhost:4000/docs/installing-neatline#installing-nl">Installing Neatline</a>
         <ul>
-          <li><a href="http://localhost:4000/docs/getting-started/installing-neatline#new-for-neatline-252">NEW for Neatline 2.5.2</a></li>
-          <li><a href="http://localhost:4000/docs/getting-started/installing-neatline#configuring-nlplugin">Configuring the Neatline Plugin (for version 2.5.2)</a></li>
+          <li><a href="http://localhost:4000/docs/installing-neatline#new-for-neatline-252">NEW for Neatline 2.5.2</a></li>
+          <li><a href="http://localhost:4000/docs/installing-neatline#configuring-nlplugin">Configuring the Neatline Plugin (for version 2.5.2)</a></li>
         </ul>
       </li>
-      <li><a href="http://localhost:4000/docs/getting-started/installing-neatline#installing-geoserver">Installing Geoserver</a></li>
+      <li><a href="http://localhost:4000/docs/installing-neatline#installing-geoserver">Installing Geoserver</a></li>
     </ul>
   </li>
-  <li><a href="http://localhost:4000/docs/getting-started/upgrading-to-v2">Upgrading Neatline to 2.0</a>
+  <li><a href="http://localhost:4000/docs/upgrading-to-v2">Upgrading Neatline to 2.0</a>
     <ul>
-      <li><a href="http://localhost:4000/docs/getting-started/upgrading-to-v2#whats-new">What’s new</a></li>
-      <li><a href="http://localhost:4000/docs/getting-started/upgrading-to-v2#whats-different">What’s different</a></li>
-      <li><a href="http://localhost:4000/docs/getting-started/upgrading-to-v2#upgrading">Upgrading</a></li>
+      <li><a href="http://localhost:4000/docs/upgrading-to-v2#whats-new">What’s new</a></li>
+      <li><a href="http://localhost:4000/docs/upgrading-to-v2#whats-different">What’s different</a></li>
+      <li><a href="http://localhost:4000/docs/upgrading-to-v2#upgrading">Upgrading</a></li>
     </ul>
   </li>
 </ul>
@@ -351,12 +447,15 @@
   <li><a href="http://localhost:4000/docs/style-tab-visibility">Editing Visibility</a></li>
 </ul>
 
-         
                     </main>
                 </div>
             </div>
-           
-    </div>
+            <div class="col-sm-2">
+                <nav id="toc" data-toggle="toc" class="sticky-top">
+                    <h4>Table of Contents - Neatline for Omeka Classic</h4>
+                </nav>
+            </div>
+        </div>
     </div>
 </article>
 
@@ -435,7 +534,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 </html>
     

@@ -3,17 +3,10 @@ layout: docs
 title: What is Neatline?
 ---
 # What is Neatline?
-{: .no_toc }
 
 Neatline is an annotation framework that allows users to create rich, interactive editions of visual objects, and is built with humanities scholarship in mind.
 
-The project began with a focus on maps, but Neatline provides the flexibility to annotate anything with some sort of visual instantiation. Neatline's set of [vector-drawing](map-tab-drawing-geometry.html) and [content management](records-overview.html) tools can be used to create interpretive views of maps, paintings, drawings, photographs, documents, diagrams, and anything else that can be captured as an image.
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
+The project began with a focus on maps, but Neatline provides the flexibility to annotate anything with some sort of visual instantiation. Neatline's set of [vector-drawing](/docs/map-tab-drawing-geometry) and [content management](/docs/records-overview) tools can be used to create interpretive views of maps, paintings, drawings, photographs, documents, diagrams, and anything else that can be captured as an image.
 
 ---
 
@@ -21,6 +14,8 @@ The project began with a focus on maps, but Neatline provides the flexibility to
 ## What makes it different?
 
 How does Neatline fit into the existing ecosystem of geospatial and annotation tools? Neatline sits in the space between consumer-grade mapping applications like the Google custom map-maker and heavyweight, analytical GIS tools like ArcGIS. It’s designed to be simple enough that college undergraduates can easily use it for class assignments, but also sufficiently flexible, scalable, and feature-rich that it can be used for professional scholarship, journalism, and art. Neatline keeps things simple and provides sensible defaults, but it’s careful never to make intellectual or aesthetic decisions on your behalf.
+
+---
 
 ## Neatline Project Examples
 

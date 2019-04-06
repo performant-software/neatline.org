@@ -5,10 +5,10 @@ title: Neatline for Omeka Classic
 ---
 # Welcome to Neatline!
 
-This guide is designed to be a comprehensive introduction to the Neatline project. We'll walk through the basic steps of [installing and configuring](getting-started/installing-neatline) Neatline, [creating exhibits](exhibits-overview) and [records](records-overview), [importing](creating-records#bulk-importing-omeka-items) items from your [Omeka](http://omeka.org) collection, and [publishing](publishing-exhibits) your projects to the web.
+This guide is designed to be a comprehensive introduction to the Neatline project. We'll walk through the basic steps of [installing and configuring](installing-neatline) Neatline, [creating exhibits](exhibits-overview) and [records](records-overview), [importing](creating-records#bulk-importing-omeka-items) items from your [Omeka](http://omeka.org) collection, and [publishing](publishing-exhibits) your projects to the web.
 {: .fs-6 .fw-300 }
 
-Start with our [introduction](getting-started/what-is-neatline), [browse](docs-TOC) the documentation, or search for specific topics.
+Start with our [introduction](what-is-neatline), [browse](docs-TOC) the documentation, or search for specific topics.
 {: .fs-6 .fw-300 }
 
 ## Help us improve this guide
