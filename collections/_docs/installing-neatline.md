@@ -3,15 +3,6 @@ layout: docs
 title: Installing Neatline
 ---
 # Installing Neatline
-{: .no_toc }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## At a glance
 
@@ -23,6 +14,8 @@ title: Installing Neatline
         + [Configuring the Neatline Plugin (for version 2.5.2)](#configuring-nlplugin)
   - For projects that incorporate custom imagery, a third piece of software called [Geoserver][geoserver] is necessary.
     * [Installing Geoserver](#installing-geoserver)
+
+---
 
 ## Before you start
 

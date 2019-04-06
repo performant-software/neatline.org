@@ -10,7 +10,9 @@ layout: docs
   - Use "Default Focus/Zoom" to set the location and zoom level that the map "snaps" to when the record is selected.
   - Use the "Use Current Viewport as Default" to use the current focus/zoom as the record default.
 
-![Screenshot of Visibility Fields](http://neatline.org/wp-content/uploads/2014/01/style-visibility.png)
+---
+
+![Screenshot of Visibility Fields](/assets/wp-content/uploads/2014/01/style-visibility.png)
 
 ## Min Zoom
 

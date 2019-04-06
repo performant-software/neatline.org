@@ -9,7 +9,9 @@ layout: docs
   - **Researcher** users can view public Neatline exhibits, but don't have access to any of the administrative features.
   - **Contributor** users can create and modify their own Neatline exhibits, but can't make changes to other users' exhibits.
   - **Admin** and **Super** users can do everything: create, modify, and delete Neatline exhibits created by all users.
-  - When [groups of users](user-permissions.html#working-with-user-groups) need to work together as a team on a single exhibit, or a set of exhibits, assign one **Contributor** account to be used by the whole group.
+  - When [groups of users](docs/user-permissions#working-with-user-groups) need to work together as a team on a single exhibit, or a set of exhibits, assign one **Contributor** account to be used by the whole group.
+
+---
 
 ## User Levels and Access
 
@@ -31,6 +33,6 @@ User roles can only be assigned to individual users - Omeka has no notion of a "
 
 For now, the easiest way to allow groups of users to work together on a single exhibit, or a set of exhibits, is to create a single **Contributor** account for each group. So, if you have 10 groups, each comprised of 4 students, create 10 different **Contributor** accounts and give the same set of login credentials to all 4 students in each of the 10 groups. This way, users can edit exhibits and records created by anyone else in their own group, but not exhibits created by anyone in a different group.
 
-**Related:** [Omeka Documentation][omeka-acl], [Managing Exhibits](managing-exhibits.html)
+**Related:** [Omeka Documentation][omeka-acl], [Managing Exhibits](docs/managing-exhibits)
 
 [omeka-acl]: http://omeka.org/codex/Managing_Users_2.0

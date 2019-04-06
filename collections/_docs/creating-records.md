@@ -9,6 +9,8 @@ layout: docs
   - Existing Neatline records can be individually linked to (and unlinked from) Omeka items at any point.
   - Omeka items can be bulk-imported into Neatline exhibits.
 
+---
+
 ## Manually creating records inside of exhibits
 
 The simplest way to add a new record is just to create one directly inside of the Neatline editor.

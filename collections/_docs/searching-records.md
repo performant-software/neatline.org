@@ -11,7 +11,9 @@ layout: docs
   - Type `map:` to make the record list mirror the currently-visible records on the map.
   - Clear the search box to show all records.
 
-![Screenshot of Search Field](http://neatline.org/wp-content/uploads/2014/01/searching-records.png)
+---
+
+![Screenshot of Search Field](/assets/wp-content/uploads/2014/01/searching-records.png)
 
 When there are just a handful of records in an exhibit, it's easy to keep track of everything. But what if there are 1,000 records, or 100,000? In Neatline 2.0, it's possible to work with _really_ large collections of records - as many as about 1,000,000 in a single exhibit. If the exhibit can display that quantity of information, though, there need to be tools to effectively manage information at that scale. To help with this, Neatline provides some useful searching and filtering tools:
 

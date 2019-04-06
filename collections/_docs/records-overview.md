@@ -9,6 +9,8 @@ layout: docs
   - Records can appear in multiple contexts (map, timeline, etc).
   - Optionally, records can be associated with Omeka items.
 
+---
+
 ## Everything is a record
 
 Records are the fundamental unit of content in Neatline exhibits. In Neatline, _everything_ is a record - vector annotations on the map, plottings on the timeline, listings in the waypoints tray, WMS overlay layers, text annotations in the exhibit narrative, and any other content displayed by sub-plugins. Depending on the type of information that's entered into the record metadata, the same record could be displayed more than once in the same exhibit. For example, if a record has both a geometric annotation value in the `coverage` field and a defined value for the `start_date`, it will be displayed both as a shape on the map and a point on the timeline. When this is the case, Neatline will automatically link all instantiations of the record - when the user clicks on the span on the timeline, the map will zoom to the corresponding location, and vice versa.

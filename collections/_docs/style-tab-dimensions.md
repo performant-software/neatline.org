@@ -12,13 +12,15 @@ layout: docs
   - Or you can click on the field and drag up or down on the page, causing the value to change smoothly.
   - When the "Stroke Width" and "Point Radius" fields are changed, the new value will automatically preview on the map.
 
+---
+
 ## Stroke Width
 
 The width, in pixels, of the lines that run around the edges of a shape on the map. Generally, it makes sense to keep this value in the range of 0-10 - anything more and the lines will start to "clump" together and blot out the shape of the polygon, especially when the map is zoomed back away from the vectors.
 
 In some cases, it can be aesthetically pleasing to completely hide the lines, and just display the "area" of points and polygons on the map. To do this, just set the stroke width to 0.
 
-![Screenshot of Stroke Width Value](/assets/images/wp-content/uploads/2014/01/style-strokewidth.png)
+![Screenshot of Stroke Width Value](/assets/wp-content/uploads/2014/01/style-strokewidth.png)
 
 ## Point Radius
 
@@ -26,7 +28,7 @@ The radius of individual points on the map. You'll almost always want this value
 
 **Important**: The point radius is a static value, meaning that the size of the points on the map _won't change with the zoom level of the map_, as a polygon or line would. This is because points are actually just dimensionless pairs of lat/lon coordinates. Since they're infinitely small and have no measurable "size" that can be correlated to the scale of the map, the points will always stay the same size, regardless of the zoom level of the map
 
-![Screenshot of Point Radius Value](/assets/images/wp-content/uploads/2014/01/style-pointradius.png)
+![Screenshot of Point Radius Value](/assets/wp-content/uploads/2014/01/style-pointradius.png)
 
 
 ## Z-Index
@@ -35,7 +37,7 @@ The "stacking" order of vector annotations and WMS layers on the map. For exampl
 
 Z-indexes are just relative numbers that control the display order, with higher numbers stacking above lower numbers. So, in this case, you could set the Z-Index on Manhattan to `1`, and the Z-Index on Central Park to `2`, and Central Park would always be displayed on top of Manhattan.
 
-![Screenshot of Z-Index Value](/assets/images/wp-content/uploads/2014/01/style-zindex.png)
+![Screenshot of Z-Index Value](/assets/wp-content/uploads/2014/01/style-zindex.png)
 
 ## Order / Weight (Experimental, subject to change)
 
@@ -43,4 +45,4 @@ The display order of a record relative to other records. This is similar to the 
 
 **Important**: For now, this is an abstract field that has no direct effect on out-of-the-box Neatline exhibits. It's included in the current version to make it possible for sub-plugins to store ordering information about records. Unless you're using a sub-plugin that makes use of the field, it usually makes sense just to leave it blank.
 
-![Screenshot of Order/Weight Value](/assets/images/wp-content/uploads/2014/01/style-orderweight.png)
+![Screenshot of Order/Weight Value](/assets/wp-content/uploads/2014/01/style-orderweight.png)

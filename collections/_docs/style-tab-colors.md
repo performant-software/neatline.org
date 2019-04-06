@@ -10,6 +10,8 @@ layout: docs
   - As you change the color, new value will be automatically previewed on the map.
   - If you want to use a specific value, just paste the value into the text input below the color picker.
 
+---
+
 ### Examples:
 
   - `#ffffff`
@@ -21,24 +23,24 @@ layout: docs
 
 The hexadecimal color value of the "body" or "area" of points and polygons on the map (the area inside the lines, not including the lines themselves). Also used as a default color for the record in other contexts. For example, if the record has date information, the fill color is used to render the plotting that represents the record on the timeline.
 
-![Screenshot of Fill Color](http://neatline.org/wp-content/uploads/2014/01/stylecolors-fillcolor.png)
+![Screenshot of Fill Color](/assets/wp-content/uploads/2014/01/stylecolors-fillcolor.png)
 
 
 ## Fill Color (Selected)
 
 The hexadecimal color value of the "body" or "area" of points and polygons on the map _when the record is highlighted or selected_ (eg, when the cursor hovers or clicks on the shape).
 
-![Screenshot of Fill Color (Selected)](http://neatline.org/wp-content/uploads/2014/01/stylecolors-fillcolorselected.png)
+![Screenshot of Fill Color (Selected)](/assets/wp-content/uploads/2014/01/stylecolors-fillcolorselected.png)
 
 ## Stroke Color
 
 The hexadecimal color value of the lines that run around the edges of a shape on the map.
 
-![Screenshot of Stroke Color](http://neatline.org/wp-content/uploads/2014/01/stylecolors-strokecolor.png)
+![Screenshot of Stroke Color](/assets/wp-content/uploads/2014/01/stylecolors-strokecolor.png)
 
 
 ## Stroke Color (Selected)
 
 The hexadecimal color value of the lines that run around the edges of a shape on the map _when the record is highlighted or selected_ (eg, when the cursor hovers or clicks on the shape).
 
-![Screenshot of Stroke Color (Selected)](http://neatline.org/wp-content/uploads/2014/01/stylecolors-strokecolorselected.png)
+![Screenshot of Stroke Color (Selected)](/assets/wp-content/uploads/2014/01/stylecolors-strokecolorselected.png)

@@ -10,6 +10,8 @@ title: Creating Exhibits
   - Use the form to define basic, high-level information about a project.
   - You can always go back and edit any of the default settings.
 
+---
+
 ## Exhibit Settings
 
 To start a new project, click on the "Create an Exhibit" button at the top of the main "Browse Exhibits" page. Use the form to define basic information about your project. Setting fields marked with an asterisk (*) are required for saving your new exhibit.

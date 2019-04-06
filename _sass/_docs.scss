@@ -1,4 +1,5 @@
 @import "docs/support/support.scss";
+@import "docs/utilities/utilities";
 @import "docs/base";
 // @import "docs/layout";
 @import "docs/content";
@@ -9,7 +10,6 @@
 // @import "docs/search";
 // @import "docs/tables";
 // @import "docs/code";
-@import "docs/utilities/utilities";
 
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
     position: relative;
@@ -51,40 +51,21 @@
   margin: 0 auto !important;
   padding: 1rem !important; 
   border-bottom: solid 1px #fff;
-  background-color:  rgba(90,60,110, 0.25); //omeka-s color #404E61
+  background-color:  rgba(90,60,110, 1); //omeka-s color #404E61
+  position: absolute !important;
+  top: 0;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-y: scroll !important;
 
-    position: absolute !important;
-    top: 0;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    overflow-y: scroll !important;
-    
-    /* Position the items */
-    // &:nth-child(2) { top: 25%; }
-    // &:nth-child(3) { top: 50%; }
-    // &:nth-child(4) { top: 75%; }
-
-    h2 {
-      font-size: 16px !important;
-      font-weight: 500 !important; 
-      color:rgba(60,60,60,0.75);
-      font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
-    }
-    // ul {
-    //   list-style-type: none;
-    //   font-family: "Cabin", "Lucida Grande", Verdana, sans-serif;
-    //   margin-block-start: 1em;
-    //   margin-block-end: 1em;
-    //   margin-inline-start: 0px;
-    //   margin-inline-end: 0px;
-    //   padding-inline-start: 40px;
-    //   font-size: 16px * 0.9;
-    //   color: #777;
-      
-    // }
+  h4 {
+    // font-size: $base-font-size * 0.9 !important;
+    // font-weight: 100 !important; 
+    color: $grey-lt-300;
+    // text-decoration: uppercase !important;
+  }
 }
-
 
 .make-me-sticky {
   position: -webkit-sticky !important;
@@ -96,10 +77,6 @@
 
 .content-section{
   background: #fff;
-  // border-radius: 12px;
-  // border: solid 10px #f1f1f1; 
-
-  // padding-top: $gutter-spacing-sm;
   @include container;
 
   @include mq(md) {
@@ -117,14 +94,6 @@
   }
 
 }
-
-// .sidebar-item {
-//     max-width: 100%;
-//     margin: 0 auto;
-//     padding: 1rem; 
-//     border-bottom: solid 1px #fff;
-//     background-color:  rgba(90,60,110, 0.25); //omeka-s color #404E61
-// }
 
 //TOC nav from: https://afeld.github.io/bootstrap-toc/
   
@@ -157,4 +126,41 @@ nav[data-toggle="toc"] {
     display: block;
   }
   */
+}
+
+
+// Neatline S Docs Styling
+
+.sidebar-item-s {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 1rem !important; 
+  border-bottom: solid 1px #fff;
+  background-color:  rgba(64, 78, 97, 1); //omeka-s color #404E61
+  position: absolute !important;
+  top: 0;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-y: scroll !important;
+
+    h4 {
+      // font-size: $base-font-size * 0.9 !important;
+      // font-weight: 100 !important; 
+      color: $grey-lt-300;
+      // text-decoration: uppercase !important;
+    }
+}
+
+.docs-s {
+  h1, h2, h3, h4 {
+  color: #404E61 !important;
+}
+.nav-link.active, .nav-link.active:focus, .nav-link.active:hover {
+  padding-left: 18px;
+  font-weight: 700;
+  color: #404E61 !important;
+  background-color: transparent;
+  border-left: 2px solid #404E61 !important;
+}
 }

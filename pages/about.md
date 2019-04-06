@@ -4,19 +4,19 @@ author: Bethany Nowviskie
 layout: about
 permalink: /about/
 ---
-### What is Neatline?
+## What is Neatline?
 
 [Neatline][1] is a geotemporal exhibit-builder that allows you to create beautiful, complex maps, image annotations, and narrative sequences from [Omeka][2] collections of archives and artifacts, and to connect your maps and narratives with timelines that are more-than-usually sensitive to ambiguity and nuance. Neatline lets you make hand-crafted, interactive stories as interpretive expressions of a single document or a whole archival or cultural heritage collection. You can import these documents (georeferenced historical maps, manuscripts, high-res photographs, etc.) from an existing collection, or create a new digital archive, yourself. Every Neatline exhibit is your contribution to humanities scholarship, in the visual vernacular.
 
 The [Scholars&#8217; Lab][3] designed Neatline as a suite of plugins for the open-source [Omeka][2] framework, which provides a powerful platform for management and publication of the collection on which your exhibit is built. Through Neatline, you can create create rich representations of places, objects, events, narratives, and documents &#8212; like [these demo exhibits][4].
 
-### What isn&#8217;t Neatline?
+## What isn&#8217;t Neatline?
 
 It&#8217;s not [Google Maps or Google Earth][5]. If you just need to drop some labelled pins on a map, Neatline is overkill.
 
 Neatline works best when you&#8217;re using it to tell a story or create an interpretive lens through which a collection of artifacts, documents, or richly-described concepts could be understood. Do you have a collection to build on, or do you want to create a searchable Omeka collection while you&#8217;re mapping and annotating? Is the aesthetic dimension of your visualization important? Do you want to show that contested, conflicting readings of the same dataset are possible? Neatline is for you.
 
-### Tell me more!
+## Tell me more!
 
 Well, how about some thought experiments? You could use Neatline to create:
 
@@ -26,13 +26,13 @@ Well, how about some thought experiments? You could use Neatline to create:
 *   A visualization of the movements of characters and concepts in *The Tempest*. Shakespeare&#8217;s play takes place in a indeterminate aesthetic space, an island outside the moving world &#8212; and yet the literal, spatial movements of its characters are described in significant detail. You can draw and scan your own map, or import a Renaissance-era map of an island in the Mediterranean (or the West Indies, or the Carribean) to create a speculative, playful plotting of the spatial dimension of the text &#8212; Prospero&#8217;s lair, the shipwreck, the carousing of Caliban and Trinculo, Ariel&#8217;s errands, and the journey back to Italy.
 
 
-### I&#8217;m ready to play. Let&#8217;s get started!
+## I&#8217;m ready to play. Let&#8217;s get started!
 
 Swell! Read the [documentation][6],
 
 check out our [demo exhibits][7],
 
-<a href="http://omeka.org/add-ons/plugins/neatline" title="Download Neatline" class="button">Download Neatline</a> for your own Omeka installation,
+<a href="http://omeka.org/add-ons/plugins/neatline" title="Download Neatline" class="btn">Download Neatline</a> for your own Omeka installation,
 
 or go straight to [the source][8].
 

@@ -11,13 +11,15 @@ layout: docs
   - Activate the different drawing modes by selecting the corresponding radio buttons.
   - When you're done drawing, switch back to the "Navigate" mode to avoid accidentally drawing more shapes.
 
+---
+
 ## Navigate
 
 Select the "Navigate" radio button to enable the default panning interaction with the map - click and drag to move the map in one direction or another, and use the scroll wheel on your mouse to zoom in and out.
 
 **Tip**: Think of Navigate as your "home base" - after sketching in new geometry with one of the drawing tools, it's usually easiest to reactivate "Navigate" mode, which has the effect of turning off any of the drawing or modification tools. This means that you don't accidentally add unwanted geometry the next time you click on the map.
 
-![Screenshot of Navigate Tool](http://neatline.org/wp-content/uploads/2014/01/newitem-drawregpolygon.png)
+![Screenshot of Navigate Tool](/assets/wp-content/uploads/2014/01/newitem-drawregpolygon.png)
 
 ## Draw Point
 
@@ -31,7 +33,7 @@ Use this control to lay down individual points on the map.
 
 Depending on the situation, this can be good or bad. For example, if you're using points in conjunction with the "Point Image" feature to plot thumbnails of photographs onto the map, you might want the points to stay the same size at different zoom levels so that the preview images never become too big or too small. If you want a real geometric circle that changes size with the zoom level, use the "Draw Regular Polygon" tool.
 
-![Screenshot of Point Drawing Tool](http://neatline.org/wp-content/uploads/2013/12/newitem-drawingapoint.png)
+![Screenshot of Point Drawing Tool](/assets/wp-content/uploads/2013/12/newitem-drawingapoint.png)
 
 ## Draw Line
 
@@ -47,7 +49,7 @@ Just like the "Draw Point" radio button, except that the points are connected by
   **Tip**: This feature has the effect of creating _extremely_ dense geometry, which is very difficult to maintain (eg, if you decide later on that you want to change the shape of the line, you would have to manually move hundreds or thousands of individual points). If you need smooth, curvy shapes, always see if you can use the "Draw SVG" feature, which makes it possible to import easily-maintained vector graphics created in programs like Adobe Illustrator and Inkscape.
 
   
-![Screenshot of Line Drawing Tool](http://neatline.org/wp-content/uploads/2013/12/newitem-linedrawing.png)  
+![Screenshot of Line Drawing Tool](/assets/wp-content/uploads/2013/12/newitem-linedrawing.png)  
 
 ## Draw Polygon
 
@@ -59,7 +61,7 @@ Just like "Draw Line," except that the shape defined by the points is "closed" i
 
   3. When you're ready to lay down the final point, move your cursor to the place where you want the last corner of the shape and double click. This "closes" the polygon.
 
-![Screenshot of Polygon Drawing Tool](http://neatline.org/wp-content/uploads/2013/12/newitem-drawpolygon-inprogress.png)
+![Screenshot of Polygon Drawing Tool](/assets/wp-content/uploads/2013/12/newitem-drawpolygon-inprogress.png)
 
 
 ## Draw Regular Polygon
@@ -84,4 +86,4 @@ There are a couple of configuration options for the regular polygon tool:
 
   **Tip**: This setting can have strange interactions with certain "Snap Angle" values - if you need to create an irregular shape, it's generally easiest to set the snap angle to 0, drag out the shape, and then rotate it as needed with the "Rotate Shape" tool.
 
-![Screenshot of Draw Regular Polygon Tool](http://neatline.org/wp-content/uploads/2014/01/newitem-drawregpolygon.png)
+![Screenshot of Draw Regular Polygon Tool](/assets/wp-content/uploads/2014/01/newitem-drawregpolygon.png)

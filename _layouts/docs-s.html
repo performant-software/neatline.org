@@ -13,26 +13,26 @@
         </div>
         <div class="row">
             <div class="col-sm-3">
-                <div class="sidebar-item sticky-top">
+                <div class="sidebar-item-s sticky-top">
                 <div class="make-me-sticky">
-                        {% include nav.html %}
+                        {% include nav-s.html %}
                 </div>
                 </div>
             </div>
             <div class="col-sm-7">
                 <div class="content-section">
-                    <main id="main" class="main-content container" role="main" >
+                    <main id="main" class="main-content container docs-s" role="main" >
                         {{ content }}
                     </main>
                 </div>
             </div>
             <div class="col-sm-2">
-                <nav id="toc" data-toggle="toc" class="sticky-top">
-                    <h4>Neatline for Omeka Classic</h4>
-                    <h4>{% if page.title != "Neatline for Omeka Classic" %}
+                <nav id="toc" data-toggle="toc" class="sticky-top docs-s">
+                    <h4>Neatline for Omeka S</h4>
+                    <h4>{% if page.title != "Neatline for Omeka S" %}
                             {{ page.title }}
                           {% endif %}
-                        </h4>
+                    </h4>
                 </nav>
             </div>
         </div>

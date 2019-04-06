@@ -11,6 +11,8 @@ layout: docs
 - The [**Styles**](#styles) tab is where you can set an exhibit's default focus and zoom and use the Neatline stylesheet.
 - The [**Plugins**](#plugins) tab allows you to access settings for the enabled Neatline widgets in the exhibit.
 
+---
+
 ## Editor Overview
 
 The Neatline editor is the interface where you build the content of your exhibit. Access the editing enviroment by clicking on the exhibit [title](/docs/managing-exhibits) in the "Browse Exhibits" view. The left panel within the editor includes tabs for **Records**, **Styles**, and **Plugins**. If there are no plugins (/docs/widgets) [enabled](/docs/creating-exhibits#widgets) for the exhibit, the **Plugins** tab will not be displayed. 

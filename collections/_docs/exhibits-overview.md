@@ -11,6 +11,8 @@ layout: docs
   - Likewise, each exhibit has a separate page on the [public-facing](/docs/publishing-exhibits) version of the website.
   - Each installation of Neatline can contain an indefinite number of exhibits.
 
+---
+
 ## Exhibits Overview
 
 Each Neatline project has its own exhibit, which can be thought of as the "canvas" or "environment" for the project - the set of base [maps](/docs/map-based-exhibits) or [images](/docs/image-based-exhibits) on top of which the content is displayed, the text narrative that introduces or describes the project, and the combination of user-interface widgets and components that are enabled for the project (timelines, lists of waypoints, etc).

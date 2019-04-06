@@ -10,7 +10,7 @@ The SIMILE Timeline web plugin allows users of Neatline to add interactive timel
 ## Enabling SIMILE Timeline for an Exhibit
 The SIMILE Timeline plugin is enabled from the main Exhibit Settings screen, either when first setting up the exhibit or by editing the settings later.
 
-![Screenshot of Selecting the Plugin](http://neatline.org/wp-content/uploads/2014/05/similetimeline1.png)
+![Screenshot of Selecting the Plugin](/assets/wp-content/uploads/2014/05/similetimeline1.png)
 
 
 To enable the Timeline plugin, click once in the widgets box, then click on SIMILE Timeline in the drop down list to turn the plugin on for the exhibit.
@@ -21,7 +21,7 @@ The settings that control the timeline's appearance are found in the Plugins tab
 Click on Plugins, then click SIMILE Timeline to open the Timeline Settings editor.
 
 
-![Screenshot of Plugin Settings](http://neatline.org/wp-content/uploads/2014/05/similetimeline2.png)
+![Screenshot of Plugin Settings](/assets/wp-content/uploads/2014/05/similetimeline2.png)
 
 ### Default Date
 The default date setting centers the timeline on the date entered. The default value for this setting is the current date/time, as defined by the server on which the Omeka + Neatline software is running.
@@ -48,13 +48,13 @@ Tape Height is the value, in pixels, that defines the height of the tape represe
 
 The default value for Tape Height is 10 pixels. The max value is 500 pixels. The min value is 0 pixels. Please note that the actual viable range for Tape Height is between 3 pixels and about 40 pixels, depending on the value selected for Track Height and the number of items on the timeline.
 
-![Annotated Screenshot of Timeline Definitions](http://neatline.org/wp-content/uploads/2014/05/timelinedefs.png)
+![Annotated Screenshot of Timeline Definitions](/assets/wp-content/uploads/2014/05/timelinedefs.png)
 
 
 ## Adding an Item Record to the Timeline
 To include a Neatline item on the timeline, on the Style tab in the Neatline Item editor, select SIMILE Timeline in the plugin drop down box and populate the Date fields on the Style tab. The Title of the Neatline item record will appear as the label on the event point or tape, and the color value will match that selected for the point or shape drawn to represent the event on the map.
 
-![Screenshot of Adding an Item Record to the Timeline](http://neatline.org/wp-content/uploads/2014/05/similetimeline3.png)
+![Screenshot of Adding an Item Record to the Timeline](/assets/wp-content/uploads/2014/05/similetimeline3.png)
 
 ## Dates
 
@@ -67,7 +67,7 @@ If both Start and End Dates for an event are populated, SIMILE Timeline will cre
 
 **NOTE:** if the Start and End Dates are the same value, the span will have width of 0 pixels and will not be visible.
 
-![Screenshot of Start and End Dates](http://neatline.org/wp-content/uploads/2014/05/similetimeline4.png)
+![Screenshot of Start and End Dates](/assets/wp-content/uploads/2014/05/similetimeline4.png)
 
 
 ### After and Before Dates
@@ -75,7 +75,7 @@ After and Before dates determine the duration of the event's visibility in the e
 
 For example, a record with an After Date of 1589-09-23 and a Before Date of 1613-04-26 would only be visible to a viewer when the center-line of the time is positioned between September 23, 1589 and April 26, 1613. At any other position on the timeline, the event's geometry is invisible.
 
-![Screenshot of After and Before Dates](http://neatline.org/wp-content/uploads/2014/05/afterbeforedates.png)
+![Screenshot of After and Before Dates](/assets/wp-content/uploads/2014/05/afterbeforedates.png)
 
 ### Date Formatting  
 <a name="dateform"></a>SIMILE Timeline requires the use of the ISO-8601 format for the date fields. Dates can be entered in a range from just the year, down to minutes and seconds.
@@ -114,11 +114,11 @@ Hours, minutes, and seconds may also be rendered for BCE dates in the same manne
 ## Removing a Neatline Item from the Timeline
 To remove an item from the timeline, click the *X* on the Simile Timeline plugin selection on the Item Record's Style tab and save the item record.
 
-![Screenshot of Removing an Item from the Timeline](http://neatline.org/wp-content/uploads/2014/05/removingfromtimeline.png)
+![Screenshot of Removing an Item from the Timeline](/assets/wp-content/uploads/2014/05/removingfromtimeline.png)
 
 
 
 ## Disabling SIMILE Timeline for an Exhibit
 From the Neatline Browse Exhibits Screen, select Exhibit Settings, scroll down to widgets, then click the *X* on the SIMILE Timeline plugin selection. Once SIMILE Timeline has been deselected, scroll to the bottom of the screen and click the Save Exhibit button to save the settings.
 
-![Screenshot of Exhibit Settings](http://neatline.org/wp-content/uploads/2014/05/similetimeline5.png)
+![Screenshot of Exhibit Settings](/assets/wp-content/uploads/2014/05/similetimeline5.png)

@@ -10,6 +10,8 @@ title: Image-based Exhibits
 - Exhibits can be built on top of any static, web-accessible image (.jpg, .png, etc). 
 - This makes it possible to use Neatline to create interactive editions of paintings, drawings, photographs, documents, and anything else that has some kind of two-dimensional, visual instantiation.
 
+---
+
 There are two methods of creating image-based exhibits, depending on your needs:
 
 1. [Using a regular, static image](#static-image): This method is easy to set up and doesn't require any additional server infrastructure. However, there’s a fundamental limitation - since the entire image has to be loaded in bulk into the in-browser application (as compared to the spatial layers, which are loaded dynamically depending on the focus and zoom of the map), the performance of the exhibit will get worse as the image gets larger. Things work well if you’re working with a more or less normally-sized image (up to around 2-3000 pixels in height/width), but after that things start to get unacceptably sluggish.

@@ -18,12 +18,13 @@
 <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
 
 
-<!-- <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 <!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/carousel.css"> -->
 <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
-<link rel="stylesheet" href="http://localhost:4000/assets/css/docs.css">
+<!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/docs.css"> -->
 
 <!-- Feeds and Pingbacks -->
 <link rel="alternate" type="application/rss+xml" title="Neatline" href=" http://localhost:4000/feed.xml">
@@ -76,7 +77,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
-                  <a class="dropdown-item" href="#">Neatline for Omeka S</a>
+                  <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -110,34 +111,33 @@
 
     <div class="wrapper">
     <main id="main" class="main-content container" role="main" >
-      <div class="container px-lg-5">
-        <div class="col-md-12">
-
-    <header class="post-header">
-        <h1>About</h1>
+      <div class="container">
+    <div class="col-md-12">
+        <header class="post-header">
+            <h1>About</h1>
         </header>
         <div class="primary">
-            <p>
+            <p class="fs-6 fw-300">
             What do you get when you cross archives and artifacts with timelines, modern and historical maps, and an appreciation for the interpretive aims of humanities scholarship? Neatline!
             </p>
         </div>
     </div>
-<div class="row mb-3 mx-lg-n5">
-        <div class="col-md-8 px-lg-5">
-        <article class="post-content">
-        <h3 id="what-is-neatline">What is Neatline?</h3>
+    <div class="row mb-3">
+        <div class="col-md-8">
+        <article class="primary">
+        <h2 id="what-is-neatline">What is Neatline?</h2>
 
 <p><a href="/">Neatline</a> is a geotemporal exhibit-builder that allows you to create beautiful, complex maps, image annotations, and narrative sequences from <a href="http://omeka.org">Omeka</a> collections of archives and artifacts, and to connect your maps and narratives with timelines that are more-than-usually sensitive to ambiguity and nuance. Neatline lets you make hand-crafted, interactive stories as interpretive expressions of a single document or a whole archival or cultural heritage collection. You can import these documents (georeferenced historical maps, manuscripts, high-res photographs, etc.) from an existing collection, or create a new digital archive, yourself. Every Neatline exhibit is your contribution to humanities scholarship, in the visual vernacular.</p>
 
 <p>The <a href="http://scholarslab.org">Scholars’ Lab</a> designed Neatline as a suite of plugins for the open-source <a href="http://omeka.org">Omeka</a> framework, which provides a powerful platform for management and publication of the collection on which your exhibit is built. Through Neatline, you can create create rich representations of places, objects, events, narratives, and documents — like <a href="../demos/index.html">these demo exhibits</a>.</p>
 
-<h3 id="what-isnt-neatline">What isn’t Neatline?</h3>
+<h2 id="what-isnt-neatline">What isn’t Neatline?</h2>
 
 <p>It’s not <a href="http://maps.google.com/help/maps/education/">Google Maps or Google Earth</a>. If you just need to drop some labelled pins on a map, Neatline is overkill.</p>
 
 <p>Neatline works best when you’re using it to tell a story or create an interpretive lens through which a collection of artifacts, documents, or richly-described concepts could be understood. Do you have a collection to build on, or do you want to create a searchable Omeka collection while you’re mapping and annotating? Is the aesthetic dimension of your visualization important? Do you want to show that contested, conflicting readings of the same dataset are possible? Neatline is for you.</p>
 
-<h3 id="tell-me-more">Tell me more!</h3>
+<h2 id="tell-me-more">Tell me more!</h2>
 
 <p>Well, how about some thought experiments? You could use Neatline to create:</p>
 
@@ -148,20 +148,20 @@
   <li>A visualization of the movements of characters and concepts in <em>The Tempest</em>. Shakespeare’s play takes place in a indeterminate aesthetic space, an island outside the moving world — and yet the literal, spatial movements of its characters are described in significant detail. You can draw and scan your own map, or import a Renaissance-era map of an island in the Mediterranean (or the West Indies, or the Carribean) to create a speculative, playful plotting of the spatial dimension of the text — Prospero’s lair, the shipwreck, the carousing of Caliban and Trinculo, Ariel’s errands, and the journey back to Italy.</li>
 </ul>
 
-<h3 id="im-ready-to-play-lets-get-started">I’m ready to play. Let’s get started!</h3>
+<h2 id="im-ready-to-play-lets-get-started">I’m ready to play. Let’s get started!</h2>
 
 <p>Swell! Read the <a href="http://docs.neatline.org/">documentation</a>,</p>
 
 <p>check out our <a href="/demos/">demo exhibits</a>,</p>
 
-<p><a href="http://omeka.org/add-ons/plugins/neatline" title="Download Neatline" class="button">Download Neatline</a> for your own Omeka installation,</p>
+<p><a href="http://omeka.org/add-ons/plugins/neatline" title="Download Neatline" class="btn">Download Neatline</a> for your own Omeka installation,</p>
 
 <p>or go straight to <a href="https://github.com/scholarslab/Neatline">the source</a>.</p>
 
 
         </article>
     </div>
-    <div class="col-md-4 px-lg-5">
+    <div class="col-md-4">
         <div class="secondary">
         <h3>Current Neatline Team</h3>
             <ul>
@@ -191,7 +191,6 @@
 			   <li>Adam Soroka</li>
                <li>Joe Gilbert</li>
                <li><a href="http://www.davidrumsey.com/">David Rumsey</a></li>
-               
            </ul>
         <h3>Past Advisors</h3>
             <ul>

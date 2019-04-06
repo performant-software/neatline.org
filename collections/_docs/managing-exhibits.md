@@ -13,6 +13,8 @@ layout: docs
 - Click [**Duplicate**](#duplicate) to create a copy of the exhibit.
 - Click [**Delete**](#delete) to permanently remove the exhibit.
 
+---
+
 Once you've created one or more exhibits, the "Browse Exhibits" view makes it possible to find, filter, edit, and display them. There are a list of options available for managing individual exhibits:
 
 ![Screenshot of exhibit options in Browse Exhibits view](/assets/images/docs/managing-exhibits.png)

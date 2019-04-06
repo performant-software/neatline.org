@@ -3,21 +3,14 @@ layout: docs
 title: Neatline Architecture
 ---
 # Neatline from 10,000 Meters
-{: .no_toc }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## At a glance
 
 - Neatline is built as a set of plugins for [Omeka](https://omeka.org/), a web publishing framework designed for scholars and archivists. 
 - Neatline adds an interactive map-making environment that makes it possible to create Neatline exhibits, each of which is populated with its own collection of records, which can optionally be synchronized with items in the underlying Omeka collection. 
 - Neatline can be used out-of-the-box with modern geography base layers like [OpenStreetMap][osm] or the [Google][google] API layers. If you want to add custom base layers or overlays, you'll need to host them using a piece of software called [Geoserver][geoserver]. 
+
+---
 
 ## Omeka: Standards-compliant Metadata
 

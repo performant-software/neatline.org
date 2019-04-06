@@ -17,6 +17,8 @@ layout: docs
     * [Minimum Map Zoom](#minimum-map-zoom)
     * [Maximum Map Zoom](#maximum-map-zoom)
 
+---
+
 ## Styles Tab
 
 ## Stylesheet Overview

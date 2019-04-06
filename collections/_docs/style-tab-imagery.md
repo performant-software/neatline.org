@@ -9,7 +9,9 @@ layout: docs
   - The "Point Image" field replaces the default circular graphic for points with any web-accessible image.
   - The "WMS Address/Layers" fields make it possible to overlay a WMS layer hosted by software like Geoserver.
 
-![Screenshot of Imagery Fields](http://neatline.org/wp-content/uploads/2014/01/style-imagery.png)
+---
+
+![Screenshot of Imagery Fields](/assets/wp-content/uploads/2014/01/style-imagery.png)
 
 ## Point Image
 
@@ -19,7 +21,7 @@ Once a "Point Image" is provided, the points continue to behave just like regula
 
 Point images can be the web-accessible location of any image. For example, to use the Neatline logo:
 
-`http://neatline.org/wp-content/themes/neatline-wp-theme/images/neatline-logo-rgb.png`
+`/assets/wp-content/themes/neatline-wp-theme/images/neatline-logo-rgb.png`
 
 **Important**: Since we're really just changing the cosmetic appearance of the points, there are some restrictions:
 

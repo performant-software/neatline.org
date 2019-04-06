@@ -10,6 +10,8 @@ layout: docs
   - Tags can be used as the "selectors" for Neatline's stylesheet system, which uses a simplified dialect of CSS.
   - Each record is assigned to a "Presenter," which controls how the record's content is displayed.
 
+---
+
 ## Tags
 
 The tags field takes a comma-delimited list of one or more tags. For example:

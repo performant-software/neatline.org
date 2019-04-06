@@ -12,6 +12,8 @@ layout: docs
 - Neatline exhibits can also be customized, using completely custom tile sets delivered as [WMS layers][wms], [MBTiles][mbtiles], or any other layer format supported by the [OpenLayers][openlayers] mapping library: 
     * [Using a Custom Map Default Layer](#using-a-custom-map-default-layer)
 
+---
+
 ## Using the Provided Spatial Layers: 
 
 To create a map-based exhibit, follow the instructions for [Creating New Exhibits](/docs/creating-exhibits), using the following **Exhibit Settings**:

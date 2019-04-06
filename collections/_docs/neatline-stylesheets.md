@@ -9,7 +9,9 @@ layout: docs
   - Neatline-infected CSS uses a custom set of rules that correspond to the properties on the record data model.
   - Groups of records are selected using the CSS class syntax, with record tags providing the class names.
 
-![Screenshot of Stylesheets](http://neatline.org/wp-content/uploads/2014/01/neatline-stylesheets.png)
+---
+
+![Screenshot of Stylesheets](/assets/wp-content/uploads/2014/01/neatline-stylesheets.png)
 
 ## Quick reference (for the impatient)
 

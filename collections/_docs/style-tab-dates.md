@@ -10,6 +10,8 @@ layout: docs
   - **Important**: All dates must be entered in a portable, standards-compliant format called [ISO 8601][iso8601].
   - To display temporal information, you'll need to install a widget like [NeatlineSimile][neatline-simile].
 
+---
+
 ### Examples:
 
 **CE Dates**
@@ -30,7 +32,7 @@ layout: docs
   - `-001563-04-23` - April 23, 1564 BCE.
   
   
-![Screenshot of Date Fields](http://neatline.org/wp-content/uploads/2014/01/style-dates.png)
+![Screenshot of Date Fields](/assets/wp-content/uploads/2014/01/style-dates.png)
 
 
 ## Start Date
@@ -47,7 +49,7 @@ The "last" or "finishing" date for an event.
 
 If you enter the same date for the "Start Date" and "End Date," the span will have width = 0 and will, therefore, be invisible on the timeline.
 
-![Screenshot of Simile Timeline](http://neatline.org/wp-content/uploads/2014/01/style-similetimelineexample.png)
+![Screenshot of Simile Timeline](/assets/wp-content/uploads/2014/01/style-similetimelineexample.png)
 
 
 ## After Date
