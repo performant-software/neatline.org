@@ -1,17 +1,30 @@
 ---
 layout: home
 ---
-{% include carousel.html %}
 
 <div class="container">
 <div class="intro-text primary">
-<h1>Neatline allows scholars, students, and curators to tell stories with maps, images and timelines.</h1>
+<h1 class="fs-7 fw-300">Neatline allows scholars, students, and curators to tell stories with maps, images and timelines.</h1>
 
 <p class="fs-6 fw-300">As a suite of add-on tools for <a href="http://omeka.org">Omeka</a>, it opens new possibilities for hand-crafted, interactive spatial and temporal interpretation.<p>
 
-<a class="btn" href="http://omeka.org/add-ons/plugins/neatline/" title="Download the Neatline plugin.">Download</a>
-<a class="btn" href="http://docs.neatline.org" title="Learn more about Neatline.">Documentation</a>
-<a class="btn" href="/demos/" title="See Neatline in action.">Demos</a>
+        {% include carousel.html %}
+
+<div class="row">
+    <div class="col-sm">
+        <h2> Neatline for Omeka Classic</h2>
+        <button class="btn btn-primary-1"><a href="https://omeka.org/classic/plugins/" title="Download the Neatline plugin.">Download</a></button>
+        <button class="btn btn-primary-1"><a href="/docs/" title="Learn more about Neatline.">Documentation</a></button>
+        <button class="btn btn-primary-1"><a href="/demos/" title="See Neatline in action.">Demos</a></button>            
+    </div>
+    <div class="col-sm docs-s">
+            <h2> Neatline for Omeka S</h2>
+            <button class="btn btn-primary-2"><a href="https://omeka.org/s/modules/" title="Download the Neatline plugin.">Download</a></button>
+            <button class="btn btn-primary-2"><a href="/docs-s/" title="Learn more about Neatline.">Documentation</a></button>
+            <button class="btn btn-primary-2"><a href="/demos/" title="See Neatline in action.">Demos</a></button>            
+        </div>
+
+</div>       
 
 
 </div>
