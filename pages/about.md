@@ -65,7 +65,12 @@ Download Neatline for your own Omeka installation:
 <button class="btn btn-primary-1"><a href="https://omeka.org/classic/plugins/Neatline/" title="Download the Neatline plugin.">Download for Omeka Classic</a></button>
 <button class="btn btn-primary-2"><a href="https://omeka.org/s/modules/" title="Download the Neatline plugin.">Download for Omeka S</a></button>
 {: .text-center }
-Go straight to [the source][8].
+Go straight to the source:
+{: .text-center }
+<button class="btn btn-primary-1"><a href="https://github.com/scholarslab/Neatline" title="Neatline plugin on Github.">
+<i class="fab fa-github"></i>  Neatline Classic</a></button>
+<button class="btn btn-primary-2"><a href="https://github.com/scholarslab/neatline-omeka-s" title="Neatline plugin on Github.">
+<i class="fab fa-github"></i>  Neatline S</a></button>
 {: .text-center }
 
 [1]: /
