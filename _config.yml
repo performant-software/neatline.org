@@ -29,9 +29,13 @@ exclude: ["README.md", "Procfile", "Gruntfile.js", "changelog.md", "Gemfile", "G
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
 collections_dir: collections
 collections:
   docs:
+    output: true
+    permalink: /:collection/:name/
+  docs-s:
     output: true
     permalink: /:collection/:name/
 
@@ -42,30 +46,8 @@ defaults:
     values:
       layout: "docs"
   - scope:
-      path: "assets/images"
-    values:
-      image: true
-  - scope:
-      path: "assets/images/docs"
-    values:
-      image: true
-  - scope:
-      path: "assets/wp-images/uploads/2014/01"
-    values:
-      image: true
-  - scope:
-      path: "pages"
-    values:
-      order: 10
-  - scope:
       path: ""
-      type: "posts"
+      type: "docs-s"
     values:
-      is_post: true
-      og_type: "article"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      is_page: true
-      og_type: "website"
+      layout: "docs-s" 
+

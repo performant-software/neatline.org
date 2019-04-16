@@ -11,6 +11,20 @@
 // @import "docs/tables";
 // @import "docs/code";
 
+// button.navbar-toggler {
+//  display: none;
+// }
+// @media (max-width: 575.98px) {
+//   button.navbar-toggler {
+//     display: block;
+//   }
+//   nav.sticky-top {
+//     min-height: 0 !important;
+//     &:active {
+//       min-height: 50vh;
+//     }
+//   }
+// }
 
 .btn-primary-1 {
     @include btn-color($white, rgba(90,60,110, .5));
@@ -18,8 +32,6 @@
       color: $white !important;
       text-decoration: none;
       font-weight: 300;
-      // &:hover {
-      // }
     }
 }
 .btn-primary-2 {
@@ -29,8 +41,6 @@
     color: $white !important;
     text-decoration: none;
     font-weight: 300;
-    // &:hover {
-    // }
   }
 }
 
@@ -43,6 +53,11 @@
     padding-left: 0 !important;
 }
 
+div.col-md-6.shadow-sm {
+  padding: 20px !important;
+  margin: 15px !important;
+  @include flex(1 0 45%);
+}
 
 //Sticky Side-bar for docs pages
 // from: https://codepen.io/ncerminara/pen/eKNROb
@@ -65,17 +80,11 @@
 }
 
 
-.sidebar-section {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
 .sidebar-item {
   max-width: 100% !important;
   margin: 0 auto !important;
-  padding: 1rem !important; 
-  border-bottom: solid 1px #fff;
+  padding: 1rem 1.5rem !important; 
+  // border-bottom: solid 1px #fff;
   background-color:  rgba(90,60,110, 1); //omeka-s color #404E61
   position: absolute !important;
   top: 0;
@@ -85,20 +94,15 @@
   overflow-y: scroll !important;
 
   h4 {
-    // font-size: $base-font-size * 0.9 !important;
-    // font-weight: 100 !important; 
     color: $grey-lt-300;
-    // text-decoration: uppercase !important;
   }
 }
 
-.make-me-sticky {
-  position: -webkit-sticky !important;
-    position: sticky !important;
-    top: 0;
-    
-  padding: 0 15px;
+nav.sticky-top {
+  min-height: 100vh;
 }
+
+
 
 .content-section{
   background: #fff;
@@ -159,8 +163,7 @@ nav[data-toggle="toc"] {
 .sidebar-item-s {
   max-width: 100% !important;
   margin: 0 auto !important;
-  padding: 1rem !important; 
-  border-bottom: solid 1px #fff;
+  padding: 1rem 1.5rem !important; 
   background-color:  rgba(64, 78, 97, 1); //omeka-s color #404E61
   position: absolute !important;
   top: 0;
@@ -170,17 +173,15 @@ nav[data-toggle="toc"] {
   overflow-y: scroll !important;
 
     h4 {
-      // font-size: $base-font-size * 0.9 !important;
-      // font-weight: 100 !important; 
       color: $grey-lt-300;
-      // text-decoration: uppercase !important;
     }
 }
 
 .docs-s {
   h1, h2, h3, h4 {
   color: #404E61 !important;
-}
+  }
+
 .nav-link.active, .nav-link.active:focus, .nav-link.active:hover {
   padding-left: 18px;
   font-weight: 700;
@@ -188,4 +189,33 @@ nav[data-toggle="toc"] {
   background-color: transparent;
   border-left: 2px solid #404E61 !important;
 }
+}
+
+.archive {
+
+  article.plugins {
+    float:left;
+    clear:left;
+    padding: 1rem;
+
+    .plugin-screen {
+      display:block;
+      float:left;
+      width: 48%;
+      border: 17px solid white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .content {
+      float:right;
+      width: 48%;
+      p {
+        font-weight: 300;
+        @include fs-6;
+      }
+    }
+  }
 }

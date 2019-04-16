@@ -59,24 +59,6 @@ body,
   @include justify-content(space-around);
 }
 
-.flex-item {
-  padding: 1rem;
-  @include flexbox();
-  @include flex-direction(column);
-  @include flex(1 46%);
-}
-@media all and (max-width: 900px) {
-  .flex-item{
-    @include flex(1 100%);
-    @include flex-flow(column nowrap);
-  }
-}
-
-.content-box {
-  margin: 1rem;
-  border: hidden;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-}
 
 a {
   &:link {
@@ -104,7 +86,7 @@ a {
 }
 
 #main {
-  background-color: #ffffff  !important; //#f8f9fa
+  background-color: #fff  !important; //#f8f9fa
   padding-bottom: 2em;
 }
 // #main h1 {
@@ -159,12 +141,15 @@ a {
     strong {
       font-weight: $font-weight-demi !important;
     }
+    em {
+      font-style: italic;
+    }
   }
 
 }
 .secondary {
-  margin-top: 3rem;
-  padding:1rem 3rem;
+  // margin-top: 3rem;
+  padding:0 3rem;
   h3 {
     font-size: $base-font-size * 1.2 !important;
     font-weight: $font-weight-medium !important; 
@@ -180,7 +165,7 @@ a {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     font-size: $base-font-size * 0.9;
-    color: #777;
+    color: #595959;
   }
   li {
     margin-bottom: 0 !important;
@@ -212,6 +197,28 @@ a {
 header {
   padding: 0;
 }
+
+#skipnav {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#skipnav:focus {
+  top:0;
+  z-index:9999;
+  clip:initial;
+  height:auto;
+  width:auto;
+  padding:.5em;
+  border:1px blue dashed;
+}
+
 .post-header {
   color: $link-color;
   text-align: center;
@@ -257,7 +264,7 @@ header {
   input[type=text] {
     background-image:none !important;
     text-indent: 5px !important; 
-    font-size: $base-font-size * .75 !important;
+    font-size: $base-font-size * .9 !important;
     
   }
   input[type=button] {
@@ -290,13 +297,13 @@ header {
 }
 
 .fa-search {
-    color: $link-color;
+    color: rgba(255, 128, 0, 0.75);
    
 }
 .fa-search:hover,
 .fa-search:active,
 .fa-search:focus {
-  color: $link-color-alternate;
+  color: #404E61;
 }
 
 /* !---------- Primary Nav Bar ---------- */
@@ -586,27 +593,3 @@ a.splash-link {
 }
 
 
-.archive {
-
-  article.plugins {
-    float:left;
-    clear:left;
-    padding: 1rem;
-
-    .plugin-screen {
-      display:block;
-      float:left;
-      width: 48%;
-      border: 17px solid white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      &:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      }
-    }
-
-    .content {
-      float:right;
-      width: 48%;
-    }
-  }
-}

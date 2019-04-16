@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
     <meta charset="utf-8">
@@ -67,14 +67,15 @@
 
 
     <body>
+        <a href="#main" id="skipnav">Skip to main content</a>
 
     {% include header.html %}
 
-    <div id="content" role="main" class="container">
+    <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <footer role="contentinfo" class="container">
+    <footer role="contentinfo">
         {% include footer.html %}
       </footer>
   

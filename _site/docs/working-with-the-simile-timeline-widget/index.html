@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,19 +58,19 @@
 
 </head>
 <body data-spy="scroll" data-target="#toc">
-<article>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                    <header role="banner">
+        <a href="#main" id="skipnav">Skip to main content</a>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+                <header role="banner">
     <nav class="navbar-light bg-light">
       <div class="topnav">
-            <a href="/http://localhost:4000" title="Neatline">
+            <a href="http://localhost:4000" title="Neatline"> 
               <img class="logo" src="http://localhost:4000/assets/images/neatline-logo-rgb.png" alt="Neatline"/>
             </a>  
           <ul class="nav navigation">
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost:4000/about/">About</a>
+              <a class="nav-link" href="http://localhost:4000/about/">What is Neatline?</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -87,9 +87,9 @@
             <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/plugins/">Plugins</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://localhost:4000/news/">Blog</a>
-            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/news/">News</a>
+            </li> -->
             <li class="nav-item">
               <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
             </li>
@@ -110,14 +110,22 @@
     
 </header>
 
-            </div>
         </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="sidebar-item sticky-top">
-                <div class="make-me-sticky">
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                menu
+                </button> -->
+            <nav class="sticky-top navbar-expand-sm">
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="sidebar-item">
                         <nav role="navigation" aria-label="Main navigation">
-  <h4 data-toc-skip>Neatline for Omeka Classic</h4>
+  <h4 data-toc-skip>
+      <a style="color:white; text-decoration:none; font-style:bold;" href="http://localhost:4000/docs/">
+        Neatline for Omeka Classic
+      </a>
+      </h4>
 
   <h4 data-toc-skip>Getting Started</h4>
 
@@ -217,12 +225,13 @@
 </nav>
   
                 </div>
-                </div>
             </div>
-            <div class="col-sm-7">
-                <div class="content-section">
-                    <main id="main" class="main-content container" role="main" >
-                        <h1 id="working-with-the-simile-timeline-plugin">Working with the SIMILE Timeline Plugin</h1>
+            </nav>
+        </div>
+        <div class="col-sm-7">
+            <div class="content-section">
+                <main id="main" class="main-content container" role="main" >
+                    <h1 id="working-with-the-simile-timeline-plugin">Working with the SIMILE Timeline Plugin</h1>
 
 <h2 id="definition">Definition</h2>
 <p>The SIMILE Timeline web plugin allows users of Neatline to add interactive timeline components to their Neatline exhibits. The plugin is open source software originally developed as part of the SIMILE project with funding from the Andrew W. Mellon Foundation.</p>
@@ -354,21 +363,20 @@
 
 <p><img src="/assets/wp-content/uploads/2014/05/similetimeline5.png" alt="Screenshot of Exhibit Settings" /></p>
 
-                    </main>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <nav id="toc" data-toggle="toc" class="sticky-top">
-                    <h4>Neatline for Omeka Classic</h4>
-                    <h4>
-                            Working With The Simile Timeline Widget
-                          
-                        </h4>
-                </nav>
+                </main>
             </div>
         </div>
+        <div class="col-sm-2">
+            <nav id="toc" data-toggle="toc" class="sticky-top">
+                <h4>Neatline for Omeka Classic</h4>
+                <h4>
+                        Working With The Simile Timeline Widget
+                        
+                    </h4>
+            </nav>
+        </div>
+        </div>
     </div>
-</article>
 
 <footer role="contentinfo">
     
@@ -386,10 +394,9 @@
         </ul>
       </div>
       <div class="col">
-          <a href="http://scholarslab.org" id="slab-link">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <a href="http://scholarslab.org" id="slab-link" title="Scholars Lab logo link">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 438.9 87.8" style="enable-background:new 0 0 438.9 87.8;" xml:space="preserve">
-       <g>
          <path d="M29.3,63.1c0,12.3-7.7,20.5-23.1,24.6l-5.1-11c4.8-1.4,8.2-2.8,10.4-4.3c3.4-2.4,5-5.5,5-9.3c0-2.9-1.4-6.5-4.3-10.7
            C9.6,48.5,7,44.6,4.4,40.7c-2.9-5-4.3-9.9-4.3-14.7c0-6.2,2.5-11.7,7.6-16.7C12.4,4.6,18,1.5,24.7,0l3.8,11.8
            C18.1,14.6,13,19.3,13,25.9c0,3.5,1.4,7.5,4.3,11.8c2.6,3.8,5.2,7.6,7.8,11.4C27.9,54,29.3,58.6,29.3,63.1L29.3,63.1z"/>
@@ -418,7 +425,6 @@
            c0,8.6-2.2,14.4-6.7,17.4C436.6,52.9,438.9,58.6,438.9,66.1L438.9,66.1z M427.8,31.8c0-8-3.1-12.1-9.2-12.1v25.6c3.2,0,5.5-1,7-3.1
            C427,40.2,427.8,36.7,427.8,31.8L427.8,31.8z M427.8,66.1c0-7.2-3.1-10.8-9.2-10.8V76C424.7,76,427.8,72.7,427.8,66.1L427.8,66.1z"
            />
-       </g>
        </svg>
       </a>
        
@@ -446,6 +452,10 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<!-- <script src="../assets/js/bootstrap/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script> -->
+
 
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>

@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Table of Contents - Neatline for Omeka Classic
 ---
+# Table of Contents - Neatline for Omeka Classic
 
 ## Getting Started
 

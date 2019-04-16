@@ -16,7 +16,7 @@ $default-color-lightest         : rgba($default-color, 0.25);
 
 $link-color                     : rgb(90,60,110);
 $link-color-light               : lighten($link-color, 10%);
-$link-color-alternate           : rgb(186, 158, 6);
+$link-color-alternate           : rgba(255, 128, 0, 0.75); //rgb(186, 158, 6)
 $link-color-alternate-light     : lighten($link-color-alternate, 10%);
 
 $link-visited-color             : $link-color;
