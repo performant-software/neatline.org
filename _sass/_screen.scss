@@ -193,6 +193,22 @@ a {
 
 }
 
+/* Tags for Demos */
+
+.tag-classic {
+  background-color: rgba(90,60,110, 0.8); // rgba(64, 78, 97, 1)
+  color: #fff;
+  font-size: $base-font-size * 0.9;
+}
+
+.tag-s {
+  background-color: rgba(64, 78, 97, 1); // rgba(64, 78, 97, 1)
+  color: #fff;
+  font-size: $base-font-size * 0.9;
+}
+
+
+
 /* !---------- Header ---------- */
 header {
   padding: 0;
