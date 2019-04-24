@@ -9207,28 +9207,28 @@ li .highlight {
 /* line 77, ../../_sass/docs/buttons.scss */
 .btn-outline {
   color: #5a3c6e;
-  background: transparent;
+  background-color: #f8f9fa;
   box-shadow: inset 0 0 0 2px #e6e1e8;
 }
-/* line 82, ../../_sass/docs/buttons.scss */
+/* line 83, ../../_sass/docs/buttons.scss */
 .btn-outline:hover, .btn-outline:active, .btn-outline.zeroclipboard-is-hover, .btn-outline.zeroclipboard-is-active {
   color: #4f3561;
   text-decoration: none;
-  background-color: transparent;
+  background-color: #f8f9fa;
   box-shadow: inset 0 0 0 3px #e6e1e8;
 }
-/* line 92, ../../_sass/docs/buttons.scss */
+/* line 94, ../../_sass/docs/buttons.scss */
 .btn-outline:focus {
   text-decoration: none;
   outline: none;
   box-shadow: inset 0 0 0 2px #5c5962, 0 0 0 3px rgba(0, 0, 255, 0.25);
 }
-/* line 98, ../../_sass/docs/buttons.scss */
+/* line 100, ../../_sass/docs/buttons.scss */
 .btn-outline:focus:hover, .btn-outline.selected:focus {
   box-shadow: inset 0 0 0 2px #5c5962;
 }
 
-/* line 104, ../../_sass/docs/buttons.scss */
+/* line 106, ../../_sass/docs/buttons.scss */
 .btn-primary {
   color: #fff;
   background-color: #1f63e5;
@@ -9252,7 +9252,7 @@ li .highlight {
   background-color: #1752c4;
 }
 
-/* line 108, ../../_sass/docs/buttons.scss */
+/* line 110, ../../_sass/docs/buttons.scss */
 .btn-purple {
   color: #fff;
   background-color: #5739ce;
@@ -9276,7 +9276,7 @@ li .highlight {
   background-color: #472cb2;
 }
 
-/* line 112, ../../_sass/docs/buttons.scss */
+/* line 114, ../../_sass/docs/buttons.scss */
 .btn-blue {
   color: #fff;
   background-color: #227efa;
@@ -9300,7 +9300,7 @@ li .highlight {
   background-color: #0669ed;
 }
 
-/* line 116, ../../_sass/docs/buttons.scss */
+/* line 118, ../../_sass/docs/buttons.scss */
 .btn-green {
   color: #fff;
   background-color: #10ac7d;
