@@ -133,6 +133,7 @@
 .navigation-list-toggle {
   position: relative; //absolute
   right: $sp-4;
+  left: $sp-4;
 
   @include mq(sm) {
     display: none !important;

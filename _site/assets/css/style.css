@@ -8982,6 +8982,7 @@ hr {
 .navigation-list-toggle {
   position: relative;
   right: 1rem;
+  left: 1rem;
 }
 @media (min-width: 36rem) {
   /* line 133, ../../_sass/docs/navigation.scss */
@@ -8991,35 +8992,35 @@ hr {
 }
 
 @media (min-width: 48rem) {
-  /* line 143, ../../_sass/docs/navigation.scss */
+  /* line 144, ../../_sass/docs/navigation.scss */
   .breadcrumb-nav {
     margin-top: -1rem;
   }
 }
 
-/* line 149, ../../_sass/docs/navigation.scss */
+/* line 150, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list {
   padding-left: 0;
   margin-bottom: 0.75rem;
   list-style: none;
 }
 
-/* line 155, ../../_sass/docs/navigation.scss */
+/* line 156, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list-item {
   display: table-cell;
   font-size: 12px !important;
 }
 @media (min-width: 36rem) {
-  /* line 155, ../../_sass/docs/navigation.scss */
+  /* line 156, ../../_sass/docs/navigation.scss */
   .breadcrumb-nav-list-item {
     font-size: 14px !important;
   }
 }
-/* line 159, ../../_sass/docs/navigation.scss */
+/* line 160, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list-item::before {
   display: none;
 }
-/* line 163, ../../_sass/docs/navigation.scss */
+/* line 164, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list-item::after {
   display: inline-block;
   margin-right: 0.5rem;
@@ -9027,7 +9028,7 @@ hr {
   color: #959396;
   content: "/";
 }
-/* line 172, ../../_sass/docs/navigation.scss */
+/* line 173, ../../_sass/docs/navigation.scss */
 .breadcrumb-nav-list-item:last-child::after {
   content: "";
 }
