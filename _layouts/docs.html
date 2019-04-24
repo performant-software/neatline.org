@@ -4,20 +4,17 @@
 {% include head.html %}
 </head>
 <body data-spy="scroll" data-target="#toc">
-        <a href="#main" id="skipnav">Skip to main content</a>
+<a href="#main" id="skipnav">Skip to main content</a>
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-                {% include header.html %}
+            {% include header.html %}
         </div>
     </div>
     <div class="row">
         <div class="col-sm-3">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                menu
-                </button> -->
-            <nav class="sticky-top navbar-expand-sm">
-            <div class="collapse navbar-collapse" id="navbar">
+            <nav class="sticky-top">
+            <div class="main-nav js-main-nav">
                 <div class="sidebar-item">
                         {% include nav.html %}
                 </div>
@@ -26,7 +23,7 @@
         </div>
         <div class="col-sm-7">
             <div class="content-section">
-                <main id="main" class="main-content container" role="main" >
+                <main id="main" class="main-content container js-main-content" role="main" >
                     {{ content }}
                 </main>
             </div>

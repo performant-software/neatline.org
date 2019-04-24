@@ -15,6 +15,8 @@ Neatline is what you get when you cross archives and artifacts with timelines, m
 
 The [Scholars&#8217; Lab][3] designed Neatline as a suite of plugins for the open-source [Omeka][2] framework, which provides a powerful platform for management and publication of the collection on which your exhibit is built. Through Neatline, you can create create rich representations of places, objects, events, narratives, and documents &#8212; like [these demo exhibits][4].
 
+Check out our [Use Cases](/use-cases/) for a custom starting place for your Neatline project. 
+
 ---
 
 ## What makes it different?
@@ -52,7 +54,9 @@ Here are some examples of the kinds of projects that could be built (or have bee
 
 ## I&#8217;m ready to play. Let&#8217;s get started!
 {: .text-center }
-Swell! Read the documentation:
+Swell! Find a starting place with our [Use Case Guides](/use-cases/).
+{: .text-center }
+Read the full documentation:
 {: .text-center }
 <button class="btn btn-primary-1"><a href="/docs/" title="Learn more about Neatline.">Neatline Classic Guide</a></button>
 <button class="btn btn-primary-2"><a href="/docs-s/" title="Learn more about Neatline.">Neatline S Guide</a></button>

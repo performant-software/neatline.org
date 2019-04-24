@@ -123,17 +123,18 @@
 
   &.nav-open {
     display: block;
+    min-height: 40vh;
   }
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
   }
 }
 
 .navigation-list-toggle {
-  position: absolute;
+  position: relative; //absolute
   right: $sp-4;
 
-  @include mq(md) {
+  @include mq(sm) {
     display: none !important;
   }
 }

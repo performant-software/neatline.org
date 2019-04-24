@@ -67,10 +67,10 @@ $base-button-color: #f7f7f7 !default;
 
 $media-queries: (
   xs: 320px,
-  sm: 500px,
-  md: 740px,
-  lg: 1120px,
-  xl: 1400px
+  sm: 576px, //500px
+  md: 768px, //740px
+  lg: 992px, //1120px
+  xl: 1200px //1400px
 ) !default;
 
 //

@@ -38,6 +38,9 @@ collections:
   docs-s:
     output: true
     permalink: /:collection/:name/
+  use-cases:
+    output: true
+    permalink: /:collection/:name/
 
 defaults:
   - scope:

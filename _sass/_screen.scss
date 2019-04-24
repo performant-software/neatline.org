@@ -207,7 +207,22 @@ a {
   font-size: $base-font-size * 0.9;
 }
 
+/* Use Case styles */
 
+.case {
+  margin: 0.5rem;
+  padding: 1.5rem;
+  a {
+    font-weight: 300;
+    text-decoration: none !important;
+    color: $default-color ;
+    text-transform: uppercase;
+  }
+  & a:hover {
+    text-decoration: underline !important;
+    color: $default-color ;
+  }
+}
 
 /* !---------- Header ---------- */
 header {

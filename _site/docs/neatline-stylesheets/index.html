@@ -51,6 +51,7 @@
         s.parentNode.insertBefore(gcse, s);
     })();
 </script>
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
 
 
 
@@ -58,11 +59,11 @@
 
 </head>
 <body data-spy="scroll" data-target="#toc">
-        <a href="#main" id="skipnav">Skip to main content</a>
+<a href="#main" id="skipnav">Skip to main content</a>
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-                <header role="banner">
+            <header role="banner">
     <nav class="navbar-light bg-light">
       <div class="topnav">
             <a href="http://localhost:4000" title="Neatline"> 
@@ -77,6 +78,7 @@
                 Documentation
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://localhost:4000/use-cases/">Use Cases</a>
                   <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
                   <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
                 </div>
@@ -97,6 +99,8 @@
               <a href="http://localhost:4000/credits/" class="nav-link">Credits</a>
             </li>
           </ul>
+          <span class="fs-3"><button class="js-aux-nav js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span> 
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle Search">
               <i class="fas fa-search"></i>
           </button>
@@ -114,11 +118,8 @@
     </div>
     <div class="row">
         <div class="col-sm-3">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                menu
-                </button> -->
-            <nav class="sticky-top navbar-expand-sm">
-            <div class="collapse navbar-collapse" id="navbar">
+            <nav class="sticky-top">
+            <div class="main-nav js-main-nav">
                 <div class="sidebar-item">
                         <nav role="navigation" aria-label="Main navigation">
   <h4 data-toc-skip>
@@ -230,7 +231,7 @@
         </div>
         <div class="col-sm-7">
             <div class="content-section">
-                <main id="main" class="main-content container" role="main" >
+                <main id="main" class="main-content container js-main-content" role="main" >
                     <h1 id="styling-exhibits-with-neatline-flavored-css">Styling Exhibits with Neatline-Flavored CSS</h1>
 
 <h2 id="at-a-glance">At a glance</h2>
