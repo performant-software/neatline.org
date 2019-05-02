@@ -96,4 +96,4 @@ There are two ways to go about this:
 [neatlight]: https://github.com/scholarslab/neatlight
 [neatlight-mcclure]: https://github.com/davidmcclure/neatlight/tree/master/neatline/exhibits/themes
 [neatline-dclure]: http://neatline.dclure.org
-[theme_docs]: http://www.scholarslab.org/geospatial-and-temporal/theming-neatline-exhibits
+[theme_docs]: https://scholarslab.lib.virginia.edu/blog/theming-neatline-exhibits/

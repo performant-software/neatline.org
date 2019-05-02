@@ -80,9 +80,9 @@ Go straight to the source:
 [1]: /
 [2]: http://omeka.org
 [3]: http://scholarslab.org
-[4]: /demos/
+[4]: /showcase/
 [5]: http://maps.google.com/help/maps/education/
 [6]: /docs/
-[7]: /demos/
+[7]: /showcase/
 [8]: https://github.com/scholarslab/Neatline
 [9]: http://sandbox.neatline.org

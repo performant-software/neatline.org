@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    {% include head.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- <script>
+$(document).ready(function() {
+    var addons = ['s_module', 's_theme', 'classic_plugin', 'classic_theme'];
+    if ($('body').hasClass('add-ons')) {
+        for (var i = 0; i < addons.length; i++) {
+            if ($('body').hasClass(addons[i])) {
+                var type = addons[i];
+                if ($('body').hasClass('show')) {
+                    var currentUrl = window.location.href;
+                    var hash = currentUrl.substring(currentUrl.indexOf("#")+1);
+                    var partialUrl = '../addons/html/' + type + '-' + hash + '.html';
+                } else {
+                    var partialUrl = '../addons/html/browse-' + type + '.html';
+                }
+                $.ajax({
+                    url: partialUrl,
+                    cache: false,
+                    dataType: "html",
+                    success: function(data) {
+                        $("#content").html(data);
+                    }
+                });
+                break;
+            }
+        }
+    }
+});
+</script> -->
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    (function($) {
+    $(document).ready(function() {
+        $('.site-filters a').click(function(e) {
+            e.preventDefault();
+            var filterButton = $(this);
+            var filter = filterButton.attr('href').replace('#', '');
+            var examplesWrapper = $('#examples');
+            examplesWrapper.css('opacity', 0);
+            filterButton.toggleClass('active');
+            setTimeout(function() {
+                examplesWrapper.toggleClass(filter);
+                if (examplesWrapper.hasClass('all')) {
+                    examplesWrapper.removeClass('all');
+                } else if (examplesWrapper.attr('class').length == 0) {
+                    examplesWrapper.addClass('all');
+                }
+            examplesWrapper.css('opacity', 1);
+            }, 500);
+        });
+    });
+})(jQuery)
+</script>
+  </head>
+  
+  <body>
+    <a href="#main" id="skipnav">Skip to main content</a>
+
+    {% include header.html %}
+    <div class="wrapper">
+    <main id="main" class="main-content container" role="main" >
+        <div class="container">
+            <header class="post-header">
+                <h1>{{ page.title }}</h1>
+            </header>
+            
+            <article class="post-content">
+            {{ content }}
+            </article>
+        </div>
+    </main>
+    </div>
+
+    <footer role="contentinfo">
+      {% include footer.html %}
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+  </body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Exhibit Showcase</title>
+<script src="https://cdn.levelaccess.net/accessjs/YW1wX3V2YTExMDA/access.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Neatline allows scholars, students, and curators to tell stories with maps and timelines.">
+<link rel="canonical" href="http://localhost:4000/showcase/">
+
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon.png" >
+<link rel="apple-touch-icon" type="image/png" href="http://localhost:4000/assets/images/apple-touch-icon.png">
+
+<!-- Style sheets -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+<link rel="stylesheet" href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" />
+
+<link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="http://localhost:4000/assets/css/carousel.css"> -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+
+<!-- Feeds and Pingbacks -->
+<link rel="alternate" type="application/rss+xml" title="Neatline" href=" http://localhost:4000/feed.xml">
+
+<!-- Modernizr and Friends -->
+<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+<script>
+    Modernizr.load([
+        {
+            test: Modernizr.mq(),
+            nope: [
+                'http://localhost:4000/assets/js/respond.min.js',
+                'http://localhost:4000/assets/js/selectivizr.min.js'
+            ]
+        }
+    ]);
+    (function() {
+        var cx = '009145345920904867543:1jiuohixchs';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- <script>
+$(document).ready(function() {
+    var addons = ['s_module', 's_theme', 'classic_plugin', 'classic_theme'];
+    if ($('body').hasClass('add-ons')) {
+        for (var i = 0; i < addons.length; i++) {
+            if ($('body').hasClass(addons[i])) {
+                var type = addons[i];
+                if ($('body').hasClass('show')) {
+                    var currentUrl = window.location.href;
+                    var hash = currentUrl.substring(currentUrl.indexOf("#")+1);
+                    var partialUrl = '../addons/html/' + type + '-' + hash + '.html';
+                } else {
+                    var partialUrl = '../addons/html/browse-' + type + '.html';
+                }
+                $.ajax({
+                    url: partialUrl,
+                    cache: false,
+                    dataType: "html",
+                    success: function(data) {
+                        $("#content").html(data);
+                    }
+                });
+                break;
+            }
+        }
+    }
+});
+</script> -->
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    (function($) {
+    $(document).ready(function() {
+        $('.site-filters a').click(function(e) {
+            e.preventDefault();
+            var filterButton = $(this);
+            var filter = filterButton.attr('href').replace('#', '');
+            var examplesWrapper = $('#examples');
+            examplesWrapper.css('opacity', 0);
+            filterButton.toggleClass('active');
+            setTimeout(function() {
+                examplesWrapper.toggleClass(filter);
+                if (examplesWrapper.hasClass('all')) {
+                    examplesWrapper.removeClass('all');
+                } else if (examplesWrapper.attr('class').length == 0) {
+                    examplesWrapper.addClass('all');
+                }
+            examplesWrapper.css('opacity', 1);
+            }, 500);
+        });
+    });
+})(jQuery)
+</script>
+  </head>
+  
+  <body>
+    <a href="#main" id="skipnav">Skip to main content</a>
+
+    <header role="banner">
+    <nav class="navbar-light bg-light">
+      <div class="topnav">
+            <a href="http://localhost:4000" title="Neatline"> 
+              <img class="logo" src="http://localhost:4000/assets/images/neatline-logo-rgb.png" alt="Neatline"/>
+            </a>  
+          <ul class="nav navigation">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/about/">What is Neatline?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Documentation
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://localhost:4000/use-cases/">Use Cases</a>
+                  <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
+                  <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=http://localhost:4000/showcase/>Showcase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/plugins/">Plugins</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/news/">News</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://localhost:4000/credits/" class="nav-link">Credits</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle Search">
+              <i class="fas fa-search"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample01">
+            <div id="custom_search">
+                <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+</header>
+
+    <div class="wrapper">
+    <main id="main" class="main-content container" role="main" >
+        <div class="container">
+            <header class="post-header">
+                <h1>Exhibit Showcase</h1>
+            </header>
+            
+            <article class="post-content">
+            <div class="container-fluid">
+<p class="fs-6 fw-300">
+    We've gathered a number of Neatline exhibits to help stretch your imagination. Look below for projects in history, literature, and contemporary space and place.
+</p>
+
+<nav class="site-filters">
+    <ul>
+        <li><a href="#classic">Omeka Classic</a></li>
+        <li><a href="#timeline">Timelines</a></li>
+        <li><a href="#text">NeatlineText</a></li>
+        <li><a href="#waypoints">Waypoints</a></li>
+    </ul>
+  </nav>
+
+<div id="examples" class="all">
+    <div class="example classic timeline exhibits ">
+        <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen" data-featherlight="#dearnelly"><img src="../assets/wp-content/uploads/2012/07/nelly.jpg"></a>
+        <div class="example-meta">
+            <h4><a href="http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen" data-featherlight="#dearnelly">"My Dear Little Nelly": Hotchkiss Maps the Battle of Fredericksburg for his Child</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="dearnelly">
+      <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen" target="_blank">
+        <h2>"My Dear Little Nelly": Hotchkiss Maps the Battle of Fredericksburg for his Child</h2>
+      </a>
+      <div class="container">
+        <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen" target="_blank">
+          <img src="../assets/wp-content/uploads/2012/07/nelly.jpg">
+        </a>
+        <p class="fs-3">By <strong>David McClure</strong> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. | Maps from the Small Special Collections Library at the University of Virginia.</p>
+        <span class="tag-classic">Neatline for Omeka Classic</span>
+      </div>  
+      <div class="container fs-4">
+          <p>A collection of letters written by Civil War cartographer Jedediah Hotchkiss and housed in the Small Special Collections Library at the University of Virginia includes a fascinating and unusual document. Four days after the Battle of Fredericksburg, Hotchkiss wrote a short letter to his daughter Nelly. After a describing the journey to rejoin the Confederate army and the natural surroundings of his campsite on the banks of the Rappahannock, Hotchkiss provides Nelly with a terse, understated description of the battle.</p>
+          <p>On the third page of the letter, Hotchkiss sketches out a rough drawing of the battlefield, penciling in the shape of the river around the Fredericksburg basin, positions of the armies, locations of artillery batteries, and the layout of the roads, railroads, and streams around the town. In this exhibit, we have cut away the section of the letter containing the map, georeferenced it against a stylized, modern-geography tileset, and layered the rest of the document around it.</p>
+          <p>Custom vector illustrations show the physical relationship between the rectified map and the rest of the letter, and the letter is transcribed with pop-up bubbles on a sentence-by-sentence basis. A collection of numbered waypoints unfold a long-format essay that describes the letter and its context in detail, and the sketch of the battle is spatially annotated and connected with content in the surrounding letter.</p>
+          <p>Most interesting, though, is the relationship between Hotchkiss's sketch and formal battle maps that were made of the same events. Scroll the timeline back to the "Sketch of the Battle of Fredericksburg, December 13," and an official map of the battle with a whole new set of waypoints and prose narrative is layered on top of Hotchkiss's sketch. Zoom in and move the timeline back and forth to compare the two maps in detail.</p>
+      </div>
+    </div>
+
+    <div class="example classic timeline waypoints exhibits ">
+        <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/battle-of-chancellorsville/fullscreen" data-featherlight="#hotchkiss"><img src="../assets/wp-content/uploads/2012/07/chancellorsville.jpg"></a>
+        <div class="example-meta">
+            <h4><a href="http://hotchkiss.neatline.org/neatline-exhibits/show/battle-of-chancellorsville/fullscreen" data-featherlight="#hotchkiss">Jedediah Hotchkiss and The Battle of Chancellorsville</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="hotchkiss">
+        <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/battle-of-chancellorsville/fullscreen" target="_blank">
+          <h2>Jedediah Hotchkiss and The Battle of Chancellorsville</h2>
+        </a>
+        <div class="container">
+        <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/battle-of-chancellorsville/fullscreen" target="_blank"><img src="../assets/wp-content/uploads/2012/07/chancellorsville.jpg"></a>
+        <p class="fs-3">
+        By <strong>David McClure</strong> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. | Maps from the Small Special Collections Library at the University of Virginia.
+        </p>
+        <span class="tag-classic">Neatline for Omeka Classic</span>
+      </div>  
+      <div class="container fs-4">
+          <p>Fought about six months after the disastrous Union defeat at the Battle of Fredericksburg, Chancellorsville was one of a series of stringing defeats that rocked the Union army in 1862 and 1863. Hotchkiss played a critical role in one of the most well-known tactical maneuvers of the war: Lee and Jackson used his sketches of the roads and logging trails in the dense forest around Chancellorsville to plan a risky, 14-mile flanking march that put Jackson into position to launch a devastating attack on the right wing of Hooker's army.</p>
+          <p>Hotchkiss made dozens of maps of the area, and continued to revise and annotate them throughout his life. UVa's Small Special Collections Library holds a series of three identical printings of the map that Hotchkiss marked with colored pencils to indicate troop movements over the course of the three-day battle.</p>
+          <p>Each of the maps has been georeferenced, tagged with temporal visibility intervals, and annotated with a complex series of illustrations and waypoints. Follow the numbered locations to read a detailed description of the battle, and click on geometric vector shapes for information about Hotchkiss's markings and specific events in the battle. Drag the timeline back and forth to switch contexts between May 2nd, 3rd, and 4th. On the right of the screen, an ordered series of timestamped labels provides a high-level overview of the narrative.</p>
+      </div>
+    </div>
+
+    <div class="example classic text exhibits ">
+        <a href="http://neatline.dclure.org/neatline/show/gemini-over-baja-california" data-featherlight="#gemini"><img src="../assets/wp-content/uploads/2014/07/gemini.png"></a>
+        <div class="example-meta">
+            <h4><a href="http://neatline.dclure.org/neatline/show/gemini-over-baja-california" data-featherlight="#gemini">Project Gemini over Baja California Sur</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="gemini">
+        <a href="http://neatline.dclure.org/neatline/show/gemini-over-baja-california" target="_blank">
+          <h2>Project Gemini over Baja California Sur</h2>
+        </a>  
+        <div class="container">
+          <a href="http://neatline.dclure.org/neatline/show/gemini-over-baja-california" target="_blank"><img src="../assets/wp-content/uploads/2014/07/gemini.png"></a>
+          <p class="fs-3">By <strong>David McClure</strong> | Map tiles by <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | Link provided with the permission of the author.</p>
+          <span class="tag-classic">Neatline for Omeka Classic</span>
+        </div>  
+        <div class="container fs-4">
+          <p>In this exhibit, David McClure sets side by side contemporary satellite imagery and two images taken by the Gemini missions of Baja California Sur. The positioning of the images, in combination with McClure's own annotations and vector graphics, highlights the remarkably different orientations evident in the images and the effects of each on the appearance of Baja California Sur.</p>
+        </div>
+    </div>
+
+    <div class="example classic timeline waypoints exhibits ">
+        <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/perspectives-on-the-haram" data-featherlight="#perspectives"><img src="../assets/wp-content/uploads/2014/07/perspectives.png"></a>
+        <div class="example-meta">
+            <h4><a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/perspectives-on-the-haram" data-featherlight="#perspectives">Perspectives on the Haram</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="perspectives">
+        <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/perspectives-on-the-haram" target="_blank">
+          <h2>Perspectives on the Haram</h2>
+        </a>  
+        <div class="container">
+          <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/perspectives-on-the-haram" target="_blank"><img src="../assets/wp-content/uploads/2014/07/perspectives.png"></a>
+          <p class="fs-3">
+            <small>By <strong>Virginia Harness, Jody Lahendro, Kelly Schantz, and David Sherdil</strong> | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a> | Link provided with the permission of the authors.</small>
+          </p>
+          <span class="tag-classic">Neatline for Omeka Classic</span>
+        </div>
+        <div class="container fs-4">
+          <p>"Perspectives on the Haram" is an exhibit created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly. The exhibit uses images and texts from travel accounts to details the changes of the Haram Mosque over a thousand years.</p>
+        </div>
+    </div>
+
+    <div class="example classic exhibits ">
+        <a href="http://blacklib1969.swarthmore.edu/neatline/fullscreen/sit-in-map" data-featherlight="#blacklib"><img src="../assets/wp-content/uploads/2014/07/blacklib.png"></a>
+        <div class="example-meta">
+            <h4><a href="http://blacklib1969.swarthmore.edu/neatline/fullscreen/sit-in-map" data-featherlight="#blacklib">Black Liberation 1969 Archive</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="blacklib">
+        <a href="http://blacklib1969.swarthmore.edu/neatline/fullscreen/sit-in-map" target="_blank">
+          <h2>Black Liberation 1969 Archive</h2>
+        </a>
+      <div class="container">
+        <a href="http://blacklib1969.swarthmore.edu/neatline/fullscreen/sit-in-map" target="_blank"><img src="../assets/wp-content/uploads/2014/07/blacklib.png"></a>
+        <p class="fs-3">
+            <small>By <strong>Nabil Kashyap, Alison Roseberry-Polier, John Gagnon, and Maria Mejia</strong> | Link with permission of <a href="http://blacklib1969.swarthmore.edu/"> the Black Liberation 1969 Archive</a>. | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a></small>
+          </p>
+        <span class="tag-classic">Neatline for Omeka Classic</span>
+      </div>
+      <div class="container fs-4">
+          <p>The Black Liberation 1969 Archive is an Omeka archive "designed in support of Black Liberation 1969: Black Studies in History Theory and Praxis taught at Swarthmore College by Professor Allison Dorsey," and produced through the joint efforts of Nabil Kashyap, a librarian, and several students. This Neatline exhibit, a part of the larger archive, maps the 1969 sit-ins at Swarthmore, creatively using custom annotations to provide a timeline for the events.</p>
+      </div>
+    </div>
+
+    <div class="example classic exhibits ">
+        <a href="http://maptherebellion.com/interactive-map" data-featherlight="#whiskey"><img src="../assets/wp-content/uploads/2014/07/whiskey.png"></a>
+        <div class="example-meta">
+            <h4><a href="http://maptherebellion.com/interactive-map" data-featherlight="#whiskey">The Whiskey Rebellion: An Interactive Mapping Project</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="whiskey">
+        <a href="http://maptherebellion.com/interactive-map" target="_blank">
+          <h2>The Whiskey Rebellion: An Interactive Mapping Project</h2>
+        </a>
+        <div class="container">
+          <a href="http://maptherebellion.com/interactive-map" target="_blank"><img src="../assets/wp-content/uploads/2014/07/whiskey.png"></a>
+          <p class="fs-3">
+              <small>By <strong>Stephanie Krom</strong> | Link with permission of <a href="http://maptherebellion.com/interactive-map"> Stephanie Krom</a>. | Map: <a href="http://openstreetmap.org">OpenStreetMap</a></small>
+          </p>
+          <span class="tag-classic">Neatline for Omeka Classic</span>
+        </div>  
+        <div class="container fs-4">
+          <p>"This digital history project explores the Whiskey Rebellion through time and space. This site includes an interactive map, a responsive timeline, and an audio tour of the major sites of the Whiskey Rebellion. Locations of important sites of the Whiskey Rebellion have been found through original, on-the-ground research and appear together for the first time in this user-focused digital space." (Text from the project's <a href="http://maptherebellion.com/about">About</a> page.)</p>
+        </div>
+    </div>
+
+    <div class="example classic exhibits ">
+        <a href="http://henshaw.neatline.org/" data-featherlight="#henshaw"><img src="../assets/wp-content/uploads/2012/07/henshaw1.jpg"></a>
+        <div class="example-meta">
+            <h4><a href="http://henshaw.neatline.org/" data-featherlight="#henshaw">"Inventing the Map": Frances Henshaw's Book of Penmanship</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="henshaw">
+      <a href="http://henshaw.neatline.org/" target="_blank">
+        <h2>"Inventing the Map": Frances Henshaw's Book of Penmanship</h2>
+      </a>
+      <div class="container">
+        <a href="http://henshaw.neatline.org/" target="_blank"><img src="../assets/wp-content/uploads/2012/07/henshaw1.jpg"></a>
+        <p class="fs-3">
+            <small>By <strong>Bethany Nowviskie</strong> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Maps & manuscripts <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a> Cartography Associates with grateful acknowledgment to David Rumsey.</small>
+          </p>
+        <span class="tag-classic">Neatline for Omeka Classic</span>
+      </div>  
+      <div class="container fs-4">
+        <p>Frances Henshaw's 1823 <em>Book of Penmanship Executed at the Middlebury Female Academy</em> is imaginatively and artistically remarkable. But this 14-year-old girl's textually-derived maps and cartographically-arranged texts also provide some of our best direct evidence for the teaching practices of famed women's educational reformer Emma Willard. Willard founded Henshaw's school at a time when geography was taught almost entirely through prose, and there she developed a new, visual and experimental pedagogy, based on drawing exercises and work with printed maps.</p><p>Emma Willard asserted her own impact on spatial and historical understanding in the early American republic unblushingly: "In history," she wrote, "I have invented the map."</p>
+        <p>This work-in-progress site demonstrates how Neatline can fit into an existing Omeka collection. It currently includes three separate Neatline exhibits.</p>
+      </div>
+    </div>
+
+    <div class="example classic text timeline exhibits ">
+        <a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" data-featherlight="#sentimentaljourney"><img src="../assets/wp-content/uploads/2014/07/sentimentaljourney.png"></a>
+        <div class="example-meta">
+            <h4><a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" data-featherlight="#sentimentaljourney">A Sentimental Journey</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="sentimentaljourney">
+      <a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" target="_blank">
+        <h2>A Sentimental Journey</h2>
+      </a>
+      <div class="container">
+        <a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" target="_blank"><img src="../assets/wp-content/uploads/2014/07/sentimentaljourney.png"></a>
+        <p class="fs-3">
+            <small>By <strong>Kurt Jensen</strong> | Map Tiles by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>. Link provided with the permission of the author.</small>
+          </p>
+        <span class="tag-classic">Neatline for Omeka Classic</span>
+      </div>  
+      <div class="container fs-4">
+        <p>In this exhibit, University of Virginia undergraduate Kurt Jensen uses Neatline to spatially and temporally visualize the travels of Yorick in Laurence Sterne's <i>A Sentimental Journey Through France and Italy</i>. In doing so, he draws attention to the ambiguous relation between the narrative and the actual course of travel. </p>
+      </div>
+    </div>
+
+    <div class="example classic timeline exhibits ">
+        <a href="http://lovecraft.neatline.org/neatline-exhibits/show/lovecraft-in-providence/fullscreen" data-featherlight="#lovecraft"><img src="../assets/wp-content/uploads/2012/07/lovecraft.jpg"></a>
+        <div class="example-meta">
+            <h4><a href="http://lovecraft.neatline.org/neatline-exhibits/show/lovecraft-in-providence/fullscreen" data-featherlight="#lovecraft">"I am It, and It is I": Lovecraft in Providence</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="lovecraft">
+      <a href="http://lovecraft.neatline.org/neatline-exhibits/show/lovecraft-in-providence/fullscreen" target="_blank">
+        <h2>"I am It, and It is I": Lovecraft in Providence</h2>
+      </a>
+      <div class="container">
+        <a href="http://lovecraft.neatline.org/neatline-exhibits/show/lovecraft-in-providence/fullscreen" target="_blank"><img src="../assets/wp-content/uploads/2012/07/lovecraft.jpg"></a>
+        <p class="fs-3">
+            <small>By <strong>Paul Mawyer</strong> | Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>.</small>
+          </p>
+            <span class="tag-classic">Neatline for Omeka Classic</span>
+      </div>  
+      <div class="container fs-4">
+        <p>This exhibit, by a University of Virginia undergraduate, connects short passages from the private letters of 20th-century horror writer H. P. Lovecraft with the geography of his home city, Providence, Rhode Island. Paul Mawyer uses Neatline to explore the ways in which Providence appears in and influences the writing of a man whose tombstone reads, "I am Providence."</p>
+      </div>
+    </div>
+
+    <div class="example classic waypoints exhibits ">
+        <a href="http://digihum.mcgill.ca/omeka/neatline/fullscreen/the-possibility-of-an-island---daniel1s-life" data-featherlight="#mcgill"><img src="../assets/wp-content/uploads/2014/07/mcgill.png"></a>
+        <div class="example-meta">
+            <h4><a href="http://digihum.mcgill.ca/omeka/neatline/fullscreen/the-possibility-of-an-island---daniel1s-life" data-featherlight="#mcgill">The Possibility of an Island</a></h4>
+        </div>
+    </div>
+    <div class=lightbox id="mcgill">
+        <a href="http://digihum.mcgill.ca/omeka/neatline/fullscreen/the-possibility-of-an-island---daniel1s-life" target="_blank">
+          <h2>The Possibility of an Island</h2>
+        </a>
+        <div class="container">
+        <a href="http://digihum.mcgill.ca/omeka/neatline/fullscreen/the-possibility-of-an-island---daniel1s-life" target="_blank"><img src="../assets/wp-content/uploads/2014/07/mcgill.png"></a>
+        <p class="fs-3">
+          <small>By <strong>Stephanie Posthumus and Amy Goh</strong> | Maps: <a href="http://www.google.com/maps/about/">Google Physical and Streets</a></small>
+        </p>
+        <span class="tag-classic">Neatline for Omeka Classic</span>
+      </div>  
+      <div class="container fs-4">
+        <p>Stephanie Posthumus and Amy Goh, of McGill University, use Neatline to map the life of one of the characters from Michel Houellebecq's novel, <i>The Possibility of an Island</i>, in this exhibit, making impressive use of custom point images.</p>
+      </div>
+    </div>
+
+    <div class="example classic text exhibits ">
+      <a href="http://ships.lib.virginia.edu/" data-featherlight="#ships"><img src="../assets/wp-content/uploads/2014/07/ships.png"></a>
+      <div class="example-meta">
+          <h4><a href="http://ships.lib.virginia.edu/" data-featherlight="#ships">Mapping the Catalogue of Ships</a></h4>
+      </div>
+  </div>
+  <div class=lightbox id="ships">
+    <a href="http://ships.lib.virginia.edu/" target="_blank">
+      <h2>Mapping the Catalogue of Ships</h2>
+    </a>
+    <div class="container">
+      <a href="http://ships.lib.virginia.edu/" target="_blank"><img src="../assets/wp-content/uploads/2014/07/ships.png"></a>
+      <p class="fs-3">
+          <small>By <strong>Jenny Strauss Clay, Courtney Evans, and Ben Jasnow</strong> | Maps: <a href="http://www.google.com/maps/about/">Google Physical</a></small>
+        </p>
+      <span class="tag-classic">Neatline for Omeka Classic</span>
+    </div>  
+    <div class="container fs-4">
+      <p>In collaboration with the Scholars' Lab, Jenny Strauss Clay, Courtney Evans, and Ben Jasnow created "Mapping the Catalogue of Ships" to visually demonstrate the link between the Catalogue of Ships in Homer's <i>Iliad</i> and the natural geography of Greece.</p>
+    </div>
+  </div>
+
+  <div class="example classic timeline waypoints exhibits ">
+    <a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" data-featherlight="#jeddah_transportation"><img src="../assets/wp-content/uploads/2014/07/jeddah_transportation.png"></a>
+    <div class="example-meta">
+        <h4><a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" data-featherlight="#jeddah_transportation">Jeddah: Gateway to the Hajj</a></h4>
+    </div>
+  </div>
+  <div class=lightbox id="jeddah_transportation">
+    <a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" target="_blank">
+      <h2>Jeddah: Gateway to the Hajj</h2>
+    </a>
+    <div class="container">
+      <a href="http://ibnjubayr.neatline-uva.org/jeddah-transportation-introduction" target="_blank"><img src="../assets/wp-content/uploads/2014/07/jeddah_transportation.png"></a>
+      <p class="fs-3">
+          <small>By <strong>Deniz Berk, Maggie Friedman, Blake McDonald</strong> | Map: <a href="http://www.google.com/maps/about/">Google Satellite</a> | Link provided with the permission of the authors.</small>
+        </p>
+      <span class="tag-classic">Neatline for Omeka Classic</span>
+    </div>  
+    <div class="container fs-4">
+      <p>"Jeddah: Gateway to the Hajj" is an exhibit created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly. The exhibit uses first hand accounts to depict the experience of the Hajj as it has been shaped by changing modes of travel in three different time periods.</p>
+    </div>
+  </div>
+
+  <div class="example classic exhibits ">
+    <a href="http://sandbox.neatline.org/webservice/david/university-of-virginia-campus" data-featherlight="#uva"><img src="../assets/wp-content/uploads/2012/07/uva.jpg"></a>
+    <div class="example-meta">
+        <h4><a href="http://sandbox.neatline.org/webservice/david/university-of-virginia-campus" data-featherlight="#uva">University of Virginia Campus Map</a></h4>
+    </div>
+  </div>
+  <div class=lightbox id="uva">
+    <a href="http://sandbox.neatline.org/webservice/david/university-of-virginia-campus" target="_blank">
+      <h2>University of Virginia Campus Map</h2>
+    </a>
+    <div class="container">
+      <a href="http://sandbox.neatline.org/webservice/david/university-of-virginia-campus" target="_blank"><img src="../assets/wp-content/uploads/2012/07/uva.jpg"></a>
+      <p class="fs-3">
+          <small>By <strong>David McClure</strong> | Copyright 2012, The Board and Visitors of the University of Virginia (<a href="http://www.virginia.edu/webmap/">U.Va. Web Map</a>)</small>
+        </p>
+      <span class="tag-classic">Neatline for Omeka Classic</span>
+    </div>  
+    <div class="container fs-4">
+      <p>In addition to built-in integration with georeferenced historical maps, Neatline can also be used as a general-purpose mapping tool to create interactive exhibits on modern-geography base layers. This exhibit is a reinvention of the standard-issue university campus map: each of the major buildings on the historic Central Grounds at the University of Virginia is outlined and annotated with a short historical description. Neatline was developed by the research and development group at the UVa Library Scholars' Lab. Our offices are indicated by an overlayed, semi-transparent image dropped over the west wing of Alderman Library.</p>
+    </div>
+  </div>
+
+  <div class="example classic exhibits ">
+    <a href="http://sandbox.neatline.org/webservice/david/climbing-pic-danie" data-featherlight="#anie"><img src="../assets/wp-content/uploads/2012/07/anie.jpg"></a>
+    <div class="example-meta">
+        <h4><a href="http://sandbox.neatline.org/webservice/david/climbing-pic-danie" data-featherlight="#anie">Pic d'Anie via Lescun</a></h4>
+    </div>
+  </div>
+  <div class=lightbox id="anie">
+    <a href="http://sandbox.neatline.org/webservice/david/climbing-pic-danie" target="_blank">
+      <h2>Pic d'Anie via Lescun</h2>
+    </a>
+    <div class="container">
+        <a href="http://sandbox.neatline.org/webservice/david/climbing-pic-danie" target="_blank"><img src="../assets/wp-content/uploads/2012/07/anie.jpg"></a>
+        <p class="fs-3">
+          <small>By <strong>David McClure</strong> | Photographs by David McClure.</small>
+        </p>
+      <span class="tag-classic">Neatline for Omeka Classic</span>
+    </div>  
+    <div class="container fs-4">
+      <p>Pic d'Anie (2,507 m) is the first non-trivial climbing target on a eastbound traverse of the Pyrenees along the Pyrenean High Route, a walking route that follows the center ridgeline between France and Spain. Just a few miles into the Parc National des Pyrénées, Anie benefits aesthetically from contrast with the rolling gentle, hills of the Basque country to the east. Although not particularly large or technically challenging, Anie is an understated, beautiful mountain with a strikingly symmetrical summit cone, tucked into a jagged ring of secondary peaks that can obscure its summit from the surrounding valleys.</p>
+      <p>This exhibit plots a series of photographs taken during an ascent of the mountain from the small hamlet of Lescun, which sits on a broad, sloping mountainside about five miles to the east. The approach route and climbing line are plotted in detail, and each photograph is represented by a dot and a thin line, indicating both the direction that the camera was pointing and offering a rough, interpretive approximation of the photographer's range of view.</p>
+    </div>
+  </div>
+
+  <div class="example classic exhibits ">
+    <a href="http://dclure.org/logs/minard-napoleon-neatline/" data-featherlight="#minard"><img src="../assets/images/minard.png"></a>
+    <div class="example-meta">
+        <h4><a href="http://dclure.org/logs/minard-napoleon-neatline/" data-featherlight="#minard">Minard + Napoleon + Neatline</a></h4>
+    </div>
+  </div>
+  <div class=lightbox id="minard">
+    <a href="http://dclure.org/logs/minard-napoleon-neatline/" target="_blank">
+      <h2>Minard + Napoleon + Neatline</h2>
+    </a>
+    <div class="container">
+        <a href="http://dclure.org/logs/minard-napoleon-neatline/" target="_blank"><img src="../assets/images/minard.png"></a>
+        <p class="fs-3">
+          <small>By <strong>David McClure</strong> | Map tiles by <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | Map from Wikipedia. Built for the <a href="https://web.northeastern.edu/nulab/dmmh/">NEH Workshop Digital Methods for Military History</a> at Northeastern University.</small>
+        </p>
+      <span class="tag-classic">Neatline for Omeka Classic</span>
+    </div>  
+    <div class="container fs-4">
+      <p>Charles Minard’s 1869 diagram showing the gradual depletion of the French army over the course of Napoleon’s 1812 invasion of Russia is a seminal work in the history of information design. This exhibit was built by georeferencing a scan of Minard’s diagram, and then vector annotations were traced out on top of each of the individual segments that represent the deteriorating size of the Grande Armée over the course of the invasion.</p>
+      <p>The small interactive chart was made using d3, that plots out the size of the French army over the course of the ~5-month interval of time between when Napoleon crossed the Neman on June 24 and when that last little bit of the army stumbled back out of Russia in December 14.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+            </article>
+        </div>
+    </main>
+    </div>
+
+    <footer role="contentinfo">
+      
+ <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="fs-2">
+            Neatline is a project of the <a href="http://www.scholarslab.org/">Scholars' Lab</a> at the University of Virginia Library. It has benefited from the generous support of the <a href="http://lib.virginia.edu">UVa Library</a>, the <a href="http://neh.gov">National Endowment for the Humanities</a>, the <a href="http://imls.gov">Institute of Museum and Library Services</a>, and the <a href="http://loc.gov">Library of Congress</a>.
+        </p>
+      </div>
+      <div class="col">
+        <ul class="fs-2">
+          <li><a rel="license" class="license" href="http://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a></li>
+          <li><a href="https://forum.omeka.org/">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col">
+          <a href="http://scholarslab.org" id="slab-link" title="Scholars Lab logo link">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 438.9 87.8" style="enable-background:new 0 0 438.9 87.8;" xml:space="preserve">
+         <path d="M29.3,63.1c0,12.3-7.7,20.5-23.1,24.6l-5.1-11c4.8-1.4,8.2-2.8,10.4-4.3c3.4-2.4,5-5.5,5-9.3c0-2.9-1.4-6.5-4.3-10.7
+           C9.6,48.5,7,44.6,4.4,40.7c-2.9-5-4.3-9.9-4.3-14.7c0-6.2,2.5-11.7,7.6-16.7C12.4,4.6,18,1.5,24.7,0l3.8,11.8
+           C18.1,14.6,13,19.3,13,25.9c0,3.5,1.4,7.5,4.3,11.8c2.6,3.8,5.2,7.6,7.8,11.4C27.9,54,29.3,58.6,29.3,63.1L29.3,63.1z"/>
+         <path d="M61.2,85.1c-3.6,1.1-6.2,1.7-7.8,1.7c-7.2,0-12.8-3.4-16.8-10.2c-4-6.8-6-16.4-6-28.7c0-12.3,2-21.9,6-28.7
+           c4-6.8,9.6-10.2,16.8-10.2c1.6,0,4.2,0.6,7.8,1.7L58,19.7c-1.6-0.6-3.1-0.8-4.5-0.8c-7.6,0-11.4,9.7-11.4,29c0,19.3,3.8,29,11.4,29
+           c1.5,0,3-0.3,4.5-0.8L61.2,85.1z"/>
+         <path d="M100.2,85.9H88.7V55.3H77.6v30.7H66.1V55.3h-3.9v-9.9h3.9V9.8h11.5v35.6h11.1V9.8h11.5C100.2,9.8,100.2,85.9,100.2,85.9z"
+           />
+         <path d="M140.4,47.8c0,25.9-5.8,38.9-17.5,38.9c-11.7,0-17.6-13-17.6-38.9c0-12.6,1.1-21.8,3.3-27.8c2.7-7.4,7.5-11.1,14.3-11.1
+           c6.6,0,11.3,3.7,14.1,11.1C139.3,26.1,140.4,35.4,140.4,47.8L140.4,47.8z M129,47.8c0-19.3-2.1-29-6.2-29c-4.1,0-6.2,9.7-6.2,29
+           c0,19.3,2,29,6.2,29C127,76.8,129,67.2,129,47.8L129,47.8z"/>
+         <path d="M169.4,85.9h-23.1V9.8h11.5V76h11.6V85.9z"/>
+         <path d="M213.2,85.9h-11.9l-1.3-6.8H189l-1.3,6.8h-11.9l1.5-6.8h-4.5l2.3-9.9h4.4l13.5-61.1h3.3L213.2,85.9z M198,69.2l-3.5-18.9
+           l-3.7,18.9H198z"/>
+         <path d="M248.5,83.7l-11.2,3.4l-10.6-31.2v30h-11.5V9.8h11.5c6.7,0,11.8,2.5,15.3,7.4c3.2,4.5,4.7,10.5,4.7,18.1
+           c0,8.1-2.5,14.7-7.6,20L248.5,83.7z M234.8,35.3c0-10.4-2.7-15.6-8.1-15.6v32.6c2.4,0,4.4-1.6,5.9-4.7
+           C234.1,44.4,234.8,40.3,234.8,35.3L234.8,35.3z"/>
+         <path d="M276,64.9c0,10.8-6.9,18.1-20.6,21.8l-4.5-9.7c4.2-1.2,7.3-2.5,9.2-3.9c3-2,4.5-4.8,4.5-8.2c0-2.6-1.3-5.8-3.8-9.5
+           c-2.3-3.5-4.7-6.9-7-10.4c-2.5-4.5-3.8-8.8-3.8-13.1c0-5.5,2.2-10.5,6.7-14.9c4.2-4.1,9.2-6.9,15.1-8.2l3.4,10.5
+           c-9.2,2.5-13.7,6.7-13.7,12.5c0,3.1,1.2,6.6,3.7,10.5c2.3,3.3,4.7,6.7,7,10.1C274.8,56.8,276,60.9,276,64.9L276,64.9z"/>
+         <path d="M298.9,3.7l-12.2,29.8l-6.8-2l6.8-31.4L298.9,3.7z"/>
+         <path d="M357.1,85.9h-26V0.5h12.8v74.3h13.2L357.1,85.9L357.1,85.9z"/>
+         <path d="M401.6,85.9h-11.9l-1.3-6.8h-10.9l-1.3,6.8h-11.9l1.5-6.8h-4.5l2.3-9.9h4.4l13.5-61.1h3.3L401.6,85.9z M386.4,69.2
+           l-3.5-18.9l-3.7,18.9H386.4z"/>
+         <path d="M438.9,66.1c0,6.3-1.7,11.1-5,14.6c-3.5,3.5-8.6,5.3-15.3,5.3h-11.5V9.8h11.5c6.6,0,11.7,2,15.3,6c3.3,3.8,5,9.2,5,16
+           c0,8.6-2.2,14.4-6.7,17.4C436.6,52.9,438.9,58.6,438.9,66.1L438.9,66.1z M427.8,31.8c0-8-3.1-12.1-9.2-12.1v25.6c3.2,0,5.5-1,7-3.1
+           C427,40.2,427.8,36.7,427.8,31.8L427.8,31.8z M427.8,66.1c0-7.2-3.1-10.8-9.2-10.8V76C424.7,76,427.8,72.7,427.8,66.1L427.8,66.1z"
+           />
+       </svg>
+      </a>
+      </div>
+    </div>
+  </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+  </body>
+</html>

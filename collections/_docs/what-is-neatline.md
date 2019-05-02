@@ -35,4 +35,4 @@ Here are some examples of the kinds of projects that could be built (or have bee
 
 - **The Chelyabinsk Meteor**: On February 15, 2013, a 10,000-ton meteor streaked over the city of Chelyabinsk in the Ural Mountains, producing a massive airburst that shattered windows and collapsed buildings. The explosion occurred during the morning rush hour, and the event was captured by dozens of commuters with dashboard-mounted video cameras. You want to create an exhibit that traces out the trajectory of the meteor as it enters the atmosphere and traverses the airspace over the city, and plot out the exact position and orientation of each of the recordings relative to the location of the airburst.
 
-Find more Neatline projects on our [Demos](http://neatline.org/demos/) page.
+Find more Neatline projects on our [Showcase](http://neatline.org/showcase/) page.
