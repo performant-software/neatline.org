@@ -9468,6 +9468,36 @@ nav[data-toggle="toc"] {
   }
 }
 
+/* line 208, ../../_sass/_docs.scss */
+.fa-arrow-circle-up {
+  color: #5a3c6e;
+}
+
+/* line 212, ../../_sass/_docs.scss */
+.fa-arrow-circle-up:hover,
+.fa-arrow-circle-up:active,
+.fa-arrow-circle-up:focus {
+  color: rgba(255, 128, 0, 0.75);
+}
+
+/* line 218, ../../_sass/_docs.scss */
+#toTop {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 1040;
+  /* Make sure it does not overlap */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */

@@ -54,7 +54,11 @@ Here are some examples of the kinds of projects that could be built (or have bee
 
 ## I&#8217;m ready to play. Let&#8217;s get started!
 {: .text-center }
-Swell! Find a starting place with our [Use Case Guides](/use-cases/).
+Swell! Check out our [Exhibit Showcase][7] to see what others have built using Neatline.
+{: .text-center }
+Find a starting place for your project with our [Use Case Guides](/use-cases/).
+{: .text-center }
+Browse [Tutorials](/tutorials/) for step-by-step guides for beginners and advanced Neatline users.
 {: .text-center }
 Read the full documentation:
 {: .text-center }
@@ -62,8 +66,6 @@ Read the full documentation:
 <button class="btn btn-primary-2"><a href="/docs-s/" title="Learn more about Neatline.">Neatline S Guide</a></button>
 {: .text-center }
 
-Check out our [Exhibit Showcase][7].
-{: .text-center }
 Download Neatline for your own Omeka installation:
 {: .text-center }
 <button class="btn btn-primary-1"><a href="https://omeka.org/classic/plugins/Neatline/" title="Download the Neatline plugin.">Download for Omeka Classic</a></button>
