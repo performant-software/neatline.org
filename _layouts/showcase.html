@@ -3,34 +3,6 @@
   <head>
     {% include head.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!-- <script>
-$(document).ready(function() {
-    var addons = ['s_module', 's_theme', 'classic_plugin', 'classic_theme'];
-    if ($('body').hasClass('add-ons')) {
-        for (var i = 0; i < addons.length; i++) {
-            if ($('body').hasClass(addons[i])) {
-                var type = addons[i];
-                if ($('body').hasClass('show')) {
-                    var currentUrl = window.location.href;
-                    var hash = currentUrl.substring(currentUrl.indexOf("#")+1);
-                    var partialUrl = '../addons/html/' + type + '-' + hash + '.html';
-                } else {
-                    var partialUrl = '../addons/html/browse-' + type + '.html';
-                }
-                $.ajax({
-                    url: partialUrl,
-                    cache: false,
-                    dataType: "html",
-                    success: function(data) {
-                        $("#content").html(data);
-                    }
-                });
-                break;
-            }
-        }
-    }
-});
-</script> -->
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
     (function($) {

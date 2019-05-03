@@ -62,7 +62,7 @@ Read the full documentation:
 <button class="btn btn-primary-2"><a href="/docs-s/" title="Learn more about Neatline.">Neatline S Guide</a></button>
 {: .text-center }
 
-Check out our [demo exhibits][7].
+Check out our [Exhibit Showcase][7].
 {: .text-center }
 Download Neatline for your own Omeka installation:
 {: .text-center }

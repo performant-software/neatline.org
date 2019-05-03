@@ -55,34 +55,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!-- <script>
-$(document).ready(function() {
-    var addons = ['s_module', 's_theme', 'classic_plugin', 'classic_theme'];
-    if ($('body').hasClass('add-ons')) {
-        for (var i = 0; i < addons.length; i++) {
-            if ($('body').hasClass(addons[i])) {
-                var type = addons[i];
-                if ($('body').hasClass('show')) {
-                    var currentUrl = window.location.href;
-                    var hash = currentUrl.substring(currentUrl.indexOf("#")+1);
-                    var partialUrl = '../addons/html/' + type + '-' + hash + '.html';
-                } else {
-                    var partialUrl = '../addons/html/browse-' + type + '.html';
-                }
-                $.ajax({
-                    url: partialUrl,
-                    cache: false,
-                    dataType: "html",
-                    success: function(data) {
-                        $("#content").html(data);
-                    }
-                });
-                break;
-            }
-        }
-    }
-});
-</script> -->
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
     (function($) {
@@ -122,25 +94,26 @@ $(document).ready(function() {
             <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/about/">What is Neatline?</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Documentation
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="http://localhost:4000/use-cases/">Use Cases</a>
-                  <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
-                  <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
-                </div>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href=http://localhost:4000/showcase/>Showcase</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/plugins/">Plugins</a>
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User Guides
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://localhost:4000/use-cases/">Use Cases</a>
+                  <a class="dropdown-item" href="http://localhost:4000/tutorials/">Tutorials</a>
+                  <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
+                  <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
+                </div>
+            </li>  
+            <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/news/">News</a>
-            </li> -->
+            </li>
             <li class="nav-item">
               <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
             </li>
