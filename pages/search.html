@@ -1,0 +1,13 @@
+---
+layout: search
+title: Search
+permalink: /search/
+---
+
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search neatline.org" />
+    <input class="btn btn-outline-secondary" type="submit" value="search">
+</form>
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>

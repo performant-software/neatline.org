@@ -87,4 +87,3 @@ Go straight to the source:
 [6]: /docs/
 [7]: /showcase/
 [8]: https://github.com/scholarslab/Neatline
-[9]: http://sandbox.neatline.org

@@ -49,7 +49,6 @@
 </script>
 
 
-
   </head>
   
   <body>
@@ -82,9 +81,9 @@
                   <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
                 </div>
             </li>  
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/news/">News</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
             </li>
@@ -92,14 +91,17 @@
               <a href="http://localhost:4000/credits/" class="nav-link">Credits</a>
             </li>
           </ul>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle Search">
+          <button class="btn btn-outline-light"><a href="http://localhost:4000/search/"><i class="fas fa-search"></i></a></button>
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle Search">
               <i class="fas fa-search"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarsExample01">
-            <div id="custom_search">
-                <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
-            </div>
-          </div>
+          <div class="collapse navbar-collapse" id="navbar-search">
+              <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+                  <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search neatline.org" />
+                  <input type="submit" value="search">
+              </form>
+          </div> -->
+
         </div>
       </nav>
     
@@ -302,8 +304,7 @@
         </p>
         <p>In mid-2017 we released <a href="https://scholarslab.lib.virginia.edu/blog/neatline-2-5-2/">Neatline 2.5.2</a>, an 
           update to our existing plugin for Omeka Classic, in large thanks to Jamie Folsom and Andy Stuhl from 
-          Performant Software, who did the heavy lifting on the coding. This release fixed some bugs in our Neatline 
-          plugin, specifically related to changes in the Google Maps API and errors with WMS layers. In addition to 
+          Performant Software. This release fixed some bugs related to changes in the Google Maps API and errors with WMS layers. In addition to 
           these fixes, we also incorporated accessibility functionality in Neatline for the first time, in thanks to Neatline community member Adam
            Doan (<a href="https://github.com/doana">@doana</a> on Github) from the University of Guelph.
         </p>
@@ -317,7 +318,7 @@
         </p>
         <p>New Scholars' Lab Community Advocate, Elizabeth Mitchell, has worked towards the grant's goal of 
           building a more sustainable and active user community with an update to our website, and in writing 
-          documentation and tutorials for both developers and implementers of Neatline.</p>
+          documentation and tutorials for both developers and implementors of Neatline.</p>
       </div>
     </div>
 <div class="col-md-4">

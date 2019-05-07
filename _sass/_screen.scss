@@ -236,51 +236,6 @@ header {
   line-height:0;
 }
 
-#custom_search {
-  // width: 250px;
-  margin:1rem;
-  padding:1rem;
-  td {
-      padding:0;
-      &.gsc-clear-button {
-          display:none;
-      }
-  }
-  input[type=text] {
-    background-image:none !important;
-    text-indent: 5px !important; 
-    font-size: $base-font-size * .9 !important;
-    
-  }
-  input[type=button] {
-    background-color: $link-color !important;
-    font-weight:normal;
-    &:hover,
-    &:focus {
-        background-color: $link-color-light;
-    }
-    &:active {
-        background-color: $link-color;
-    }
-  }
-}
-.gsc-search-button,
-.gsc-search-button-v2 {
- font-size: 0px;
- padding: 0;
- width: auto;
- vertical-align: middle;
- border: none;
- border-radius: 0;
- -moz-border-radius: 0;
- -webkit-border-radius: 0;
- margin-top: 0;
- border-color: #f8f9fa;
- background-color: #f8f9fa;
- background-image: -webkit-gradient(linear,left top,left bottom,from(#333333),to(#333333));
- background-image: -webkit-linear-gradient(top,#333333,#333333);
-}
-
 .fa-search {
     color: rgba(255, 128, 0, 0.75);
    

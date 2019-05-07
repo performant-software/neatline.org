@@ -49,7 +49,6 @@
 </script>
 
 
-
 </head>
 
 <body>
@@ -81,9 +80,9 @@
                   <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
                 </div>
             </li>  
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/news/">News</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
             </li>
@@ -91,14 +90,17 @@
               <a href="http://localhost:4000/credits/" class="nav-link">Credits</a>
             </li>
           </ul>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle Search">
+          <button class="btn btn-outline-light"><a href="http://localhost:4000/search/"><i class="fas fa-search"></i></a></button>
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle Search">
               <i class="fas fa-search"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarsExample01">
-            <div id="custom_search">
-                <gcse:searchbox-only resultsUrl="/results/"></gcse:searchbox-only>
-            </div>
-          </div>
+          <div class="collapse navbar-collapse" id="navbar-search">
+              <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+                  <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search neatline.org" />
+                  <input type="submit" value="search">
+              </form>
+          </div> -->
+
         </div>
       </nav>
     
@@ -254,8 +256,6 @@
         </div>
 
 </div>       
-
-
 </div>
 </div>
 
