@@ -56,27 +56,26 @@ Here are some examples of the kinds of projects that could be built (or have bee
 {: .text-center }
 Swell! Check out our [Exhibit Showcase][7] to see what others have built using Neatline.
 {: .text-center }
-Find a starting place for your project with our [Use Case Guides](/use-cases/).
-{: .text-center }
-Browse [Tutorials](/tutorials/) for step-by-step guides for beginners and advanced Neatline users.
-{: .text-center }
+<!-- Find a starting place for your project with our [Use Case Guides](/use-cases/).
+{: .text-center } -->
+<!-- Browse [Tutorials](/tutorials/) for step-by-step guides for beginners and advanced Neatline users.
+{: .text-center } -->
 Read the full documentation:
 {: .text-center }
-<button class="btn btn-primary-1"><a href="/docs/" title="Learn more about Neatline.">Neatline Classic Guide</a></button>
-<button class="btn btn-primary-2"><a href="/docs-s/" title="Learn more about Neatline.">Neatline S Guide</a></button>
+<a href="/docs/" class="btn btn-primary-1" title="Learn more about Neatline.">Neatline Classic Guide</a>
+<a href="/docs-s/" class="btn btn-primary-2" title="Learn more about Neatline.">Neatline S Guide</a>
 {: .text-center }
 
 Download Neatline for your own Omeka installation:
 {: .text-center }
-<button class="btn btn-primary-1"><a href="https://omeka.org/classic/plugins/Neatline/" title="Download the Neatline plugin.">Download for Omeka Classic</a></button>
-<button class="btn btn-primary-2"><a href="https://omeka.org/s/modules/" title="Download the Neatline plugin.">Download for Omeka S</a></button>
+<a href="https://omeka.org/classic/plugins/Neatline/" class="btn btn-primary-1" title="Download the Neatline plugin.">Download for Omeka Classic</a>
+<a href="https://omeka.org/s/modules/" class="btn btn-primary-2" title="Download the Neatline plugin.">Download for Omeka S</a>
 {: .text-center }
 Go straight to the source:
 {: .text-center }
-<button class="btn btn-primary-1"><a href="https://github.com/scholarslab/Neatline" title="Neatline plugin on Github.">
-<i class="fab fa-github"></i>  Neatline Classic</a></button>
-<button class="btn btn-primary-2"><a href="https://github.com/scholarslab/neatline-omeka-s" title="Neatline plugin on Github.">
-<i class="fab fa-github"></i>  Neatline S</a></button>
+<a href="https://github.com/scholarslab/Neatline" class="btn btn-primary-1" title="Neatline plugin on Github.">
+<i class="fab fa-github"></i>  Neatline Classic</a>
+<a href="https://github.com/scholarslab/neatline-omeka-s" class="btn btn-primary-2" title="Neatline plugin on Github."><i class="fab fa-github"></i>  Neatline S</a>
 {: .text-center }
 
 [1]: /

@@ -3,10 +3,12 @@ layout: search
 title: Search
 permalink: /search/
 ---
-
-<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search neatline.org" />
-    <input class="btn btn-outline-secondary" type="submit" value="search">
+<form class="input-group mb-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <label class="sr-only" for="lunrsearch">Site Search</label>
+    <input type="text" class="form-control" id="lunrsearch" name="q" value="" placeholder="Search neatline.org" aria-label="Search neatline.org" aria-describedby="button-search"/>
+    <div class="input-group-append">
+        <input class="btn" type="submit" value="search" id="button-search">
+    </div>
 </form>
 <div id="lunrsearchresults">
     <ul></ul>

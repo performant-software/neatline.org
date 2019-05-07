@@ -85,6 +85,28 @@ a {
   }
 }
 
+a.btn-primary-1, a.btn-primary-2 {
+  &:link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  &:visited {
+      color: #fff;
+  }
+  &:hover {
+      color: #fff;
+      text-decoration: none;
+  }
+  &:focus {
+      color: #fff;
+  }
+  &:active {
+      color: #fff;
+  }
+}
+
+
 #main {
   background-color: #fff  !important; //#f8f9fa
   padding-bottom: 2em;
@@ -222,7 +244,7 @@ header {
   display: block;
   @include flexbox();
   @include flex-flow(row nowrap);
-  @include justify-content(space-between);
+  @include justify-content(space-evenly);
   @include align-items(center);
 }
 
@@ -294,7 +316,6 @@ header {
   }
 }
 
-
 /* !---------- Footer ---------- */
 
 footer {
@@ -314,14 +335,6 @@ footer {
 
 
 #slab-link {
-  // content: " ";
-  // display:block;
-  // text-align:center;
-  // vertical-align:middle;
-  // max-width: 350px;
-  // margin:2rem auto;
-  // padding: 5px 10px;
-
   svg {
     // vertical-align:middle;
     max-height: $base-line-height;
@@ -331,7 +344,6 @@ footer {
       fill: rgba($link-color, 0.75);
     }
   }
-
   &:hover {
     path {
       fill: $link-color-alternate;
@@ -339,6 +351,14 @@ footer {
   }
 }
 // !--- end footer ---//
+// !--- Search results page ---//
+
+.lunrsearchresult .title {color: #5a3c6e;text-decoration: underline !important;}
+.lunrsearchresult .url {color: silver;}
+.lunrsearchresult a {display: block; color: #777; text-decoration: none !important;}
+.lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none !important;}
+.lunrsearchresult a:hover .title {text-decoration: none !important;}
+
 
 //Misc styling
 a.splash-link {

@@ -13,45 +13,27 @@
 
 
 .btn-primary-1 {
-    @include btn-color($white, rgba(90,60,110, .5));
-    a{
-      color: $white !important;
-      text-decoration: none;
-      font-weight: 300;
-    }
+  @include btn-color($white, rgba(90,60,110, .5));
 }
 .btn-primary-2 {
   @include btn-color($white, rgba(64, 78, 97, .5));
-
-  a{
-    color: $white !important;
-    text-decoration: none;
-    font-weight: 300;
-  }
 }
-
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+  position: relative;
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
-
-div.col-md-6.shadow-sm {
-  padding: 20px !important;
-  margin: 15px !important;
-  @include flex(1 0 45%);
-}
-
-//Sticky Side-bar for docs pages
+// !--- Sticky Side-bar for docs pages --- //
 // from: https://codepen.io/ncerminara/pen/eKNROb
 
 .content-section {
   min-height: 100vh;
+  background: #fff;
+  @include container;
   strong {
     font-weight: 700 !important;
   }
-
   ul {
     list-style-type: disc;
     margin-block-start: 1em;
@@ -59,10 +41,21 @@ div.col-md-6.shadow-sm {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-
   }
-}
+  @include mq(md) {
+    position: relative;
+    max-width: $content-width;
+    // padding-top: $gutter-spacing;
+    padding-bottom: $gutter-spacing;
+    // padding-left: $gutter-spacing * 1.5;
+    // margin-left: $nav-width;
+  }
+  @include mq(lg) {
+    padding-left: $gutter-spacing;
+    // margin-left: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
+  }
 
+}
 
 .sidebar-item {
   max-width: 100% !important;
@@ -86,26 +79,6 @@ nav.sticky-top {
   @include mq(sm) {
     min-height: 100vh;
   }
-}
-
-.content-section{
-  background: #fff;
-  @include container;
-
-  @include mq(md) {
-    position: relative;
-    max-width: $content-width;
-    // padding-top: $gutter-spacing;
-    padding-bottom: $gutter-spacing;
-    // padding-left: $gutter-spacing * 1.5;
-    // margin-left: $nav-width;
-  }
-
-  @include mq(lg) {
-    padding-left: $gutter-spacing;
-    // margin-left: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
-  }
-
 }
 
 //TOC nav from: https://afeld.github.io/bootstrap-toc/
@@ -203,24 +176,3 @@ nav[data-toggle="toc"] {
   }
 }
 
-// Back to top button
-
-.fa-arrow-circle-up {
-  color: $link-color;
- 
-}
-.fa-arrow-circle-up:hover,
-.fa-arrow-circle-up:active,
-.fa-arrow-circle-up:focus {
-color: $link-hover-color;
-}
-
-#toTop {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 1040; /* Make sure it does not overlap */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-}

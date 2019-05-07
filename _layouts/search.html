@@ -3,7 +3,7 @@
   <head>
     {% include head.html %}
     <!-- https://jekyllcodex.org/without-plugin/search-lunr/# -->
-    <script src="/assets/js/lunr.min.js"></script>
+    <script src="{{ "/assets/js/lunr.min.js" | absolute_url }}"></script>
     <script>
     {% assign counter = 0 %}
     var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}{
@@ -61,37 +61,24 @@
         return false;
     }
     </script>
-    <style>
-        .lunrsearchresult .title {color: #5a3c6e;text-decoration: underline !important;}
-        .lunrsearchresult .url {color: silver;}
-        .lunrsearchresult a {display: block; color: #777; text-decoration: none !important;}
-        .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none !important;}
-        .lunrsearchresult a:hover .title {text-decoration: none !important;}
-    </style>
   </head>
-  
   <body>
     <a href="#main" id="skipnav">Skip to main content</a>
-
     {% include header.html %}
     <div class="wrapper">
     <main id="main" class="main-content container" role="main" >
-            <header class="post-header">
-                    <h1>{{ page.title }}</h1>
-                  </header>
-                
-                  <article class="post-content">
-                  {{ content }}
-                  </article>
+        <header class="post-header">
+          <h1>{{ page.title }}</h1>
+        </header>
+        <article class="post-content">
+        {{ content }}
+        </article>
     </main>
     </div>
-
     <footer role="contentinfo">
       {% include footer.html %}
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{{ "/assets/js/bootstrap/bootstrap.bundle.min.js" | absolute_url }}"></script>
   </body>
 </html>

@@ -19,8 +19,8 @@
                 User Guides
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ "/use-cases/" | prepend: site.url }}">Use Cases</a>
-                  <a class="dropdown-item" href="{{ "/tutorials/" | prepend: site.url }}">Tutorials</a>
+                  <!-- <a class="dropdown-item" href="{{ "/use-cases/" | prepend: site.url }}">Use Cases</a> -->
+                  <!-- <a class="dropdown-item" href="{{ "/tutorials/" | prepend: site.url }}">Tutorials</a> -->
                   <a class="dropdown-item" href="{{ "/docs/" | prepend: site.url }}">Neatline for Omeka Classic</a>
                   <a class="dropdown-item" href="{{ "/docs-s/" | prepend: site.url }}">Neatline for Omeka S</a>
                 </div>
@@ -34,18 +34,10 @@
             <li class="nav-item">
               <a href="{{ "/credits/" | prepend: site.url }}" class="nav-link">Credits</a>
             </li>
+            <li class="nav-item">
+              <a href="{{ "/search/" | prepend: site.url }}" class="btn" aria-label="Search neatline.org"><i class="fas fa-search"></i></a>
+            </li>
           </ul>
-          <button class="btn btn-outline-light"><a href="{{ "/search/" | prepend: site.url }}"><i class="fas fa-search"></i></a></button>
-          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-search" aria-controls="navbar-search" aria-expanded="false" aria-label="Toggle Search">
-              <i class="fas fa-search"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-search">
-              <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-                  <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search neatline.org" />
-                  <input type="submit" value="search">
-              </form>
-          </div> -->
-
         </div>
       </nav>
     
