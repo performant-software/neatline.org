@@ -2,19 +2,27 @@
 .tag-classic {
     background-color: rgba(90,60,110, 0.8); // rgba(64, 78, 97, 1)
     color: #fff;
-    font-size: $base-font-size * 0.9;
+    @include fs-3;
   }
   
   .tag-s {
     background-color: rgba(64, 78, 97, 1); // rgba(64, 78, 97, 1)
     color: #fff;
-    font-size: $base-font-size * 0.9;
+    font-size: $base-font-size * 0.8;
   }
-  
-  .lightbox div.container {
-    float: left;
-    width: 50%;
-  }
+  .featherlight-inner a h2 {
+    &:after {
+      display: block;
+      content: "Neatline for Omeka Classic";
+      color: #fff;
+      @include fs-3;
+      width: 175px;
+      background-color: rgba(90,60,110, 0.8);
+      margin-top: 0.5rem;
+      text-decoration: none !important;
+      }
+    }   
+    // <span class="tag-classic">Neatline for Omeka Classic</span>
   
 /* ----- Showcase ----- */
 .site-filters ul {
@@ -103,7 +111,7 @@
 .lightbox {
   display: none;
 }
-    
+
 #examples .example img {
   vertical-align: bottom;
   max-width: 100%; }

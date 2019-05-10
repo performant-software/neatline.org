@@ -35,7 +35,7 @@ One of the coolest but most under-documented features in Neatline is the ability
 
 In other cases, though, this can be a real hindrance. Sometimes it can make sense to host a number of self-contained Neatline exhibits in the same installation of Omeka. For example, imagine you&#8217;re using Neatline in a big lecture course, and you split the class up into 10-15 groups of students, all working on separate exhibits. As the semester draws to an end, some of the groups want to use the [NeatlineText][5] plugin, and need a layout that positions the exhibit narrative on the side of the screen, flush with the edge of the window. But other groups are just threading the text content into the record bodies, and don&#8217;t want a big, empty container element taking up space on the screen. How to handle both at once? Or, for a concrete example, take a look at the [Neatline Labs][6] site, which I use a sandbox for little Neatline-powered experiments and feature demos. By design, these projects are all totally different &#8211; different content, different layouts, different Javascript interactions, etc:
 
-[<img src="http://www.scholarslab.org/wp-content/uploads/2014/03/panorama-1024x88.jpg" alt="panorama" width="1024" height="88" class="aligncenter size-large wp-image-10046" />][7]
+[<img src="http://static.scholarslab.org/wp-content/uploads/2014/03/panorama-1024x88.jpg" alt="panorama" width="1024" height="88" class="aligncenter size-large wp-image-10046" />][7]
 
 It would be annoying to have to spin up a completely new instance of Omeka for each of these projects. To get around this, Neatline implements its own &#8220;sub-theming&#8221; system, piggybacking on top of the capabilities provided by Omeka, that makes it possible to customize part or all of the appearance, layout, or behavior of each exhibit on an individual basis. This is an opt-in system that can be mixed with the regular, site-wide theming system &#8211; if you have 10 Neatline exhibits on your site, you could write exhibit-specific themes for three of them, and leave the other seven unchanged, allowing them to continue to inherit the generic Omeka theme. And, within the three exhibit-specific themes, you have full control over which parts of the theme you override &#8211; for one, you could leave the layout unchanged, but modify the CSS; for another, you could leave the CSS the same but change the layout and add some custom Javascript interactions. Exhibit-specific themes are also highly portable &#8211; once you&#8217;ve built one to your liking, it can be adapted for new exhibits just by copying and renaming the directory.
 
@@ -49,7 +49,7 @@ Neatline themes are created as directories that sit inside of the Omeka theme. F
 
 For example, here&#8217;s the layout of [my fork of the Neatlight theme][8], with the theme directories for a handful of exhibits at [neatline.dclure.org][6]:
 
-[<img src="http://www.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg" alt="nltheme-tree" width="313" height="372" class="aligncenter size-full wp-image-10040" />][9]
+[<img src="http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg" alt="nltheme-tree" width="313" height="372" class="aligncenter size-full wp-image-10040" />][9]
 
 ## Anatomy of a Neatline theme
 
@@ -101,7 +101,7 @@ That said, in most cases you&#8217;ll probably just need a few little snippets t
 
                 First, add tags to the records in Neatline:
 
-                [<img src="http://www.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag-300x214.jpg" alt="nltheme-tag" width="300" height="214" class="aligncenter size-medium wp-image-10043" />][14]
+                [<img src="http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag-300x214.jpg" alt="nltheme-tag" width="300" height="214" class="aligncenter size-medium wp-image-10043" />][14]
 
                 Then, just create two template in the exhibit theme &#8211; one called **`item-image.php`** (the same as above), the other called **`item-letter.php`**. In the letter template, just display the title and text:
 
@@ -113,7 +113,7 @@ That said, in most cases you&#8217;ll probably just need a few little snippets t
 
                 So far, we&#8217;ve just been entering all of our custom CSS and Javascript directly into the **`style.css`** and **`script.js`** and files. This works fine for simple themes, but it can start to get a little clunky as the theme grows more complex &#8211; nobody likes to see a big heap of Javascript snippets, all doing different things, crammed into the same file. So, how to decompose **`style.css`** and **`script.js`** into separate files? One good solution is to use a task runner like [Grunt][15] to concatenate multiple source files into the **`style.css`** and **`script.js`** files, which, instead of being edited directly, become compiled payload files that are updated automatically by the task runner.
 
-                [<img src="http://www.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg" alt="file-concatenation" width="233" height="460" class="aligncenter size-full wp-image-10050" />][16]
+                [<img src="http://static.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg" alt="file-concatenation" width="233" height="460" class="aligncenter size-full wp-image-10050" />][16]
 
                 To make it easy to get started, I&#8217;ve created a little starter theme, based on the theme used for the [Project Gemini over Baja California][2] project, with all of the configuration and file structure in place to build out themes for exhibits that use the NeatlineText extension. This includes all of the layout, styling, and UX interactions from the Gemini project, like the little yellow lines that wire up the text with the map.
 
@@ -127,13 +127,13 @@ That said, in most cases you&#8217;ll probably just need a few little snippets t
  [4]: https://github.com/scholarslab/neatscape
  [5]: http://www.scholarslab.org/announcements/neatline-text/
  [6]: http://neatline.dclure.org/
- [7]: http://www.scholarslab.org/wp-content/uploads/2014/03/panorama.jpg
+ [7]: http://static.scholarslab.org/wp-content/uploads/2014/03/panorama.jpg
  [8]: https://github.com/davidmcclure/neatlight
- [9]: http://www.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg
+ [9]: http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg
  [10]: http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
  [11]: https://github.com/marionettejs/backbone.wreqr#event-aggregator
  [12]: http://ricostacruz.com/nprogress/
  [13]: https://github.com/davidmcclure/neatlight/tree/master/neatline/exhibits/themes/gemini-over-baja-california/assets/javascripts/lines
- [14]: http://www.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag.jpg
+ [14]: http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag.jpg
  [15]: http://gruntjs.com/
- [16]: http://www.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg
+ [16]: http://static.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg

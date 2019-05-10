@@ -56,20 +56,23 @@
             <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/plugins/">Plugins</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/themes/">Themes</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 User Guides
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <!-- <a class="dropdown-item" href="http://localhost:4000/use-cases/">Use Cases</a> -->
-                  <!-- <a class="dropdown-item" href="http://localhost:4000/tutorials/">Tutorials</a> -->
+                  <a class="dropdown-item" href="http://localhost:4000/tutorials/">Tutorials</a>
                   <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
                   <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
                 </div>
             </li>  
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/news/">News</a>
-            </li> -->
+            </li>
             <li class="nav-item">
               <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
             </li>
@@ -102,7 +105,7 @@ Neatline makes it possible to create separate themes for individual exhibits, wh
 
 <p>In other cases, though, this can be a real hindrance. Sometimes it can make sense to host a number of self-contained Neatline exhibits in the same installation of Omeka. For example, imagine you’re using Neatline in a big lecture course, and you split the class up into 10-15 groups of students, all working on separate exhibits. As the semester draws to an end, some of the groups want to use the <a href="http://www.scholarslab.org/announcements/neatline-text/">NeatlineText</a> plugin, and need a layout that positions the exhibit narrative on the side of the screen, flush with the edge of the window. But other groups are just threading the text content into the record bodies, and don’t want a big, empty container element taking up space on the screen. How to handle both at once? Or, for a concrete example, take a look at the <a href="http://neatline.dclure.org/">Neatline Labs</a> site, which I use a sandbox for little Neatline-powered experiments and feature demos. By design, these projects are all totally different – different content, different layouts, different Javascript interactions, etc:</p>
 
-<p><a href="http://www.scholarslab.org/wp-content/uploads/2014/03/panorama.jpg"><img src="http://www.scholarslab.org/wp-content/uploads/2014/03/panorama-1024x88.jpg" alt="panorama" width="1024" height="88" class="aligncenter size-large wp-image-10046" /></a></p>
+<p><a href="http://static.scholarslab.org/wp-content/uploads/2014/03/panorama.jpg"><img src="http://static.scholarslab.org/wp-content/uploads/2014/03/panorama-1024x88.jpg" alt="panorama" width="1024" height="88" class="aligncenter size-large wp-image-10046" /></a></p>
 
 <p>It would be annoying to have to spin up a completely new instance of Omeka for each of these projects. To get around this, Neatline implements its own “sub-theming” system, piggybacking on top of the capabilities provided by Omeka, that makes it possible to customize part or all of the appearance, layout, or behavior of each exhibit on an individual basis. This is an opt-in system that can be mixed with the regular, site-wide theming system – if you have 10 Neatline exhibits on your site, you could write exhibit-specific themes for three of them, and leave the other seven unchanged, allowing them to continue to inherit the generic Omeka theme. And, within the three exhibit-specific themes, you have full control over which parts of the theme you override – for one, you could leave the layout unchanged, but modify the CSS; for another, you could leave the CSS the same but change the layout and add some custom Javascript interactions. Exhibit-specific themes are also highly portable – once you’ve built one to your liking, it can be adapted for new exhibits just by copying and renaming the directory.</p>
 
@@ -116,7 +119,7 @@ Neatline makes it possible to create separate themes for individual exhibits, wh
 
 <p>For example, here’s the layout of <a href="https://github.com/davidmcclure/neatlight">my fork of the Neatlight theme</a>, with the theme directories for a handful of exhibits at <a href="http://neatline.dclure.org/">neatline.dclure.org</a>:</p>
 
-<p><a href="http://www.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg"><img src="http://www.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg" alt="nltheme-tree" width="313" height="372" class="aligncenter size-full wp-image-10040" /></a></p>
+<p><a href="http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg"><img src="http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg" alt="nltheme-tree" width="313" height="372" class="aligncenter size-full wp-image-10040" /></a></p>
 
 <h2 id="anatomy-of-a-neatline-theme">Anatomy of a Neatline theme</h2>
 
@@ -165,7 +168,7 @@ For an example of a fully-fledged module, which follows the file layout conventi
 
                 <p>First, add tags to the records in Neatline:</p>
 
-                <p><a href="http://www.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag.jpg"><img src="http://www.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag-300x214.jpg" alt="nltheme-tag" width="300" height="214" class="aligncenter size-medium wp-image-10043" /></a></p>
+                <p><a href="http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag.jpg"><img src="http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag-300x214.jpg" alt="nltheme-tag" width="300" height="214" class="aligncenter size-medium wp-image-10043" /></a></p>
 
                 <p>Then, just create two template in the exhibit theme – one called <strong><code class="highlighter-rouge">item-image.php</code></strong> (the same as above), the other called <strong><code class="highlighter-rouge">item-letter.php</code></strong>. In the letter template, just display the title and text:</p>
 
@@ -175,7 +178,7 @@ For an example of a fully-fledged module, which follows the file layout conventi
 
                 <p>So far, we’ve just been entering all of our custom CSS and Javascript directly into the <strong><code class="highlighter-rouge">style.css</code></strong> and <strong><code class="highlighter-rouge">script.js</code></strong> and files. This works fine for simple themes, but it can start to get a little clunky as the theme grows more complex – nobody likes to see a big heap of Javascript snippets, all doing different things, crammed into the same file. So, how to decompose <strong><code class="highlighter-rouge">style.css</code></strong> and <strong><code class="highlighter-rouge">script.js</code></strong> into separate files? One good solution is to use a task runner like <a href="http://gruntjs.com/">Grunt</a> to concatenate multiple source files into the <strong><code class="highlighter-rouge">style.css</code></strong> and <strong><code class="highlighter-rouge">script.js</code></strong> files, which, instead of being edited directly, become compiled payload files that are updated automatically by the task runner.</p>
 
-                <p><a href="http://www.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg"><img src="http://www.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg" alt="file-concatenation" width="233" height="460" class="aligncenter size-full wp-image-10050" /></a></p>
+                <p><a href="http://static.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg"><img src="http://static.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg" alt="file-concatenation" width="233" height="460" class="aligncenter size-full wp-image-10050" /></a></p>
 
                 <p>To make it easy to get started, I’ve created a little starter theme, based on the theme used for the <a href="http://dclure.org/logs/project-gemini-over-baja-california/">Project Gemini over Baja California</a> project, with all of the configuration and file structure in place to build out themes for exhibits that use the NeatlineText extension. This includes all of the layout, styling, and UX interactions from the Gemini project, like the little yellow lines that wire up the text with the map.</p>
 

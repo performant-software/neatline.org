@@ -56,20 +56,23 @@
             <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/plugins/">Plugins</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/themes/">Themes</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 User Guides
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <!-- <a class="dropdown-item" href="http://localhost:4000/use-cases/">Use Cases</a> -->
-                  <!-- <a class="dropdown-item" href="http://localhost:4000/tutorials/">Tutorials</a> -->
+                  <a class="dropdown-item" href="http://localhost:4000/tutorials/">Tutorials</a>
                   <a class="dropdown-item" href="http://localhost:4000/docs/">Neatline for Omeka Classic</a>
                   <a class="dropdown-item" href="http://localhost:4000/docs-s/">Neatline for Omeka S</a>
                 </div>
             </li>  
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="http://localhost:4000/news/">News</a>
-            </li> -->
+            </li>
             <li class="nav-item">
               <a href="http://localhost:4000/publications/" class="nav-link">Publications</a>
             </li>
@@ -95,13 +98,13 @@
   </header>
 
   <article class="post-content">
-  <p><strong>Note</strong> This is specifically for Omeka/Neatline 1.x. If you are using Omeka/Neatline 2.x, you can upload your maps to Geoserver with Option 2 below. Follow <a href="http://docs.neatline.org/style-tab-imagery.html">Editing Record Imagery</a> for working with the WMS layers.</p>
+  <p><strong>Note</strong> This is specifically for Omeka/Neatline 1.x. If you are using Omeka/Neatline 2.x, you can upload your maps to Geoserver with Option 2 below. Follow <a href="http://localhost:4000/docs/style-tab-imagery.html">Editing Record Imagery</a> for working with the WMS layers.</p>
 
 <p><em>[Cross-posted with <a href="http://dclure.org/tutorials/neatline-maps-geoserver/" target="_blank">dclure.org</a> and <a href="http://www.scholarslab.org/geospatial-and-temporal/using-neatline-with-historical-maps-geoserver/" target="_blank">scholarslab.org</a>]</em></p>
 
 <p><small><em>This is part 3 of a 3-post tutorial that walks through process of georeferencing a historical map and using it in GeoServer and Neatline.</em></small></p>
 
-<p>In <a href="http://neatline.org/2012/08/20/using-neatline-with-historical-maps-part-1-georeferencing/">part 1</a> of this series, we used ArcMap to convert a static image into a georeferenced .tiff file. In <a href="http://neatline.org/2012/08/23/using-neatline-with-historical-maps-part-2-transparency/">part 2</a>, we post-processed the file with <code class="highlighter-rouge">gdal</code> to remove the black borders around the image. In this article, we’ll load the .tiff file into GeoServer and import the final web map service into a Neatline exhibit.</p>
+<p>In <a href="http://localhost:4000/2012/08/20/using-neatline-with-historical-maps-part-1-georeferencing/">part 1</a> of this series, we used ArcMap to convert a static image into a georeferenced .tiff file. In <a href="http://localhost:4000/2012/08/23/using-neatline-with-historical-maps-part-2-transparency/">part 2</a>, we post-processed the file with <code class="highlighter-rouge">gdal</code> to remove the black borders around the image. In this article, we’ll load the .tiff file into GeoServer and import the final web map service into a Neatline exhibit.</p>
 
 <p><strong>Generating the web map service on GeoServer</strong></p>
 
@@ -122,59 +125,60 @@
     <p>With Neatline Maps installed, click on the “Neatline Maps” tab in the top toolbar of the Omeka administrative interface and click on “Create Server.” Fill in the URL, Username, and Password for your GeoServer. In the Name section, enter a plaintext identifier for the server (used for content management in Omeka) and use the Workspace field to specify the workspace on the GeoServer installation that will house the new stores and layers. Click “Save” to create the server record. 
 (<strong>Note</strong>: If you want to upload files to more than one installation of GeoServer, you can create as many server records as you want. At any given point, though, only one of the record can be marked as the “Active” server – this the server that the plugin will use to handle new .tif uploads).</p>
 
-    <p><a href="http://www.scholarslab.org/wp-content/uploads/2012/07/create-server.jpg" rel="attachment wp-att-5167"><img src="http://www.scholarslab.org/wp-content/uploads/2012/07/create-server-300x245.jpg" alt="" title="create-server" width="300" height="245" class="alignnone size-medium wp-image-5167" /></a></p>
+    <p><a href="http://static.scholarslab.org/wp-content/uploads/2012/07/create-server.jpg" rel="attachment wp-att-5167"><img src="http://static.scholarslab.org/wp-content/uploads/2012/07/create-server-300x245.jpg" alt="" title="create-server" width="300" height="245" class="alignnone size-medium wp-image-5167" /></a></p>
   </li>
   <li>
     <p>Create an item to associate the web map service with (or edit an existing item). In the Item add/edit form, click on the “Files” tab, click on “Choose File,” and select the .tiff file as you would for a regular file upload. When you save the item, Neatline Maps will automatically detect that you’re trying to upload a georeferenced .tif file and create a corresponding web map service by way of the GeoServer API. 
-<a href="http://www.scholarslab.org/wp-content/uploads/2012/07/upload-file.jpg" rel="attachment wp-att-5170"><img src="http://www.scholarslab.org/wp-content/uploads/2012/07/upload-file-300x124.jpg" alt="" title="upload-file" width="300" height="124" class="alignnone size-medium wp-image-5170" /></a></p>
+<a href="http://static.scholarslab.org/wp-content/uploads/2012/07/upload-file.jpg" rel="attachment wp-att-5170"><img src="http://static.scholarslab.org/wp-content/uploads/2012/07/upload-file-300x124.jpg" alt="" title="upload-file" width="300" height="124" class="alignnone size-medium wp-image-5170" /></a></p>
 
-    <p>Once you’ve saved the file, if you go back into the Item edit form and click on the “Web Map Service” tab, you’ll notice that “WMS Address” and “Layers” fields have been automatically updated to point to the new web map service. On the show page for the item, the map will be displayed in a small, interactive widget below the default metadata fields.&lt;/li&gt; &lt;/ol&gt; 
-<strong>Option 2: Upload directly to GeoServer</strong></p>
+    <p>Once you’ve saved the file, if you go back into the Item edit form and click on the “Web Map Service” tab, you’ll notice that “WMS Address” and “Layers” fields have been automatically updated to point to the new web map service. On the show page for the item, the map will be displayed in a small, interactive widget below the default metadata fields.</p>
+  </li>
+</ol>
 
-    <ol>
+<p><strong>Option 2: Upload directly to GeoServer</strong></p>
+
+<ol>
+  <li>
+    <p>First, upload the file to the server running GeoServer with <code class="highlighter-rouge">scp</code> or another file transfer protocol. It’s usually a good idea to get the file out of the <code class="highlighter-rouge">/tmp</code> directory, but it doesn’t matter beyond that – GeoServer can read the entire file system. We’ve gotten into the habit of putting the source .tiff files in <code class="highlighter-rouge">/var/geotiff</code>.</p>
+  </li>
+  <li>
+    <p>In the GeoServer administrative interface, click on “Stores” in the left column and then click “Add new Store.” On the next screen, click GeoTIFF under the “Raster Data Sources” heading.</p>
+
+    <p><a href="http://static.scholarslab.org/wp-content/uploads/2012/07/new-data-store.jpg" rel="attachment wp-att-5175"><img src="http://static.scholarslab.org/wp-content/uploads/2012/07/new-data-store-300x159.jpg" alt="" title="new-data-store" width="300" height="159" class="alignnone size-medium wp-image-5175" /></a></p>
+  </li>
+  <li>
+    <p>Select a workspace for the store and enter a name. Under “Connection Parameters,” click the “Browse..” link, and use the pop-up window to navigate to the file. Click “Save” to create the store.</p>
+
+    <p><a href="http://static.scholarslab.org/wp-content/uploads/2012/07/connection-parameters.jpg" rel="attachment wp-att-5178"><img src="http://static.scholarslab.org/wp-content/uploads/2012/07/connection-parameters-300x162.jpg" alt="" title="connection-parameters" width="300" height="162" class="alignnone size-medium wp-image-5178" /></a></p>
+  </li>
+  <li>
+    <p>Next, we have to publish the store as a public-facing layer. On the next screen, click the “Publish” link.</p>
+
+    <p><a href="http://static.scholarslab.org/wp-content/uploads/2012/07/publish.jpg" rel="attachment wp-att-5181"><img src="http://static.scholarslab.org/wp-content/uploads/2012/07/publish-300x158.jpg" alt="" title="publish" width="300" height="158" class="alignnone size-medium wp-image-5181" /></a></p>
+  </li>
+  <li>
+    <p>Now, the tricky part. We have to manually tell GeoServer to deliver the layer using a coordinate projection system that Neatline can use to layer the map on top of the real-geography base layers in OpenLayers. Scroll down to the “Coordinate Reference Systems” heading and enter <code class="highlighter-rouge">EPSG:900913</code> into the “Declared SRS” field. Under “SRS handling,” select “Force declared.” Under the “Bounding Boxes” heading, click both the “Compute from data” and “Compute from native bound” links.</p>
+
+    <p><a href="http://static.scholarslab.org/wp-content/uploads/2012/07/coordinates.jpg" rel="attachment wp-att-5184"><img src="http://static.scholarslab.org/wp-content/uploads/2012/07/coordinates-274x300.jpg" alt="" title="coordinates" width="274" height="300" class="alignnone size-medium wp-image-5184" /></a></p>
+  </li>
+</ol>
+
+<p>Now, with the layer created, we can associate the new web map service with an item in your Omeka collection by manually filling in the two fields in the “Web Map Services” tab:</p>
+
+<ol>
+  <li>Go back the Omeka administrative interface and find the item that you want to associate the map with (or just create a new item). Open up the edit form for the item.
+    <ul>
       <li>
-        <p>First, upload the file to the server running GeoServer with <code class="highlighter-rouge">scp</code> or another file transfer protocol. It’s usually a good idea to get the file out of the <code class="highlighter-rouge">/tmp</code> directory, but it doesn’t matter beyond that – GeoServer can read the entire file system. We’ve gotten into the habit of putting the source .tiff files in <code class="highlighter-rouge">/var/geotiff</code>.</p>
+        <p>Click the “Web Map Services” tab. Fill in the the top-level WMS address for the GeoServer installation (this always ends with <code class="highlighter-rouge">/wms</code>, and might look something like <code class="highlighter-rouge">localhost:8080/GeoServer/wms</code>) and enter the list of comma-delimited layers that you want to be associated with the item. For example, if you have a workspace called “hotchkiss” with layers “chancellorsville” and “fredericksburg,” you could enter:</p>
+
+        <p><code class="highlighter-rouge">hotchkiss:chancellorsville,hotchkiss:fredericksburg</code>.</p>
+
+        <p><a href="http://static.scholarslab.org/wp-content/uploads/2012/07/wms-tab.jpg" rel="attachment wp-att-5189"><img src="http://static.scholarslab.org/wp-content/uploads/2012/07/wms-tab-300x181.jpg" alt="" title="wms-tab" width="300" height="181" class="alignnone size-medium wp-image-5189" /></a></p>
       </li>
       <li>
-        <p>In the GeoServer administrative interface, click on “Stores” in the left column and then click “Add new Store.” On the next screen, click GeoTIFF under the “Raster Data Sources” heading.</p>
-
-        <p><a href="http://www.scholarslab.org/wp-content/uploads/2012/07/new-data-store.jpg" rel="attachment wp-att-5175"><img src="http://www.scholarslab.org/wp-content/uploads/2012/07/new-data-store-300x159.jpg" alt="" title="new-data-store" width="300" height="159" class="alignnone size-medium wp-image-5175" /></a></p>
+        <p>Save the item</p>
       </li>
-      <li>
-        <p>Select a workspace for the store and enter a name. Under “Connection Parameters,” click the “Browse..” link, and use the pop-up window to navigate to the file. Click “Save” to create the store.</p>
-
-        <p><a href="http://www.scholarslab.org/wp-content/uploads/2012/07/connection-parameters.jpg" rel="attachment wp-att-5178"><img src="http://www.scholarslab.org/wp-content/uploads/2012/07/connection-parameters-300x162.jpg" alt="" title="connection-parameters" width="300" height="162" class="alignnone size-medium wp-image-5178" /></a></p>
-      </li>
-      <li>
-        <p>Next, we have to publish the store as a public-facing layer. On the next screen, click the “Publish” link.</p>
-
-        <p><a href="http://www.scholarslab.org/wp-content/uploads/2012/07/publish.jpg" rel="attachment wp-att-5181"><img src="http://www.scholarslab.org/wp-content/uploads/2012/07/publish-300x158.jpg" alt="" title="publish" width="300" height="158" class="alignnone size-medium wp-image-5181" /></a></p>
-      </li>
-      <li>
-        <p>Now, the tricky part. We have to manually tell GeoServer to deliver the layer using a coordinate projection system that Neatline can use to layer the map on top of the real-geography base layers in OpenLayers. Scroll down to the “Coordinate Reference Systems” heading and enter <code class="highlighter-rouge">EPSG:900913</code> into the “Declared SRS” field. Under “SRS handling,” select “Force declared.” Under the “Bounding Boxes” heading, click both the “Compute from data” and “Compute from native bound” links.</p>
-
-        <p><a href="http://www.scholarslab.org/wp-content/uploads/2012/07/coordinates.jpg" rel="attachment wp-att-5184"><img src="http://www.scholarslab.org/wp-content/uploads/2012/07/coordinates-274x300.jpg" alt="" title="coordinates" width="274" height="300" class="alignnone size-medium wp-image-5184" /></a></p>
-      </li>
-    </ol>
-
-    <p>Now, with the layer created, we can associate the new web map service with an item in your Omeka collection by manually filling in the two fields in the “Web Map Services” tab:</p>
-
-    <ol>
-      <li>Go back the Omeka administrative interface and find the item that you want to associate the map with (or just create a new item). Open up the edit form for the item.
-        <ul>
-          <li>
-            <p>Click the “Web Map Services” tab. Fill in the the top-level WMS address for the GeoServer installation (this always ends with <code class="highlighter-rouge">/wms</code>, and might look something like <code class="highlighter-rouge">localhost:8080/GeoServer/wms</code>) and enter the list of comma-delimited layers that you want to be associated with the item. For example, if you have a workspace called “hotchkiss” with layers “chancellorsville” and “fredericksburg,” you could enter:</p>
-
-            <p><code class="highlighter-rouge">hotchkiss:chancellorsville,hotchkiss:fredericksburg</code>.</p>
-
-            <p><a href="http://www.scholarslab.org/wp-content/uploads/2012/07/wms-tab.jpg" rel="attachment wp-att-5189"><img src="http://www.scholarslab.org/wp-content/uploads/2012/07/wms-tab-300x181.jpg" alt="" title="wms-tab" width="300" height="181" class="alignnone size-medium wp-image-5189" /></a></p>
-          </li>
-          <li>
-            <p>Save the item</p>
-          </li>
-        </ul>
-      </li>
-    </ol>
+    </ul>
   </li>
 </ol>
 
@@ -184,11 +188,11 @@
 
 <p>Once an item is linked to a web map service, Neatline automatically detects the map and loads it into an exhibit when the item is activated on the map. With the item queried into the editing environment for an exhibit, just check the middle of the three checkboxes next to the listing for the item in the content management panel:</p>
 
-<p><a href="http://www.scholarslab.org/wp-content/uploads/2012/08/map-activation.jpg"><img src="http://www.scholarslab.org/wp-content/uploads/2012/08/map-activation-300x178.jpg" alt="" title="map-activation" width="300" height="178" class="alignnone size-medium wp-image-5780" /></a></p>
+<p><a href="http://static.scholarslab.org/wp-content/uploads/2012/08/map-activation.jpg"><img src="http://static.scholarslab.org/wp-content/uploads/2012/08/map-activation-300x178.jpg" alt="" title="map-activation" width="300" height="178" class="alignnone size-medium wp-image-5780" /></a></p>
 
 <p>…and the WMS layer will appear on the map:</p>
 
-<p><a href="http://www.scholarslab.org/wp-content/uploads/2012/08/map-in-exhibit.jpg"><img src="http://www.scholarslab.org/wp-content/uploads/2012/08/map-in-exhibit-300x195.jpg" alt="" title="map-in-exhibit" width="300" height="195" class="alignnone size-medium wp-image-5781" /></a></p>
+<p><a href="http://static.scholarslab.org/wp-content/uploads/2012/08/map-in-exhibit.jpg"><img src="http://static.scholarslab.org/wp-content/uploads/2012/08/map-in-exhibit-300x195.jpg" alt="" title="map-in-exhibit" width="300" height="195" class="alignnone size-medium wp-image-5781" /></a></p>
 
 
   </article>
