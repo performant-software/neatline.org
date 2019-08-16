@@ -7,6 +7,5 @@ url: ""
 # Build settings
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
 
 exclude: ["README.md", "Procfile", "Gruntfile.js", "changelog.md", "Gemfile", "Gemfile.lock", "node_modules", "bower_components", "scss", "config.rb", "package.json", "LICENSE", "bower.json"]
