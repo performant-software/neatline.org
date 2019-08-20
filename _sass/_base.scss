@@ -4,8 +4,8 @@
 
 // Compass Variables ---------------------------------------------------------
 
-$base-font-size                 : 16px;
-$base-line-height               : 28px;
+// $base-font-size                 : 16px;
+// $base-line-height               : 28px;
 
 // Colors --------------------------------------------------------------------
 
@@ -31,8 +31,8 @@ $link-active-color              : darken($link-color, 30%);
 
 $font-family-main: 'Lato', sans-serif !default;
 $font-secondary: $font-family-main;
-// $base-font-size: 16px;
-// $base-line-height: 24px;
+$base-font-size: 16px;
+$base-line-height: 28px;
 $font-family-title: $font-family-main;
 
 $spacing-unit: $base-line-height;

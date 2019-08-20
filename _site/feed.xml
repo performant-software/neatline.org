@@ -1,4 +1,463 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-09T20:16:58-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Neatline</title><subtitle>Neatline allows scholars, students, and curators to tell stories with maps and timelines.</subtitle><entry><title type="html">A (Digital) Declaration of Independence</title><link href="http://localhost:4000/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map/" rel="alternate" type="text/html" title="A (Digital) Declaration of Independence" /><published>2014-07-02T00:00:00-04:00</published><updated>2014-07-02T00:00:00-04:00</updated><id>http://localhost:4000/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map</id><content type="html" xml:base="http://localhost:4000/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=A+%28Digital%29+Declaration+of+Independence&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-07-02&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fgeospatial-and-temporal%2Fa-digital-declaration-of-independence-with-text-painting-and-map%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-20T17:56:30-04:00</updated><id>/feed.xml</id><title type="html">Neatline</title><subtitle>Neatline allows scholars, students, and curators to tell stories with maps and timelines.</subtitle><entry><title type="html">Neatline 2.6.2 Release</title><link href="/2019/06/04/neatline-2.6.2-release.html" rel="alternate" type="text/html" title="Neatline 2.6.2 Release" /><published>2019-06-04T12:00:00-04:00</published><updated>2019-06-04T12:00:00-04:00</updated><id>/2019/06/04/neatline-2.6.2-release</id><content type="html" xml:base="/2019/06/04/neatline-2.6.2-release.html">&lt;p&gt;Neatline 2.6.2 is a security release for all previous versions of Neatline for Omeka Classic, and we strongly encourage you to update to this version immediately. &lt;a href=&quot;https://omeka.org/classic/plugins/Neatline/&quot;&gt;Download Neatline 2.6.2&lt;/a&gt; from the Omeka Classic addons page and check out the &lt;a href=&quot;https://omeka.org/classic/docs/Admin/Adding_and_Managing_Plugins/#upgrading-plugins&quot;&gt;documentation for upgrading plugins&lt;/a&gt; to complete your upgrade.&lt;/p&gt;
+
+&lt;p&gt;This release addresses a SQL injection vulnerability in the records view. Many thanks to Andrew Angelopoulos and Mathew Tams of Fordham University for reporting the issue.&lt;/p&gt;</content><author><name>jeremy-boggs</name></author><summary type="html">Neatline 2.6.2 is a security release for all previous versions of Neatline for Omeka Classic, and we strongly encourage you to update to this version immediately. Download Neatline 2.6.2 from the Omeka Classic addons page and check out the documentation for upgrading plugins to complete your upgrade.</summary></entry><entry><title type="html">Neatline 2.5.2</title><link href="/announcements/2017/07/05/neatline-2-5-2.html" rel="alternate" type="text/html" title="Neatline 2.5.2" /><published>2017-07-05T09:15:00-04:00</published><updated>2017-07-05T09:15:00-04:00</updated><id>/announcements/2017/07/05/neatline-2-5-2</id><content type="html" xml:base="/announcements/2017/07/05/neatline-2-5-2.html">&lt;p&gt;New release!&lt;/p&gt;
+
+&lt;p&gt;First, a huge thank you to Jamie Folsom and Andy Stuhl from &lt;a href=&quot;http://www.performantsoftware.com/&quot;&gt;Perfomant Software Solutions LLC&lt;/a&gt;, who did the heavy lifting on the coding for this release. We couldn’t have done it without them. We’re grateful, as well, to Neatline community member Adam Doan (&lt;a href=&quot;https://github.com/doana&quot;&gt;@doana&lt;/a&gt; on Github) from the University of Guelph, whose code contributions made Neatline’s first accessibility functionality possible.&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-fixed&quot;&gt;What’s Fixed:&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Google Maps API issues.&lt;/strong&gt; We originally embedded the API key for Google Maps directly in the Neatline code, but Google changes the way apps should connect to their codebase fairly regularly, and with little or no warning. It’s just easier for everyone if you can directly configure an API key for your specific installation of Neatline, so that’s what we’ve done. Updated installation and configuration instructions (with screencaps!) are available on our &lt;a href=&quot;http://docs.neatline.org/installing-neatline.html&quot;&gt;documentation site&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WMS map layer issues.&lt;/strong&gt; We thought we had this one squished, but it came back again because of issues with our implementation of OpenLayers 2.0 and conflicts with the way that MapWarper passes data via URL. MapWarper WMS layers will now render properly as exhibit items and as base layers for an exhibit.&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-new&quot;&gt;What’s New:&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Accessibility.&lt;/strong&gt; Thanks to Neatline community member &lt;a href=&quot;https://github.com/doana&quot;&gt;@doana&lt;/a&gt;, you can now specify a URL to an accessible version of your Neatline exhibit in the exhibit’s settings. If the accessible URL exists, a hidden link will be rendered at the top of the public exhibit page directing users of assistive technology to the alternative page so that their screen reader can render the page for them. This feature relates specifically to &lt;a href=&quot;https://www.w3.org/WAI/WCAG20/quickref/#text-equiv&quot;&gt;Guideline 1.1 of WCAG 2.0&lt;/a&gt;. Our documentation of this new feature will be available on &lt;a href=&quot;http://docs.neatline.org&quot;&gt;docs.neatline.org&lt;/a&gt; by July 10, 2017.&lt;/p&gt;
+
+&lt;p&gt;For more detail on this update, check out the &lt;a href=&quot;https://github.com/scholarslab/Neatline/blob/master/CHANGELOG.md&quot;&gt;Changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ready to download? Get the latest release from the &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Omeka Add-Ons Repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Encounter an issue? ask a question on the &lt;a href=&quot;https://forum.omeka.org/&quot;&gt;Omeka Forums&lt;/a&gt; or submit an issue, or feature request, directly to us on our &lt;a href=&quot;https://github.com/scholarslab/Neatline/issues&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;</content><author><name>ronda-grizzle</name></author><category term="neatline" /><summary type="html">New release!</summary></entry><entry><title type="html">Neatline Implementation Grant</title><link href="/announcements/2016/08/12/neatline-implementation-grant.html" rel="alternate" type="text/html" title="Neatline Implementation Grant" /><published>2016-08-12T05:29:52-04:00</published><updated>2016-08-12T05:29:52-04:00</updated><id>/announcements/2016/08/12/neatline-implementation-grant</id><content type="html" xml:base="/announcements/2016/08/12/neatline-implementation-grant.html">&lt;p&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2016/08/Screen-Shot-2016-08-11-at-4.23.37-PM.png&quot; alt=&quot;Screen Shot 2016-08-11 at 4.23.37 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You may have noticed on Twitter or elsewhere that the &lt;a href=&quot;http://www.neh.gov/news/press-release/2016-08-09&quot;&gt;NEH announced funding for almost 300 humanities projects&lt;/a&gt;. Congratulations to all!&lt;/p&gt;
+
+&lt;p&gt;One of the projects awarded was our &lt;a href=&quot;http://neatline.org/&quot;&gt;Neatline&lt;/a&gt; Omeka plugin! We’re really excited by the possibilities that this will open up for this project and the ways that we’re planning on improving it.&lt;/p&gt;
+
+&lt;p&gt;So what do we hope to accomplish? What should you be looking for from the future of Neatline?&lt;/p&gt;
+
+&lt;p&gt;Primarily, we’re going to focus on &lt;em&gt;graphesis&lt;/em&gt; and &lt;em&gt;sustainability&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;First, Neatline has always been an experiment in trying to embody the principles of &lt;a href=&quot;https://docs.google.com/viewer?a=v&amp;amp;pid=sites&amp;amp;srcid=ZGVmYXVsdGRvbWFpbnxlbmdhZ2VtZW50YnlkZXNpZ258Z3g6NzY1ZGY3ZWRmMmRkYTY3NA&quot;&gt;graphesis&lt;/a&gt;. It’s motivated by the belief that interacting with your project and your data in a visual, hands-on, and messy way informs and changes the way that you think about your project. Of course, modern technology is limited in how well it can enact these principles. As mobile platforms and tablets have matured, however, they offer a more hands-on, material experience. We’d like to incorporate these new technologies and leverage them to improve the experience of creating and exploring Neatline exhibits.&lt;/p&gt;
+
+&lt;p&gt;Related to this, we want to improve the &lt;a href=&quot;https://omeka.org/add-ons/plugins/neatlinetext/&quot;&gt;Neatline Text&lt;/a&gt; add-on. This allows Neatline exhibits to incorporate and interact with long-form text. Unfortunately, the editing interface is still very rough. Improving this would go a long way to making Neatline a more compelling platform for creating geotemporal exhibits around a text.&lt;/p&gt;
+
+&lt;p&gt;And in general, we’ll revisit the editing interface for Neatline to streamline it for common tasks, while making less used features still easily accessible.&lt;/p&gt;
+
+&lt;p&gt;Second, Neatline is itself also maturing, and like any software project, it’s aging gracefully in some ways, and—ahem—less so in others. We’d like to take this opportunity to make Neatline a more sustainable project. This is a broad goal, so let’s tease it apart. What do I mean by this?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Omeka team at &lt;a href=&quot;http://chnm.gmu.edu/&quot;&gt;RRCHNM&lt;/a&gt; are working on a new version of the platform, called &lt;a href=&quot;https://github.com/omeka/omeka-s&quot;&gt;Omeka S&lt;/a&gt;, that will make it significantly easier to host and managing multiple Omeka instances. This will involve significant changes to the plugin architecture, however, so we’ll update Neatline to work with this new version of Omeka.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Currently, Neatline uses &lt;a href=&quot;http://openlayers.org/&quot;&gt;OpenLayers&lt;/a&gt; for its mapping component. After we included it in Neatline, however, OpenLayers released version 3, which is a major rewrite of this component for modern browsers. Because of licensing issues, it also no longer supports Google maps. We’ll take this opportunity to evaluate upgrading to OpenLayers 3 or going with a different mapping component altogether, such as &lt;a href=&quot;http://leafletjs.com/&quot;&gt;LeafletJS&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For the timeline component, Neatline uses the &lt;a href=&quot;http://www.simile-widgets.org/timeline/&quot;&gt;SIMILE Timeline&lt;/a&gt;. This software is also showing its age, so we’ll look at using a different timeline component, possibly creating one ourselves. This will also give us the chance to evaluate the data models that we use to represent time and change them to accommodate ambiguity and fuzzy dates better. This will also make this part of Neatline better suited to messy humanities data.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;But the most important sustainability feature that we’d like to work on is building a more sustainable and active community. This includes better documentation, better tutorials, and better support for getting new developers set up to work on Neatline. We’d also like to make it easier for users to contribute in many ways to the project, whether through code, documentation, design, or other ways.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We’re really excited about the opportunities that this grant opens up for us, and we’re so grateful to the NEH ODH for providing the resources for this.&lt;/p&gt;</content><author><name>eric-rochester</name></author><category term="grants" /><category term="neatline" /><summary type="html"></summary></entry><entry><title type="html">Neatline 2.4.0</title><link href="/announcements/experimental%20humanities/research%20and%20development/2015/03/09/neatline-2-4-0.html" rel="alternate" type="text/html" title="Neatline 2.4.0" /><published>2015-03-09T10:52:52-04:00</published><updated>2015-03-09T10:52:52-04:00</updated><id>/announcements/experimental%20humanities/research%20and%20development/2015/03/09/neatline-2-4-0</id><content type="html" xml:base="/announcements/experimental%20humanities/research%20and%20development/2015/03/09/neatline-2-4-0.html">&lt;p&gt;We’re happy to announce a new version of Neatline which adds a couple new features along with resolving a few small issues.&lt;/p&gt;
+
+&lt;p&gt;The two main features in this release  were implemented based on community feedback. First, it’s now possible to set the opacity of a WMS layer when its selected using the “selected” opacity setting. Previously this setting only pertained to drawn geometries on a Neatline record. Second is the ability for custom themes to provide containers for Neatline widgets. This gives theme developers more control over where elements of a Neatline exhibit are displayed on the page.&lt;/p&gt;
+
+&lt;p&gt;There were also some issues that are resolved. An optimization was introduced in Neatline 2.3 which caused Neatline to not render WMS maps created using MapWarper. This has been corrected and maps created using the &lt;a href=&quot;http://maps.nypl.org/warper/&quot;&gt;NYPL MapWarper &lt;/a&gt;and &lt;a href=&quot;http://warp.worldmap.harvard.edu/&quot;&gt;Harvard WorldMap WARP&lt;/a&gt; tools properly render in Neatline. By the way, these two resources provide a great number of maps for you to use in Neatline without needing to run your own instance of &lt;a href=&quot;http://geoserver.org/&quot;&gt;GeoServer&lt;/a&gt; or other service. We also fixed an issue where styles with an underscore (“_”) in them would not render properly, and we fixed an issue that would move SVG layers at specific zoom levels.&lt;/p&gt;
+
+&lt;p&gt;You can check out the &lt;a href=&quot;https://github.com/scholarslab/Neatline/blob/master/CHANGELOG.md&quot;&gt;Changelog&lt;/a&gt; for more detail on these changes. As always, you can download the latest release from the &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Omeka Add-Ons  Repository&lt;/a&gt;. If you run into any issues, you can always ask a question on the &lt;a href=&quot;http://omeka.org/forums/&quot;&gt;Omeka Forums&lt;/a&gt; or submit an issue or feature request on our &lt;a href=&quot;https://github.com/scholarslab/Neatline/issues&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;</content><author><name>wayne-graham</name></author><category term="neatline" /><summary type="html">We’re happy to announce a new version of Neatline which adds a couple new features along with resolving a few small issues.</summary></entry><entry><title type="html">Minard + Napoleon + Neatline</title><link href="/geospatial%20and%20temporal/2014/10/11/minard-napoleon-neatline.html" rel="alternate" type="text/html" title="Minard + Napoleon + Neatline" /><published>2014-10-11T05:15:56-04:00</published><updated>2014-10-11T05:15:56-04:00</updated><id>/geospatial%20and%20temporal/2014/10/11/minard-napoleon-neatline</id><content type="html" xml:base="/geospatial%20and%20temporal/2014/10/11/minard-napoleon-neatline.html">&lt;p&gt;&lt;em&gt;[Cross-posted from &lt;a href=&quot;http://dclure.org/logs/minard-napoleon-neatline/&quot;&gt;dclure.org&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dmmh.dclure.org/neatline/show/minard&quot;&gt;Open the Exhibit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dmmh.dclure.org/neatline/show/minard&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/minard-overview-1024x619.jpg&quot; alt=&quot;minard-overview&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yesterday I made the hop across the country to Boston for the &lt;a href=&quot;http://www.northeastern.edu/nulab/dmmh/&quot;&gt;NEH Workshop on Digital Methods for Military History&lt;/a&gt; at  Northeastern University, where I’ll be giving a couple of workshops about &lt;a href=&quot;http://neatline.org/&quot;&gt;&lt;strong&gt;Neatline&lt;/strong&gt;&lt;/a&gt; and soaking up lots of interesting new projects from old friends and new friends alike. Beautiful fall foliage aside, I’m very excited about this! Ever since we worked on the Hotchkiss projects back in 2012, Neatline and military history have been a great pairing. Which is no accident - military history is often about how things change over time on maps, which is basically the tag line for Neatline. In fact, I’ve always assumed that military history played a pretty big role in inventing the whole vocabulary of visual concepts and techniques that have been picked up by digital tools like Neatline - the flowcharts, the arrows, the diagrammatic ways of representing how things move from one place to another. Hotchkiss was using colored pencils to scratch out annotations onto his battle maps back in the 1870s, which is more or less exactly what Neatline is, minus the computer screen.&lt;/p&gt;
+
+&lt;p&gt;Anyway, when I started putting together the workshop, I decided to use this as an excuse to build out a little Neatline exhibit that I’ve been rolling around in my head about for about three years - an interactive version of &lt;a href=&quot;http://en.wikipedia.org/wiki/Charles_Joseph_Minard#Work&quot;&gt;Charles Minard’s classic flow diagram of Napoleon’s 1812 invasion of Russia&lt;/a&gt;. This is not an original idea. Minard’s map is sort of like the “Stairway to Heaven” of digital mapping and information visualization, and it’s been remade digitally dozens of times. But, I decided to give it try, and see if I could find some kind of interesting riff. I started out by georeferencing a scan of Minard’s diagram, and then traced out vector annotations on top of each of the individual segments that represent the deteriorating size of the Grande Armée over the course of the invasion:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/segment-annotations.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/segment-annotations.jpg&quot; alt=&quot;segment-annotations&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the basic structure in place, I realized that I didn’t really have an intuitive sense of the &lt;em&gt;scale&lt;/em&gt; of the whole thing - how far was it from the Neman River to Moscow? How long did it take? It turns out that the march was about 540 miles in each direction. I fired up Illustrator, blocked in a little ruler-like shape, and dragged out the annotation along the top of the map:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/540-miles.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/540-miles-1024x178.jpg&quot; alt=&quot;540-miles&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, the question of time. This seemed like a good excuse for some d3. I made a little chart on the right side of the screen that plots out the size of the French army over the course of the ~5-month interval of time between when Napoleon crossed the Neman on June 24 and when that last little bit of the army stumbled back out of Russia in December 14. Then, in the exhibit theme, I wrote a little bit of Javascript that wires up the graph with the vector annotations on the map - hover on the graph to highlight the corresponding blocks in Minard’s diagram, and click to zoom to that location:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/graph.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/graph-1024x979.jpg&quot; alt=&quot;graph&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Anyway - simple but fun. I’m looking forward to spending the next two days learning from people who actually know something about military history!&lt;/p&gt;</content><author><name>david-mcclure</name></author><category term="d3" /><category term="military history" /><category term="neatline" /><summary type="html">[Cross-posted from dclure.org]</summary></entry><entry><title type="html">Upgrading Neatline and Omeka</title><link href="/research%20and%20development/2014/09/26/upgrading-neatline-and-omeka.html" rel="alternate" type="text/html" title="Upgrading Neatline and Omeka" /><published>2014-09-26T07:53:08-04:00</published><updated>2014-09-26T07:53:08-04:00</updated><id>/research%20and%20development/2014/09/26/upgrading-neatline-and-omeka</id><content type="html" xml:base="/research%20and%20development/2014/09/26/upgrading-neatline-and-omeka.html">&lt;p&gt;One of my first projects here at the Scholars’ Lab was to help update some Omeka/Neatline sites. These are sites we keep around as examples of our &lt;a href=&quot;http://neatline.org&quot;&gt;Neatline&lt;/a&gt; plugin for &lt;a href=&quot;http://omeka.org&quot;&gt;Omeka&lt;/a&gt;, and they were a few versions behind. While a pretty easy process to do by hand, having a script to take care of it makes it even easier for future upgrades, too. I call the script ONUS (Omeka Neatline Upgrade Script). While the script was written specifically for our purposes, it may be useful if you have an Omeka install using the Neatline plugin. It can be found here on github.com, feel free to use at your own risk.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/scholarslab/onus&quot;&gt;https://github.com/scholarslab/onus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I perhaps went a little overboard and made the script pretty robust. I was going to take the opportunity to learn some Ruby, but ended up writing it in Bash. What is Bash (or ksh or zsh or tcsh)? Bash is a shell. When you open a terminal, or command line, what you type in is called a shell. It takes your commands and does stuff with them. They are all basically the same, but have various things they do better than others, hence the great number of them. A shell script is basically a document that has a list of commands that the shell can run. Most shells allow for some logic, like if/while/case/for statements, variables, functions, etc. Usually very basic programming. (A good tutorial for learning the command line in general is found here: &lt;a href=&quot;http://cli.learncodethehardway.org/book/&quot;&gt;http://cli.learncodethehardway.org/book/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;I thought I could write the script very quickly in Bash since I know that language relatively well (much better than Ruby), but one thing I learned is that Bash does not handle comparing floating point numbers. Floating point numbers is a fancy way of saying numbers with decimal points, like version numbers, (ex. 2.2.1 and 1.3.1). Bash does not have an easy, default way to compare these numbers like most programming languages (like Ruby, Python, and Perl), and even other shells (like ksh and zsh).&lt;/p&gt;
+
+&lt;p&gt;In retrospect it probably would have been better to write this in Ruby or some “real” programming language from the get go, but alas I didn’t have the need for comparing floating point numbers until most of the logic was already figured out and coded in Bash.&lt;/p&gt;
+
+&lt;p&gt;I’ll run through how to use the script as well as go through some of the logic for working with floating point numbers in Bash.&lt;/p&gt;
+
+&lt;h2 id=&quot;running-the-script&quot;&gt;Running the Script&lt;/h2&gt;
+
+&lt;p&gt;The script runs the commands needed to upgrade Omeka from 1.5.x to the latest version, and Neatline from 1.x.x to the latest version.&lt;/p&gt;
+
+&lt;p&gt;You would run this script on the server/computer where the Omeka installation is found. You can pass the path to the Omeka install to the script, or it will prompt you for it.&lt;/p&gt;
+
+&lt;p&gt;The script can take four flags/switches/options:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-L : Upgrade Omeka and Neatline to the latest and greatest versions. (Note: &quot;Pre-2.0 versions of Neatline can't be upgraded directly to version 2.2. Upgrade to version 2.0 first!&quot;)
+-n [number]  :  Where [number] is a valid Neatline tag from https://github.com/scholarslab/Neatline. This will upgrade Neatline to the specified version number. Note, all Neatline version have three digits x.x.x.
+-o [number]  :  Where [number] is a valid Omeka tag from https://github.com/omeka/Omeka. This will upgrade Omeka to the specified version number.
+-s  :  Do not upgrade Omeka
+-t  :  Do not upgrade Neatline
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;basic-usage&quot;&gt;Basic Usage:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download the onus.sh file from the github repo. It doesn’t really matter where you put this script, but your home directory is a good location.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On the command line, enter the directory where the file is located and type the following command. This will allow you to execute the script.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod u+x onus.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If needed, change any default variables at the top of the file, ex. paths to MySQL, PHP, and git. The default is to use your account’s system default. This may be different based on your system, if for example you are testing with &lt;a href=&quot;http://www.mamp.info/de/&quot;&gt;MAMP&lt;/a&gt; on your Mac computer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MYSQL=&quot;/path/to/bin/mysql&quot;
+MDUMP=&quot;/path/to/bin/mysqldump&quot;
+MADMIN=&quot;/path/to/bin/mysqladmin&quot;
+PHP=&quot;/path/to/bin/php&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Change one ‘sed’ line if needed, to work with GNU/Linux. Remove the empty double quotes after -i&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sed -i &quot;&quot; &quot;80s/.*/${migrate}/&quot; ${path}/plugins/Neatline/migrations/2.0.0/Neatline_Migration_200.php
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Run the script by typing the following at the command promp; make sure to type the period ( . ) before the forward slash ( / ) and then the script name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./onus.sh /path/to/omeka/install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will upgrade Omeka and Neatline to the next available major release. Run the script as many times as needed to get to the latest version.&lt;/p&gt;
+
+&lt;p&gt;For more examples, please visit the GitHub page at &lt;a href=&quot;https://github.com/scholarslab/onus&quot;&gt;https://github.com/scholarslab/onus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;NOTE: One important thing to be aware of is when you  upgrade from 1.5.x versions of Omeka and 1.x.x versions of Neatline the Neatline functionality will be broken until Omeka and Neatline are upgraded to the very latest stable versions. So if you plan on using this script, then plan on upgrading to the very latest versions!&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-back-neatline-exhibits-after-upgrading-to-200&quot;&gt;Getting Back Neatline Exhibits After Upgrading to 2.0.0&lt;/h2&gt;
+
+&lt;p&gt;We noticed one big problem when upgrading sites with versions of Omeka and Neatline previous to 2.0.0 by hand. This section will detail the steps to fix it by hand for demonstration purposes, but they are included in the script.&lt;/p&gt;
+
+&lt;p&gt;Omeka and Neatline both go through some significant database (and code) changes from 1.5.x to 2.x.x. The biggest seemed to be that the upgrade script for Neatline didn’t “take” and needed to be done manually. For these sites, the Neatline Exhibits did not get transferred from the old database table to the new table.&lt;/p&gt;
+
+&lt;p&gt;The first step is always to make a backup copy of the database and files. That way if anything goes awry, you can easily put things back together.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To back up the database, simply take a MySQL dump.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysqldump -uUserName -pPassword databasename &amp;gt; databasename.sql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Do this in the main directory of Omeka. Then make a zip file of the entire Omeka directory.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zip -r omeka-backup.zip /path/to/omeka/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next, deactivate any plugins, including Neatline and NeatlineMaps. One of the big changes with the 2.x.x version is that NeatlineMaps is rolled into Neatline.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Grab a 2.0.x version of Omeka. Either do this with github&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/omeka/Omeka NewOmeka
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or with a zip file.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://omeka.org/files/omeka-2.0.4.zip
+unzip omeka-2.0.4.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add the 2.0.0 version of Neatline plugin into the NewOmeka/plugins directory, along with any other upgraded plugins you may need. NeatlineText, NeatlineSimilie and NeatlineWaypoints may be needed if you used that functionality in the previous version.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy the db.ini file from the old installation to the NewOmeka/ directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now load the admin page for NewOmeka/ in the browser: http://domain/NewOMeka/admin/. Upgrade the database and login to upgrade and reactivate the Neatline plugin and other plugins as needed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You may notice things go smoothly, except the existing Neatline exhibits may not transfer. To get them into the new database tables, add the following two lines at line 80 in the NewOmeka/plugins/Neatline/migrations/2.0.0/Neatline_Migration_200.php file:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$fc = Zend_Registry::get(&quot;bootstrap&quot;)-&amp;gt;getPluginResource(&quot;FrontController&quot;)-&amp;gt;getFrontController();
+$fc-&amp;gt;getRouter()-&amp;gt;addDefaultRoutes();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Run the following database command to allow the background process to run:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql -uuser -ppassword database --execute=&quot;UPDATE prefix_processes SET status='starting' WHERE id=1;&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Run the following php command to get the processes started.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/path/to/bin/php /path/to/NewOmeka/application/scripts/background.php -p 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Finally, if everything in the new version looks good, you can remove the old and replace it with the new.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mv /path/to/omeka/ /path/to/old-omeka/
+mv /path/to/NewOmeka /path/to/omeka
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;some-script-logic&quot;&gt;Some Script Logic&lt;/h2&gt;
+
+&lt;p&gt;Initially, I used the script to upgrade both Omeka and Neatline to the next higher version, going through every single minor version incrementally. When upgrading from Omeka 1.5.1 and Neatline 1.0.0 to the latest versions (2.2.2 for Omeka and 2.3.0 for Neatline), I had to run the script over 20 times!&lt;/p&gt;
+
+&lt;p&gt;That was way too labor intensive and time consuming, so next I added some logic to just skip to the next major release. That dropped the times needed to run the script down to four. This is how the script behaves if run without any options.&lt;/p&gt;
+
+&lt;p&gt;But I could do better than that! I added in some command line options/flags that allow you to upgrade to any Omeka or Neatline version you specify. Now you can upgrade from Omeka 1.5.x and Neatline 1.x.x directly to Omeka 2.0.4 and Neatline 2.0.0, then right to Omeka 2.2.2 and Neatline 2.3.0. Two steps!&lt;/p&gt;
+
+&lt;h2 id=&quot;bash-and-floating-points&quot;&gt;Bash and floating points&lt;/h2&gt;
+
+&lt;p&gt;As mentioned above, Bash does not work with floating points, so I had to create a function to deal with that. Dealing with version numbers, especially with minor version numbers kind of requires the need to compare floating point numbers…&lt;/p&gt;
+
+&lt;p&gt;In the script I use two different functions:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    # Compare two floating point numbers.
+    # Usage:
+    # if $( compare_floats number1 number 2 ); then
+    #     echo 'number1 is less'
+    # else
+    #     echo 'number2 is less'
+    # fi
+    #
+    # result  : the string 'true' or 'false'
+    # number1 : the first number to compare
+    # number2 : the second number to compare
+    # Read it as: is number1 less than number2? It returns 'true' if number1 is
+    # less, and 'false' if number1 is greater.
+    function compare_floats() {
+        echo | awk -v n1=$1 -v n2=$2 '{if (n1&amp;lt;n2) printf (&quot;true&quot;); else printf (&quot;false&quot;);}'
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This function basically compares two numbers. It outputs true if the first number is less than the second number, and false if the first number is greater than the second number. Another way to think about it would be to ask the question, is the first number less than the second number? It returns ‘true’ if that is true, and ‘false’ if that is false.&lt;/p&gt;
+
+&lt;p&gt;The function is basically echoing the result of the awk command, so let’s look at what it does a bit more closely.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+    awk -v n1=$1 -v n2=$2 '{if (n1&amp;lt;n2) printf (&quot;false&quot;); else printf (&quot;true&quot;);}'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;First we call the awk command with two ‘variable’ flags. The -v says that the next expression sets a value to a variable, so n1 is the variable and $1 is the value. The $1 and $2 are actually variables themselves. When you call this function later in the script, you pass it two numbers. These numbers are automatically assigned to variables, the first number to $1 and the second to $2.&lt;/p&gt;
+
+&lt;p&gt;The next part of the awk command processes an if/else statement; the part within the single quotes and curly braces. The single quotes are required by Bash, and the curly braces tell awk to process the action. The part within the braces is the basic if/else statement. If the comparison is true, then do the first step; else/otherwise do the next step. So, in our case, if the first number (n1) is less than the second number (n2), then print “true”, otherwise print “false”.&lt;/p&gt;
+
+&lt;p&gt;See here if you are interested in learning more about the ways of awk &lt;a href=&quot;http://www.grymoire.com/Unix/Awk.html#uh-1&quot;&gt;http://www.grymoire.com/Unix/Awk.html#uh-1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This function is used in two ways in the script. First, it just does a basic check in an if statement. Check if this number is less than that number:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+    if $( compare_floats $n_upgrade 2.0.0 ); then
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This checks if the next Neatline version is less than 2.0.0. If that is true, it runs some commands.&lt;/p&gt;
+
+&lt;p&gt;Second, we can use the function as part of a multi conditional check:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    if [[ -d $path/archive/ &amp;amp;&amp;amp; $( compare_floats $o_upgrade 2.0.0 ) == &quot;true&quot; ]]; then
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here we check if the /archive/ directory exists (used with Omeka versions less than 2.0) and we also check if the next version to upgrade Omeka to is less than 2.0.0. If both of those conditions are met, then we can run some code. Otherwise we do some more conditional checking and different code running.&lt;/p&gt;
+
+&lt;p&gt;And, the next function…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    # Pass the current version first, then the array
+    # the function echoes the version just greater than the current version,
+    # i.e., the next version to upgrade to.
+    #
+    # Usage:
+    # variable=$( get_next_version $num array[@] )
+    #
+    # variable : the next version greater than $num
+    # $num : the current version
+    # array[@] : an array of all possible versions
+    function get_next_version() {
+        num=$1
+        declare -a ARRAY=(&quot;${!2}&quot;)
+        for i in ${ARRAY[@]}
+        do
+            if awk -v n1=$num -v n2=$i 'BEGIN{ if (n1&amp;lt;n2) exit 0; exit 1}'; then
+                echo $i
+                break
+            fi
+        done
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this function we are doing a similar thing, comparing two numbers, but we are comparing one number against a list of numbers. To run this function you pass the current version and a list of possible version numbers. The function will compare the number you pass it with the list, and echo the next highest number from the list.&lt;/p&gt;
+
+&lt;p&gt;Let’s break down this function as well.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    num=$1
+    declare -a ARRAY=(&quot;${!2}&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These first two lines are simply getting the input from calling the function and turning them into an internal variable and an internal array. You may remember the ‘$1’ is the first number passed to the function. But where is the ‘$2’? It’s expanded and changed a bit because it is actually an array, or a list of numbers, rather than a single number. In Bash, you can write a variable with a dollar sign (ex. $myNumber) or with curly braces (ex. ${myNumber}). The second option allows you to string multiple variables together and do basic string or array manipulation. For example we could put two variables together: ${myNumber}${anotherNumber}&lt;/p&gt;
+
+&lt;p&gt;In this case we are declaring a new array named ‘ARRAY’ and pre-populating it with the values of the passed array. We do some indirect expansion to get the values of the passed array, that’s the “${!2}” part. Basically, this part says set the values of the array passed as the values of the new array (in this case we call it ‘ARRAY’), rather than setting the name of the array as the value of the new array. See here for more explanation on Bash arrays and indirection &lt;a href=&quot;http://wiki.bash-hackers.org/syntax/arrays#indirection&quot;&gt;http://wiki.bash-hackers.org/syntax/arrays#indirection&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Next we do a standard for loop to go through every element or value of the array.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    for i in ${ARRAY[@]}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next we check the current version number against each number in the list of version numbers, using the same awk command as before.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    if awk -v n1=$num -v n2=$i 'BEGIN{ if (n1&amp;lt;n2) exit 0; exit 1}'; then
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In this case, though, instead of printing ‘true’ or ‘false’ the command exits without errors (exit 0) or exits with an error (exit 1). The if statement that includes the awk command will execute the code within the if statement only if the statement returns true, that is, if the awk command exits without errors. So, if the first number is less than the second number, then exit without errors (true) and echo the second number. This becomes the next version number.&lt;/p&gt;
+
+&lt;p&gt;Basically you can think of this as getting the current version number, then comparing this to a list of all possible version numbers, starting with the lowest number. When the current version is greater than the possible version number, do nothing. When the current version is not less than the possible version number, then the possible version number is greater, and therefore should be the next version to upgrade to. The break statement within the for loop tells the for loop to stop looping when it has found the next version number.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Few, that was a long winded explanation of the script. The two above functions, and accompanying explanation, could have been avoided by using a programming language (like Ruby, Python, or Perl) instead of a shell script because they handle floating point comparisons naturally.&lt;/p&gt;
+
+&lt;p&gt;So, just to summarize, if you have Omeka and Neatline installed already, and would like to upgrade to the latest version, then you can run this script on the server where Omeka is installed. It requires that you have git installed. All of the other programs it depends on are pretty standard.&lt;/p&gt;</content><author><name>ammon-shepherd</name></author><category term="awk" /><category term="bash" /><category term="neatline" /><category term="omeka" /><category term="Programming" /><category term="scripting" /><category term="upgrade" /><summary type="html">One of my first projects here at the Scholars’ Lab was to help update some Omeka/Neatline sites. These are sites we keep around as examples of our Neatline plugin for Omeka, and they were a few versions behind. While a pretty easy process to do by hand, having a script to take care of it makes it even easier for future upgrades, too. I call the script ONUS (Omeka Neatline Upgrade Script). While the script was written specifically for our purposes, it may be useful if you have an Omeka install using the Neatline plugin. It can be found here on github.com, feel free to use at your own risk.</summary></entry><entry><title type="html">Omeka, Neatline, Mac, development, oh my!</title><link href="/research%20and%20development/2014/08/18/omeka-neatline-mac-development-oh-my.html" rel="alternate" type="text/html" title="Omeka, Neatline, Mac, development, oh my!" /><published>2014-08-18T05:41:08-04:00</published><updated>2014-08-18T05:41:08-04:00</updated><id>/research%20and%20development/2014/08/18/omeka-neatline-mac-development-oh-my</id><content type="html" xml:base="/research%20and%20development/2014/08/18/omeka-neatline-mac-development-oh-my.html">&lt;p&gt;At the Scholars’ Lab, we’re big big advocates of Open Source. All of our projects are available freely and openly on &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;, and we’re always more than happy to accept pull requests. We’d like to be able to empower everyone to contribute to our projects as much as they’re able to and comfortable with.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, one of our flagship projects, &lt;a href=&quot;http://neatline.org/&quot;&gt;Neatline&lt;/a&gt;, isn’t easy to contribute to. There are a number of reasons for this, but one is that the development environment is not trivial to get set up. In order to address this and make it easier for others to contribute, we’ve developed an &lt;a href=&quot;http://www.ansible.com/&quot;&gt;Ansible&lt;/a&gt; playbook that takes a not-quite-stock Mac and sets up an instance of Omeka with the Neatline plugin available, as well as all the tools necessary for working on Neatline.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ansible.com/&quot;&gt;Ansible&lt;/a&gt; is a system for setting up and configuring systems. It’s often used to set up multiple servers—for instance, a database server and a static web server, both working with a dynamic web applications deployed on several computers. If you’re familiar with &lt;a href=&quot;http://www.getchef.com/&quot;&gt;Chef&lt;/a&gt; or &lt;a href=&quot;http://puppetlabs.com/&quot;&gt;Puppet&lt;/a&gt;, Ansible solves the same problems. In this case, we’ll use it to configure our local development workstation.&lt;/p&gt;
+
+&lt;p&gt;We’ve published these playbooks on &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt; in the &lt;a href=&quot;https://github.com/erochest/neatline.dev/tree/mac-ansible&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;neatline.dev&lt;/code&gt; repository, on the &lt;code class=&quot;highlighter-rouge&quot;&gt;mac-ansible&lt;/code&gt; branch&lt;/a&gt;. You can get this by cloning it to your local machine. (Since this is for getting started developing Neatline, I assume that you’re already comfortable with &lt;a href=&quot;http://git-scm.com/&quot;&gt;git&lt;/a&gt;. If not, &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;there&lt;/a&gt; &lt;a href=&quot;https://try.github.io/&quot;&gt;are&lt;/a&gt; &lt;a href=&quot;http://www.git-tower.com/learn/&quot;&gt;lots&lt;/a&gt; &lt;a href=&quot;http://gitimmersion.com/&quot;&gt;of&lt;/a&gt; &lt;a href=&quot;http://www.vogella.com/tutorials/Git/article.html&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;http://git-scm.com/book&quot;&gt;tutorials&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone --branch mac-ansible https://github.com/erochest/neatline.dev.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;In creating this, I’ve aimed for starting from a stock Mac. And I missed pretty badly. However, the necessary prerequisites are minimal. You’ll just need to have these things installed.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/xcode/id497799835&quot;&gt;XCode&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once those two are on your machine, you can install the other two dependencies. These are available through &lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;. So open Terminal and type these lines:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ brew install python
+$ brew install ansible
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s all. You should be ready to go.&lt;/p&gt;
+
+&lt;h2 id=&quot;settings&quot;&gt;Settings&lt;/h2&gt;
+
+&lt;p&gt;This project includes a number settings that you can change to customize your installation. Those are found in the file &lt;a href=&quot;https://github.com/erochest/neatline.dev/blob/mac-ansible/playbook.yaml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;playbook.yaml&lt;/code&gt;&lt;/a&gt;. The relevant section is labelled &lt;code class=&quot;highlighter-rouge&quot;&gt;vars&lt;/code&gt;, and it allows you to set information about the Omeka database (&lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_db_user&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_db_password&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_db_name&lt;/code&gt;), which version of Omeka you wish to use (&lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_version&lt;/code&gt;), where you wish to install it (&lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_dir&lt;/code&gt;), and where you want to point your browser to (&lt;code class=&quot;highlighter-rouge&quot;&gt;dev_hostname&lt;/code&gt;) as you’re working on the site. The defaults are:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vars:
+  db_user: root
+  db_password:
+  omeka_db_user: omeka
+  omeka_db_password: omeka
+  omeka_db_name: omeka
+  dev_hostname: omeka-neatline.dev
+  omeka_dir: &quot;/omeka/neatlinedev&quot;
+  omeka_version: stable-2.1
+  debug: true
+  neatline_repo: git@github.com:scholarslab/Neatline.git
+  php_version: 55
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Change these to reflect what you’d like your personal Omeka/Neatline installation to look like.&lt;/p&gt;
+
+&lt;p&gt;One option that I’ll call out in particular is &lt;code class=&quot;highlighter-rouge&quot;&gt;neatline_repo&lt;/code&gt;. This is the git repository that you’ll be working with. If you’re using github to host your project, you can &lt;a href=&quot;https://help.github.com/articles/fork-a-repo&quot;&gt;fork&lt;/a&gt; the primary Neatline repository (from the URL given above). And when you’ve completed your work, if you’d like to contribute back, you can send us a &lt;a href=&quot;https://help.github.com/articles/using-pull-requests&quot;&gt;pull request&lt;/a&gt; through the Github site.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up&quot;&gt;Setting Up&lt;/h2&gt;
+
+&lt;p&gt;Finally, we’re ready to actually create the system. This is quite easy. In the Terminal, from the &lt;code class=&quot;highlighter-rouge&quot;&gt;neatline.dev&lt;/code&gt; directory, run the &lt;code class=&quot;highlighter-rouge&quot;&gt;neatline-dev&lt;/code&gt; script.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd neatline.dev
+$ ./neatline-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now wait.&lt;/p&gt;
+
+&lt;p&gt;After your computer whirs away for a while, you’ll get your prompt back. When that happens, you should be able to point your browser to http://omeka-neatline.dev (in the example above). There you’ll see the Omeka installation form.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-just-happened&quot;&gt;What Just Happened?&lt;/h2&gt;
+
+&lt;p&gt;The Ansible playbook does a number of tasks.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;It installs all the dependencies that you’ll need, including &lt;a href=&quot;http://php.net/&quot;&gt;PHP&lt;/a&gt;, &lt;a href=&quot;http://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt;, and &lt;a href=&quot;http://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It sets MySQL to start automatically when you log in, and it creates the Omeka MySQL user and database.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It configures &lt;a href=&quot;http://httpd.apache.org/&quot;&gt;Apache&lt;/a&gt; to work with PHP and to find your Omeka directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It downloads and configures &lt;a href=&quot;http://omeka.org/&quot;&gt;Omeka&lt;/a&gt; and turns on debugging.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It clones &lt;a href=&quot;http://neatline.org/&quot;&gt;Neatline&lt;/a&gt; into Omeka’s &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin&lt;/code&gt; directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It initializes &lt;a href=&quot;https://github.com/nvie/gitflow&quot;&gt;git flow&lt;/a&gt; for working in Neatline and leaves you on the &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt; branch.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;And it installs the necessary JavaScript and PHP tools, including &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt;, &lt;a href=&quot;http://bower.io/&quot;&gt;Bower&lt;/a&gt;, &lt;a href=&quot;https://getcomposer.org/&quot;&gt;Composer&lt;/a&gt;, and &lt;a href=&quot;http://phpunit.de/&quot;&gt;PHPUnit&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After all that, it really needs a break.&lt;/p&gt;
+
+&lt;p&gt;You probably do too.&lt;/p&gt;
+
+&lt;h2 id=&quot;future&quot;&gt;Future&lt;/h2&gt;
+
+&lt;p&gt;Unfortunately, that’s only the first step that we need to take to make the Neatline code-base approachable. Some more things that we have planned include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Documentation on all the moving parts.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Documentation on the overall architecture of Neatline.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Documentation on the code. What’s where? If you wish to change something, where would you find it?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As we get those parts in place, we’ll keep you posted.&lt;/p&gt;</content><author><name>eric-rochester</name></author><summary type="html">At the Scholars’ Lab, we’re big big advocates of Open Source. All of our projects are available freely and openly on Github, and we’re always more than happy to accept pull requests. We’d like to be able to empower everyone to contribute to our projects as much as they’re able to and comfortable with.</summary></entry><entry><title type="html">Neatline 2.3</title><link href="/announcements/2014/07/28/neatline-2-3.html" rel="alternate" type="text/html" title="Neatline 2.3" /><published>2014-07-28T07:01:55-04:00</published><updated>2014-07-28T07:01:55-04:00</updated><id>/announcements/2014/07/28/neatline-2-3</id><content type="html" xml:base="/announcements/2014/07/28/neatline-2-3.html">&lt;p&gt;Today we’re happy to announce &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Neatline 2.3&lt;/a&gt;! This release includes a couple of nifty new features and, under the hood, a pretty big stack of bug fixes, performance tweaks, and improvements to the development workflow. The coolest new feature in 2.3 is a simple little addition that we’ve gotten a number of requests for in the last few months - the ability to “hard link” to individual records inside of an exhibit. In the new version, when you select a record in an exhibit, a little fragment gets tacked on to the end of the URL that points back to that record. For example, if the record has an ID of &lt;code class=&quot;highlighter-rouge&quot;&gt;16&lt;/code&gt;, the URL will change to something like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;www.omeka-site.org/neatline/show/exhibit**#records/16**&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, if someone goes directly to this URL, the exhibit will automatically select that record when the page loads, just as if the reader had manually clicked on it - the map will focus and zoom around the record, the popup bubble will appear, the timeline will scroll, and any other custom event bindings added by the exhibit’s theme will fire. This is nice because it makes it easier to use Neatline as a kind of geospatial “footnoting” system that can be referred to from external resources - sort of like the &lt;a href=&quot;http://www.scholarslab.org/announcements/neatline-text/&quot;&gt;Neatline Text&lt;/a&gt; extension, except the text doesn’t have to be housed inside of Omeka. Imagine you’re working on an article that makes reference to some geographic locations, and you want to plot them out in Neatline. This way you could put the text of the article anywhere on the web (a Wordpress blog, an online journal, etc.) and just link to the relevant parts of the Neatline exhibit using plain old anchor tags.&lt;/p&gt;
+
+&lt;p&gt;For example, check out this &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo&quot;&gt;simple little Neatline exhibit&lt;/a&gt;, which just plots out the locations of eight US cities. Then, click on these links to open up the same exhibit, this time focused on the individual cities: &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1526&quot;&gt;New York&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1525&quot;&gt;San Francisco&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1527&quot;&gt;Chicago&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1528&quot;&gt;Los Angeles&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1531&quot;&gt;Seattle&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1530&quot;&gt;Denver&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1532&quot;&gt;Atlanta&lt;/a&gt;, and (but of course) &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1529&quot;&gt;Charlottesville&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1525&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/hard-link1-1024x591.jpg&quot; alt=&quot;hard-link&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://github.com/scholarslab/Neatline/releases/tag/2.3.0&quot;&gt;change log&lt;/a&gt; for the full list of updates in 2.3, and grab the new production package from the &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Omeka addons repository&lt;/a&gt;. Thanks Jenifer Bartle, Jacki Musacchio, Rachel King, Lincoln Mullen, and Miriam Posner for helping us find bugs and brainstorm about features! As always, drop a note on the &lt;a href=&quot;https://github.com/scholarslab/Neatline/issues?direction=desc&amp;amp;sort=created&amp;amp;state=closed&quot;&gt;GitHub issue tracker&lt;/a&gt; if you run into problems or have ideas for new features.&lt;/p&gt;</content><author><name>david-mcclure</name></author><category term="neatline" /><summary type="html">Today we’re happy to announce Neatline 2.3! This release includes a couple of nifty new features and, under the hood, a pretty big stack of bug fixes, performance tweaks, and improvements to the development workflow. The coolest new feature in 2.3 is a simple little addition that we’ve gotten a number of requests for in the last few months - the ability to “hard link” to individual records inside of an exhibit. In the new version, when you select a record in an exhibit, a little fragment gets tacked on to the end of the URL that points back to that record. For example, if the record has an ID of 16, the URL will change to something like:</summary></entry><entry><title type="html">A (Digital) Declaration of Independence</title><link href="/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map/" rel="alternate" type="text/html" title="A (Digital) Declaration of Independence" /><published>2014-07-02T00:00:00-04:00</published><updated>2014-07-02T00:00:00-04:00</updated><id>/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map</id><content type="html" xml:base="/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=A+%28Digital%29+Declaration+of+Independence&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-07-02&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fgeospatial-and-temporal%2Fa-digital-declaration-of-independence-with-text-painting-and-map%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
 &lt;em&gt;[Cross-posted from &lt;a href=&quot;http://dclure.org/essays/a-digital-declaration-of-independence-with-text-painting-and-map/&quot;&gt;dclure.org&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;launch-the-exhibit&quot;&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/declaration-of-independence&quot;&gt;Launch the Exhibit&lt;/a&gt;&lt;/h2&gt;
@@ -49,7 +508,7 @@ Once I positioned the layers, annotated the signatures and faces, and plotted ou
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>dm4fn</name></author><summary type="html">[Cross-posted from dclure.org] Launch the Exhibit Way back in the spring of 2012, a couple months before we released the first version of Neatline, I drove up to Washington to give a little demo of the project to the folks at the Library of Congress. I had put together a couple of example exhibits for&amp;hellip;. More.</summary></entry><entry><title type="html">Creating themes for individual Neatline exhibits</title><link href="http://localhost:4000/2014/04/01/creating-themes-for-individual-neatline-exhibits/" rel="alternate" type="text/html" title="Creating themes for individual Neatline exhibits" /><published>2014-04-01T00:00:00-04:00</published><updated>2014-04-01T00:00:00-04:00</updated><id>http://localhost:4000/2014/04/01/creating-themes-for-individual-neatline-exhibits</id><content type="html" xml:base="http://localhost:4000/2014/04/01/creating-themes-for-individual-neatline-exhibits/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=Creating+themes+for+individual+Neatline+exhibits&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-04-01&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fgeospatial-and-temporal%2Ftheming-neatline-exhibits%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt;
+&lt;/ol&gt;</content><author><name>dm4fn</name></author><summary type="html">[Cross-posted from dclure.org] Launch the Exhibit Way back in the spring of 2012, a couple months before we released the first version of Neatline, I drove up to Washington to give a little demo of the project to the folks at the Library of Congress. I had put together a couple of example exhibits for&amp;hellip;. More.</summary></entry><entry><title type="html">Creating themes for individual Neatline exhibits</title><link href="/2014/04/01/creating-themes-for-individual-neatline-exhibits/" rel="alternate" type="text/html" title="Creating themes for individual Neatline exhibits" /><published>2014-04-01T00:00:00-04:00</published><updated>2014-04-01T00:00:00-04:00</updated><id>/2014/04/01/creating-themes-for-individual-neatline-exhibits</id><content type="html" xml:base="/2014/04/01/creating-themes-for-individual-neatline-exhibits/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=Creating+themes+for+individual+Neatline+exhibits&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-04-01&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fgeospatial-and-temporal%2Ftheming-neatline-exhibits%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt;
 Neatline makes it possible to create separate themes for individual exhibits, which is useful if you want to host a collection of self-contained Neatline projects on a single site. To get started, fork the &lt;a href=&quot;https://github.com/scholarslab/neatline-theme-template&quot;&gt;exhibit starter theme&lt;/a&gt;, which abstracts out the style, layout, and UX of the &lt;a href=&quot;http://dclure.org/logs/project-gemini-over-baja-california/&quot;&gt;Project Gemini over Baja California&lt;/a&gt; exhibit.&lt;/p&gt;
 
 &lt;p&gt;One of the coolest but most under-documented features in Neatline is the ability to create separate themes for each individual exhibit. Since Neatline exhibits are just one particular type of “view” inside of Omeka, it’s always been possible to customize the styling and layout at the level of the Omeka theme. Changes the the Omeka theme, though, propagate to all the exhibits on the site. In many cases, this is ideal – if you have a collection of closely-related Neatline projects, all part of the same thematic umbrella, it makes sense that they should all look more or less the same. For examples of this, check out Jeremy’s beautiful &lt;a href=&quot;https://github.com/scholarslab/astrolabe&quot;&gt;Astrolabe&lt;/a&gt; and &lt;a href=&quot;https://github.com/scholarslab/neatscape&quot;&gt;Neatscape&lt;/a&gt; themes for Omeka, which were designed with Neatline projects in mind.&lt;/p&gt;
@@ -143,228 +602,4 @@ For an example of a fully-fledged module, which follows the file layout conventi
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>dm4fn</name></author><summary type="html">Neatline makes it possible to create separate themes for individual exhibits, which is useful if you want to host a collection of self-contained Neatline projects on a single site. To get started, fork the exhibit starter theme, which abstracts out the style, layout, and UX of the Project Gemini over Baja California exhibit. One&amp;hellip;. More.</summary></entry><entry><title type="html">NeatlineText: Connect Neatline exhibits to documents</title><link href="http://localhost:4000/2014/03/31/neatlinetext-connect-neatline-exhibits-to-documents/" rel="alternate" type="text/html" title="NeatlineText: Connect Neatline exhibits to documents" /><published>2014-03-31T00:00:00-04:00</published><updated>2014-03-31T00:00:00-04:00</updated><id>http://localhost:4000/2014/03/31/neatlinetext-connect-neatline-exhibits-to-documents</id><content type="html" xml:base="http://localhost:4000/2014/03/31/neatlinetext-connect-neatline-exhibits-to-documents/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=NeatlineText%3A+Connect+Neatline+exhibits+to+documents&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-03-31&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fannouncements%2Fneatline-text%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Announcements&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;download-the-plugin&quot;&gt;&lt;a href=&quot;http://omeka.org/add-ons/plugins/neatlinetext&quot;&gt;Download the plugin&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://omeka.org/add-ons/plugins/neatlinetext&quot;&gt;&lt;img src=&quot;http://www.scholarslab.org/wp-content/uploads/2014/03/nltext-detail-1024x442.jpg&quot; alt=&quot;nltext-detail&quot; width=&quot;1024&quot; height=&quot;442&quot; class=&quot;aligncenter size-large wp-image-9950&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Today we’re pleased to announce the first public release of &lt;strong&gt;&lt;a href=&quot;http://omeka.org/add-ons/plugins/neatlinetext&quot;&gt;NeatlineText&lt;/a&gt;&lt;/strong&gt;, which makes it possible to create interactive, Neatline-enhanced editions of text documents – literary and historical texts, articles, book chapters, dissertations, blog posts, etc. – by connecting individual paragraphs, sentences, and words with objects in Neatline exhibits. Once the associations are established, the plugin wires up two-way linkages in the user interface between the highlighted sections in the text and the imagery in the exhibit. Click on the text, and the exhibit focuses around the corresponding location or annotation. Or, click on the map, and the text scrolls to show the corresponding sections in the text.&lt;/p&gt;
-
-&lt;p&gt;We’ve been using some version of this code in internal projects here at the lab for almost two years, and it’s long overdue for a public release. The rationale for NeatlineText is pretty simple – again and again, we’ve found that Neatline projects often go hand-in-hand with some kind of regular text narrative that sets the stage, describes the goals of project, or lays out an expository thesis that would be hard to weave into the more visual, free-form world of the Neatline exhibit proper. This is awesome combination – tools like Neatline are really good at displaying spatial, visual, dimensional, diagrammatic information, but nothing beats plain old text when you need to develop a nuanced, closely-argued narrative or interpretation.&lt;/p&gt;
-
-&lt;p&gt;The difficulty, though, is that it’s hard to combine the two in a way that doesn’t favor one over the other. We’ve taken quite a few whacks at this problem over the course of the last few years. One option is to present the text narrative as a kind of “front page” of the project that links out to the interactive environment. But this tends to make the Neatline exhibit feel like an add-on, something grafted onto the project as an after-thought. And this can easily become a self-fulfilling prophecy – when you have the click back and forth between different web pages to read the text and explore the exhibit, you tend to write the text as a more or less standalone piece of writing, instead of weaving the narrative in with the conceptual landscape of the exhibit.&lt;/p&gt;
-
-&lt;p&gt;Another option is to chop the prose narrative up into little chunks and build it directly into the exhibit – like the numbered waypoints we used in the &lt;a href=&quot;http://hotchkiss.neatline.org/neatline-exhibits/show/chancellorsville-may-2-1863-132/fullscreen&quot;&gt;the&lt;/a&gt; &lt;a href=&quot;http://hotchkiss.neatline.org/neatline-exhibits/show/battle-of-chancellorsville/fullscreen&quot;&gt;Hotchkiss&lt;/a&gt; &lt;a href=&quot;http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen&quot;&gt;projects&lt;/a&gt; back in 2012, each waypoint containing a small portion of a longer interpretive essay. But this tends to err in the other direction, dissolving the text into the visual organization of the exhibit instead of presenting it as a first-class piece of content.&lt;/p&gt;
-
-&lt;p&gt;NeatlineText tries to solves the problem by just plunking the two next to each other and making it easy for the reader (and the writer!) to move back and forth between the two. For example, NeatlineText powers the interactions between the text and imagery in &lt;a href=&quot;http://neatline.dclure.org/neatline/show/gemini-over-baja-california&quot;&gt;these&lt;/a&gt; &lt;a href=&quot;http://neatline.dclure.org/neatline/show/saturn-v-stage-2&quot;&gt;two&lt;/a&gt; exhibits of NASA photograph from the 1960s:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/logs/project-gemini-over-baja-california/&quot;&gt;&lt;img src=&quot;http://www.scholarslab.org/wp-content/uploads/2014/03/nltext-gemini-1024x619.jpg&quot; alt=&quot;nltext-gemini&quot; width=&quot;1024&quot; height=&quot;619&quot; class=&quot;aligncenter size-large wp-image-9941&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/saturn-v-stage-2&quot;&gt;&lt;img src=&quot;http://www.scholarslab.org/wp-content/uploads/2014/03/nltext-saturn-v-1024x615.jpg&quot; alt=&quot;nltext-saturn-v&quot; width=&quot;1024&quot; height=&quot;615&quot; class=&quot;aligncenter size-large wp-image-9942&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;(Yes, I know – I’m a space nerd.) NeatlineText is also great for creating interactive editions of primary texts. An earlier version of this code powers the &lt;a href=&quot;http://ships.lib.virginia.edu/neatline-editions/271&quot;&gt;Mapping the Catalog of Ships&lt;/a&gt; project by Jenny Strauss Clay, Courtney Evans, and Ben Jasnow (winner of the Fortier Prize prize at DH2013!), which connects the contingents in the Greek army mentioned in Book 2 of the Iliad with locations on the map:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://ships.lib.virginia.edu/neatline-editions/271&quot;&gt;&lt;img src=&quot;http://www.scholarslab.org/wp-content/uploads/2014/03/nltext-ships-1024x614.jpg&quot; alt=&quot;nltext-ships&quot; width=&quot;1024&quot; height=&quot;614&quot; class=&quot;aligncenter size-large wp-image-9944&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And NeatlineText was also used in this interactive edition of the &lt;a href=&quot;http://neatline.dclure.org/neatline/show/gettysburg-address&quot;&gt;first draft of the Gettysburg Address&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/logs/nicolay-copy-gettysburg-address/&quot;&gt;&lt;img src=&quot;http://www.scholarslab.org/wp-content/uploads/2014/03/nltext-gettysburg-1024x611.jpg&quot; alt=&quot;nltext-gettysburg&quot; width=&quot;1024&quot; height=&quot;611&quot; class=&quot;aligncenter size-large wp-image-9943&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Anyway, grab the code from the &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatlinetext&quot;&gt;Omeka add-ons repository&lt;/a&gt; and check out the &lt;a href=&quot;https://github.com/scholarslab/nl-widget-Text#neatlinetext&quot;&gt;documentation&lt;/a&gt; for step-by-step instructions about how to get up and running. And, as always, be sure to &lt;a href=&quot;https://github.com/scholarslab/nl-widget-Text/issues&quot;&gt;file a ticket&lt;/a&gt; if you run into problems!&lt;/p&gt;</content><author><name>dm4fn</name></author><summary type="html">Download the plugin Today we&amp;rsquo;re pleased to announce the first public release of NeatlineText, which makes it possible to create interactive, Neatline-enhanced editions of text documents &amp;ndash; literary and historical texts, articles, book chapters, dissertations, blog posts, etc. &amp;ndash; by connecting individual paragraphs, sentences, and words with objects in Neatline exhibits. Once the associations are&amp;hellip;. More.</summary></entry><entry><title type="html">Project Gemini over Baja California</title><link href="http://localhost:4000/2014/03/17/project-gemini-over-baja-california/" rel="alternate" type="text/html" title="Project Gemini over Baja California" /><published>2014-03-17T00:00:00-04:00</published><updated>2014-03-17T00:00:00-04:00</updated><id>http://localhost:4000/2014/03/17/project-gemini-over-baja-california</id><content type="html" xml:base="http://localhost:4000/2014/03/17/project-gemini-over-baja-california/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=Project+Gemini+over+Baja+California&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-03-17&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fgeospatial-and-temporal%2Fproject-gemini-over-baja-california%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
-&lt;em&gt;[Cross-posted from &lt;a href=&quot;http://dclure.org/logs/project-gemini-over-baja-california/&quot;&gt;dclure.org&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;launch-the-exhibit&quot;&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/gemini-over-baja-california&quot;&gt;Launch the Exhibit&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/gemini-over-baja-california&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/03/gemini-screenshot-1024x615.jpg&quot; alt=&quot;gemini-screenshot&quot; width=&quot;640&quot; height=&quot;384&quot; class=&quot;alignnone size-large wp-image-3754&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A couple weeks ago, somewhere in the middle of a long session of free-association link hopping on Wikipedia, I stumbled into a cluster of articles about &lt;a href=&quot;http://en.wikipedia.org/wiki/Project_Gemini&quot;&gt;Project Gemini&lt;/a&gt;, NASA’s second manned spaceflight program. Gemini, I quickly discovered, produced some spectacular photographs – many of them pointed downward towards the surface of the earth, capturing a dizzying opposition between the intelligible scale of the foreground (the 20-foot capsule, 100-foot tethering cords, 6-foot human bodies floating in space) and the completely unintelligible scale of the massive geographic entities below (peninsulas, continents, oceans).&lt;/p&gt;
-
-&lt;p&gt;As I started to click through the pictures, I found myself reflexively alt-tabbing back and forth between Chrome and Google Earth to compare them with the modern satellite imagery of the same geographic locations. Which made me think – why not try to actually combine the two into a single environment? Over the course of the next few days, I sketched out a little Neatline exhibit that plasters two photographs of Baja California Sur – taken about a year apart on Gemini 5 (August 1965) and Gemini 11 (September 1966) – around the Mapbox satellite imagery of the peninsula. Instead of lining up the coastlines to make the images overlay accurately on top of the satellite tiles, I just plunked them down on the map off to the side at a scale and orientation that makes it easy to compare the two. (We’ve &lt;a href=&quot;http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen&quot;&gt;played around with this before&lt;/a&gt;, and I like to think of it as faux – or just especially humanistic! – georectification.)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/03/faux-georectification.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/03/faux-georectification-1024x616.jpg&quot; alt=&quot;faux-georectification&quot; width=&quot;640&quot; height=&quot;385&quot; class=&quot;alignnone size-large wp-image-3774&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then, using the drawing tools in Neatline, I blocked in some simple annotations that visually wire up the two sets of imagery – outlines around the four islands along the eastern coast of the peninsula, and arrows between the different instantiations of La Paz and San José del Cabo. I also wanted to find a way to visually formalize the difference in perspective between the Gemini photographs (oblique, wide-angle, deliberate) and the Mapbox tiles (flat-on, uniform). Using Illustrator, I created a long, ruler-like vector shape to label the ~200-mile distance between La Paz and the approximate positon of the Gemini 5 capsule when the picture was taken, and then used the “Perspective Grid” tool to render the shape in three dimensions and place it on top of the Gemini photograph, as if the same shape were physically positioned in front of the lens. In Illustrator:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/03/200-miles-illustrator.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/03/200-miles-illustrator-1024x564.jpg&quot; alt=&quot;200-miles-illustrator&quot; width=&quot;640&quot; height=&quot;352&quot; class=&quot;alignnone size-large wp-image-3767&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And placed in the Neatline exhibit, first to match the shallow angle of the Gemini shot:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/03/200-miles.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/03/200-miles-1024x619.jpg&quot; alt=&quot;200-miles&quot; width=&quot;640&quot; height=&quot;386&quot; class=&quot;alignnone size-large wp-image-3764&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And then to match the perpendicular angle of the Mapbox tiles:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/03/200-miles-mapbox.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/03/200-miles-mapbox-1024x602.jpg&quot; alt=&quot;200-miles-mapbox&quot; width=&quot;640&quot; height=&quot;376&quot; class=&quot;alignnone size-large wp-image-3788&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I was also fascinated by the surreal opposition in scale between the Agena Target Vehicle (an unmanned spacecraft used for docking practice in orbit) and Isla San José, which sits serenely in the dark blue of the Gulf of California hundreds of miles below, but occupies almost exactly the same amount of space in the photograph as the 7-foot boom antenna on the Agena. In the space between the two, I dragged out two little shapes that map the sizes of things onto recognizable objects – a 6-foot person in the foreground, Manhattan in the background:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/03/manhattan-person.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/03/manhattan-person-1024x617.jpg&quot; alt=&quot;manhattan-person&quot; width=&quot;640&quot; height=&quot;385&quot; class=&quot;alignnone size-large wp-image-3762&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Perspective and Perspectivelessness&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;These images fascinate me because they roll together two types of imagery – both ubiquitous on the web – that are almost exact opposites of one another. On the one hand, you have regular pictures, taken by regular (non-astronaut) people. These photographs freeze into place one particular &lt;em&gt;perspective&lt;/em&gt; on things. In a literal sense, the world recedes from the lens in three dimensions – walls, buildings, bridges, mountains, valleys, clouds. Close things are big, distant things are small. Some are in focus, others aren’t. And unlike other forms of art like painting, poetry, sculpture, or music, which can claim (overconfidently, maybe) to graft completely new material onto the world, photographs innovate at the level of &lt;em&gt;stance&lt;/em&gt; and &lt;em&gt;viewpoint&lt;/em&gt;, the newness of the perspective on things that already exist. It’s less about what they add, more about what they subtract in order to whittle the world down to one particular frame. Why that angle? Why that moment? Why &lt;em&gt;that&lt;/em&gt;, and not anything else?&lt;/p&gt;
-
-&lt;p&gt;On the other hand you have spatial photography – the satellite imagery used in &lt;a href=&quot;https://www.google.com/maps&quot;&gt;Google Maps&lt;/a&gt;, &lt;a href=&quot;https://www.mapbox.com/&quot;&gt;Mapbox&lt;/a&gt;, &lt;a href=&quot;http://www.bing.com/maps/&quot;&gt;Bing Maps&lt;/a&gt;, etc. – which is almost completely &lt;em&gt;perspectiveless&lt;/em&gt;, in just about every sense of the word. The world becomes a flat, depthless plane, photographed from a distance at a perpendicular angle. Instead of trying to find interesting new ways to crop down the world, spatial tiles try to be comprehensive and standardized. Instead of showing one thing, in one way, at one moment in time, they try to show everything, in the exact same way, at the exact same moment – now. The companies that source and assemble the satellite imagery race to keep it as current as possible, right at the threshold of the present. Last year, Google announced that its satellite imagery had been &lt;a href=&quot;http://google-latlong.blogspot.com/2013/06/only-clear-skies-on-google-maps-and.html&quot;&gt;purged of all clouds&lt;/a&gt;. No doubt this makes it more functional, but it also does away with those wispy, bright-white threads of cloud that used to hang over the rainforests in Peru and Brazil, which were lovely. What’s gained, of course, is the intoxicating grandeur of it all, the ability to hold in a single view a photograph of the entire world – which, if nothing else, is some sort of crazy affirmation of human willpower. I always imagine Whitman, scratching out “&lt;a href=&quot;http://www.bartelby.com/142/74.html&quot;&gt;Salut au Monde&lt;/a&gt;“, panning around Google Maps for inspiration.&lt;/p&gt;
-
-&lt;p&gt;Photographs taken by astronauts, though, collapse the distinction in interesting ways. They’re literally “satellite” photography, but they’re also drenched in subjectivity and historical stance. The oceans and continents spread out hundreds of miles below, just like on Google Maps or Mapbox – but the pictures were snapped with regular cameras by the hands of actual people, stuffed into little canisters falling around the world at thousands of miles an hour, which were only up there in the first place due to a crazy mix of socio-political ambitions and anxieties that were deeply characteristic of that particular moment in history. The Gemini imagery is haloed with little bits of space-race technology that instantly historicizes the frame – the nose cone of the capsule blocks out a huge swath of desert and ocean, the Agena vehicle hangs just a couple of hundred feet from the camera, tethered by a slight, ribbon-like cord that twists for hundreds of miles across the Gulf of California.&lt;/p&gt;</content><author><name>dm4fn</name></author><summary type="html">[Cross-posted from dclure.org] Launch the Exhibit A couple weeks ago, somewhere in the middle of a long session of free-association link hopping on Wikipedia, I stumbled into a cluster of articles about Project Gemini, NASA&amp;rsquo;s second manned spaceflight program. Gemini, I quickly discovered, produced some spectacular photographs &amp;ndash; many of them pointed downward towards the&amp;hellip;. More.</summary></entry><entry><title type="html">The “Nicolay copy” of the Gettysburg Address</title><link href="http://localhost:4000/2014/02/04/the-nicolay-copy-of-the-gettysburg-address/" rel="alternate" type="text/html" title="The “Nicolay copy” of the Gettysburg Address" /><published>2014-02-04T00:00:00-05:00</published><updated>2014-02-04T00:00:00-05:00</updated><id>http://localhost:4000/2014/02/04/the-nicolay-copy-of-the-gettysburg-address</id><content type="html" xml:base="http://localhost:4000/2014/02/04/the-nicolay-copy-of-the-gettysburg-address/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=The+%22Nicolay+copy%22+of+the+Gettysburg+Address&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-02-04&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fexperimental-humanities%2Fneatline-gettysburg-address%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Experimental+Humanities&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
-&lt;em&gt;[Cross-posted from [dclure.org][1]]&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;launch-the-exhibit2&quot;&gt;[Launch the Exhibit][2]&lt;/h2&gt;
-
-&lt;p&gt;[&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/02/nicolay-fullscreen1.jpg&quot; alt=&quot;nicolay-fullscreen&quot; width=&quot;2880&quot; height=&quot;1727&quot; class=&quot;alignnone size-full wp-image-3661&quot; /&gt;][2]&lt;/p&gt;
-
-&lt;p&gt;This is a project that I’ve been hacking away at for some time, but only found the time (and motivation) to get it polished up and out the door over the weekend – a digital edition of the [“Nicolay copy” of the Gettysburg Address][3], with each of the ~250 words in the manuscript individually traced out in Neatline and wired up with a plain-text transcription of the text on the right side of the screen. I’ve tinkered around with [similar interfaces][4] in the past, but this time I wanted to play around with different approaches to formalizing the connection between the digitally-typeset words in the text and the handwritten words in the manuscript. Your eyes tend to dart back and forth between the image and the text, and it’s easy to lose your place – how to reduce that cognitive friction?&lt;/p&gt;
-
-&lt;p&gt;To chip away at this, I wrote a little sub-plugin for Neatline called [WordLines][5], which automatically overlays a little visual guideline (under the hood, a [d3][6]-wrapped SVG `&amp;lt;/p&amp;gt;&lt;/p&gt;
-&lt;line&gt;` element) on top of the page that connects each pair of words in the two viewports when the cursor hovers on either of the instantiations. So, when the mouse passes over words in the transcription, lines are automatically drawn to the corresponding locations on the image; and vice versa. From a technical standpoint, this turns out to be quite easy &amp;#8211; just get the pixel offsets for the `&lt;span&gt;` element in the transcription and the vector annotation on the map (for the latter, OpenLayers does the heavy lifting with helpers like `getViewPortPxFromLonLat`, which maps spatial coordinates to document-space pixel pairs), and then draw a line connecting the two points. The one hitch, though, is that this involves placing a large SVG element directly on top of the page content, which, by default, will cover all of the underlying elements (shapes on the map, words in the text) and block them from receiving the cursor events that drive the rest of the UI &amp;#8211; including, very problematically, the `mouseleave` event that garbage-collects old lines and prevents them from getting stuck on the screen.
-
-[&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/02/wordline.jpg&quot; alt=&quot;wordline&quot; width=&quot;1470&quot; height=&quot;678&quot; class=&quot;alignnone size-full wp-image-3666&quot; /&gt;][7]
-
-The work-around is to put `pointer-events: none;` on the SVG element, which causes the browser to treat it as a purely visual veneer over the page &amp;#8211; cursor events drop through to the underlying content elements, and everything else behaves normally. This is [just barely and only very recently cross-browser][8], but I&amp;#8217;m not sure if there&amp;#8217;s actually any other way to accomplish this, given the full set of constraints.
-
-**Modeling intuitions about scale**
-
-Originally, I had planned to just leave it at that, but, as is almost always the case with these projects, I ended up learning lots of interesting things along the way, and I ended up going back and adding in another set of annotations that make note of some of the more historically noteworthy aspects of the manuscript. Namely, I was interested in the different types of paper used for the two different pages (Lincoln probably wrote the first page in Washington before departing, the second page after arriving in Gettysburg) and the matching fold creases on the pages, which some historians have pointed to as evidence that the Nicolay copy was perhaps the actual &amp;#8220;reading copy&amp;#8221; that Lincoln used when delivering the speech, since eyewitness accounts describe Lincoln pulling a folded piece of paper out of his coat pocket.
-
-The other candidate is the [Hay draft][9], which includes lots of changes and corrections in Lincoln&amp;#8217;s hand, giving it the appearance of working draft that was prepared just before the event. One problem with the Hays draft, though, is its size &amp;#8211; it&amp;#8217;s written on larger paper and has just a single fold down the center, which would seem to make it an unlikely thing to tuck into coat pocket. When I read about this, I realized that I had paid almost no attention to the physical size of the manuscript. On the screen, it&amp;#8217;s either extremely small or almost infinitely large &amp;#8211; a tiny speck when you zoom far back, and an endless plane of beige-and-black when you zoom in. But, in this case, size turns out to be of great historical significance &amp;#8211; the Nicolay copy is smaller than the Hays copy, especially when folded along the set of matching creases clearly visible on the pages.
-
-So, how big is it? This involved a bit of guesswork. The resource page for the manuscript on the Library of Congress website doesn&amp;#8217;t include dimensions, and direct Google searches didn&amp;#8217;t turn up an easy answer, so I started poking around the internet to see if I could find other Lincoln manuscripts written on the &amp;#8220;Executive Stationery&amp;#8221; used for the first page. I rooted up a couple of documents for sale by rare book sellers, and in [both][10] [cases][11] the dimensions are listed at about 5 inches in width and 7-8 inches in height, meaning that the Nicolay copy &amp;#8211; assuming the stationery was more or less standardized &amp;#8211; would have folded down to a roughly 5 x 2.5-inch rectangle, which seems reasonably pocket-sized. (Again, this is amateur historical conjecture &amp;#8211; if I&amp;#8217;m wrong, please let me know!)
-
-I sketched out little ruler annotations labeling the width of the page and the height of the fold segment, but, zooming around the exhibit, I realized that I still didn&amp;#8217;t any intuitive sense of the size of the thing. Raw numerical measurements, even when you&amp;#8217;re beat across the head with them, become surprisingly abstract in the a-physical, point-of-reference-less netherlands of deeply-zooming digital landscapes. I dug out a ruler and zoomed the exhibit back until the first page occupied five real-world inches, and then held my hand up to the screen, imagining the sheet of paper in my hand. And then I thought &amp;#8211; why not just bake some kind of visual reference directly into the exhibit? I hunted down a CC-licensed SVG illustration of a handprint, and, using the size of my own hand as a reference, used Neatline&amp;#8217;s import-SVG feature to position the outline in the whitespace to the right of the first page of the manuscript:
-
-[&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/02/hand2.jpg&quot; alt=&quot;hand2&quot; width=&quot;2106&quot; height=&quot;1524&quot; class=&quot;alignnone size-full wp-image-3664&quot; /&gt;][12]
-
- [1]: http://dclure.org/logs/nicolay-copy-gettysburg-address/
- [2]: http://neatline.dclure.org/neatline/show/gettysburg-address
- [3]: http://prod.myloc.gov/Exhibitions/gettysburgaddress/exhibitionitems/ExhibitObjects/NicolayCopy.aspx
- [4]: http://neatline.dclure.org/neatline/show/saturn-v-stage-2
- [5]: https://github.com/davidmcclure/nl-widget-WordLines
- [6]: http://d3js.org/
- [7]: http://dclure.org/wp-content/uploads/2014/02/wordline.jpg
- [8]: http://caniuse.com/pointer-events
- [9]: http://prod.myloc.gov/Exhibitions/gettysburgaddress/exhibitionitems/ExhibitObjects/HayDraft.aspx
- [10]: http://www.baumanrarebooks.com/rare-books/lincoln-abraham/autograph-letter-signed/63126.aspx
- [11]: http://www.robertedwardauctions.com/auction/2006/1204.html
- [12]: http://dclure.org/wp-content/uploads/2014/02/hand2.jpg
-&lt;/span&gt;&lt;/line&gt;</content><author><name>dm4fn</name></author><summary type="html">[Cross-posted from dclure.org] Launch the Exhibit This is a project that I&amp;rsquo;ve been hacking away at for some time, but only found the time (and motivation) to get it polished up and out the door over the weekend &amp;ndash; a digital edition of the &amp;ldquo;Nicolay copy&amp;rdquo; of the Gettysburg Address, with each of the ~250&amp;hellip;. More.</summary></entry><entry><title type="html">Neatline release-apalooza: Neatline 2.2.0, Neatscape, Astrolabe</title><link href="http://localhost:4000/2014/01/15/neatline-release-apalooza-neatline-2-2-0-neatscape-astrolabe/" rel="alternate" type="text/html" title="Neatline release-apalooza: Neatline 2.2.0, Neatscape, Astrolabe" /><published>2014-01-15T00:00:00-05:00</published><updated>2014-01-15T00:00:00-05:00</updated><id>http://localhost:4000/2014/01/15/neatline-release-apalooza-neatline-2-2-0-neatscape-astrolabe</id><content type="html" xml:base="http://localhost:4000/2014/01/15/neatline-release-apalooza-neatline-2-2-0-neatscape-astrolabe/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=Neatline+release-apalooza%3A+Neatline+2.2.0%2C+Neatscape%2C+Astrolabe&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-01-15&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fannouncements%2Fneatline-2-2-0%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Announcements&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
-Today we’re excited to announce the release of Neatline 2.2.0! This is a big update that ships out a cluster of features and fixes that address a couple of rough spots identified by users over the course of the last couple months. 2.2.0 focuses on improvements in two areas – first, we’ve overhauled the workflows that connect Neatline records with Omeka items to make them more intuitive, flexible, and feature-rich, with the goal of making the overall integration between the two environments feel more seamless and low-friction. Second, we’ve added a system of interactive documentation to the editor that builds reference materials and tutorials directly into the interface, which should make it easier for new users to find their way around.&lt;/p&gt;
-
-&lt;p&gt;We’re also pushing out maintenance releases of the two extensions, NeatlineSimile and NeatlineWaypoints, which add compatibility for Neatline 2.2 and deal with a couple of minor bugs. As always, grab the code from the Omeka addons repository:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;&lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Neatline 2.2.0&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;&lt;a href=&quot;http://omeka.org/add-ons/plugins/neatlinesimile/&quot;&gt;NeatlineSimile 2.0.1&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;&lt;a href=&quot;http://omeka.org/add-ons/plugins/neatlinewaypoints/&quot;&gt;NeatlineWaypoints 2.0.2&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;What’s more, we’re also making release candidates available for two new Omeka themes designed to showcase Neatline exhibits: &lt;a href=&quot;http://omeka.org/add-ons/themes/astrolabe/&quot;&gt;Astrolabe&lt;/a&gt; and &lt;a href=&quot;http://omeka.org/add-ons/themes/neatscape/&quot;&gt;Neatscape&lt;/a&gt;. Loyal readers may recall that a while back, we &lt;a href=&quot;http://www.scholarslab.org/announcements/neatline-omeka-theme-name-winners/&quot;&gt;ran a theme naming contest&lt;/a&gt;, and we’re finally making good on our word! These are just release candidates, but we wanted to get them out in the open for testing and feedback before cutting off stable releases. Give them a spin, and be sure to file a ticket on the respective issue trackers (&lt;a href=&quot;https://github.com/scholarslab/astrolabe/issues&quot;&gt;Astrolabe&lt;/a&gt; and &lt;a href=&quot;https://github.com/scholarslab/neatscape/issues&quot;&gt;Neatscape&lt;/a&gt;) if you find quirks or need new features.&lt;/p&gt;
-
-&lt;p&gt;Some highlights in Neatline 2.2:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Adds a new interface for linking Neatline records to Omeka items&lt;/strong&gt; that makes it possible to browse the entire collection of items, run full-text searches, and instantaneously preview the Omeka content (metadata, images, etc.) as it will appear in the public Neatline exhibit. 
-&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/01/item-binding.gif&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/01/item-binding.gif&quot; alt=&quot;item-binding&quot; width=&quot;312&quot; height=&quot;771&quot; class=&quot;alignnone size-full wp-image-3379&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Frees up the “Title” and “Body” fields for modification on Neatline records linked to Omeka items&lt;/strong&gt;. Previously, these fields were automatically populated with the item content imported from Omeka, making it impossible to add custom information not contained in the Omeka metadata. Now, Neatline leaves these fields open for editing and displays them above the content synced in from Omeka, making it possible (though not required) to add exhibit-specific headings and text descriptions for imported items.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Makes it possible to import raw data from the Dublin Core “Coverage” field&lt;/strong&gt;. When Omeka items are imported into Neatline exhibits, existing values in the Dublin Core “Coverage” field (either KML or WKT strings) are now automatically imported into Neatline and displayed on the map. Previously, this only worked if the coverage on the item was created with the Neatline Features plugin. With this functionality in place, it’s much easier to bulk-import existing spatial data sets – use the &lt;a href=&quot;http://omeka.org/add-ons/plugins/csv-import/&quot;&gt;CSV Import&lt;/a&gt; plugin to populate a collection of items, and then push the new items to a Neatline exhibit.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Adds interactive documentation to the editor&lt;/strong&gt; that builds reference materials for each individual control directly into the interface. Now, the heading for each input is followed by a little “&lt;strong&gt;?&lt;/strong&gt;” button that, when clicked, overlays a document with information about what the control does, how to use it, and how it interacts with other functionality. The goal is to make the editor effectively self-documenting, so that it’s unnecessary to find separate documentation and toggle back and forth between different tabs as you work. 
-&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/01/interactive-docs.gif&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/01/interactive-docs.gif&quot; alt=&quot;interactive-docs&quot; width=&quot;1261&quot; height=&quot;771&quot; class=&quot;alignnone size-full wp-image-3381&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Last semester was a busy one for Neatline – we were supporting twelve classes here at UVa that are using Neatline for research assignments, and had the good fortune to collaborate with a number of folks at Harvard, Stanford, Northeastern, Duke, Indiana, and elsewhere who were using Neatline or gearing up for upcoming projects in the new year. We’ve also got a couple of exciting ideas brewing here in the lab for new, Neatline-powered projects – keep an eye on this space over the course of the next couple months.&lt;/p&gt;
-
-&lt;p&gt;As always, don’t hesitate to file bug reports on the &lt;a href=&quot;https://github.com/scholarslab/Neatline/issues&quot;&gt;issue tracker&lt;/a&gt;, post questions to the &lt;a href=&quot;http://omeka.org/forums/forum/plugins&quot;&gt;forums&lt;/a&gt;, or &lt;a href=&quot;mailto:neatline@collab.itc.virginia.edu&quot;&gt;contact us directly&lt;/a&gt;. Happy new year!&lt;/p&gt;</content><author><name>dm4fn</name></author><summary type="html">Today we&amp;rsquo;re excited to announce the release of Neatline 2.2.0! This is a big update that ships out a cluster of features and fixes that address a couple of rough spots identified by users over the course of the last couple months. 2.2.0 focuses on improvements in two areas &amp;ndash; first, we&amp;rsquo;ve overhauled the workflows&amp;hellip;. More.</summary></entry><entry><title type="html">Neighborhoods of San Francisco</title><link href="http://localhost:4000/2013/12/11/neighborhoods-of-san-francisco/" rel="alternate" type="text/html" title="Neighborhoods of San Francisco" /><published>2013-12-11T00:00:00-05:00</published><updated>2013-12-11T00:00:00-05:00</updated><id>http://localhost:4000/2013/12/11/neighborhoods-of-san-francisco</id><content type="html" xml:base="http://localhost:4000/2013/12/11/neighborhoods-of-san-francisco/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=Neighborhoods+of+San+Francisco&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2013-12-11&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fgeospatial-and-temporal%2Fneatline-san-francisco%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
-&lt;em&gt;[Cross-posted from &lt;a href=&quot;http://dclure.org/essays/neighborhoods-of-san-francisco/&quot;&gt;dclure.org&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;view-the-exhibit&quot;&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/neighborhoods-of-san-francisco&quot;&gt;View the Exhibit&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/neighborhoods-of-san-francisco&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/12/neighborhoods-of-san-francisco.jpg&quot; alt=&quot;neighborhoods-of-san-francisco&quot; width=&quot;1000&quot; height=&quot;980&quot; class=&quot;alignnone size-full wp-image-3355&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;Built on the &lt;a href=&quot;http://maps.stamen.com/#toner/12/37.7706/-122.3782&quot;&gt;Stamen Toner layer&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;Back in October, about a month after moving from Scholars’ Lab HQ in Virginia out to Menlo Park (my partner started a PhD program at Stanford), I drove up the peninsula to San Francisco on a Saturday morning and set out on a long, rambling, 10-mile trek along the northwest shoulder of the city. It was a fantastic day – I walked west through Golden Gate Park, north along the Richmond beach, past the Cliff House, into the fog over Lincoln Park, through the mansions in Sea Cliff, past the abandoned artillery nests on the western coast of the Presidio, and finally out onto the Golden Gate bridge. From there, I headed south through the trails in the Presidio, into Richmond, and eventually back to where I started, near the top right corner of the park.&lt;/p&gt;
-
-&lt;p&gt;From the middle of the Golden Gate Bridge, you can look out to the east over a large swath of the city – the skyscrapers of the financial district, the new span of the Bay Bridge hanging over Treasure Island, Alcatraz, and the faded outline of the East Bay, the Berkeley campus a little smudge at the base of the ridge line. But, scanning my eyes over the rest of the city, I realized that I had very little sense of what I was actually looking at. I could attach labels onto all the touristy landmarks, but I didn’t have any kind of intuitive mental geography of the place – the names of all the little hills and neighborhoods, what connects to what, how to string the pieces of the city together into workable routes and itineraries.&lt;/p&gt;
-
-&lt;p&gt;So, over the course of the next few weeks, I slowly cobbled together a &lt;a href=&quot;http://neatline.dclure.org/neatline/show/neighborhoods-of-san-francisco&quot;&gt;Neatline exhibit&lt;/a&gt; that plots out each of the neighborhoods in the city – 87 of them, by my count, although it’s somewhat a matter of interpretation as to how they should be sliced and diced. Working mainly from &lt;a href=&quot;http://www.reocities.com/mwarren_us/sf-neighborhoods/SFNeighborhoods.gif&quot;&gt;this image&lt;/a&gt; as reference, I started by tracing rough outlines of the boundaries (using Neatline’s standard-issue “Draw Polygon” tool) on top of Stamen’s Toner layer. Then, once the borders were in place, I used Neatline’s SVG import tool to place vector-geometry text labels on top of each of the individual neighborhoods, inspired by other spatial-wordcloud experiments like &lt;a href=&quot;http://sfsgeography.wikispaces.com/file/view/SF_neighborhhods.jpg/184285923/SF_neighborhhods.jpg&quot;&gt;this&lt;/a&gt; and &lt;a href=&quot;http://www.californiatravel.eu/travel/NeighborhoodsofSanFrancisco.jpg&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Adventures in geospatial typesetting&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This was great fun, and, interestingly, it ended up overlapping in unexpected ways with the &lt;a href=&quot;http://dclure.org/essays/experimental-typesetting-with-neatline-and-shakespeare/&quot;&gt;interactive&lt;/a&gt; &lt;a href=&quot;http://dclure.org/essays/more-fun-with-interactive-typesetting-a-coat-by-yeats/&quot;&gt;typesetting&lt;/a&gt; &lt;a href=&quot;http://dclure.org/essays/song-of-wandering-aengus/&quot;&gt;projects&lt;/a&gt; that I was playing with earlier in the semester. The process of positioning the labels becomes a kind of textual jigsaw puzzle, a game of trying to wrangle the raw, geometric instantiations of words into a coherent organizational scheme – except, this time, against the backdrop of actual geospatial coordinates and locations, not the abstract, featureless voids of the poetry experiments. Often, this is pretty straightforward – Noe Valley and the Inner Mission, for example, just get tagged as such:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2013/12/noe-valley-inner-mission.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/12/noe-valley-inner-mission.jpg&quot; alt=&quot;noe-valley-inner-mission&quot; width=&quot;1000&quot; height=&quot;788&quot; class=&quot;alignnone size-full wp-image-3312&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In other places, though, the names of the neighborhoods overlap with one another in ways that make it possible to find interesting “economies” in how the words can be laid out on the map – when adjacent neighborhoods share the same words, it’s sometimes possible to essentially atomize the names into their component parts, and then rebuild them according to their own spatial logic, in a sense, by visually stringing together the pieces on the map. Take Richmond, for example, which is divided into three side-by-side segments: Outer Richmond, Central Richmond, and Inner Richmond. Instead of cluttering things up by repeating “Richmond” for each of the three sections, I just dragged out a single, all-encompassing “Richmond” across the entire width of the three sub-neighborhoods, and the blocked in the three modifiers as smaller words on top of the corresponding sections:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2013/12/richmond.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/12/richmond.jpg&quot; alt=&quot;richmond&quot; width=&quot;1000&quot; height=&quot;412&quot; class=&quot;alignnone size-full wp-image-3314&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This worked much the same way for the Sunset and Parkside neighborhoods, which share the same cleanly partitioned spatial organization:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2013/12/sunset.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/12/sunset.jpg&quot; alt=&quot;sunset&quot; width=&quot;1000&quot; height=&quot;383&quot; class=&quot;alignnone size-full wp-image-3316&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;With the exception of the “middle” portion of Parkside, which is just the un-prefixed “Parkside,” meaning that the center piece doesn’t get a separate modifier:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2013/12/parkside.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/12/parkside.jpg&quot; alt=&quot;parkside&quot; width=&quot;1000&quot; height=&quot;590&quot; class=&quot;alignnone size-full wp-image-3318&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In other cases, though, it gets much trickier, and much more interesting. Take the little cluster of neighborhoods at the southwest corner of the Presidio, the big park at the base of the Golden Gate Bridge. It’s a hodgepodge of repeated names, but in a much more scrambled and overlapping way – Presidio, Presidio Heights, Pacific Heights, Lower Pacific Heights. In this case, I had to take a bit more care to place the little black arrows in ways that didn’t connote incorrect linkages among the names. For example, the relationship between Presidio and Presidio Heights moves in just one direction – Presidio Heights (labelled with just “Heights” on the map) needs to “inherit” the “Presidio” modifier from the Presidio, but not the other way around, since the Presidio ceases to be the Presidio when “Heights” is tacked onto it:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2013/12/presidio.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/12/presidio.jpg&quot; alt=&quot;presidio&quot; width=&quot;1000&quot; height=&quot;467&quot; class=&quot;alignnone size-full wp-image-3319&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;To encode these relationships, I settled on a rule of thumb that the arrows would always be &lt;em&gt;contained inside the neighborhoods that they modify&lt;/em&gt;. So, the arrow pointing from “Presidio” to “Heights” is fully contained inside of the geographic boundaries of Presidio Heights, in the sense that it pulls “Presidio” downward into the “Heights,” without also pushing “Heights” back in the other direction (which would effectively mislabel the Presidio). Likewise the link between “Pacific” and “Heights” is contained within the Pacific Heights outline, since otherwise Presidio Heights would be implicitly but incorrectly prefixed by “Pacific.”&lt;/p&gt;
-
-&lt;p&gt;Anyway, this is all completely useless as actual cartographic practice, but great fun as a kind of abstract &lt;em&gt;étude&lt;/em&gt; of information design. It’s also incredibly useful as a mnemonic device – after untold hours in Palo Alto coffee shops sketching out all the outlines and positioning the labels, they’re all thoroughly burned into my mind. This is an interesting aspect of digital mapping projects that doesn’t get a lot of attention – we tend to focus on the final products, the public-facing visualizations and interactions (for good and obvious reasons), but much less on the &lt;em&gt;process&lt;/em&gt; that goes into creating them, the personal acquisition of knowledge that takes place when you force yourself to spend dozens or hundreds of hours painstakingly positioning and repositioning things on maps. It gives you an incredible sense of cognitive intimacy with the space, the ability to load a little chunk of the world into working memory and reason about it in really complex and interesting ways.&lt;/p&gt;</content><author><name>dm4fn</name></author><summary type="html">[Cross-posted from dclure.org] View the Exhibit Built on the Stamen Toner layer. Back in October, about a month after moving from Scholars&amp;rsquo; Lab HQ in Virginia out to Menlo Park (my partner started a PhD program at Stanford), I drove up the peninsula to San Francisco on a Saturday morning and set out on a&amp;hellip;. More.</summary></entry><entry><title type="html">NITLE Presentation on Geotemporal Storytelling with Neatline</title><link href="http://localhost:4000/2013/10/14/nitle-presentation-on-geotemporal-storytelling-with-neatline/" rel="alternate" type="text/html" title="NITLE Presentation on Geotemporal Storytelling with Neatline" /><published>2013-10-14T00:00:00-04:00</published><updated>2013-10-14T00:00:00-04:00</updated><id>http://localhost:4000/2013/10/14/nitle-presentation-on-geotemporal-storytelling-with-neatline</id><content type="html" xml:base="http://localhost:4000/2013/10/14/nitle-presentation-on-geotemporal-storytelling-with-neatline/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=NITLE+Presentation+on+Geotemporal+Storytelling+with+Neatline&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2013-10-14&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fdigital-humanities%2Fnitle-presentation-on-geotemporal-storytelling-with-neatline%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Digital+Humanities&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=Boggs&amp;amp;rft.aufirst=Jeremy&quot;&gt;&lt;/span&gt; 
-About this time last year, &lt;a href=&quot;http://www.scholarslab.org/people/david-mcclure/&quot;&gt;David McClure&lt;/a&gt; and I had a great conversation with the folks from the &lt;a href=&quot;http://www.nitle.org/&quot;&gt;National Institute for Technology in Liberal Education (NITLE)&lt;/a&gt; about geotemporal storytelling with &lt;a href=&quot;http://neatline.org/&quot;&gt;Neatline&lt;/a&gt;. We had lots of great questions and comments from the audience, too. Video for the talk is now available on NITLE’s YouTube channel:&lt;/p&gt;</content><author><name>Jeremy Boggs</name></author><summary type="html">About this time last year, David McClure and I had a great conversation with the folks from the National Institute for Technology in Liberal Education (NITLE) about geotemporal storytelling with Neatline. We had lots of great questions and comments from the audience, too. Video for the talk is now available on NITLE&amp;rsquo;s YouTube channel:</summary></entry><entry><title type="html">“The Song of Wandering Aengus,” Neatline, and negotiation with the machine</title><link href="http://localhost:4000/2013/10/11/the-song-of-wandering-aengus-neatline-and-negotiation-with-the-machine/" rel="alternate" type="text/html" title="“The Song of Wandering Aengus,” Neatline, and negotiation with the machine" /><published>2013-10-11T00:00:00-04:00</published><updated>2013-10-11T00:00:00-04:00</updated><id>http://localhost:4000/2013/10/11/the-song-of-wandering-aengus-neatline-and-negotiation-with-the-machine</id><content type="html" xml:base="http://localhost:4000/2013/10/11/the-song-of-wandering-aengus-neatline-and-negotiation-with-the-machine/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=%22The+Song+of+Wandering+Aengus%2C%22+Neatline%2C+and+negotiation+with+the+machine&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2013-10-11&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fexperimental-humanities%2Fsong-of-wandering-aengus%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Experimental+Humanities&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
-&lt;em&gt;[Cross-posted from &lt;a href=&quot;http://neatline.dclure.org/neatline/show/song-of-wandering-aengus&quot;&gt;dclure.org&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;click-here-to-view-the-exhibit&quot;&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/song-of-wandering-aengus&quot;&gt;Click here to view the exhibit&lt;/a&gt;.&lt;/h2&gt;
-
-&lt;p&gt;One last little experiment with Neatline-powered interactive typesettings – this time with the ending of Yeats’ endlessly recitable “The Song of Wandering Aengus,” which, like many great poems, seems to somehow signify the entire world and nothing really in particular. I chose to use just the last three lines so that it would be possible to play with a more dramatic type of geometric nesting that, with more content, would quickly run up against the technical limitation that I mentioned in &lt;a href=&quot;http://dclure.org/essays/more-fun-with-interactive-typesetting-a-coat-by-yeats/&quot;&gt;Wednesday’s post about “A Coat”&lt;/a&gt; – the vector geometry used to form the letters starts to degrade as the Javascript environment runs out of decimal precision at around 40 levels of zoom, making it impossible to continue the downward beyond a certain point.&lt;/p&gt;
-
-&lt;p&gt;With just three lines, though, I was able to place each consecutive line completely inside of one of the dots above an “i” in the previous line. So, the “silver apples of the moon” are inscribed into the dot over the “i” in the “till” of “till time and times are done,” and the “golden apples of the moon” are then contained by the dot on the “i” in “silver.” Since the nested lines are placed literally inside the shaded boundaries of letters (as opposed to the empty spaces delineated by the “holes” in letters, as was the case with the &lt;a href=&quot;http://dclure.org/essays/more-fun-with-interactive-typesetting-a-coat-by-yeats/&quot;&gt;first&lt;/a&gt; &lt;a href=&quot;http://dclure.org/essays/experimental-typesetting-with-neatline-and-shakespeare/&quot;&gt;two&lt;/a&gt; experiments), the color of the text has to alternate in order to be legible against the changing color of the backdrop. What I didn’t expect (although in retrospect I guess it’s obvious) is that this shift in the color palette completely modulates the visual temperature of the whole environment – the backdrop swerves from bright white to solid black back and then back to white over the course of the three lines, with the last transition mapping onto the night-to-day, moon-to-sun thematic movement in the final couplet.&lt;/p&gt;
-
-&lt;p&gt;Interestingly, this effect was almost thwarted by another unexpected quirk in the underlying technologies, although I managed to maneuver around it with a little hack in the exhibit theme. The problem was this – it turns out that OpenLayers will actually stop rendering an SVG geometry ones the dimension of the viewport shrinks down below a certain ratio relative to the overall size of the shape. So, in this case, as the camera descends down into the black landscape of the dot over the first “i,” the black background supplied by the vector shape would suddenly drop away, as if the camera were falling through the surface, which of course had the effect of making the second-to-last line – typeset in white – suddenly invisible against the default-white background of the exhibit.&lt;/p&gt;
-
-&lt;p&gt;I thought this was a showstopper, but then I realized that I could programmatically “fake” the black background by directly flipping the CSS &lt;code class=&quot;highlighter-rouge&quot;&gt;background&lt;/code&gt; color on the exhibit container. So, I just fired up the Javascript console, inspected the &lt;code class=&quot;highlighter-rouge&quot;&gt;zoom&lt;/code&gt; attribute on the OpenLayers instance to get the zoom thresholds where the color changes needed to happen, and then dropped a little chunk of custom code into the &lt;a href=&quot;https://github.com/davidmcclure/neatlight/tree/master/neatline/exhibits/themes/song-of-wandering-aengus&quot;&gt;exhibit theme&lt;/a&gt; that manifests the style change in response to the zoom events triggered by the map:&lt;/p&gt;
-
-&lt;p&gt;Weird, but effective. Whenever I work on projects like these I’m fascinated by the wrinkles that arise in the interaction between what you want to do and what the technology allows you to do. It’s very different from analog scholarship or art practice, where you have a more complete mastery over the field of play – you have a much more direct and unmediated control over the sound of your words, the shape of a line in a physical sketch, the pressure of a brush stroke. With digital objects, though, you’re building on top of almost unimaginably huge stacks of technology – the millions of man-hours of work that it took to create the vast ecosystem of Javascript and PHP libraries that Neatline depends on, the whole set of lower-level technologies that shape the underlying browser rendering engines and Javascript runtimes, which in turn are implemented in still lower-level languages, which eventually brush up against the dizzying rabbit hole of physical hardware engineering, which to my mind is about as close to magic as anything that people have produced.&lt;/p&gt;
-
-&lt;p&gt;That kind of deep, massively-distributed collaboration can definitely exist offscreen (eg., all of intellectual history, in a sense), but it’s more loosely coupled, and certainly less fragile – if I write an essay about Yeats, Yeats can’t &lt;em&gt;break&lt;/em&gt; in the way that a code dependency literally can (will). At first this really bothered me, but I’ve come to peace with it – digital work is by definition a relinquishing of control, a give-and-take with the machine, a negotiation with our current little slice of modernity about what’s possible.&lt;/p&gt;</content><author><name>dm4fn</name></author><summary type="html">[Cross-posted from dclure.org] Click here to view the exhibit. One last little experiment with Neatline-powered interactive typesettings &amp;ndash; this time with the ending of Yeats&amp;rsquo; endlessly recitable &amp;ldquo;The Song of Wandering Aengus,&amp;rdquo; which, like many great poems, seems to somehow signify the entire world and nothing really in particular. I chose to use just the&amp;hellip;. More.</summary></entry><entry><title type="html">More fun with interactive typesetting: “A Coat,” by Yeats</title><link href="http://localhost:4000/2013/10/09/more-fun-with-interactive-typesetting-a-coat-by-yeats/" rel="alternate" type="text/html" title="More fun with interactive typesetting: “A Coat,” by Yeats" /><published>2013-10-09T00:00:00-04:00</published><updated>2013-10-09T00:00:00-04:00</updated><id>http://localhost:4000/2013/10/09/more-fun-with-interactive-typesetting-a-coat-by-yeats</id><content type="html" xml:base="http://localhost:4000/2013/10/09/more-fun-with-interactive-typesetting-a-coat-by-yeats/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=More+fun+with+interactive+typesetting%3A+%22A+Coat%2C%22+by+Yeats&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2013-10-09&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fexperimental-humanities%2Fmore-fun-with-interactive-typesetting-a-coat-by-yeats%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Experimental+Humanities&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
-&lt;em&gt;[Cross-posted from &lt;a href=&quot;http://dclure.org/essays/more-fun-with-interactive-typesetting-a-coat-by-yeats/&quot;&gt;dclure.org&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;click-here-to-view-the-exhibit&quot;&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/a-coat&quot;&gt;Click here to view the exhibit&lt;/a&gt;.&lt;/h2&gt;
-
-&lt;p&gt;After spending the weekend &lt;a href=&quot;http://dclure.org/essays/experimental-typesetting-with-neatline-and-shakespeare/&quot;&gt;tinkering around with an interactive typesetting of a couplet from Macbeth&lt;/a&gt; that tried to model reading as a process of zooming &lt;em&gt;downward&lt;/em&gt; towards the end of the phrase, I became curious about experimenting with the opposite analogy – reading as an &lt;em&gt;upward&lt;/em&gt; movement, an climb from the bottom (the beginning) to the top (the end), with each word circumscribing everything that comes before it. Really, this is just the flip side of the same coin. Meaning certainly flows “downhill” in a phrase – each word is informed by the previous word. But it also flows back “uphill” – each word casts new meaning onto what comes before it. What would it would feel like to visualize that?&lt;/p&gt;
-
-&lt;p&gt;This time I decided to work with “A Coat,” Yeats’ wonderful little ode to simplicity (he renounces what he thinks to be the stylistic affectation of his work from the 1890’s, and announces an intention to write “naked[ly]“). Originally, I planned to exactly invert the layout of the Macbeth couplet – start with the “I” at the bottom of the stack, and work upwards towards the end with “naked,” which, in the final frame, would geometrically contain each of the preceding words. I started to do this, but quickly ran into an interesting computational obstacle, which actually cropped up in the Shakespeare example as well.&lt;/p&gt;
-
-&lt;p&gt;Trip Kirkpatrick noticed the problem:&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
-  &lt;p&gt;
-    &lt;a href=&quot;https://twitter.com/clured&quot;&gt;@clured&lt;/a&gt; Are jaggies on deepest zoom artifacts results of zoomed pixels or aesthetic decisions? Both?
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &amp;mdash; Trip Kirkpatrick (@triplingual) &lt;a href=&quot;https://twitter.com/triplingual/statuses/387254660563992576&quot;&gt;October 7, 2013&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Indeed, the last two words – “way” and “comes” – are pixelated and malformed:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2013/10/way.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/10/way-300x151.jpg&quot; alt=&quot;way&quot; width=&quot;300&quot; height=&quot;151&quot; class=&quot;size-medium wp-image-3114&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2013/10/comes.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/10/comes-300x93.jpg&quot; alt=&quot;comes&quot; width=&quot;300&quot; height=&quot;93&quot; class=&quot;size-medium wp-image-3113&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This wasn’t on purpose – I couldn’t figure out why it was happening when I was working on the exhibit, but decided against trying to fix it, half out of laziness and half because the visual effect had some satisfying affinities with the content of the line, especially when paired with the “descending” motif – a plunge down to hell, where order disintegrates, smooth lines are forbidden, etc. Anyway – after thinking it over, I’m pretty sure I know what’s going on, although I’m not certain. At the extremely deep zoom levels (far beyond anything you’d ever need for a regular map), I think that OpenLayers is actually losing the floating point precision that it needs to accurately plot the SVG paths for the letters – the computer is running out of decimal places, essentially.&lt;/p&gt;
-
-&lt;p&gt;I squeaked by with the Macbeth couplet, but this turned out to be a showstopper for the Yeats, since I was effectively trying to plot geometry about four and a half times deeper – 45 words versus 11. At that depth, the text becomes completely illegible, so I had to find a way to squeeze more content into fewer zoom levels. In the end, I managed to fit it all in by positioning each line into a geometric “notch” formed by the ascenders of two letters on the following line, which more or less preserves the philosophical rationale of the exhibit (each bit of text “envelops” the previous, if somewhat less completely than before) while limiting the zooming to just ten magnification contexts, one for each line.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2013/10/heel.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2013/10/heel-300x114.jpg&quot; alt=&quot;heel&quot; width=&quot;300&quot; height=&quot;114&quot; class=&quot;size-medium wp-image-3131&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;To scan the poem, just zoom out by clicking on the “minus” button (or scrolling the mouse wheel or pinching the screen, if applicable), or click on the lines in the reference text at the top left to auto-focus on a particular part of the poem.&lt;/p&gt;</content><author><name>dm4fn</name></author><summary type="html">[Cross-posted from dclure.org] Click here to view the exhibit. After spending the weekend tinkering around with an interactive typesetting of a couplet from Macbeth that tried to model reading as a process of zooming downward towards the end of the phrase, I became curious about experimenting with the opposite analogy &amp;ndash; reading as an upward&amp;hellip;. More.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>dm4fn</name></author><summary type="html">Neatline makes it possible to create separate themes for individual exhibits, which is useful if you want to host a collection of self-contained Neatline projects on a single site. To get started, fork the exhibit starter theme, which abstracts out the style, layout, and UX of the Project Gemini over Baja California exhibit. One&amp;hellip;. More.</summary></entry></feed>

@@ -190,19 +190,18 @@ nav[data-toggle="toc"] {
 }
 
 
-.archive {
-  article.container {
+
     .content {
-      p {
+     
         font-weight: 300;
         @include fs-6;
-      }
+      
     }
-  }
-}
+
 
 .plugin-screen {
   display:block;
+  margin: 1rem;
   border: 8px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   &:hover {

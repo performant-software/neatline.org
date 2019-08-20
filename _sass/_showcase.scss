@@ -3,27 +3,26 @@
     background-color: rgba(90,60,110, 0.8); // rgba(64, 78, 97, 1)
     color: #fff;
     @include fs-3;
-  }
-  
-  .tag-s {
-    background-color: rgba(64, 78, 97, 1); // rgba(64, 78, 97, 1)
+}
+
+.tag-s {
+  background-color: rgba(64, 78, 97, 1); // rgba(64, 78, 97, 1)
+  color: #fff;
+  font-size: $base-font-size * 0.8;
+}
+.featherlight-inner a h2 {
+  &:after {
+    display: block;
+    content: "Neatline for Omeka Classic";
     color: #fff;
-    font-size: $base-font-size * 0.8;
-  }
-  .featherlight-inner a h2 {
-    &:after {
-      display: block;
-      content: "Neatline for Omeka Classic";
-      color: #fff;
-      @include fs-3;
-      width: 175px;
-      background-color: rgba(90,60,110, 0.8);
-      margin-top: 0.5rem;
-      text-decoration: none !important;
-      }
-    }   
-    // <span class="tag-classic">Neatline for Omeka Classic</span>
-  
+    @include fs-3;
+    width: 175px;
+    background-color: rgba(90,60,110, 0.8);
+    margin-top: 0.5rem;
+    text-decoration: none !important;
+    }
+  }   
+
 /* ----- Showcase ----- */
 .site-filters ul {
   margin: 24px 0;
@@ -56,8 +55,6 @@
 #examples {
   @include flexbox();
   @include flex-wrap(wrap);
-  // display: flex;
-  // flex-wrap: wrap;
   margin: 0 auto;
   transition: opacity ease-in .5s;
   max-width: 1100px; 
@@ -90,7 +87,8 @@
 #examples.classic .example.classic,
 #examples.timeline .example.timeline,
 #examples.text .example.text,
-#examples.waypoints .example.waypoints {
+#examples.waypoints .example.waypoints,
+#examples.omeka-s .example.omeka-s {
   display: block; 
 }
 
@@ -204,4 +202,23 @@
 }
 
 /* @end */
-  
+/* ----- Plugins/Themes ----- */
+#examples .example.classic {
+  border-bottom: 5px solid rgba(90,60,110, 0.8);
+}
+#examples .example.classic:before {
+  background: linear-gradient(15deg, #d8d8d8, rgba(90,60,110, 0.8));
+}
+
+#examples .example.omeka-s {
+  border-bottom: 5px solid #404E61;
+}
+#examples .example.omeka-s:before {
+  background: linear-gradient(15deg, #d8d8d8, #404E61);
+}
+    
+#examples.all .example,
+#examples.classic .example.classic,
+#examples.omeka-s .example.omeka-s {
+  display: block; 
+}

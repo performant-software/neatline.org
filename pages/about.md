@@ -69,7 +69,7 @@ Read the full documentation:
 Download Neatline for your own Omeka installation:
 {: .text-center }
 <a href="https://omeka.org/classic/plugins/Neatline/" class="btn btn-primary-1" title="Download the Neatline plugin.">Download for Omeka Classic</a>
-<a href="https://omeka.org/s/modules/" class="btn btn-primary-2" title="Download the Neatline plugin.">Download for Omeka S</a>
+<a href="https://github.com/scholarslab/neatline-omeka-s" class="btn btn-primary-2" title="Download the Neatline plugin.">Download for Omeka S</a>
 {: .text-center }
 Go straight to the source:
 {: .text-center }

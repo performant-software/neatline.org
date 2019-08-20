@@ -61,6 +61,7 @@ body,
 
 
 a {
+  cursor: pointer;
   &:link {
       color: $link-color;
       text-decoration: underline;
@@ -247,6 +248,9 @@ header {
   @include flex-flow(row nowrap);
   @include justify-content(space-evenly);
   @include align-items(center);
+  .dropdown {
+    z-index: 1080 !important;
+  }
 }
 
 .logo {
