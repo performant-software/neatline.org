@@ -364,112 +364,30 @@ footer {
 .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none !important;}
 .lunrsearchresult a:hover .title {text-decoration: none !important;}
 
+// !--- Home page ---//
 
-//Misc styling
+.intro-text {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  text-align:center;
+}
 
+// Posts //
 
-// a.splash-link {
-//   text-decoration: none;
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
 
-//   div.splash {
-//     @include background-size(cover);
-//     background-repeat:no-repeat;
-//     height: auto;
-//     border: 5px solid #584561;
-//     border-radius: 2px;
-//     box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
-//     cursor: pointer;
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
 
-//     img {
-//       vertical-align:bottom;
-//     }
-
-//     div.launch-overlay {
-//       display: none;
-//       background-color: rgba(0,0,0,0.3);
-//       text-align: center;
-//       height: 100%;
-
-//       div.launch-button {
-//         position: relative;
-//         color: white;
-//         font-size: 2em;
-//         font-style: italic;
-//         text-decoration: none;
-//         top: 200px;
-//       }
-
-//     }
-
-//     &:hover {
-//       box-shadow: 0 0 50px rgba(0, 0, 0, 0.50);
-
-//       div.launch-overlay {
-//         display: block;
-//       }
-
-//     }
-
-//     &.homepage {
-//       background-image: url('../wp-content/uploads/2012/06/neatline-splash.jpg');
-//     }
-//     &.hotchkiss {
-//       background-image: url('../wp-content/uploads/2012/07/chancellorsville.jpg');
-//     }
-//     &.nelly {
-//       background-image: url('../wp-content/uploads/2012/07/nelly.jpg');
-//     }
-//     &.num132 {
-//       background-image: url('../wp-content/uploads/2012/07/132.jpg');
-//     }
-//     &.num138 {
-//       background-image: url('../wp-content/uploads/2012/07/138.jpg');
-//     }
-//     &.uva {
-//       background-image: url('../wp-content/uploads/2012/07/uva.jpg');
-//     }
-//     &.tech {
-//       background-image: url('../wp-content/uploads/2012/07/tech.jpg');
-//     }
-//     &.anie {
-//       background-image: url('../wp-content/uploads/2012/07/anie.jpg');
-//     }
-//     &.henshaw {
-//       background-image: url('../wp-content/uploads/2012/07/henshaw1.jpg');
-//     }
-//     &.lovecraft {
-//       background-image: url('../wp-content/uploads/2012/07/lovecraft.jpg');
-//     }
-//     &.sentimental {
-//       background-image: url('../wp-content/uploads/2014/07/sentimentaljourney.png');
-//     }
-//     &.boston {
-//       background-image: url('../wp-content/uploads/2014/07/boston.png');
-//     }
-//     &.haram {
-//       background-image: url('../wp-content/uploads/2014/07/perspectives.png');
-//     }
-//     &.transportation {
-//       background-image: url('../wp-content/uploads/2014/07/jeddah_transportation.png');
-//     }
-//     &.gemini {
-//       background-image: url('../wp-content/uploads/2014/07/gemini.png');
-//     }
-//     &.mcgill {
-//       background-image: url('../wp-content/uploads/2014/07/mcgill.png');
-//     }
-//     &.ships {
-//       background-image: url('../wp-content/uploads/2014/07/ships.png');
-//     }
-//     &.blacklib {
-//       background-image: url('../wp-content/uploads/2014/07/blacklib.png');
-//     }
-//     &.whiskey {
-//       background-image: url('../wp-content/uploads/2014/07/whiskey.png');
-//     }
-
-//   }
-
-// }
-
-
+.PageNavigation .next {
+  text-align: right;
+}

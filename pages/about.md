@@ -15,15 +15,15 @@ Neatline is what you get when you cross archives and artifacts with timelines, m
 
 The [Scholars&#8217; Lab][3] designed Neatline as a suite of plugins for the open-source [Omeka][2] framework, which provides a powerful platform for management and publication of the collection on which your exhibit is built. Through Neatline, you can create create rich representations of places, objects, events, narratives, and documents &#8212; like [these demo exhibits][4].
 
-Check out our [Use Cases](/use-cases/) for a custom starting place for your Neatline project. 
+<!-- Check out our [Use Cases](/use-cases/) for a custom starting place for your Neatline project.  -->
 
 ---
 
 ## What makes it different?
 
-How does Neatline fit into the existing ecosystem of geospatial and annotation tools? Neatline sits in the space between consumer-grade mapping applications like the Google custom map-maker and heavyweight, analytical GIS tools like ArcGIS. It’s designed to be simple enough that college undergraduates can easily use it for class assignments, but also sufficiently flexible, scalable, and feature-rich that it can be used for professional scholarship, journalism, and art. Neatline keeps things simple and provides sensible defaults, but it’s careful never to make intellectual or aesthetic decisions on your behalf.
+How does Neatline fit into the existing ecosystem of geospatial and annotation tools? Neatline sits in the space between consumer-grade mapping applications like the Google custom map-maker and heavyweight, analytical GIS tools like ArcGIS. It&#8217;s not [Google Maps or Google Earth][5]: if you just need to drop some labelled pins on a map, Neatline may be overkill for your project.
 
-It&#8217;s not [Google Maps or Google Earth][5]. If you just need to drop some labelled pins on a map, Neatline is overkill.
+Neatline is designed to be simple enough that college undergraduates can easily use it for class assignments, but also sufficiently flexible, scalable, and feature-rich that it can be used for professional scholarship, journalism, and art. Neatline keeps things simple and provides sensible defaults, but it’s careful never to make intellectual or aesthetic decisions on your behalf.
 
 ---
 

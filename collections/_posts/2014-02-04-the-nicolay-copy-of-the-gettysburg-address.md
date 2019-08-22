@@ -34,19 +34,16 @@ categories:
   - lincoln
   - neatline
 ---
-<span class="Z3988" title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&rfr_id=info%3Asid%2Focoins.info%3Agenerator&rft.type=&rft.format=text&rft.title=The+%22Nicolay+copy%22+of+the+Gettysburg+Address&rft.source=Scholars%26%23039%3B+Lab&rft.date=2014-02-04&rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fexperimental-humanities%2Fneatline-gettysburg-address%2F&rft.language=English&rft.subject=Experimental+Humanities&rft.aulast=McClure&rft.aufirst=David"></span> 
-*[Cross-posted from [dclure.org][1]]*
 
-## [Launch the Exhibit][2]
+*Cross-posted from [dclure.org](http://dclure.org/logs/nicolay-copy-gettysburg-address/)*
 
-[<img src="http://dclure.org/wp-content/uploads/2014/02/nicolay-fullscreen1.jpg" alt="nicolay-fullscreen" width="2880" height="1727" class="alignnone size-full wp-image-3661" />][2]
+## [Launch the Exhibit](http://neatline.dclure.org/neatline/show/gettysburg-address)
 
+[![exhibit](http://dclure.org/wp-content/uploads/2014/02/nicolay-fullscreen1.jpg)](http://neatline.dclure.org/neatline/show/gettysburg-address)
 
+This is a project that I&#8217;ve been hacking away at for some time, but only found the time (and motivation) to get it polished up and out the door over the weekend &#8211; a digital edition of the [&#8220;Nicolay copy&#8221; of the Gettysburg Address](http://prod.myloc.gov/Exhibitions/gettysburgaddress/exhibitionitems/ExhibitObjects/NicolayCopy.aspx), with each of the ~250 words in the manuscript individually traced out in Neatline and wired up with a plain-text transcription of the text on the right side of the screen. I&#8217;ve tinkered around with [similar interfaces](http://neatline.dclure.org/neatline/show/saturn-v-stage-2) in the past, but this time I wanted to play around with different approaches to formalizing the connection between the digitally-typeset words in the text and the handwritten words in the manuscript. Your eyes tend to dart back and forth between the image and the text, and it&#8217;s easy to lose your place &#8211; how to reduce that cognitive friction?
 
-This is a project that I&#8217;ve been hacking away at for some time, but only found the time (and motivation) to get it polished up and out the door over the weekend &#8211; a digital edition of the [&#8220;Nicolay copy&#8221; of the Gettysburg Address][3], with each of the ~250 words in the manuscript individually traced out in Neatline and wired up with a plain-text transcription of the text on the right side of the screen. I&#8217;ve tinkered around with [similar interfaces][4] in the past, but this time I wanted to play around with different approaches to formalizing the connection between the digitally-typeset words in the text and the handwritten words in the manuscript. Your eyes tend to dart back and forth between the image and the text, and it&#8217;s easy to lose your place &#8211; how to reduce that cognitive friction?
-
-To chip away at this, I wrote a little sub-plugin for Neatline called [WordLines][5], which automatically overlays a little visual guideline (under the hood, a [d3][6]-wrapped SVG `</p>
-<line>` element) on top of the page that connects each pair of words in the two viewports when the cursor hovers on either of the instantiations. So, when the mouse passes over words in the transcription, lines are automatically drawn to the corresponding locations on the image; and vice versa. From a technical standpoint, this turns out to be quite easy &#8211; just get the pixel offsets for the `<span>` element in the transcription and the vector annotation on the map (for the latter, OpenLayers does the heavy lifting with helpers like `getViewPortPxFromLonLat`, which maps spatial coordinates to document-space pixel pairs), and then draw a line connecting the two points. The one hitch, though, is that this involves placing a large SVG element directly on top of the page content, which, by default, will cover all of the underlying elements (shapes on the map, words in the text) and block them from receiving the cursor events that drive the rest of the UI &#8211; including, very problematically, the `mouseleave` event that garbage-collects old lines and prevents them from getting stuck on the screen.
+To chip away at this, I wrote a little sub-plugin for Neatline called [WordLines](https://github.com/davidmcclure/nl-widget-WordLines), which automatically overlays a little visual guideline (under the hood, a [d3](http://d3js.org/)-wrapped SVG `</p><line>` element) on top of the page that connects each pair of words in the two viewports when the cursor hovers on either of the instantiations. So, when the mouse passes over words in the transcription, lines are automatically drawn to the corresponding locations on the image; and vice versa. From a technical standpoint, this turns out to be quite easy &#8211; just get the pixel offsets for the `<span>` element in the transcription and the vector annotation on the map (for the latter, OpenLayers does the heavy lifting with helpers like `getViewPortPxFromLonLat`, which maps spatial coordinates to document-space pixel pairs), and then draw a line connecting the two points. The one hitch, though, is that this involves placing a large SVG element directly on top of the page content, which, by default, will cover all of the underlying elements (shapes on the map, words in the text) and block them from receiving the cursor events that drive the rest of the UI &#8211; including, very problematically, the `mouseleave` event that garbage-collects old lines and prevents them from getting stuck on the screen.
 
 [<img src="http://dclure.org/wp-content/uploads/2014/02/wordline.jpg" alt="wordline" width="1470" height="678" class="alignnone size-full wp-image-3666" />][7]
 
@@ -64,15 +61,15 @@ I sketched out little ruler annotations labeling the width of the page and the h
 
 [<img src="http://dclure.org/wp-content/uploads/2014/02/hand2.jpg" alt="hand2" width="2106" height="1524" class="alignnone size-full wp-image-3664" />][12]
 
- [1]: http://dclure.org/logs/nicolay-copy-gettysburg-address/
- [2]: http://neatline.dclure.org/neatline/show/gettysburg-address
- [3]: http://prod.myloc.gov/Exhibitions/gettysburgaddress/exhibitionitems/ExhibitObjects/NicolayCopy.aspx
- [4]: http://neatline.dclure.org/neatline/show/saturn-v-stage-2
- [5]: https://github.com/davidmcclure/nl-widget-WordLines
- [6]: http://d3js.org/
- [7]: http://dclure.org/wp-content/uploads/2014/02/wordline.jpg
- [8]: http://caniuse.com/pointer-events
- [9]: http://prod.myloc.gov/Exhibitions/gettysburgaddress/exhibitionitems/ExhibitObjects/HayDraft.aspx
- [10]: http://www.baumanrarebooks.com/rare-books/lincoln-abraham/autograph-letter-signed/63126.aspx
- [11]: http://www.robertedwardauctions.com/auction/2006/1204.html
- [12]: http://dclure.org/wp-content/uploads/2014/02/hand2.jpg
+[1]: http://dclure.org/logs/nicolay-copy-gettysburg-address/
+[2]: http://neatline.dclure.org/neatline/show/gettysburg-address
+[3]: http://prod.myloc.gov/Exhibitions/gettysburgaddress/exhibitionitems/ExhibitObjects/NicolayCopy.aspx
+[4]: http://neatline.dclure.org/neatline/show/saturn-v-stage-2
+[5]: https://github.com/davidmcclure/nl-widget-WordLines
+[6]: http://d3js.org/
+[7]: http://dclure.org/wp-content/uploads/2014/02/wordline.jpg
+[8]: http://caniuse.com/pointer-events
+[9]: http://prod.myloc.gov/Exhibitions/gettysburgaddress/exhibitionitems/ExhibitObjects/HayDraft.aspx
+[10]: http://www.baumanrarebooks.com/rare-books/lincoln-abraham/autograph-letter-signed/63126.aspx
+[11]: http://www.robertedwardauctions.com/auction/2006/1204.html
+[12]: http://dclure.org/wp-content/uploads/2014/02/hand2.jpg
