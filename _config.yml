@@ -1,6 +1,6 @@
 # Site settings
 title: Neatline
-email: neatline@collab.itc.virginia.edu
+email: scholarslab@virginia.edu
 description: "Neatline allows scholars, students, and curators to tell stories with maps and timelines."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -15,19 +15,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-exclude: ["README.md", "Procfile", "Gruntfile.js", "changelog.md", "Gemfile", "Gemfile.lock", "node_modules", "bower_components", "scss", "config.rb", "package.json", "LICENSE", "bower.json"]
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "node_modules", "scss", "config.rb", "package.json", "LICENSE", "bower.json"]
 
 
 collections_dir: collections

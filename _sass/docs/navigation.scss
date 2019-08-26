@@ -51,7 +51,7 @@
 
     &.active  {
       &::before {
-        color: $body-heading-color;
+        color: $body-heading-color !important;
       }
     }
   }
@@ -97,16 +97,17 @@
   
 
   &.active {
-    font-weight: 500;
-    color: $white !important;
-    // text-decoration: underline;
+    font-weight: 700;
+    // color: $body-heading-color !important;
+    background-color: rgba(255,128,0,0.65);
+    // text-decoration: underline !important;
   }
 
-  &:hover {
-    font-weight: 500;
-    color: $white !important;
-    // text-decoration: none;
-  }
+  // &:hover {
+  //   font-weight: 500;
+  //   color: $white !important;
+  //   // text-decoration: none;
+  // }
   &::before {
     position: absolute;
     margin-left: -0.8em;
