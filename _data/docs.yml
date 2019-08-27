@@ -86,29 +86,23 @@ toc:
         url: /docs/docs-TOC/
 
 toc-s:
-  - title: Getting Started
+  - title: 
     subfolderitems:
-      - page: What is Neatline?
-        url: /docs/what-is-neatline/
-      - page: Neatline Architecture
-        url: /docs/neatline-from-10000-meters/
-      - page: Installing Neatline
-        url: /docs/installing-neatline/
-      - page: Upgrading Neatline to 2.0
-        url: /docs/upgrading-to-v2/
-  - title: Working with Exhibits
+      - page: 
+        url: 
+      - page: 
+        url: 
+      - page: 
+        url: 
+      - page: 
+        url: 
+  - title: 
     subfolderitems:
-      - page: Exhibits Overview
-        url: /docs/exhibits-overview/
-      - page: Creating New Exhibits
-        url: /docs/creating-exhibits/
-      - page: Map-based Exhibits
-        url: /docs/map-based-exhibits/
-      - page: Image-based Exhibits
-        url: /docs/image-based-exhibits/
-      - page: Managing Exhibits
-        url: /docs/managing-exhibits/
-      - page: Managing User Permissions
-        url: /docs/user-permissions/
-      - page: Publishing Exhibits
-        url: /docs/publishing-exhibits/
+      - page: 
+        url: 
+      - page: 
+        url: 
+      - page: 
+        url: 
+      - page: 
+        url: 

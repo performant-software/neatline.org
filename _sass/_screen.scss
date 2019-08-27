@@ -355,6 +355,32 @@ footer {
     }
   }
 }
+
+.to-top {
+a {
+  margin-left: 2em;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  text-decoration: none;
+  svg {
+    height: 4em;
+    margin-bottom: 0;
+    fill:rgba($link-color, 0.75);
+    transform: translate(0.5rem, 0);
+  }
+  span {
+    position: relative;
+    width: 4em;
+    padding-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+  } 
+}
+}
 // !--- end footer ---//
 // !--- Search results page ---//
 
@@ -390,4 +416,8 @@ footer {
 
 .PageNavigation .next {
   text-align: right;
+}
+
+.PageNavigation .disabled {
+    display: none;
 }

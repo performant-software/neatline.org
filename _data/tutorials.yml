@@ -1,0 +1,74 @@
+nav:
+- title: Tutorials
+  tutorials:
+      - what-is-neatline
+      - neatline-from-10000-meters
+      - installing-neatline
+      - upgrading-to-v2
+      - exhibits-overview
+      - creating-exhibits
+      - map-based-exhibits
+      - image-based-exhibits
+      - managing-exhibits
+      - user-permissions
+      - publishing-exhibits
+      - working-with-the-simile-timeline-widget
+      - working-with-the-waypoints-plugin
+      - working-with-the-text-widget
+      - editor-overview
+      - exhibit-styles-tab
+      - neatline-stylesheets
+      - records-overview
+      - creating-records
+      - importing-omeka-items
+      - searching-records
+      - text-tab
+      - map-tab-drawing-geometry
+      - map-tab-editing-geometry
+      - map-tab-importing-svg
+      - style-tab-groups
+      - style-tab-colors
+      - style-tab-opacities
+      - style-tab-dimensions
+      - style-tab-dates
+      - style-tab-imagery
+      - style-tab-visibility
+      - docs-TOC
+
+label:
+- title: Tutorials
+  tutorials:
+      - What is Neatline?
+      - Neatline Architecture
+      - Installing Neatline
+      - Upgrading Neatline to 2.0
+      - Exhibits Overview
+      - Creating New Exhibits
+      - Map-based Exhibits
+      - Image-based Exhibits
+      - Managing Exhibits
+      - Managing User Permissions
+      - Publishing Exhibits
+      - SIMILE Timeline
+      - Waypoints
+      - Neatline Text
+      - Editor Overview
+      - Exhibit Styles Tab
+      - Using Neatline Stylesheets
+      - Records Overview
+      - Creating New Records
+      - Importing Omeka Items
+      - Searching Records
+      - Adding Text Content
+      - Drawing Vector Annotations
+      - Editing Vector Annotations
+      - Importing SVG Documents
+      - Editing Groups
+      - Editing Colors
+      - Editing Opacities
+      - Editing Dimensions
+      - Editing Dates
+      - Editing Imagery
+      - Editing Visibility
+      - Neatline for Omeka Classic
+
