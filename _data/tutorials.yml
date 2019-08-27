@@ -1,6 +1,7 @@
 nav:
 - title: Tutorials
   tutorials:
+      - 
       - what-is-neatline
       - neatline-from-10000-meters
       - installing-neatline
@@ -38,6 +39,7 @@ nav:
 label:
 - title: Tutorials
   tutorials:
+      - Welcome!
       - What is Neatline?
       - Neatline Architecture
       - Installing Neatline

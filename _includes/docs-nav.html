@@ -15,7 +15,11 @@ next, lets build a link to it.
 
 
 {% for tutorial in tutorials %}
+  {% if forloop.first %}
+  {% assign tutorial_url = tutorial | prepend:"/docs/" %}
+  {% else %}
   {% assign tutorial_url = tutorial | prepend:"/docs/" | append:"/" %}
+  {% endif %}
   {% if tutorial_url == page.url %}
     <div class="PageNavigation">
       <div>
@@ -33,11 +37,14 @@ next, lets build a link to it.
           {% else %}
             {% assign next = forloop.index0 | plus: 1 %}
             {% assign next_page = tutorials[next] | prepend:"/docs/" | append:"/" %}
+            {% if forloop.first %}
+            <a href="{{ next_page }}" style="width:100%;" class="next">{{ labels[next] }}  &raquo;</a>
+            {% else %}
             <a href="{{ next_page }}" class="next">{{ labels[next] }}  &raquo;</a>
+            {% endif %}
           {% endif %}
       </div>
     </div>
-    <div class="clear"></div>
     {% break %}
   {% endif %}
 {% endfor %}
