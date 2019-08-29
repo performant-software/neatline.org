@@ -10,18 +10,18 @@
   color: #fff;
   font-size: $base-font-size * 0.8;
 }
-.featherlight-inner a h2 {
-  &:after {
-    display: block;
-    content: "Neatline for Omeka Classic";
-    color: #fff;
-    @include fs-3;
-    width: 175px;
-    background-color: rgba(90,60,110, 0.8);
-    margin-top: 0.5rem;
-    text-decoration: none !important;
-    }
-  }   
+// .featherlight-inner a h2 {
+//   &:after {
+//     display: block;
+//     content: "Neatline for Omeka Classic";
+//     color: #fff;
+//     @include fs-3;
+//     width: 175px;
+//     background-color: rgba(90,60,110, 0.8);
+//     margin-top: 0.5rem;
+//     text-decoration: none !important;
+//     }
+//   }   
 
 /* ----- Showcase ----- */
 .site-filters ul {

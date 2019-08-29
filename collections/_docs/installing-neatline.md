@@ -10,8 +10,8 @@ title: Installing Neatline
     * [Before you start](#before-you-start)
     * [Installing Omeka](#installing-omeka)
     * [Installing Neatline](#installing-nl)
-        + [NEW for Neatline 2.5.2](#new-for-neatline-252)
         + [Configuring the Neatline Plugin (for version 2.5.2)](#configuring-nlplugin)
+        + [Google Maps API Settings](#google-maps-api-settings)
   - For projects that incorporate custom imagery, a third piece of software called [Geoserver][geoserver] is necessary.
     * [Installing Geoserver](#installing-geoserver)
 
@@ -45,11 +45,11 @@ Once Omeka is up and running, install the Neatline plugin:
 
 You'll be redirected back to the list of plugins and see a notification saying that "The Neatline plugin was successfully installed." Over in the main vertical navigation on the left side of the screen, you'll see a new listing for **Neatline** - click there to get started.
 
-### NEW for Neatline 2.5.2:
+### Configuring the Neatline Plugin (for versions 2.5.2 and above): {#configuring-nlplugin}
 
-Neatline users must now specify a Google Maps API Key as a configuration step after installing the **Neatline** plugin.
+Neatline users must now specify a Google Maps API Key to use the Google Map layers as a configuration step after installing the **Neatline** plugin. Neatline for Omeka Classic also comes with open source map options, [Open Street Map](https://www.openstreetmap.org/) and [Stamen](http://maps.stamen.com/) maps, which do not require an API key. 
 
-### Configuring the Neatline Plugin (for version 2.5.2) {#configuring-nlplugin}
+### Google Maps API Settings
 
 1. On the Plugins Screen, click the **Configure** button. ![Screenshot of Configure Button](/assets/wp-content/uploads/2017/06/configurebutton.png)
 

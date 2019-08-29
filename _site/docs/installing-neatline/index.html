@@ -57,9 +57,18 @@
             <li class="nav-item">
               <a class="nav-link" href="/showcase/">Showcase</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Add-Ons
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/plugins/">Plugins & Modules</a>
+                  <a class="dropdown-item" href="/themes/">Themes</a>
+                </div>
+            </li>  
+            <!-- <li class="nav-item">
               <a class="nav-link" href="/plugins/">Add-Ons</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link" href="/themes/">Themes</a>
             </li> -->
@@ -74,12 +83,22 @@
                   <a class="dropdown-item" href="/docs-s/">Neatline for Omeka S</a>
                 </div>
             </li>  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resources
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="">Teaching Resources</a>
+                  <a class="dropdown-item" href="">Workshop Materials</a>
+                  <a class="dropdown-item" href="/publications/">Publications</a>
+                </div>
+            </li>  
             <li class="nav-item">
               <a class="nav-link" href="/blog/">News</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="/publications/" class="nav-link">Publications</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="/credits/" class="nav-link">Credits</a>
             </li>
@@ -248,8 +267,8 @@
       <li><a href="#installing-omeka">Installing Omeka</a></li>
       <li><a href="#installing-nl">Installing Neatline</a>
         <ul>
-          <li><a href="#new-for-neatline-252">NEW for Neatline 2.5.2</a></li>
           <li><a href="#configuring-nlplugin">Configuring the Neatline Plugin (for version 2.5.2)</a></li>
+          <li><a href="#google-maps-api-settings">Google Maps API Settings</a></li>
         </ul>
       </li>
     </ul>
@@ -299,11 +318,11 @@
 
 <p>You’ll be redirected back to the list of plugins and see a notification saying that “The Neatline plugin was successfully installed.” Over in the main vertical navigation on the left side of the screen, you’ll see a new listing for <strong>Neatline</strong> - click there to get started.</p>
 
-<h3 id="new-for-neatline-252">NEW for Neatline 2.5.2:</h3>
+<h3 id="configuring-nlplugin">Configuring the Neatline Plugin (for versions 2.5.2 and above):</h3>
 
-<p>Neatline users must now specify a Google Maps API Key as a configuration step after installing the <strong>Neatline</strong> plugin.</p>
+<p>Neatline users must now specify a Google Maps API Key to use the Google Map layers as a configuration step after installing the <strong>Neatline</strong> plugin. Neatline for Omeka Classic also comes with open source map options, <a href="https://www.openstreetmap.org/">Open Street Map</a> and <a href="http://maps.stamen.com/">Stamen</a> maps, which do not require an API key.</p>
 
-<h3 id="configuring-nlplugin">Configuring the Neatline Plugin (for version 2.5.2)</h3>
+<h3 id="google-maps-api-settings">Google Maps API Settings</h3>
 
 <ol>
   <li>
@@ -377,6 +396,7 @@
           
       </div>
     </div>
+    <div class="clear"></div>
        
                 </main>
             </div>

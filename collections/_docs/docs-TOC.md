@@ -18,8 +18,8 @@ layout: docs
     * [Before you start]({{ "docs/installing-neatline#before-you-start" | absolute_url }})
     * [Installing Omeka]({{ "docs/installing-neatline#installing-omeka" | absolute_url }})
     * [Installing Neatline]({{ "docs/installing-neatline#installing-nl" | absolute_url }})
-        + [NEW for Neatline 2.5.2]({{ "docs/installing-neatline#new-for-neatline-252" | absolute_url }})
-        + [Configuring the Neatline Plugin (for version 2.5.2)]({{ "docs/installing-neatline#configuring-nlplugin" | absolute_url }})
+        + [Configuring the Neatline Plugin (for version 2.5.2 and above)]({{ "docs/installing-neatline#configuring-nlplugin" | absolute_url }})
+        + [Google Maps API Settings]({{ "docs/installing-neatline#google-maps-api-settings" | absolute_url }})
     * [Installing Geoserver]({{ "docs/installing-neatline#installing-geoserver" | absolute_url }})
 
 - [Upgrading Neatline to 2.0]({{ "docs/upgrading-to-v2" | absolute_url }})
