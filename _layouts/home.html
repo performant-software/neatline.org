@@ -19,6 +19,22 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="{{ "/assets/js/bootstrap/bootstrap.bundle.min.js" | absolute_url }}"></script>
+  <script>
+    var $item = $('.carousel-item');
+    var $numberofSlides = $('.carousel-item').length;
+    var $currentSlide = Math.floor((Math.random() * $numberofSlides));
+
+    $('.carousel-indicators li').each(function(){
+      var $slideValue = $(this).attr('data-slide-to');
+      if($currentSlide == $slideValue) {
+        $(this).addClass('active');
+        $item.eq($slideValue).addClass('active');
+      } else {
+        $(this).removeClass('active');
+        $item.eq($slideValue).removeClass('active');
+      }
+    });
+  </script>
 
   </body>
 </html>
