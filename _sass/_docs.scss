@@ -70,7 +70,7 @@ ol {
 
 .content-section {
   min-height: 100vh;
-  background: #fff;
+  background: $main-body-color;
   @include container;
   strong {
     font-weight: 700 !important;
@@ -101,7 +101,7 @@ ol {
 .sidebar-item {
   max-width: 100% !important;
   margin: 0 auto !important;
-  padding: 1rem 1.5rem !important; 
+  // padding: 1rem 1.5rem !important; 
   // border-bottom: solid 1px #fff;
   background-color:  rgba(90,60,110, 1); //omeka-s color #404E61
   position: absolute !important;
@@ -113,6 +113,7 @@ ol {
 
   h4 {
     color: $white;//$grey-lt-300
+    padding: 0 1.618em !important; //0.4045em 1.618em
   }
 }
 
@@ -133,7 +134,7 @@ nav[data-toggle="toc"] {
 // }
 
 /* small screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* override stickyness so that the navigation does not follow scrolling */
   nav[data-toggle="toc"] {
     margin-bottom: 42px;
@@ -160,7 +161,7 @@ nav[data-toggle="toc"] {
 .sidebar-item-s {
   max-width: 100% !important;
   margin: 0 auto !important;
-  padding: 1rem 1.5rem !important; 
+  // padding: 1rem 1.5rem !important; 
   background-color:  rgba(64, 78, 97, 1); //omeka-s color #404E61
   position: absolute !important;
   top: 0;
@@ -171,6 +172,7 @@ nav[data-toggle="toc"] {
 
     h4 {
       color: $grey-lt-300;
+      padding: 0 1.618em !important; //0.4045em 1.618em
     }
 }
 
@@ -188,15 +190,10 @@ nav[data-toggle="toc"] {
 }
 }
 
-
-
-    .content {
-     
-        font-weight: 300;
-        @include fs-6;
-      
-    }
-
+.content {
+    font-weight: 300;
+    @include fs-6;
+}
 
 .plugin-screen {
   display:block;

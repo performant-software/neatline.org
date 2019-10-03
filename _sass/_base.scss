@@ -1,5 +1,8 @@
 // Colors --------------------------------------------------------------------
 
+$main-body-color                :#ffffff;
+$secondary-body-color           :#f8f9fa;
+
 $default-color                  : #595959; //rgb(60,60,60)
 $default-color-light            : rgba($default-color, 0.75);
 $default-color-lighter          : rgba($default-color, 0.5);
@@ -20,7 +23,7 @@ $link-active-color              : darken($link-color, 30%);
 
 // Typography
 
-$font-family-main: 'Lato', sans-serif !default;
+$font-family-main: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif !default;
 $font-secondary: $font-family-main;
 $base-font-size: 16px;
 $base-line-height: 28px;

@@ -37,6 +37,8 @@ The location of a web-accessible Web Map Service server like Geoserver. This fie
 
 `http://libsvr35.lib.virginia.edu/geoserver/hotchkiss/wms`
 
+See also: [Tutorial: Neatline for Historical Maps](http://www.kristenmapes.com/neatline/) by Kristen Mapes.
+
 ## WMS Layers
 
 A comma-delimited list of layers on the served defined by "WMS Layers," such as:

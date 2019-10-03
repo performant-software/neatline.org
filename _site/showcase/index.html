@@ -16,10 +16,11 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
 
 <!-- Modernizr and Friends -->
-<script src="/assets/js/modernizr.min.js"></script>
+<!-- <script src="/assets/js/modernizr.min.js"></script>
 <script>
     Modernizr.load([
         {
@@ -30,7 +31,7 @@
             ]
         }
     ]);
-</script>
+</script> -->
 
 
 
@@ -38,110 +39,183 @@
     <link rel="stylesheet" href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    (function($) {
-    $(document).ready(function() {
-        $('.site-filters a').click(function(e) {
-            e.preventDefault();
-            var filterButton = $(this);
-            var filter = filterButton.attr('href').replace('#', '');
-            var examplesWrapper = $('#examples');
-            examplesWrapper.css('opacity', 0);
-            filterButton.toggleClass('active');
-            setTimeout(function() {
-                examplesWrapper.toggleClass(filter);
-                if (examplesWrapper.hasClass('all')) {
-                    examplesWrapper.removeClass('all');
-                } else if (examplesWrapper.attr('class').length == 0) {
-                    examplesWrapper.addClass('all');
-                }
-            examplesWrapper.css('opacity', 1);
-            }, 500);
+    <script>
+        (function($) {
+        $(document).ready(function() {
+            $('.site-filters a').click(function(e) {
+                e.preventDefault();
+                var filterButton = $(this);
+                var filter = filterButton.attr('href').replace('#', '');
+                var examplesWrapper = $('#examples');
+                examplesWrapper.css('opacity', 0);
+                filterButton.toggleClass('active');
+                setTimeout(function() {
+                    examplesWrapper.toggleClass(filter);
+                    if (examplesWrapper.hasClass('all')) {
+                        examplesWrapper.removeClass('all');
+                    } else if (examplesWrapper.attr('class').length == 0) {
+                        examplesWrapper.addClass('all');
+                    }
+                examplesWrapper.css('opacity', 1);
+                }, 500);
+            });
         });
-    });
-})(jQuery)
-</script>
+    })(jQuery)
+    </script>
   </head>
   
   <body>
     <a href="#main" id="skipnav">Skip to main content</a>
-
     <header role="banner">
-    <nav class="navbar-light bg-light">
-      <div class="topnav">
-            <a href="" title="Neatline"> 
-              <img class="logo" src="/assets/images/neatline-logo-rgb.png" alt="Neatline"/>
-            </a>  
-          <ul class="nav navigation">
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">What is Neatline?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/showcase/">Showcase</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Add-Ons
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/plugins/">Plugins & Modules</a>
-                  <a class="dropdown-item" href="/themes/">Themes</a>
-                </div>
-            </li>   -->
-            <li class="nav-item">
-              <a class="nav-link" href="/plugins/">Add-Ons</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="/themes/">Themes</a>
-            </li> -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                User Guides
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <!-- <a class="dropdown-item" href="/use-cases/">Use Cases</a> -->
-                  <!-- <a class="dropdown-item" href="/tutorials/">Tutorials</a> -->
-                  <a class="dropdown-item" href="/docs/">Neatline for Omeka Classic</a>
-                  <a class="dropdown-item" href="/docs-s/">Neatline for Omeka S</a>
-                </div>
-            </li>  
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Resources
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="">Teaching Resources</a>
-                  <a class="dropdown-item" href="">Workshop Materials</a>
-                  <a class="dropdown-item" href="/publications/">Publications</a>
-                </div>
-            </li>   -->
-            <li class="nav-item">
-              <a class="nav-link" href="/blog/">News</a>
-            </li>
-            <li class="nav-item">
-              <a href="/publications/" class="nav-link">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a href="/credits/" class="nav-link">Credits</a>
-            </li>
-            <li class="nav-item">
-              <a href="/search/" class="btn btn-outline" title= "Search neatline.org" aria-label="Search neatline.org"><i class="fas fa-search"></i></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    
-</header>
+<div class="flexnav-wrapper">
+	<div class="flexnav-main">
+		<div class="flexnav__home-icon">
+			<a href="" title="Neatline"> 
+				<img class="logo" src="/assets/images/neatline-logo-rgb.png" alt="Neatline"/>
+			</a>  
+		</div>
 
+		
+		<ul class="flexnav-main-grid">
+			
+			
+			<li class="flexnav__item"><a href="/about/">What is Neatline?</a></li>
+			
+
+			
+
+			
+			
+			<li class="flexnav__item"><a href="/showcase/">Showcase</a></li>
+			
+
+			
+
+			
+			
+			<li class="flexnav__item"><a href="/plugins/">Add-Ons</a></li>
+			
+
+			
+
+			
+			
+
+			
+			<li class="flexnav__item dropdown">
+				<a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Guides<span>&rsaquo;</span></a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					
+					<a class="dropdown-item" href="/use-cases/">Use Cases</a>
+					
+					<a class="dropdown-item" href="/docs/">Neatline Classic</a>
+					
+					<a class="dropdown-item" href="/docs-s/">Neatline S</a>
+					
+				</div>
+				</li>  
+			
+
+			
+			
+			<li class="flexnav__item"><a href="/blog/">News</a></li>
+			
+
+			
+
+			
+			
+			<li class="flexnav__item"><a href="/publications/">Publications</a></li>
+			
+
+			
+
+			
+			
+			<li class="flexnav__item"><a href="/credits/">Credits</a></li>
+			
+
+			
+
+			
+			
+			<li class="flexnav__item"><a href="/search/">Search</a></li>
+			
+
+			
+
+			
+			<li class="flexnav__more-menu">
+				<div class="flexnav-more__prompt" aria-label="More menu items">More<span>&rsaquo;</span></div>
+				<ul class="flexnav-more__wrapper">
+				
+				
+				<li class="flexnav-more__item"><a href="/about/">What is Neatline?</a></li>
+					
+							
+				
+				
+				<li class="flexnav-more__item"><a href="/showcase/">Showcase</a></li>
+					
+							
+				
+				
+				<li class="flexnav-more__item"><a href="/plugins/">Add-Ons</a></li>
+					
+							
+				
+					
+				
+				<li class="flexnav-more__item">
+					
+					<a href="/use-cases/">User Guides: Use Cases</a><br />
+					
+					<a href="/docs/">User Guides: Neatline Classic</a><br />
+					
+					<a href="/docs-s/">User Guides: Neatline S</a><br />
+					
+				</li>
+							
+				
+				
+				<li class="flexnav-more__item"><a href="/blog/">News</a></li>
+					
+							
+				
+				
+				<li class="flexnav-more__item"><a href="/publications/">Publications</a></li>
+					
+							
+				
+				
+				<li class="flexnav-more__item"><a href="/credits/">Credits</a></li>
+					
+							
+				
+				
+				<li class="flexnav-more__item"><a href="/search/">Search</a></li>
+					
+							
+				
+				</ul>
+			</li>
+		</ul>
+		
+		
+	</div> <!-- end content -->
+</div> 
+<!-- end wrapper -->
+</header>
     <div class="wrapper">
-    <main id="main" class="main-content container" role="main" >
+    <main id="main" class="main-content" role="main" >
         <div class="container">
             <header class="post-header">
                 <h1>Exhibit Showcase</h1>
             </header>
             
             <article class="post-content">
-            <p class="fs-6 fw-300">
+            <div class="container-fluid">
+<p class="fs-6 fw-300">
     We've gathered a number of Neatline exhibits to help stretch your imagination. Look below for projects in history, literature, and contemporary space and place.
 </p>
 <p class="fs-5 fw-300">Do you have a public Neatline exhibit you'd like to share? Please use our <a href="https://docs.google.com/forms/d/e/1FAIpQLScghu4_klBMKfLAh3d2ydRkQwC5gHNcLxLJSq8pnSnEHpQY1g/viewform?usp=sf_link" target="_blank">
@@ -281,6 +355,61 @@
     </div>
   </div>
 
+  <div class="example classic exhibits ">
+    <a href="http://maptherebellion.com/interactive-map" data-featherlight="#whiskey"><img src="../assets/wp-content/uploads/2014/07/whiskey.png" alt="Exhibit Screenshot" class="img-fluid"></a>
+    <h3><a href="http://maptherebellion.com/interactive-map" data-featherlight="#whiskey">The Whiskey Rebellion: An Interactive Mapping Project</a></h3>
+  </div>
+  <div class="lightbox container" id="whiskey">
+    <h2><a href="http://maptherebellion.com/interactive-map" target="_blank">The Whiskey Rebellion: An Interactive Mapping Project</a></h2>
+    <div class="row">
+      <div class="col-md-7">
+        <a href="http://maptherebellion.com/interactive-map" target="_blank"><img src="../assets/wp-content/uploads/2014/07/whiskey.png" alt="Exhibit Screenshot" class="img-fluid"></a>
+        <span class="tag-classic">Neatline for Omeka Classic</span>
+        <p class="fs-3">By Stephanie Krom | Link with permission of <a href="http://maptherebellion.com/interactive-map"> Stephanie Krom</a>. | Map: <a href="http://openstreetmap.org">OpenStreetMap</a></p>
+      </div>  
+      <div class="col-md-5 fs-4">
+        <p>"This digital history project explores the Whiskey Rebellion through time and space. This site includes an interactive map, a responsive timeline, and an audio tour of the major sites of the Whiskey Rebellion. Locations of important sites of the Whiskey Rebellion have been found through original, on-the-ground research and appear together for the first time in this user-focused digital space." (Text from the project's <a href="http://maptherebellion.com/about">About</a> page.)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="example classic exhibits ">
+    <a href="http://dclure.org/logs/minard-napoleon-neatline/" data-featherlight="#minard"><img src="../assets/images/minard.png" alt="Exhibit Screenshot" class="img-fluid"></a>
+    <h3><a href="http://dclure.org/logs/minard-napoleon-neatline/" data-featherlight="#minard">Minard + Napoleon + Neatline</a></h3>
+  </div>
+  <div class="lightbox container" id="minard">
+    <h2><a href="http://dclure.org/logs/minard-napoleon-neatline/" target="_blank">Minard + Napoleon + Neatline</a></h2>
+    <div class="row">
+    <div class="col-md-7">
+      <a href="http://dclure.org/logs/minard-napoleon-neatline/" target="_blank"><img src="../assets/images/minard.png" alt="Exhibit Screenshot" class="img-fluid"></a>
+      <span class="tag-classic">Neatline for Omeka Classic</span>
+      <p class="fs-3">By David McClure | Map tiles by <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | Map from Wikipedia. Built for the <a href="https://web.northeastern.edu/nulab/dmmh/">NEH Workshop Digital Methods for Military History</a> at Northeastern University.</p>
+    </div>  
+    <div class="col-md-5 fs-4">
+      <p>Charles Minard’s 1869 diagram showing the gradual depletion of the French army over the course of Napoleon’s 1812 invasion of Russia is a seminal work in the history of information design. This exhibit was built by georeferencing a scan of Minard’s diagram, and then vector annotations were traced out on top of each of the individual segments that represent the deteriorating size of the Grande Armée over the course of the invasion.</p>
+      <p>The small interactive chart was made using d3, that plots out the size of the French army over the course of the ~5-month interval of time between when Napoleon crossed the Neman on June 24 and when that last little bit of the army stumbled back out of Russia in December 14.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="example classic text exhibits ">
+    <a href="http://neatline.dclure.org/neatline/show/declaration-of-independence" data-featherlight="#declaration-of-independence"><img src="../assets/wp-content/uploads/2014/07/declaration.png" alt="Exhibit Screenshot" class="img-fluid"></a>
+    <h3><a href="http://neatline.dclure.org/neatline/show/declaration-of-independence" data-featherlight="#declaration-of-independence">A (Digital) Declaration of Independence</a></h3>
+  </div>
+  <div class="lightbox container" id="declaration-of-independence">
+    <h2><a href="http://neatline.dclure.org/neatline/show/declaration-of-independence" target="_blank">A (Digital) Declaration of Independence</a></h2>
+    <div class="row">
+    <div class="col-md-7">
+      <a href="http://neatline.dclure.org/neatline/show/declaration-of-independence" target="_blank"><img src="../assets/wp-content/uploads/2014/07/declaration.png" alt="Exhibit Screenshot" class="img-fluid"></a>
+      <span class="tag-classic">Neatline for Omeka Classic</span>
+      <p class="fs-3">By David McClure | Map tiles by <a href="https://www.mapbox.com/about/maps/">Mapbox</a></p>
+    </div>  
+    <div class="col-md-5 fs-4">
+      <p><a href="/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map/">Read more about this project on our blog.</a></p>
+    </div>
+  </div>
+  </div>
+
   <div class="example classic timeline exhibits ">
     <a href="http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen" data-featherlight="#dearnelly"><img src="../assets/wp-content/uploads/2012/07/nelly.jpg" alt="Exhibit Screenshot" class="img-fluid"></a>
     <h3><a href="http://hotchkiss.neatline.org/neatline-exhibits/show/my-dear-little-nelly/fullscreen" data-featherlight="#dearnelly">"My Dear Little Nelly": Hotchkiss Maps the Battle of Fredericksburg for his Child</a></h3>
@@ -346,24 +475,6 @@
     </div>
   </div>
 
-  <div class="example classic exhibits ">
-    <a href="http://maptherebellion.com/interactive-map" data-featherlight="#whiskey"><img src="../assets/wp-content/uploads/2014/07/whiskey.png" alt="Exhibit Screenshot" class="img-fluid"></a>
-    <h3><a href="http://maptherebellion.com/interactive-map" data-featherlight="#whiskey">The Whiskey Rebellion: An Interactive Mapping Project</a></h3>
-  </div>
-  <div class="lightbox container" id="whiskey">
-    <h2><a href="http://maptherebellion.com/interactive-map" target="_blank">The Whiskey Rebellion: An Interactive Mapping Project</a></h2>
-    <div class="row">
-      <div class="col-md-7">
-        <a href="http://maptherebellion.com/interactive-map" target="_blank"><img src="../assets/wp-content/uploads/2014/07/whiskey.png" alt="Exhibit Screenshot" class="img-fluid"></a>
-        <span class="tag-classic">Neatline for Omeka Classic</span>
-        <p class="fs-3">By Stephanie Krom | Link with permission of <a href="http://maptherebellion.com/interactive-map"> Stephanie Krom</a>. | Map: <a href="http://openstreetmap.org">OpenStreetMap</a></p>
-      </div>  
-      <div class="col-md-5 fs-4">
-        <p>"This digital history project explores the Whiskey Rebellion through time and space. This site includes an interactive map, a responsive timeline, and an audio tour of the major sites of the Whiskey Rebellion. Locations of important sites of the Whiskey Rebellion have been found through original, on-the-ground research and appear together for the first time in this user-focused digital space." (Text from the project's <a href="http://maptherebellion.com/about">About</a> page.)</p>
-      </div>
-    </div>
-  </div>
-
 <div class="example classic text timeline exhibits ">
   <a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" data-featherlight="#sentimentaljourney"><img src="../assets/wp-content/uploads/2014/07/sentimentaljourney.png" alt="Exhibit Screenshot" class="img-fluid"></a>
   <h3><a href="http://enec3120.neatline-uva.org/neatline/show/a-sentimental-journey" data-featherlight="#sentimentaljourney">A Sentimental Journey</a></h3>
@@ -418,69 +529,32 @@
     </div>
   </div>
 
-  <div class="example classic exhibits ">
-    <a href="http://dclure.org/logs/minard-napoleon-neatline/" data-featherlight="#minard"><img src="../assets/images/minard.png" alt="Exhibit Screenshot" class="img-fluid"></a>
-    <h3><a href="http://dclure.org/logs/minard-napoleon-neatline/" data-featherlight="#minard">Minard + Napoleon + Neatline</a></h3>
-  </div>
-  <div class="lightbox container" id="minard">
-    <h2><a href="http://dclure.org/logs/minard-napoleon-neatline/" target="_blank">Minard + Napoleon + Neatline</a></h2>
-    <div class="row">
-    <div class="col-md-7">
-      <a href="http://dclure.org/logs/minard-napoleon-neatline/" target="_blank"><img src="../assets/images/minard.png" alt="Exhibit Screenshot" class="img-fluid"></a>
-      <span class="tag-classic">Neatline for Omeka Classic</span>
-      <p class="fs-3">By David McClure | Map tiles by <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | Map from Wikipedia. Built for the <a href="https://web.northeastern.edu/nulab/dmmh/">NEH Workshop Digital Methods for Military History</a> at Northeastern University.</p>
-    </div>  
-    <div class="col-md-5 fs-4">
-      <p>Charles Minard’s 1869 diagram showing the gradual depletion of the French army over the course of Napoleon’s 1812 invasion of Russia is a seminal work in the history of information design. This exhibit was built by georeferencing a scan of Minard’s diagram, and then vector annotations were traced out on top of each of the individual segments that represent the deteriorating size of the Grande Armée over the course of the invasion.</p>
-      <p>The small interactive chart was made using d3, that plots out the size of the French army over the course of the ~5-month interval of time between when Napoleon crossed the Neman on June 24 and when that last little bit of the army stumbled back out of Russia in December 14.</p>
-    </div>
-  </div>
-  </div>
 
-  <div class="example classic text exhibits ">
-    <a href="http://neatline.dclure.org/neatline/show/declaration-of-independence" data-featherlight="#declaration-of-independence"><img src="../assets/wp-content/uploads/2014/07/declaration.png" alt="Exhibit Screenshot" class="img-fluid"></a>
-    <h3><a href="http://neatline.dclure.org/neatline/show/declaration-of-independence" data-featherlight="#declaration-of-independence">A (Digital) Declaration of Independence</a></h3>
-  </div>
-  <div class="lightbox container" id="declaration-of-independence">
-    <h2><a href="http://neatline.dclure.org/neatline/show/declaration-of-independence" target="_blank">A (Digital) Declaration of Independence</a></h2>
-    <div class="row">
-    <div class="col-md-7">
-      <a href="http://neatline.dclure.org/neatline/show/declaration-of-independence" target="_blank"><img src="../assets/wp-content/uploads/2014/07/declaration.png" alt="Exhibit Screenshot" class="img-fluid"></a>
-      <span class="tag-classic">Neatline for Omeka Classic</span>
-      <p class="fs-3">By David McClure | Map tiles by <a href="https://www.mapbox.com/about/maps/">Mapbox</a></p>
-    </div>  
-    <div class="col-md-5 fs-4">
-      <p><a href="/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map/">Read more about this project on our blog.</a></p>
-    </div>
-  </div>
-  </div>
-
-  <div class="example classic waypoints timeline exhibits ">
-    <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" data-featherlight="#palermo-1"><img src="/assets/wp-content/uploads/2014/07/simile.png" alt="Exhibit Screenshot" class="img-fluid"></a>
-    <h3><a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" data-featherlight="#palermo-1">Cultural Syncretism in Medieval Palermo: from Ibn Hawqal to Ibn Jubayr</a></h3>
-  </div>
-  <div class="lightbox container" id="palermo-1">
-    <h2><a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" target="_blank">Cultural Syncretism in Medieval Palermo: from Ibn Hawqal to Ibn Jubayr</a></h2>  
-    <div class="row">
-    <div class="col-md-7">
-      <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" target="_blank"><img src="/assets/wp-content/uploads/2014/07/simile.png" alt="Exhibit Screenshot" class="img-fluid"></a>
-      <span class="tag-classic">Neatline for Omeka Classic</span>
-      <p class="fs-3">Created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly.</p>
-    </div>  
-    <div class="col-md-5 fs-4">
-      <p>Between the 9th and 12th centuries, medieval Palermo in Sicily was visited by two Muslim travelers, Ibn Ḥawqal and Ibn Jubayr, a little more than two hundred years apart. Their accounts sit on either side of a transition from Islamic to Norman rule, making them invaluable primary sources of the regional medieval Mediterranean experiences. This exhibit uses their writings to show the diversity and complex interrelations between multiple cultures that built Palermo's medieval identity.</p>
-    </div>
-    </div>
-  </div>
-
-  </div>
+</div>
     
 
 </div>
-
+</div>
 
 <!-- depreciated exhibits -->
 
+<!-- <div class="example classic waypoints timeline exhibits ">
+  <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" data-featherlight="#palermo-1"><img src="/assets/wp-content/uploads/2014/07/simile.png" alt="Exhibit Screenshot" class="img-fluid"></a>
+  <h3><a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" data-featherlight="#palermo-1">Cultural Syncretism in Medieval Palermo: from Ibn Hawqal to Ibn Jubayr</a></h3>
+</div>
+<div class="lightbox container" id="palermo-1">
+  <h2><a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" target="_blank">Cultural Syncretism in Medieval Palermo: from Ibn Hawqal to Ibn Jubayr</a></h2>  
+  <div class="row">
+  <div class="col-md-7">
+    <a href="http://ibnjubayr.neatline-uva.org/neatline/fullscreen/ibn-and-ibn-in-palermo" target="_blank"><img src="/assets/wp-content/uploads/2014/07/simile.png" alt="Exhibit Screenshot" class="img-fluid"></a>
+    <span class="tag-classic">Neatline for Omeka Classic</span>
+    <p class="fs-3">Created by a group of University of Virginia undergraduate students for a course in the School of Architecture, taught by Professor Lisa Reilly.</p>
+  </div>  
+  <div class="col-md-5 fs-4">
+    <p>Between the 9th and 12th centuries, medieval Palermo in Sicily was visited by two Muslim travelers, Ibn Ḥawqal and Ibn Jubayr, a little more than two hundred years apart. Their accounts sit on either side of a transition from Islamic to Norman rule, making them invaluable primary sources of the regional medieval Mediterranean experiences. This exhibit uses their writings to show the diversity and complex interrelations between multiple cultures that built Palermo's medieval identity.</p>
+  </div>
+  </div>
+</div> -->
 
 <!-- <div class="example classic exhibits ">
   <a href="http://henshaw.neatline.org/" data-featherlight="#henshaw"><img src="../assets/wp-content/uploads/2012/07/henshaw1.jpg" alt="Exhibit Screenshot" class="img-fluid"></a>
@@ -650,7 +724,7 @@
     </div>
   </div>
     </footer>
-
+    <script src="/assets/js/flex-nav.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   </body>

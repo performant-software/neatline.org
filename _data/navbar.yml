@@ -1,0 +1,30 @@
+- title: What is Neatline?
+  url: /about/
+  level: 1
+- title: Showcase
+  url: /showcase/
+  level: 1
+- title: Add-Ons
+  url: /plugins/
+  level: 1
+- title: User Guides
+  level: 2
+  subnav:
+  - page: Use Cases
+    url: /use-cases/
+  - page: Neatline Classic
+    url: /docs/
+  - page: Neatline S
+    url: /docs-s/
+- title: News
+  url: /blog/
+  level: 1
+- title: Publications
+  url: /publications/
+  level: 1
+- title: Credits
+  url: /credits/
+  level: 1
+- title: Search
+  url: /search/
+  level: 1

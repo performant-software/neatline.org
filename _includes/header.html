@@ -1,66 +1,52 @@
 <header role="banner">
-    <nav class="navbar-light bg-light">
-      <div class="topnav">
-            <a href="{{ site.url }}" title="{{ site.title }}"> 
-              <img class="logo" src="{{ "/assets/images/neatline-logo-rgb.png" | prepend: site.url }}" alt="{{ site.title }}"/>
-            </a>  
-          <ul class="nav navigation">
-            <li class="nav-item">
-              <a class="nav-link" href="{{ "/about/" | prepend: site.url }}">What is Neatline?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ "/showcase/" | prepend: site.url }}">Showcase</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Add-Ons
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ "/plugins/" | prepend: site.url }}">Plugins & Modules</a>
-                  <a class="dropdown-item" href="{{ "/themes/" | prepend: site.url }}">Themes</a>
-                </div>
-            </li>   -->
-            <li class="nav-item">
-              <a class="nav-link" href="{{ "/plugins/" | prepend: site.url }}">Add-Ons</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="{{ "/themes/" | prepend: site.url }}">Themes</a>
-            </li> -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                User Guides
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <!-- <a class="dropdown-item" href="{{ "/use-cases/" | prepend: site.url }}">Use Cases</a> -->
-                  <!-- <a class="dropdown-item" href="{{ "/tutorials/" | prepend: site.url }}">Tutorials</a> -->
-                  <a class="dropdown-item" href="{{ "/docs/" | prepend: site.url }}">Neatline for Omeka Classic</a>
-                  <a class="dropdown-item" href="{{ "/docs-s/" | prepend: site.url }}">Neatline for Omeka S</a>
-                </div>
-            </li>  
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Resources
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="">Teaching Resources</a>
-                  <a class="dropdown-item" href="">Workshop Materials</a>
-                  <a class="dropdown-item" href="{{ "/publications/" | prepend: site.url }}">Publications</a>
-                </div>
-            </li>   -->
-            <li class="nav-item">
-              <a class="nav-link" href="{{ "/blog/" | prepend: site.url }}">News</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ "/publications/" | prepend: site.url }}" class="nav-link">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ "/credits/" | prepend: site.url }}" class="nav-link">Credits</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{ "/search/" | prepend: site.url }}" class="btn btn-outline" title= "Search neatline.org" aria-label="Search neatline.org"><i class="fas fa-search"></i></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    
+<div class="flexnav-wrapper">
+	<div class="flexnav-main">
+		<div class="flexnav__home-icon">
+			<a href="{{ site.url }}" title="{{ site.title }}"> 
+				<img class="logo" src="{{ "/assets/images/neatline-logo-rgb.png" | prepend: site.url }}" alt="{{ site.title }}"/>
+			</a>  
+		</div>
+
+		{% if site.data.navbar[0] %}
+		<ul class="flexnav-main-grid">
+			{% for item in site.data.navbar %}
+			{% if item.level == 1 %}
+			<li class="flexnav__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endif %}
+
+			{% if item.level == 2 %}
+			<li class="flexnav__item dropdown">
+				<a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}<span>&rsaquo;</span></a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					{% for entry in item.subnav %}
+					<a class="dropdown-item" href="{{ entry.url }}">{{ entry.page }}</a>
+					{% endfor %}
+				</div>
+				</li>  
+			{% endif %}
+
+			{% endfor %}
+			<li class="flexnav__more-menu">
+				<div class="flexnav-more__prompt" aria-label="More menu items">More<span>&rsaquo;</span></div>
+				<ul class="flexnav-more__wrapper">
+				{% for item in site.data.navbar  %}
+				{% if item.level == 1 %}
+				<li class="flexnav-more__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+				{% endif %}	
+				{% if item.level == 2 %}
+				<li class="flexnav-more__item">
+					{% for entry in item.subnav %}
+					<a href="{{ entry.url }}">{{ item.title }}: {{ entry.page }}</a><br />
+					{% endfor %}
+				</li>
+				{% endif %}			
+				{% endfor %}
+				</ul>
+			</li>
+		</ul>
+		{% endif %}
+		
+	</div> <!-- end content -->
+</div> 
+<!-- end wrapper -->
 </header>

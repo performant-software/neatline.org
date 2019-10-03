@@ -1,11 +1,13 @@
 ---
 layout: docs
 ---
-# [NeatlineText][plugin]
+# NeatlineText
 
 ## Definition
 
 **NeatlineText** is an extension to the Neatline plugin that makes it possible to connect paragraphs, sentences, and words in text documents with annotations in Neatline exhibits.
+
+[Download the latest version of the plugin.](/plugins)
 
 For example, imagine you're making an interactive edition of Walt Whitman's "[Salut au Monde][salut-au-monde]," and want to wire up the locations in this passage with annotations on the map:
 
@@ -18,7 +20,7 @@ I see them in Asia and in Africa.
 
 ## Installation
 
-  1. Download the latest version of the plugin from the Omeka add-ons repository.
+  1. Download the latest version of the plugin from the [Omeka add-ons][plugin] repository.
 
   1. Uncompress the `.zip` archive.
 
@@ -91,7 +93,7 @@ There are two ways to go about this:
 
   - **Neatline themes**: The other approach is to use Neatline's exhibit-specific themeing system, which makes it possible to create completely separate themes for each individual Neatline exhibit. For more information about this, check out the [documentation]({{ "/2014/04/01/creating-themes-for-individual-neatline-exhibits/" | prepend: site.url }}), and take a look at [David McClure's fork of the Neatlight theme][neatlight-mcclure], which contains the source code for the custom themes used in projects at [neatline.dclure.org][neatline-dclure].
 
-[plugin]: http://omeka.org/add-ons/plugins/neatlinetext
+[plugin]: https://omeka.org/classic/plugins/NeatlineText/
 [salut-au-monde]: http://www.bartelby.com/142/74.html
 [neatlight]: https://github.com/scholarslab/neatlight
 [neatlight-mcclure]: https://github.com/davidmcclure/neatlight/tree/master/neatline/exhibits/themes

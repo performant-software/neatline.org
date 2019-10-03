@@ -2,7 +2,7 @@
 // Typography
 //
 
-$body-font-family: 'Lato', sans-serif !default;
+$body-font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif !default;
 $mono-font-family: "SFMono-Regular", Menlo, Consolas, Monospace !default;
 $root-font-size: 16px !default;         // Base font-size for rems
 $body-line-height: 1.4 !default;
@@ -121,10 +121,10 @@ $gutter-spacing-sm: $sp-4 !default;
 $nav-width: 232px !default;
 $content-width: 800px !default;
 
-$media-queries: (
-  xs: 320px,
-  sm: 500px,
-  md: 740px,
-  lg: 800px,
-  xl: 1316px
-) !default;
+// $media-queries: (
+//   xs: 320px,
+//   sm: 500px,
+//   md: 740px,
+//   lg: 800px,
+//   xl: 1316px
+// ) !default;

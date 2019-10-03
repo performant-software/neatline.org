@@ -2,22 +2,22 @@
 // Main nav, breadcrumb, etc...
 //
 
-.site-title {
-  display: block;
-  flex: 1 1 auto;
-  color: $body-heading-color;
-  background-color: $sidebar-color;
+// .site-title {
+//   display: block;
+//   flex: 1 1 auto;
+//   color: $body-heading-color;
+//   background-color: $sidebar-color;
 
-  @include mq(md) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 101;
-    height: 60px;
-    padding-top: $sp-4;
-    border-bottom: $border $border-color;
-  }
-}
+//   @include mq(md) {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     z-index: 101;
+//     height: 60px;
+//     padding-top: $sp-4;
+//     border-bottom: $border $border-color;
+//   }
+// }
 
 .navigation-list {
   padding: 0;
@@ -41,31 +41,31 @@
   .navigation-list-item {
     position: relative;
 
-    &::before {
-      position: absolute;
-      margin-top: 0.3em;
-      margin-left: -0.8em;
-      color: rgba($body-text-color, 0.3);
-      content: "- ";
-    }
+    // &::before {
+    //   position: absolute;
+    //   margin-top: 0.3em;
+    //   margin-left: -0.8em;
+    //   color: rgba($body-text-color, 0.3);
+    //   content: "- ";
+    // }
 
-    &.active  {
-      &::before {
-        color: $body-heading-color !important;
-      }
-    }
+    // &.active  {
+    //   &::before {
+    //     color: $body-heading-color !important;
+    //   }
+    // }
   }
 }
 
 .navigation-list-item {
   @include fs-4;
-  font-family: "Cabin", "Lucida Grande", Verdana, sans-serif !important;
-  font-weight: 300 !important;
+  font-family: $font-family-main;
+  font-weight: 400 !important;
   margin: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 20px;
-
+  // padding-inline-start: 0.5rem; //20px
+  padding: 0.4045em 2.427em;
   @include mq(md) {
     @include fs-3;
   }
@@ -75,18 +75,25 @@
   }
 
   &.active {
+    background: $main-body-color;
     .navigation-list-child-list {
       display: block;
     }
+    &:hover {
+      background: $main-body-color;
+    }
+  }
+  &:hover {
+    background-color: darken($secondary-body-color, 50%);
   }
   a {
     text-decoration: none !important;
-    &:active {
-      text-decoration: underline !important;
-    }
-    &:hover {
-      text-decoration: underline !important;
-    }
+    // &:active {
+    //   text-decoration: underline !important;
+    // }
+    // &:hover {
+    //   text-decoration: underline !important;
+    // }
   }
 }
 
@@ -99,10 +106,11 @@
   
 
   &.active {
-    font-weight: 700;
-    // color: $body-heading-color !important;
+    // font-weight: 700;
+    // background: $main-body-color;
+    color: rgba(90,60,110, 1) !important;
     // background-color: rgba(255,128,0,0.65);
-    text-decoration: underline !important;
+    // text-decoration: underline !important;
   }
 
   // &:hover {
@@ -110,12 +118,12 @@
   //   color: $white !important;
   //   // text-decoration: none;
   // }
-  &::before {
-    position: absolute;
-    margin-left: -0.8em;
-    color: $grey-dk-000;
-    content: "- ";
-  }
+  // &::before {
+  //   position: absolute;
+  //   margin-left: -0.8em;
+  //   color: $grey-dk-000;
+  //   content: "- ";
+  // }
 }
 
 // Small screen nav
@@ -137,6 +145,7 @@
   position: relative; //absolute
   right: $sp-4;
   left: $sp-4;
+  float: right;
 
   @include mq(sm) {
     display: none !important;

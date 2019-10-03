@@ -3,9 +3,10 @@ layout: docs
 ---
 # Working with the SIMILE Timeline Plugin
 
-
 ## Definition
 The SIMILE Timeline web plugin allows users of Neatline to add interactive timeline components to their Neatline exhibits. The plugin is open source software originally developed as part of the SIMILE project with funding from the Andrew W. Mellon Foundation.
+
+[Download the latest version of the plugin.](/plugins)
 
 ## Enabling SIMILE Timeline for an Exhibit
 The SIMILE Timeline plugin is enabled from the main Exhibit Settings screen, either when first setting up the exhibit or by editing the settings later.

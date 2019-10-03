@@ -1,5 +1,5 @@
 ---
-layout: docs-s
+layout: docs
 permalink: /docs-s/
 title: Neatline for Omeka S
 ---

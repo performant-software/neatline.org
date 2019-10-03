@@ -6,6 +6,8 @@ layout: docs
 ## Definition
 The Neatline Waypoints widget allows the creation of contextual reference points for exhibit content, providing creators with a means of shaping users' interaction with the exhibit's contents.
 
+[Download the latest version of the plugin.](/plugins)
+
 ## Enabling Waypoints for an Exhibit
 To enable the waypoints widget, on the exhibit settings screen, select the widget from the drop down selection box.
 ![Screenshot of Exhibit Settings](http://neatline.org/wp-content/uploads/2014/06/enablingwaypoints.png)

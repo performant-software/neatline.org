@@ -5,10 +5,7 @@ layout: docs
 
 ## Getting Started
 
-- [What is Neatline?]({{ "docs/what-is-neatline" | absolute_url }})
-    * [What makes it different?]({{ "docs/what-is-neatline#what-makes-it-different" | absolute_url }})
-    * [Neatline Project Examples]({{ "docs/what-is-neatline#neatline-project-examples" | absolute_url }})
-
+- [Welcome to Neatline!]({{ "docs/" | absolute_url }})
 - [Neatline Architecture]({{ "docs/neatline-from-10000-meters" | absolute_url }})
     * [Omeka: Standards-compliant Metadata]({{ "docs/neatline-from-10000-meters#omeka-standards-compliant-metadata" | absolute_url }})
     * [Neatline: Interactive Map-making Environment]({{ "docs/neatline-from-10000-meters#neatline-interactive-map-making-environment" | absolute_url }})

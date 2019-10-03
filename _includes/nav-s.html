@@ -4,18 +4,15 @@
         Neatline for Omeka S
       </a>
   </h4>
-  <span style="color:white; text-decoration:none; font-style:bold;">
-      Production-ready release and documentation coming soon!
-  </span>
 
-  <!-- {% for item in site.data.docs.toc-s %}
+  {% for item in site.data.docs.toc-s %}
   <h4 data-toc-skip>{{ item.title }}</h4>
     <ul class="navigation-list">
       {% for entry in item.subfolderitems %}
-        <li class="navigation-list-item"><a class="navigation-list-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url }}">{{ entry.page }}</a></li>
+        <li class="navigation-list-item{% if entry.url == page.url %} active{% endif %}"><a class="navigation-list-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url }}">{{ entry.page }}</a></li>
       {% endfor %}
     </ul>
-  {% endfor %} -->
+  {% endfor %}
 
 </nav>
     

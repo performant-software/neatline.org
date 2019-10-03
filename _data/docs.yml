@@ -1,8 +1,10 @@
 toc:
   - title: Getting Started
     subfolderitems:
-      - page: What is Neatline?
-        url: /docs/what-is-neatline/
+      - page: Welcome to Neatline!
+        url: /docs/
+      # - page: What is Neatline?
+      #   url: /docs/what-is-neatline/
       - page: Neatline Architecture
         url: /docs/neatline-from-10000-meters/
       - page: Installing Neatline
@@ -88,21 +90,29 @@ toc:
 toc-s:
   - title: 
     subfolderitems:
-      - page: 
-        url: 
-      - page: 
-        url: 
-      - page: 
-        url: 
-      - page: 
-        url: 
-  - title: 
+      - page: Production-ready release and documentation in development
+        url: /docs-s/
+
+
+toc-tutorials:
+  - title: Use Cases
+    url: /use-cases/
     subfolderitems:
-      - page: 
-        url: 
-      - page: 
-        url: 
-      - page: 
-        url: 
-      - page: 
-        url: 
+      - page: Educators
+        url: /use-cases/educators/
+      - page: Scholars
+        url: /use-cases/scholars/
+      - page: Librarians
+        url: /use-cases/librarians/
+      - page: Cultural Heritage Professionals
+        url: /use-cases/professionals/
+      - page: Students
+        url: /use-cases/students/
+      - page: Community Creators
+        url: /use-cases/creators/
+  - title: Documentation
+    subfolderitems:
+      - page: Neatline for Omeka Classic
+        url: /docs/
+      - page: Neatline for Omeka S
+        url: /docs-s/

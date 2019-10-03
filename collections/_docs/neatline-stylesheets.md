@@ -6,7 +6,7 @@ layout: docs
 ## At a glance
 
   - Neatline 2.0 makes it possible to use a dialect of CSS to perform bulk updates on large groups of records.
-  - Neatline-infected CSS uses a custom set of rules that correspond to the properties on the record data model.
+  - Neatline-inflected CSS uses a custom set of rules that correspond to the properties on the record data model.
   - Groups of records are selected using the CSS class syntax, with record tags providing the class names.
 
 ---

@@ -42,8 +42,8 @@ The body is a catch-all field designed to house the main textual content for the
 
 Like with the title, click on the "Edit HTML" link to open up a full-screen WYSWYG editor for the field. Although it's generally a good idea to keep the formatting pretty minimal for the title, it fine to use much more elaborate and structural styling in the body - bullets and numbered lists, images, tables, etc.
 
+![Screenshot of HTML editor](/assets/wp-content/uploads/2013/12/htmleditor.png)
+
 Also, you can use the body as a space to include any kind of embeddable third-party multimedia content - videos from YouTube or Vimeo, audio from SoundCloud, etc. Just click on the "Source" button at the top left of the editor to activate view-HTML mode, and paste in the embed code.
 
-To close the full-screen editor, click the Minimize/Maximize button highlighted below.
-
-![Screenshot of HTML editor](https://raw.githubusercontent.com/scholarslab/Neatline/gh-pages/images/texteditormenu.png )
+To close the full-screen editor, click the Minimize/Maximize button.

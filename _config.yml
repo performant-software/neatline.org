@@ -44,5 +44,11 @@ defaults:
       path: ""
       type: "docs-s"
     values:
-      layout: "docs-s" 
+      layout: "docs"
+  - scope:
+      path: ""
+      type: "use-cases"
+    values:
+      layout: "tutorial"
+
 
