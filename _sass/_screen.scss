@@ -241,19 +241,19 @@ header {
   }
 }
 
-.topnav {
-  // overflow: hidden;
-  display: block;
-  @include flexbox();
-  @include flex-flow(row nowrap);
-  @include justify-content(space-evenly);
-  @include align-items(center);
-  .dropdown {
-    // z-index: 1080 !important;
-    .dropdown-menu {
-      z-index: 2000 !important;}
-  }
-}
+// .topnav {
+//   // overflow: hidden;
+//   display: block;
+//   @include flexbox();
+//   @include flex-flow(row nowrap);
+//   @include justify-content(space-evenly);
+//   @include align-items(center);
+//   .dropdown {
+//     // z-index: 1080 !important;
+//     .dropdown-menu {
+//       z-index: 2000 !important;}
+//   }
+// }
 
 // .logo {
 //   margin:1rem;
