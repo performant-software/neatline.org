@@ -2,11 +2,10 @@
 <html lang="en-us">
 <head>
 {% include head.html %}
-<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
 <script type="text/javascript" src="{{ "/assets/js/mobile-menu.js" | absolute_url }}"></script>
 </head>
 
-<body data-spy="scroll" data-target="#toc">
+<body>
 <a href="#main" id="skipnav">Skip to main content</a>
 <div class="container-fluid">
     <div class="row">
@@ -36,7 +35,7 @@
             </div>
             </nav>
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-9">
             <div class="content-section">
                 <main id="main" class="main-content container js-main-content" role="main" >
                 {{ content }}  
@@ -47,18 +46,6 @@
                 </main>
             </div>
         </div>
-        <div class="col-sm-2">
-            {% if page.collection == 'docs' and page.title != "Neatline for Omeka Classic" %}
-            <nav id="toc" data-toggle="toc" class="sticky-top">
-                <h4>{{ page.title }}</h4>
-            </nav>
-            {% endif %}
-            {% if page.collection == 'docs-s' and page.title != "Neatline for Omeka S" %}
-            <nav id="toc" data-toggle="toc" class="sticky-top docs-s">
-                <h4>{{ page.title }}</h4>
-            </nav>
-            {% endif %}
-        </div>
         </div>
     </div>
 
@@ -68,7 +55,6 @@
 <script src="/assets/js/flex-nav.js" type="text/javascript" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="{{ "/assets/js/bootstrap/bootstrap.bundle.min.js" | absolute_url }}"></script>
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 </html>
     

@@ -44,7 +44,12 @@
 				menuItems[i].classList.add("hidden--js");
 			}
 			// hide pre-split on sub-menu
-			for (var j=0; j < splitIndex; j++) {
+			var dropdown = document.getElementById("dropdown");
+
+			for (var j=0; (j < (splitIndex) && (dropdown.classList.contains("hidden--js"))); j++) {
+				moreItems[j].classList.add("hidden--js");
+			}
+			for (var j=0; (j < (splitIndex + 2) && (!dropdown.classList.contains("hidden--js"))); j++) {
 				moreItems[j].classList.add("hidden--js");
 			}
 		}

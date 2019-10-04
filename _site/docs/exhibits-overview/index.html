@@ -22,11 +22,10 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
 <script type="text/javascript" src="/assets/js/mobile-menu.js"></script>
 </head>
 
-<body data-spy="scroll" data-target="#toc">
+<body>
 <a href="#main" id="skipnav">Skip to main content</a>
 <div class="container-fluid">
     <div class="row">
@@ -67,7 +66,7 @@
 			
 
 			
-			<li class="flexnav__item dropdown">
+			<li class="flexnav__item dropdown" id="dropdown">
 				<a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Guides<span>&rsaquo;</span></a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					
@@ -115,50 +114,56 @@
 				<ul class="flexnav-more__wrapper">
 				
 				
-				<li class="flexnav-more__item"><a href="/about/">What is Neatline?</a></li>
+				<a href="/about/"><li class="flexnav-more__item">What is Neatline?</li></a>
 					
 							
 				
 				
-				<li class="flexnav-more__item"><a href="/showcase/">Showcase</a></li>
+				<a href="/showcase/"><li class="flexnav-more__item">Showcase</li></a>
 					
 							
 				
 				
-				<li class="flexnav-more__item"><a href="/plugins/">Add-Ons</a></li>
+				<a href="/plugins/"><li class="flexnav-more__item">Add-Ons</li></a>
 					
 							
 				
 					
 				
-				<li class="flexnav-more__item">
+				
 					
-					<a href="/use-cases/">User Guides: Use Cases</a><br />
+					<a href="/use-cases/" id="subnav">
+						<li class="flexnav-more__item">User Guides: Use Cases</li>
+					</a>
 					
-					<a href="/docs/">User Guides: Neatline Classic</a><br />
+					<a href="/docs/" id="subnav">
+						<li class="flexnav-more__item">User Guides: Neatline Classic</li>
+					</a>
 					
-					<a href="/docs-s/">User Guides: Neatline S</a><br />
+					<a href="/docs-s/" id="subnav">
+						<li class="flexnav-more__item">User Guides: Neatline S</li>
+					</a>
 					
 				</li>
 							
 				
 				
-				<li class="flexnav-more__item"><a href="/blog/">News</a></li>
+				<a href="/blog/"><li class="flexnav-more__item">News</li></a>
 					
 							
 				
 				
-				<li class="flexnav-more__item"><a href="/publications/">Publications</a></li>
+				<a href="/publications/"><li class="flexnav-more__item">Publications</li></a>
 					
 							
 				
 				
-				<li class="flexnav-more__item"><a href="/credits/">Credits</a></li>
+				<a href="/credits/"><li class="flexnav-more__item">Credits</li></a>
 					
 							
 				
 				
-				<li class="flexnav-more__item"><a href="/search/">Search</a></li>
+				<a href="/search/"><li class="flexnav-more__item">Search</li></a>
 					
 							
 				
@@ -185,125 +190,264 @@
                 
                 <div class="sidebar-item">
                     <nav role="navigation" aria-label="Main navigation">
-  <h4 data-toc-skip>
+  <h4>
     <a style="color:white; text-decoration:none; font-style:bold;" href="/docs/">
       Neatline for Omeka Classic
     </a>
   </h4>
     
-    <h4 data-toc-skip>Getting Started</h4>
+    <h4>Getting Started</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/">Welcome to Neatline!</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/">Welcome to Neatline!</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/neatline-from-10000-meters/">Neatline Architecture</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/neatline-from-10000-meters/">Neatline Architecture</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/installing-neatline/">Installing Neatline</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/installing-neatline/">Installing Neatline</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/upgrading-to-v2/">Upgrading Neatline to 2.0</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/upgrading-to-v2/">Upgrading Neatline to 2.0</a>
+            
+          </li>
+
         
       </ul>
     
-    <h4 data-toc-skip>Working with Exhibits</h4>
+    <h4>Working with Exhibits</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item active"><a class="navigation-list-link active" href="/docs/exhibits-overview/">Exhibits Overview</a></li>
+          <li class="navigation-list-item active">
+            <a class="navigation-list-link active" href="/docs/exhibits-overview/">Exhibits Overview</a>
+            
+            <ul class="navigation-list-toc active">
+                <ul id="my_toc" class="toc">
+  <li><a href="#at-a-glance">At a glance</a></li>
+  <li><a href="#exhibits-overview">Exhibits Overview</a></li>
+</ul>
+            </ul>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/creating-exhibits/">Creating New Exhibits</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/creating-exhibits/">Creating New Exhibits</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/map-based-exhibits/">Map-based Exhibits</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/map-based-exhibits/">Map-based Exhibits</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/image-based-exhibits/">Image-based Exhibits</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/image-based-exhibits/">Image-based Exhibits</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/managing-exhibits/">Managing Exhibits</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/managing-exhibits/">Managing Exhibits</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/user-permissions/">Managing User Permissions</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/user-permissions/">Managing User Permissions</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/publishing-exhibits/">Publishing Exhibits</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/publishing-exhibits/">Publishing Exhibits</a>
+            
+          </li>
+
         
       </ul>
     
-    <h4 data-toc-skip>Working with Neatline Plugins</h4>
+    <h4>Working with Neatline Plugins</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/working-with-the-simile-timeline-widget/">SIMILE Timeline</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/working-with-the-simile-timeline-widget/">SIMILE Timeline</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/working-with-the-waypoints-plugin/">Waypoints</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/working-with-the-waypoints-plugin/">Waypoints</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/working-with-the-text-widget/">Neatline Text</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/working-with-the-text-widget/">Neatline Text</a>
+            
+          </li>
+
         
       </ul>
     
-    <h4 data-toc-skip>Working with the Neatline Editor</h4>
+    <h4>Working with the Neatline Editor</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/editor-overview/">Editor Overview</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/editor-overview/">Editor Overview</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/exhibit-styles-tab/">Exhibit Styles Tab</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/exhibit-styles-tab/">Exhibit Styles Tab</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/neatline-stylesheets/">Using Neatline Stylesheets</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/neatline-stylesheets/">Using Neatline Stylesheets</a>
+            
+          </li>
+
         
       </ul>
     
-    <h4 data-toc-skip>Working With Records</h4>
+    <h4>Working With Records</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/records-overview/">Records Overview</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/records-overview/">Records Overview</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/creating-records/">Creating New Records</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/creating-records/">Creating New Records</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/importing-omeka-items/">Importing Omeka Items</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/importing-omeka-items/">Importing Omeka Items</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/searching-records/">Searching Records</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/searching-records/">Searching Records</a>
+            
+          </li>
+
         
       </ul>
     
-    <h4 data-toc-skip>Editing Neatline Records</h4>
+    <h4>Editing Neatline Records</h4>
       <ul class="navigation-list">
         
       </ul>
     
-    <h4 data-toc-skip>Text Tab</h4>
+    <h4>Text Tab</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/text-tab/">Adding Text Content</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/text-tab/">Adding Text Content</a>
+            
+          </li>
+
         
       </ul>
     
-    <h4 data-toc-skip>Map Tab</h4>
+    <h4>Map Tab</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/map-tab-drawing-geometry/">Drawing Vector Annotations</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/map-tab-drawing-geometry/">Drawing Vector Annotations</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/map-tab-editing-geometry/">Editing Vector Annotations</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/map-tab-editing-geometry/">Editing Vector Annotations</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/map-tab-importing-svg/">Importing SVG Documents</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/map-tab-importing-svg/">Importing SVG Documents</a>
+            
+          </li>
+
         
       </ul>
     
-    <h4 data-toc-skip>Style Tab</h4>
+    <h4>Style Tab</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/style-tab-groups/">Editing Groups</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/style-tab-groups/">Editing Groups</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/style-tab-colors/">Editing Colors</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/style-tab-colors/">Editing Colors</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/style-tab-opacities/">Editing Opacities</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/style-tab-opacities/">Editing Opacities</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/style-tab-dimensions/">Editing Dimensions</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/style-tab-dimensions/">Editing Dimensions</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/style-tab-dates/">Editing Dates</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/style-tab-dates/">Editing Dates</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/style-tab-imagery/">Editing Imagery</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/style-tab-imagery/">Editing Imagery</a>
+            
+          </li>
+
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/style-tab-visibility/">Editing Visibility</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/style-tab-visibility/">Editing Visibility</a>
+            
+          </li>
+
         
       </ul>
     
-    <h4 data-toc-skip>User Guide Table of Contents</h4>
+    <h4>User Guide Table of Contents</h4>
       <ul class="navigation-list">
         
-          <li class="navigation-list-item"><a class="navigation-list-link" href="/docs/docs-TOC/">Neatline for Omeka Classic</a></li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="/docs/docs-TOC/">Neatline for Omeka Classic</a>
+            
+          </li>
+
         
       </ul>
     
@@ -316,7 +460,7 @@
             </div>
             </nav>
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-9">
             <div class="content-section">
                 <main id="main" class="main-content container js-main-content" role="main" >
                 <h1 id="neatline-exhibits-an-overview">Neatline Exhibits: An Overview</h1>
@@ -401,14 +545,6 @@
                 </main>
             </div>
         </div>
-        <div class="col-sm-2">
-            
-            <nav id="toc" data-toggle="toc" class="sticky-top">
-                <h4>Exhibits Overview</h4>
-            </nav>
-            
-            
-        </div>
         </div>
     </div>
 
@@ -474,7 +610,6 @@
 <script src="/assets/js/flex-nav.js" type="text/javascript" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 </html>
     

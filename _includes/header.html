@@ -15,7 +15,7 @@
 			{% endif %}
 
 			{% if item.level == 2 %}
-			<li class="flexnav__item dropdown">
+			<li class="flexnav__item dropdown" id="dropdown">
 				<a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}<span>&rsaquo;</span></a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					{% for entry in item.subnav %}
@@ -31,12 +31,14 @@
 				<ul class="flexnav-more__wrapper">
 				{% for item in site.data.navbar  %}
 				{% if item.level == 1 %}
-				<li class="flexnav-more__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+				<a href="{{ item.url }}"><li class="flexnav-more__item">{{ item.title }}</li></a>
 				{% endif %}	
 				{% if item.level == 2 %}
-				<li class="flexnav-more__item">
+				
 					{% for entry in item.subnav %}
-					<a href="{{ entry.url }}">{{ item.title }}: {{ entry.page }}</a><br />
+					<a href="{{ entry.url }}" id="subnav">
+						<li class="flexnav-more__item">{{ item.title }}: {{ entry.page }}</li>
+					</a>
 					{% endfor %}
 				</li>
 				{% endif %}			
