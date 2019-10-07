@@ -10,8 +10,8 @@
 - title: User Guides
   level: 2
   subnav:
-  - page: Use Cases
-    url: /use-cases/
+  # - page: Use Cases
+  #   url: /use-cases/
   - page: Neatline Classic
     url: /docs/
   - page: Neatline S

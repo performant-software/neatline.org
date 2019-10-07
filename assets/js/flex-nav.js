@@ -49,7 +49,7 @@
 			for (var j=0; (j < (splitIndex) && (dropdown.classList.contains("hidden--js"))); j++) {
 				moreItems[j].classList.add("hidden--js");
 			}
-			for (var j=0; (j < (splitIndex + 2) && (!dropdown.classList.contains("hidden--js"))); j++) {
+			for (var j=0; (j < (splitIndex + 1) && (!dropdown.classList.contains("hidden--js"))); j++) {
 				moreItems[j].classList.add("hidden--js");
 			}
 		}
