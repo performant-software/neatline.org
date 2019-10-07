@@ -1,0 +1,54 @@
+<header role="banner">
+<div class="flexnav-wrapper">
+	<div class="flexnav-main">
+		<div class="flexnav__home-icon">
+			<a href="{{ site.url }}" title="{{ site.title }}"> 
+				<img class="logo" src="{{ "/assets/images/neatline-logo-rgb.png" | prepend: site.url }}" alt="{{ site.title }}"/>
+			</a>  
+		</div>
+
+		{% if site.data.navbar[0] %}
+		<ul class="flexnav-main-grid">
+			{% for item in site.data.navbar %}
+			{% if item.level == 1 %}
+			<li class="flexnav__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endif %}
+
+			{% if item.level == 2 %}
+			<li class="flexnav__item dropdown" id="dropdown">
+				<a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ item.title }}<span>&rsaquo;</span></a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					{% for entry in item.subnav %}
+					<a class="dropdown-item" href="{{ entry.url }}">{{ entry.page }}</a>
+					{% endfor %}
+				</div>
+				</li>  
+			{% endif %}
+
+			{% endfor %}
+			<li class="flexnav__more-menu">
+				<div class="flexnav-more__prompt" aria-label="More menu items">More<span>&rsaquo;</span></div>
+				<ul class="flexnav-more__wrapper">
+				{% for item in site.data.navbar  %}
+				{% if item.level == 1 %}
+				<a href="{{ item.url }}"><li class="flexnav-more__item">{{ item.title }}</li></a>
+				{% endif %}	
+				{% if item.level == 2 %}
+				
+					{% for entry in item.subnav %}
+					<a href="{{ entry.url }}" id="subnav">
+						<li class="flexnav-more__item">{{ item.title }}: {{ entry.page }}</li>
+					</a>
+					{% endfor %}
+				</li>
+				{% endif %}			
+				{% endfor %}
+				</ul>
+			</li>
+		</ul>
+		{% endif %}
+		
+	</div> <!-- end content -->
+</div> 
+<!-- end wrapper -->
+</header>

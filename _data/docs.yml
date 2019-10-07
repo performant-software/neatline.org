@@ -1,0 +1,118 @@
+toc:
+  - title: Getting Started
+    subfolderitems:
+      - page: Welcome to Neatline!
+        url: /docs/
+      # - page: What is Neatline?
+      #   url: /docs/what-is-neatline/
+      - page: Neatline Architecture
+        url: /docs/neatline-from-10000-meters/
+      - page: Installing Neatline
+        url: /docs/installing-neatline/
+      - page: Upgrading Neatline to 2.0
+        url: /docs/upgrading-to-v2/
+  - title: Working with Exhibits
+    subfolderitems:
+      - page: Exhibits Overview
+        url: /docs/exhibits-overview/
+      - page: Creating New Exhibits
+        url: /docs/creating-exhibits/
+      - page: Map-based Exhibits
+        url: /docs/map-based-exhibits/
+      - page: Image-based Exhibits
+        url: /docs/image-based-exhibits/
+      - page: Managing Exhibits
+        url: /docs/managing-exhibits/
+      - page: Managing User Permissions
+        url: /docs/user-permissions/
+      - page: Publishing Exhibits
+        url: /docs/publishing-exhibits/
+  - title: Working with Neatline Plugins
+    subfolderitems:
+      - page: SIMILE Timeline
+        url: /docs/working-with-the-simile-timeline-widget/
+      - page: Waypoints
+        url: /docs/working-with-the-waypoints-plugin/
+      - page: Neatline Text
+        url: /docs/working-with-the-text-widget/
+  - title: Working with the Neatline Editor
+    subfolderitems:
+      - page: Editor Overview
+        url: /docs/editor-overview/
+      - page: Exhibit Styles Tab
+        url: /docs/exhibit-styles-tab/
+      - page: Using Neatline Stylesheets
+        url: /docs/neatline-stylesheets/
+  - title: Working With Records
+    subfolderitems:
+      - page: Records Overview
+        url: /docs/records-overview/
+      - page: Creating New Records
+        url: /docs/creating-records/
+      - page: Importing Omeka Items
+        url: /docs/importing-omeka-items/
+      - page: Searching Records
+        url: /docs/searching-records/
+  - title: Editing Neatline Records
+  - title: Text Tab
+    subfolderitems:
+      - page: Adding Text Content
+        url: /docs/text-tab/
+  - title: Map Tab
+    subfolderitems:
+      - page: Drawing Vector Annotations
+        url: /docs/map-tab-drawing-geometry/
+      - page: Editing Vector Annotations
+        url: /docs/map-tab-editing-geometry/
+      - page: Importing SVG Documents
+        url: /docs/map-tab-importing-svg/
+  - title: Style Tab
+    subfolderitems:
+      - page: Editing Groups
+        url: /docs/style-tab-groups/
+      - page: Editing Colors
+        url: /docs/style-tab-colors/
+      - page: Editing Opacities
+        url: /docs/style-tab-opacities/
+      - page: Editing Dimensions
+        url: /docs/style-tab-dimensions/
+      - page: Editing Dates
+        url: /docs/style-tab-dates/
+      - page: Editing Imagery
+        url: /docs/style-tab-imagery/
+      - page: Editing Visibility
+        url: /docs/style-tab-visibility/
+  - title: User Guide Table of Contents
+    subfolderitems:
+      - page: Neatline for Omeka Classic
+        url: /docs/docs-TOC/
+
+toc-s:
+  - title: 
+    subfolderitems:
+      - page: Production-ready release and documentation in development
+        url: /docs-s/
+
+
+toc-tutorials:
+  - title: Use Cases
+    url: /use-cases/
+    subfolderitems:
+      - page: Educators
+        url: /use-cases/educators/
+      - page: Scholars
+        url: /use-cases/scholars/
+      - page: Librarians
+        url: /use-cases/librarians/
+      - page: Cultural Heritage Professionals
+        url: /use-cases/professionals/
+      - page: Students
+        url: /use-cases/students/
+      - page: Community Creators
+        url: /use-cases/creators/
+  - title: Documentation
+    subfolderitems:
+      - page: Neatline for Omeka Classic
+        url: /docs/
+      - page: Neatline for Omeka S
+        url: /docs-s/

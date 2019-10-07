@@ -1,0 +1,235 @@
+//
+// Main nav, breadcrumb, etc...
+//
+
+// .site-title {
+//   display: block;
+//   flex: 1 1 auto;
+//   color: $body-heading-color;
+//   background-color: $sidebar-color;
+
+//   @include mq(md) {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     z-index: 101;
+//     height: 60px;
+//     padding-top: $sp-4;
+//     border-bottom: $border $border-color;
+//   }
+// }
+
+.navigation-list {
+  padding: 0;
+  margin-top: $sp-4;
+  margin-bottom: 0;
+  list-style: none;
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.navigation-list-child-list {
+  padding-left: $sp-3;
+  list-style: none;
+
+  .navigation-list-link {
+    color: $nav-child-link-color;
+  }
+
+  .navigation-list-item {
+    position: relative;
+
+    // &::before {
+    //   position: absolute;
+    //   margin-top: 0.3em;
+    //   margin-left: -0.8em;
+    //   color: rgba($body-text-color, 0.3);
+    //   content: "- ";
+    // }
+
+    // &.active  {
+    //   &::before {
+    //     color: $body-heading-color !important;
+    //   }
+    // }
+  }
+}
+
+.navigation-list-item {
+  @include fs-4;
+  font-family: $font-family-main;
+  font-weight: 400 !important;
+  margin: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  // padding-inline-start: 0.5rem; //20px
+  // padding: 0.4045em 2.427em;
+  @include mq(md) {
+    @include fs-3;
+  }
+
+  .navigation-list-child-list {
+    display: none;
+  }
+
+  &.active {
+    background: $main-body-color;
+    .navigation-list-child-list {
+      display: block;
+    }
+    &:hover {
+      background: $main-body-color;
+    }
+  }
+  &:hover {
+    background-color: darken($secondary-body-color, 50%);
+  }
+  a {
+    padding: 0.4045em 2.427em;
+
+    text-decoration: none !important;
+    // &:active {
+    //   text-decoration: underline !important;
+    // }
+    // &:hover {
+    //   text-decoration: underline !important;
+    // }
+  }
+}
+
+.navigation-list-link {
+  display: block;
+  padding-top: $sp-1;
+  padding-bottom: $sp-1;
+  color: $white !important;
+  // text-decoration: none !important;
+  
+
+  &.active {
+    // font-weight: 700;
+    // background: $main-body-color;
+    color: rgba(90,60,110, 1) !important;
+    // background-color: rgba(255,128,0,0.65);
+    // text-decoration: underline !important;
+  }
+
+  // &:hover {
+  //   font-weight: 500;
+  //   color: $white !important;
+  //   // text-decoration: none;
+  // }
+  // &::before {
+  //   position: absolute;
+  //   margin-left: -0.8em;
+  //   color: $grey-dk-000;
+  //   content: "- ";
+  // }
+}
+
+// Small screen nav
+
+.main-nav,
+.aux-nav {
+  display: none;
+
+  &.nav-open {
+    display: block;
+    min-height: 55vh;
+  }
+  @include mq(sm) {
+    display: block;
+  }
+}
+
+.navigation-list-toggle {
+  position: relative; //absolute
+  right: $sp-4;
+  left: $sp-4;
+  margin: 0 4.167% !important;
+  // float: right;
+
+  @include mq(sm) {
+    display: none !important;
+  }
+}
+
+// Breadcrumb nav
+.breadcrumb-nav {
+  @include mq(md) {
+    margin-top: -$sp-4;
+  }
+}
+
+.breadcrumb-nav-list {
+  padding-left: 0;
+  margin-bottom: $sp-3;
+  list-style: none;
+}
+
+.breadcrumb-nav-list-item {
+  display: table-cell;
+  @include fs-3; //fs-2
+
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: inline-block;
+    margin-right: $sp-2;
+    margin-left: $sp-2;
+    color: $grey-dk-000;
+    content: "/";
+  }
+
+  &:last-child {
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.navigation-list-toc {
+  display: none; //none to hide //block to show
+  @include mq(md) {
+    display: none; //none to hide //block to show
+  }
+}
+
+.active {
+  .navigation-list-toc {
+    // display: block;
+    background-color: #f8f9fa;
+    padding-inline-start: 0px !important;
+    border: $border $border-color;
+    display:table;
+    width: 100% !important;
+    ul,ol {
+      padding-inline-start: 10px !important;
+      
+      li {
+        @include fs-3;
+        list-style-type: none;
+        margin: 0 !important;
+        a {  
+          text-decoration: none !important;
+          color: #616161;
+          display:table-cell;
+         
+          // &:hover {
+          //   font-weight: 500;
+          //   text-decoration: underline;
+          // }
+          }
+          &:hover {
+            background-color: darken($secondary-body-color, 10%) !important;
+          }
+                }
+      }
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+    }
+  }

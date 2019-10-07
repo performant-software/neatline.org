@@ -1,0 +1,51 @@
+{% comment %}
+From: https://github.com/jekyll/jekyll/blob/master/docs/_includes/section_nav_tutorials.html
+Map grabs the tutorials sections, giving us an array of arrays. Join, flattens all
+the items to a comma delimited string. Split turns it into an array again.
+{% endcomment %}
+{% assign tutorials = site.data.tutorials.nav | map: 'tutorials' | join: ',' | split: ',' %}
+
+{% comment %}
+Because this is built for every page, lets find where we are in the ordered
+document list by comparing url strings. Then if there's something previous or
+next, lets build a link to it.
+{% endcomment %}
+
+{% assign labels = site.data.tutorials.label | map: 'tutorials' | join: ',' | split: ',' %}
+
+
+{% for tutorial in tutorials %}
+  {% if forloop.first %}
+  {% assign tutorial_url = tutorial | prepend:"/docs/" %}
+  {% else %}
+  {% assign tutorial_url = tutorial | prepend:"/docs/" | append:"/" %}
+  {% endif %}
+  {% if tutorial_url == page.url %}
+    <div class="PageNavigation">
+      <div>
+          {% if forloop.first %}
+            <span class="disabled">Back</span>
+          {% else %}
+            {% assign previous = forloop.index0 | minus: 1 %}
+            {% assign previous_page = tutorials[previous] | prepend:"/docs/" | append:"/" %}
+            <a href="{{ previous_page }}" class="prev">&laquo; {{ labels[previous] }}</a>
+          {% endif %}
+      </div>
+      <div>
+          {% if forloop.last %}
+            <span class="disabled">Next</span>
+          {% else %}
+            {% assign next = forloop.index0 | plus: 1 %}
+            {% assign next_page = tutorials[next] | prepend:"/docs/" | append:"/" %}
+            {% if forloop.first %}
+            <a href="{{ next_page }}" style="width:100%;" class="next">{{ labels[next] }}  &raquo;</a>
+            {% else %}
+            <a href="{{ next_page }}" class="next">{{ labels[next] }}  &raquo;</a>
+            {% endif %}
+          {% endif %}
+      </div>
+    </div>
+    <div class="clear"></div>
+    {% break %}
+  {% endif %}
+{% endfor %}

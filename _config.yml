@@ -1,0 +1,54 @@
+# Site settings
+title: Neatline
+email: scholarslab@virginia.edu
+description: "Neatline allows scholars, students, and curators to tell stories with maps and timelines."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "node_modules", "scss", "config.rb", "package.json", "LICENSE", "bower.json"]
+
+
+collections_dir: collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+  docs-s:
+    output: true
+    permalink: /:collection/:name/
+  use-cases:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "docs"
+  - scope:
+      path: ""
+      type: "docs-s"
+    values:
+      layout: "docs"
+  - scope:
+      path: ""
+      type: "use-cases"
+    values:
+      layout: "tutorial"
+
+

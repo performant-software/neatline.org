@@ -1,0 +1,26 @@
+<nav role="navigation" aria-label="Main navigation">
+  <h4>
+    <a style="color:white; text-decoration:none; font-style:bold;" href="{{ "/docs-s/" | prepend: site.url }}">
+      Neatline for Omeka S
+    </a>
+  </h4>
+
+  {% for item in site.data.docs.toc-s %}
+  <h4>{{ item.title }}</h4>
+    <ul class="navigation-list">
+      {% for entry in item.subfolderitems %}
+        <li class="navigation-list-item{% if entry.url == page.url %} active{% endif %}">
+          <a class="navigation-list-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url }}">{{ entry.page }}</a>
+          {% if page.url == entry.url %}
+          <ul class="navigation-list-toc{% if entry.url == page.url %} active{% endif %}">
+              {% include toc.html html=content sanitize=true class="toc" id="my_toc" h_min=2 h_max=4 %}
+          </ul>
+          {% endif %}
+
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+</nav>
+    

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-07T10:17:56-04:00</updated><id>/feed.xml</id><title type="html">Neatline</title><subtitle>Neatline allows scholars, students, and curators to tell stories with maps and timelines.</subtitle><entry><title type="html">Neatline 2.6.2 Release</title><link href="/2019/06/04/neatline-2.6.2-release.html" rel="alternate" type="text/html" title="Neatline 2.6.2 Release" /><published>2019-06-04T12:00:00-04:00</published><updated>2019-06-04T12:00:00-04:00</updated><id>/2019/06/04/neatline-2.6.2-release</id><content type="html" xml:base="/2019/06/04/neatline-2.6.2-release.html">&lt;p&gt;Neatline 2.6.2 is a security release for all previous versions of Neatline for Omeka Classic, and we strongly encourage you to update to this version immediately. &lt;a href=&quot;https://omeka.org/classic/plugins/Neatline/&quot;&gt;Download Neatline 2.6.2&lt;/a&gt; from the Omeka Classic addons page and check out the &lt;a href=&quot;https://omeka.org/classic/docs/Admin/Adding_and_Managing_Plugins/#upgrading-plugins&quot;&gt;documentation for upgrading plugins&lt;/a&gt; to complete your upgrade.&lt;/p&gt;
+
+&lt;p&gt;This release addresses a SQL injection vulnerability in the records view. Many thanks to Andrew Angelopoulos and Mathew Tams of Fordham University for reporting the issue.&lt;/p&gt;</content><author><name>jeremy-boggs</name></author><summary type="html">Neatline 2.6.2 is a security release for all previous versions of Neatline for Omeka Classic, and we strongly encourage you to update to this version immediately. Download Neatline 2.6.2 from the Omeka Classic addons page and check out the documentation for upgrading plugins to complete your upgrade.</summary></entry><entry><title type="html">Neatline 2.5.2</title><link href="/announcements/2017/07/05/neatline-2-5-2.html" rel="alternate" type="text/html" title="Neatline 2.5.2" /><published>2017-07-05T09:15:00-04:00</published><updated>2017-07-05T09:15:00-04:00</updated><id>/announcements/2017/07/05/neatline-2-5-2</id><content type="html" xml:base="/announcements/2017/07/05/neatline-2-5-2.html">&lt;p&gt;New release!&lt;/p&gt;
+
+&lt;p&gt;First, a huge thank you to Jamie Folsom and Andy Stuhl from &lt;a href=&quot;http://www.performantsoftware.com/&quot;&gt;Perfomant Software Solutions LLC&lt;/a&gt;, who did the heavy lifting on the coding for this release. We couldn’t have done it without them. We’re grateful, as well, to Neatline community member Adam Doan (&lt;a href=&quot;https://github.com/doana&quot;&gt;@doana&lt;/a&gt; on Github) from the University of Guelph, whose code contributions made Neatline’s first accessibility functionality possible.&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-fixed&quot;&gt;What’s Fixed:&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Google Maps API issues.&lt;/strong&gt; We originally embedded the API key for Google Maps directly in the Neatline code, but Google changes the way apps should connect to their codebase fairly regularly, and with little or no warning. It’s just easier for everyone if you can directly configure an API key for your specific installation of Neatline, so that’s what we’ve done. Updated installation and configuration instructions (with screencaps!) are available on our &lt;a href=&quot;http://docs.neatline.org/installing-neatline.html&quot;&gt;documentation site&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WMS map layer issues.&lt;/strong&gt; We thought we had this one squished, but it came back again because of issues with our implementation of OpenLayers 2.0 and conflicts with the way that MapWarper passes data via URL. MapWarper WMS layers will now render properly as exhibit items and as base layers for an exhibit.&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-new&quot;&gt;What’s New:&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Accessibility.&lt;/strong&gt; Thanks to Neatline community member &lt;a href=&quot;https://github.com/doana&quot;&gt;@doana&lt;/a&gt;, you can now specify a URL to an accessible version of your Neatline exhibit in the exhibit’s settings. If the accessible URL exists, a hidden link will be rendered at the top of the public exhibit page directing users of assistive technology to the alternative page so that their screen reader can render the page for them. This feature relates specifically to &lt;a href=&quot;https://www.w3.org/WAI/WCAG20/quickref/#text-equiv&quot;&gt;Guideline 1.1 of WCAG 2.0&lt;/a&gt;. Our documentation of this new feature will be available on &lt;a href=&quot;http://docs.neatline.org&quot;&gt;docs.neatline.org&lt;/a&gt; by July 10, 2017.&lt;/p&gt;
+
+&lt;p&gt;For more detail on this update, check out the &lt;a href=&quot;https://github.com/scholarslab/Neatline/blob/master/CHANGELOG.md&quot;&gt;Changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ready to download? Get the latest release from the &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Omeka Add-Ons Repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Encounter an issue? ask a question on the &lt;a href=&quot;https://forum.omeka.org/&quot;&gt;Omeka Forums&lt;/a&gt; or submit an issue, or feature request, directly to us on our &lt;a href=&quot;https://github.com/scholarslab/Neatline/issues&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;</content><author><name>ronda-grizzle</name></author><category term="neatline" /><summary type="html">New release!</summary></entry><entry><title type="html">Neatline Implementation Grant</title><link href="/announcements/2016/08/12/neatline-implementation-grant.html" rel="alternate" type="text/html" title="Neatline Implementation Grant" /><published>2016-08-12T05:29:52-04:00</published><updated>2016-08-12T05:29:52-04:00</updated><id>/announcements/2016/08/12/neatline-implementation-grant</id><content type="html" xml:base="/announcements/2016/08/12/neatline-implementation-grant.html">&lt;p&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2016/08/Screen-Shot-2016-08-11-at-4.23.37-PM.png&quot; alt=&quot;Screen Shot 2016-08-11 at 4.23.37 PM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You may have noticed on Twitter or elsewhere that the &lt;a href=&quot;http://www.neh.gov/news/press-release/2016-08-09&quot;&gt;NEH announced funding for almost 300 humanities projects&lt;/a&gt;. Congratulations to all!&lt;/p&gt;
+
+&lt;p&gt;One of the projects awarded was our &lt;a href=&quot;http://neatline.org/&quot;&gt;Neatline&lt;/a&gt; Omeka plugin! We’re really excited by the possibilities that this will open up for this project and the ways that we’re planning on improving it.&lt;/p&gt;
+
+&lt;p&gt;So what do we hope to accomplish? What should you be looking for from the future of Neatline?&lt;/p&gt;
+
+&lt;p&gt;Primarily, we’re going to focus on &lt;em&gt;graphesis&lt;/em&gt; and &lt;em&gt;sustainability&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;First, Neatline has always been an experiment in trying to embody the principles of &lt;a href=&quot;https://docs.google.com/viewer?a=v&amp;amp;pid=sites&amp;amp;srcid=ZGVmYXVsdGRvbWFpbnxlbmdhZ2VtZW50YnlkZXNpZ258Z3g6NzY1ZGY3ZWRmMmRkYTY3NA&quot;&gt;graphesis&lt;/a&gt;. It’s motivated by the belief that interacting with your project and your data in a visual, hands-on, and messy way informs and changes the way that you think about your project. Of course, modern technology is limited in how well it can enact these principles. As mobile platforms and tablets have matured, however, they offer a more hands-on, material experience. We’d like to incorporate these new technologies and leverage them to improve the experience of creating and exploring Neatline exhibits.&lt;/p&gt;
+
+&lt;p&gt;Related to this, we want to improve the &lt;a href=&quot;https://omeka.org/add-ons/plugins/neatlinetext/&quot;&gt;Neatline Text&lt;/a&gt; add-on. This allows Neatline exhibits to incorporate and interact with long-form text. Unfortunately, the editing interface is still very rough. Improving this would go a long way to making Neatline a more compelling platform for creating geotemporal exhibits around a text.&lt;/p&gt;
+
+&lt;p&gt;And in general, we’ll revisit the editing interface for Neatline to streamline it for common tasks, while making less used features still easily accessible.&lt;/p&gt;
+
+&lt;p&gt;Second, Neatline is itself also maturing, and like any software project, it’s aging gracefully in some ways, and—ahem—less so in others. We’d like to take this opportunity to make Neatline a more sustainable project. This is a broad goal, so let’s tease it apart. What do I mean by this?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Omeka team at &lt;a href=&quot;http://chnm.gmu.edu/&quot;&gt;RRCHNM&lt;/a&gt; are working on a new version of the platform, called &lt;a href=&quot;https://github.com/omeka/omeka-s&quot;&gt;Omeka S&lt;/a&gt;, that will make it significantly easier to host and managing multiple Omeka instances. This will involve significant changes to the plugin architecture, however, so we’ll update Neatline to work with this new version of Omeka.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Currently, Neatline uses &lt;a href=&quot;http://openlayers.org/&quot;&gt;OpenLayers&lt;/a&gt; for its mapping component. After we included it in Neatline, however, OpenLayers released version 3, which is a major rewrite of this component for modern browsers. Because of licensing issues, it also no longer supports Google maps. We’ll take this opportunity to evaluate upgrading to OpenLayers 3 or going with a different mapping component altogether, such as &lt;a href=&quot;http://leafletjs.com/&quot;&gt;LeafletJS&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For the timeline component, Neatline uses the &lt;a href=&quot;http://www.simile-widgets.org/timeline/&quot;&gt;SIMILE Timeline&lt;/a&gt;. This software is also showing its age, so we’ll look at using a different timeline component, possibly creating one ourselves. This will also give us the chance to evaluate the data models that we use to represent time and change them to accommodate ambiguity and fuzzy dates better. This will also make this part of Neatline better suited to messy humanities data.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;But the most important sustainability feature that we’d like to work on is building a more sustainable and active community. This includes better documentation, better tutorials, and better support for getting new developers set up to work on Neatline. We’d also like to make it easier for users to contribute in many ways to the project, whether through code, documentation, design, or other ways.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We’re really excited about the opportunities that this grant opens up for us, and we’re so grateful to the NEH ODH for providing the resources for this.&lt;/p&gt;</content><author><name>eric-rochester</name></author><category term="grants" /><category term="neatline" /><summary type="html"></summary></entry><entry><title type="html">Neatline 2.4.0</title><link href="/announcements/experimental%20humanities/research%20and%20development/2015/03/09/neatline-2-4-0.html" rel="alternate" type="text/html" title="Neatline 2.4.0" /><published>2015-03-09T10:52:52-04:00</published><updated>2015-03-09T10:52:52-04:00</updated><id>/announcements/experimental%20humanities/research%20and%20development/2015/03/09/neatline-2-4-0</id><content type="html" xml:base="/announcements/experimental%20humanities/research%20and%20development/2015/03/09/neatline-2-4-0.html">&lt;p&gt;We’re happy to announce a new version of Neatline which adds a couple new features along with resolving a few small issues.&lt;/p&gt;
+
+&lt;p&gt;The two main features in this release  were implemented based on community feedback. First, it’s now possible to set the opacity of a WMS layer when its selected using the “selected” opacity setting. Previously this setting only pertained to drawn geometries on a Neatline record. Second is the ability for custom themes to provide containers for Neatline widgets. This gives theme developers more control over where elements of a Neatline exhibit are displayed on the page.&lt;/p&gt;
+
+&lt;p&gt;There were also some issues that are resolved. An optimization was introduced in Neatline 2.3 which caused Neatline to not render WMS maps created using MapWarper. This has been corrected and maps created using the &lt;a href=&quot;http://maps.nypl.org/warper/&quot;&gt;NYPL MapWarper &lt;/a&gt;and &lt;a href=&quot;http://warp.worldmap.harvard.edu/&quot;&gt;Harvard WorldMap WARP&lt;/a&gt; tools properly render in Neatline. By the way, these two resources provide a great number of maps for you to use in Neatline without needing to run your own instance of &lt;a href=&quot;http://geoserver.org/&quot;&gt;GeoServer&lt;/a&gt; or other service. We also fixed an issue where styles with an underscore (“_”) in them would not render properly, and we fixed an issue that would move SVG layers at specific zoom levels.&lt;/p&gt;
+
+&lt;p&gt;You can check out the &lt;a href=&quot;https://github.com/scholarslab/Neatline/blob/master/CHANGELOG.md&quot;&gt;Changelog&lt;/a&gt; for more detail on these changes. As always, you can download the latest release from the &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Omeka Add-Ons  Repository&lt;/a&gt;. If you run into any issues, you can always ask a question on the &lt;a href=&quot;http://omeka.org/forums/&quot;&gt;Omeka Forums&lt;/a&gt; or submit an issue or feature request on our &lt;a href=&quot;https://github.com/scholarslab/Neatline/issues&quot;&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;</content><author><name>wayne-graham</name></author><category term="neatline" /><summary type="html">We’re happy to announce a new version of Neatline which adds a couple new features along with resolving a few small issues.</summary></entry><entry><title type="html">Minard + Napoleon + Neatline</title><link href="/geospatial%20and%20temporal/2014/10/11/minard-napoleon-neatline.html" rel="alternate" type="text/html" title="Minard + Napoleon + Neatline" /><published>2014-10-11T05:15:56-04:00</published><updated>2014-10-11T05:15:56-04:00</updated><id>/geospatial%20and%20temporal/2014/10/11/minard-napoleon-neatline</id><content type="html" xml:base="/geospatial%20and%20temporal/2014/10/11/minard-napoleon-neatline.html">&lt;p&gt;&lt;em&gt;[Cross-posted from &lt;a href=&quot;http://dclure.org/logs/minard-napoleon-neatline/&quot;&gt;dclure.org&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dmmh.dclure.org/neatline/show/minard&quot;&gt;Open the Exhibit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dmmh.dclure.org/neatline/show/minard&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/minard-overview-1024x619.jpg&quot; alt=&quot;minard-overview&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yesterday I made the hop across the country to Boston for the &lt;a href=&quot;http://www.northeastern.edu/nulab/dmmh/&quot;&gt;NEH Workshop on Digital Methods for Military History&lt;/a&gt; at  Northeastern University, where I’ll be giving a couple of workshops about &lt;a href=&quot;http://neatline.org/&quot;&gt;&lt;strong&gt;Neatline&lt;/strong&gt;&lt;/a&gt; and soaking up lots of interesting new projects from old friends and new friends alike. Beautiful fall foliage aside, I’m very excited about this! Ever since we worked on the Hotchkiss projects back in 2012, Neatline and military history have been a great pairing. Which is no accident - military history is often about how things change over time on maps, which is basically the tag line for Neatline. In fact, I’ve always assumed that military history played a pretty big role in inventing the whole vocabulary of visual concepts and techniques that have been picked up by digital tools like Neatline - the flowcharts, the arrows, the diagrammatic ways of representing how things move from one place to another. Hotchkiss was using colored pencils to scratch out annotations onto his battle maps back in the 1870s, which is more or less exactly what Neatline is, minus the computer screen.&lt;/p&gt;
+
+&lt;p&gt;Anyway, when I started putting together the workshop, I decided to use this as an excuse to build out a little Neatline exhibit that I’ve been rolling around in my head about for about three years - an interactive version of &lt;a href=&quot;http://en.wikipedia.org/wiki/Charles_Joseph_Minard#Work&quot;&gt;Charles Minard’s classic flow diagram of Napoleon’s 1812 invasion of Russia&lt;/a&gt;. This is not an original idea. Minard’s map is sort of like the “Stairway to Heaven” of digital mapping and information visualization, and it’s been remade digitally dozens of times. But, I decided to give it try, and see if I could find some kind of interesting riff. I started out by georeferencing a scan of Minard’s diagram, and then traced out vector annotations on top of each of the individual segments that represent the deteriorating size of the Grande Armée over the course of the invasion:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/segment-annotations.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/segment-annotations.jpg&quot; alt=&quot;segment-annotations&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the basic structure in place, I realized that I didn’t really have an intuitive sense of the &lt;em&gt;scale&lt;/em&gt; of the whole thing - how far was it from the Neman River to Moscow? How long did it take? It turns out that the march was about 540 miles in each direction. I fired up Illustrator, blocked in a little ruler-like shape, and dragged out the annotation along the top of the map:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/540-miles.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/540-miles-1024x178.jpg&quot; alt=&quot;540-miles&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, the question of time. This seemed like a good excuse for some d3. I made a little chart on the right side of the screen that plots out the size of the French army over the course of the ~5-month interval of time between when Napoleon crossed the Neman on June 24 and when that last little bit of the army stumbled back out of Russia in December 14. Then, in the exhibit theme, I wrote a little bit of Javascript that wires up the graph with the vector annotations on the map - hover on the graph to highlight the corresponding blocks in Minard’s diagram, and click to zoom to that location:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/graph.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/10/graph-1024x979.jpg&quot; alt=&quot;graph&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Anyway - simple but fun. I’m looking forward to spending the next two days learning from people who actually know something about military history!&lt;/p&gt;</content><author><name>david-mcclure</name></author><category term="d3" /><category term="military history" /><category term="neatline" /><summary type="html">[Cross-posted from dclure.org]</summary></entry><entry><title type="html">Upgrading Neatline and Omeka</title><link href="/research%20and%20development/2014/09/26/upgrading-neatline-and-omeka.html" rel="alternate" type="text/html" title="Upgrading Neatline and Omeka" /><published>2014-09-26T07:53:08-04:00</published><updated>2014-09-26T07:53:08-04:00</updated><id>/research%20and%20development/2014/09/26/upgrading-neatline-and-omeka</id><content type="html" xml:base="/research%20and%20development/2014/09/26/upgrading-neatline-and-omeka.html">&lt;p&gt;One of my first projects here at the Scholars’ Lab was to help update some Omeka/Neatline sites. These are sites we keep around as examples of our &lt;a href=&quot;http://neatline.org&quot;&gt;Neatline&lt;/a&gt; plugin for &lt;a href=&quot;http://omeka.org&quot;&gt;Omeka&lt;/a&gt;, and they were a few versions behind. While a pretty easy process to do by hand, having a script to take care of it makes it even easier for future upgrades, too. I call the script ONUS (Omeka Neatline Upgrade Script). While the script was written specifically for our purposes, it may be useful if you have an Omeka install using the Neatline plugin. It can be found here on github.com, feel free to use at your own risk.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/scholarslab/onus&quot;&gt;https://github.com/scholarslab/onus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I perhaps went a little overboard and made the script pretty robust. I was going to take the opportunity to learn some Ruby, but ended up writing it in Bash. What is Bash (or ksh or zsh or tcsh)? Bash is a shell. When you open a terminal, or command line, what you type in is called a shell. It takes your commands and does stuff with them. They are all basically the same, but have various things they do better than others, hence the great number of them. A shell script is basically a document that has a list of commands that the shell can run. Most shells allow for some logic, like if/while/case/for statements, variables, functions, etc. Usually very basic programming. (A good tutorial for learning the command line in general is found here: &lt;a href=&quot;http://cli.learncodethehardway.org/book/&quot;&gt;http://cli.learncodethehardway.org/book/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;I thought I could write the script very quickly in Bash since I know that language relatively well (much better than Ruby), but one thing I learned is that Bash does not handle comparing floating point numbers. Floating point numbers is a fancy way of saying numbers with decimal points, like version numbers, (ex. 2.2.1 and 1.3.1). Bash does not have an easy, default way to compare these numbers like most programming languages (like Ruby, Python, and Perl), and even other shells (like ksh and zsh).&lt;/p&gt;
+
+&lt;p&gt;In retrospect it probably would have been better to write this in Ruby or some “real” programming language from the get go, but alas I didn’t have the need for comparing floating point numbers until most of the logic was already figured out and coded in Bash.&lt;/p&gt;
+
+&lt;p&gt;I’ll run through how to use the script as well as go through some of the logic for working with floating point numbers in Bash.&lt;/p&gt;
+
+&lt;h2 id=&quot;running-the-script&quot;&gt;Running the Script&lt;/h2&gt;
+
+&lt;p&gt;The script runs the commands needed to upgrade Omeka from 1.5.x to the latest version, and Neatline from 1.x.x to the latest version.&lt;/p&gt;
+
+&lt;p&gt;You would run this script on the server/computer where the Omeka installation is found. You can pass the path to the Omeka install to the script, or it will prompt you for it.&lt;/p&gt;
+
+&lt;p&gt;The script can take four flags/switches/options:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-L : Upgrade Omeka and Neatline to the latest and greatest versions. (Note: &quot;Pre-2.0 versions of Neatline can't be upgraded directly to version 2.2. Upgrade to version 2.0 first!&quot;)
+-n [number]  :  Where [number] is a valid Neatline tag from https://github.com/scholarslab/Neatline. This will upgrade Neatline to the specified version number. Note, all Neatline version have three digits x.x.x.
+-o [number]  :  Where [number] is a valid Omeka tag from https://github.com/omeka/Omeka. This will upgrade Omeka to the specified version number.
+-s  :  Do not upgrade Omeka
+-t  :  Do not upgrade Neatline
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;basic-usage&quot;&gt;Basic Usage:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download the onus.sh file from the github repo. It doesn’t really matter where you put this script, but your home directory is a good location.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On the command line, enter the directory where the file is located and type the following command. This will allow you to execute the script.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod u+x onus.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If needed, change any default variables at the top of the file, ex. paths to MySQL, PHP, and git. The default is to use your account’s system default. This may be different based on your system, if for example you are testing with &lt;a href=&quot;http://www.mamp.info/de/&quot;&gt;MAMP&lt;/a&gt; on your Mac computer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;MYSQL=&quot;/path/to/bin/mysql&quot;
+MDUMP=&quot;/path/to/bin/mysqldump&quot;
+MADMIN=&quot;/path/to/bin/mysqladmin&quot;
+PHP=&quot;/path/to/bin/php&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Change one ‘sed’ line if needed, to work with GNU/Linux. Remove the empty double quotes after -i&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sed -i &quot;&quot; &quot;80s/.*/${migrate}/&quot; ${path}/plugins/Neatline/migrations/2.0.0/Neatline_Migration_200.php
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Run the script by typing the following at the command promp; make sure to type the period ( . ) before the forward slash ( / ) and then the script name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./onus.sh /path/to/omeka/install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will upgrade Omeka and Neatline to the next available major release. Run the script as many times as needed to get to the latest version.&lt;/p&gt;
+
+&lt;p&gt;For more examples, please visit the GitHub page at &lt;a href=&quot;https://github.com/scholarslab/onus&quot;&gt;https://github.com/scholarslab/onus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;NOTE: One important thing to be aware of is when you  upgrade from 1.5.x versions of Omeka and 1.x.x versions of Neatline the Neatline functionality will be broken until Omeka and Neatline are upgraded to the very latest stable versions. So if you plan on using this script, then plan on upgrading to the very latest versions!&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-back-neatline-exhibits-after-upgrading-to-200&quot;&gt;Getting Back Neatline Exhibits After Upgrading to 2.0.0&lt;/h2&gt;
+
+&lt;p&gt;We noticed one big problem when upgrading sites with versions of Omeka and Neatline previous to 2.0.0 by hand. This section will detail the steps to fix it by hand for demonstration purposes, but they are included in the script.&lt;/p&gt;
+
+&lt;p&gt;Omeka and Neatline both go through some significant database (and code) changes from 1.5.x to 2.x.x. The biggest seemed to be that the upgrade script for Neatline didn’t “take” and needed to be done manually. For these sites, the Neatline Exhibits did not get transferred from the old database table to the new table.&lt;/p&gt;
+
+&lt;p&gt;The first step is always to make a backup copy of the database and files. That way if anything goes awry, you can easily put things back together.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To back up the database, simply take a MySQL dump.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysqldump -uUserName -pPassword databasename &amp;gt; databasename.sql
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Do this in the main directory of Omeka. Then make a zip file of the entire Omeka directory.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zip -r omeka-backup.zip /path/to/omeka/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next, deactivate any plugins, including Neatline and NeatlineMaps. One of the big changes with the 2.x.x version is that NeatlineMaps is rolled into Neatline.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Grab a 2.0.x version of Omeka. Either do this with github&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/omeka/Omeka NewOmeka
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or with a zip file.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://omeka.org/files/omeka-2.0.4.zip
+unzip omeka-2.0.4.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add the 2.0.0 version of Neatline plugin into the NewOmeka/plugins directory, along with any other upgraded plugins you may need. NeatlineText, NeatlineSimilie and NeatlineWaypoints may be needed if you used that functionality in the previous version.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy the db.ini file from the old installation to the NewOmeka/ directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now load the admin page for NewOmeka/ in the browser: http://domain/NewOMeka/admin/. Upgrade the database and login to upgrade and reactivate the Neatline plugin and other plugins as needed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You may notice things go smoothly, except the existing Neatline exhibits may not transfer. To get them into the new database tables, add the following two lines at line 80 in the NewOmeka/plugins/Neatline/migrations/2.0.0/Neatline_Migration_200.php file:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$fc = Zend_Registry::get(&quot;bootstrap&quot;)-&amp;gt;getPluginResource(&quot;FrontController&quot;)-&amp;gt;getFrontController();
+$fc-&amp;gt;getRouter()-&amp;gt;addDefaultRoutes();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Run the following database command to allow the background process to run:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql -uuser -ppassword database --execute=&quot;UPDATE prefix_processes SET status='starting' WHERE id=1;&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Run the following php command to get the processes started.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/path/to/bin/php /path/to/NewOmeka/application/scripts/background.php -p 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Finally, if everything in the new version looks good, you can remove the old and replace it with the new.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mv /path/to/omeka/ /path/to/old-omeka/
+mv /path/to/NewOmeka /path/to/omeka
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;some-script-logic&quot;&gt;Some Script Logic&lt;/h2&gt;
+
+&lt;p&gt;Initially, I used the script to upgrade both Omeka and Neatline to the next higher version, going through every single minor version incrementally. When upgrading from Omeka 1.5.1 and Neatline 1.0.0 to the latest versions (2.2.2 for Omeka and 2.3.0 for Neatline), I had to run the script over 20 times!&lt;/p&gt;
+
+&lt;p&gt;That was way too labor intensive and time consuming, so next I added some logic to just skip to the next major release. That dropped the times needed to run the script down to four. This is how the script behaves if run without any options.&lt;/p&gt;
+
+&lt;p&gt;But I could do better than that! I added in some command line options/flags that allow you to upgrade to any Omeka or Neatline version you specify. Now you can upgrade from Omeka 1.5.x and Neatline 1.x.x directly to Omeka 2.0.4 and Neatline 2.0.0, then right to Omeka 2.2.2 and Neatline 2.3.0. Two steps!&lt;/p&gt;
+
+&lt;h2 id=&quot;bash-and-floating-points&quot;&gt;Bash and floating points&lt;/h2&gt;
+
+&lt;p&gt;As mentioned above, Bash does not work with floating points, so I had to create a function to deal with that. Dealing with version numbers, especially with minor version numbers kind of requires the need to compare floating point numbers…&lt;/p&gt;
+
+&lt;p&gt;In the script I use two different functions:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    # Compare two floating point numbers.
+    # Usage:
+    # if $( compare_floats number1 number 2 ); then
+    #     echo 'number1 is less'
+    # else
+    #     echo 'number2 is less'
+    # fi
+    #
+    # result  : the string 'true' or 'false'
+    # number1 : the first number to compare
+    # number2 : the second number to compare
+    # Read it as: is number1 less than number2? It returns 'true' if number1 is
+    # less, and 'false' if number1 is greater.
+    function compare_floats() {
+        echo | awk -v n1=$1 -v n2=$2 '{if (n1&amp;lt;n2) printf (&quot;true&quot;); else printf (&quot;false&quot;);}'
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This function basically compares two numbers. It outputs true if the first number is less than the second number, and false if the first number is greater than the second number. Another way to think about it would be to ask the question, is the first number less than the second number? It returns ‘true’ if that is true, and ‘false’ if that is false.&lt;/p&gt;
+
+&lt;p&gt;The function is basically echoing the result of the awk command, so let’s look at what it does a bit more closely.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+    awk -v n1=$1 -v n2=$2 '{if (n1&amp;lt;n2) printf (&quot;false&quot;); else printf (&quot;true&quot;);}'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;First we call the awk command with two ‘variable’ flags. The -v says that the next expression sets a value to a variable, so n1 is the variable and $1 is the value. The $1 and $2 are actually variables themselves. When you call this function later in the script, you pass it two numbers. These numbers are automatically assigned to variables, the first number to $1 and the second to $2.&lt;/p&gt;
+
+&lt;p&gt;The next part of the awk command processes an if/else statement; the part within the single quotes and curly braces. The single quotes are required by Bash, and the curly braces tell awk to process the action. The part within the braces is the basic if/else statement. If the comparison is true, then do the first step; else/otherwise do the next step. So, in our case, if the first number (n1) is less than the second number (n2), then print “true”, otherwise print “false”.&lt;/p&gt;
+
+&lt;p&gt;See here if you are interested in learning more about the ways of awk &lt;a href=&quot;http://www.grymoire.com/Unix/Awk.html#uh-1&quot;&gt;http://www.grymoire.com/Unix/Awk.html#uh-1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This function is used in two ways in the script. First, it just does a basic check in an if statement. Check if this number is less than that number:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+    if $( compare_floats $n_upgrade 2.0.0 ); then
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This checks if the next Neatline version is less than 2.0.0. If that is true, it runs some commands.&lt;/p&gt;
+
+&lt;p&gt;Second, we can use the function as part of a multi conditional check:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    if [[ -d $path/archive/ &amp;amp;&amp;amp; $( compare_floats $o_upgrade 2.0.0 ) == &quot;true&quot; ]]; then
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here we check if the /archive/ directory exists (used with Omeka versions less than 2.0) and we also check if the next version to upgrade Omeka to is less than 2.0.0. If both of those conditions are met, then we can run some code. Otherwise we do some more conditional checking and different code running.&lt;/p&gt;
+
+&lt;p&gt;And, the next function…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    # Pass the current version first, then the array
+    # the function echoes the version just greater than the current version,
+    # i.e., the next version to upgrade to.
+    #
+    # Usage:
+    # variable=$( get_next_version $num array[@] )
+    #
+    # variable : the next version greater than $num
+    # $num : the current version
+    # array[@] : an array of all possible versions
+    function get_next_version() {
+        num=$1
+        declare -a ARRAY=(&quot;${!2}&quot;)
+        for i in ${ARRAY[@]}
+        do
+            if awk -v n1=$num -v n2=$i 'BEGIN{ if (n1&amp;lt;n2) exit 0; exit 1}'; then
+                echo $i
+                break
+            fi
+        done
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With this function we are doing a similar thing, comparing two numbers, but we are comparing one number against a list of numbers. To run this function you pass the current version and a list of possible version numbers. The function will compare the number you pass it with the list, and echo the next highest number from the list.&lt;/p&gt;
+
+&lt;p&gt;Let’s break down this function as well.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    num=$1
+    declare -a ARRAY=(&quot;${!2}&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These first two lines are simply getting the input from calling the function and turning them into an internal variable and an internal array. You may remember the ‘$1’ is the first number passed to the function. But where is the ‘$2’? It’s expanded and changed a bit because it is actually an array, or a list of numbers, rather than a single number. In Bash, you can write a variable with a dollar sign (ex. $myNumber) or with curly braces (ex. ${myNumber}). The second option allows you to string multiple variables together and do basic string or array manipulation. For example we could put two variables together: ${myNumber}${anotherNumber}&lt;/p&gt;
+
+&lt;p&gt;In this case we are declaring a new array named ‘ARRAY’ and pre-populating it with the values of the passed array. We do some indirect expansion to get the values of the passed array, that’s the “${!2}” part. Basically, this part says set the values of the array passed as the values of the new array (in this case we call it ‘ARRAY’), rather than setting the name of the array as the value of the new array. See here for more explanation on Bash arrays and indirection &lt;a href=&quot;http://wiki.bash-hackers.org/syntax/arrays#indirection&quot;&gt;http://wiki.bash-hackers.org/syntax/arrays#indirection&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Next we do a standard for loop to go through every element or value of the array.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    for i in ${ARRAY[@]}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next we check the current version number against each number in the list of version numbers, using the same awk command as before.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    if awk -v n1=$num -v n2=$i 'BEGIN{ if (n1&amp;lt;n2) exit 0; exit 1}'; then
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In this case, though, instead of printing ‘true’ or ‘false’ the command exits without errors (exit 0) or exits with an error (exit 1). The if statement that includes the awk command will execute the code within the if statement only if the statement returns true, that is, if the awk command exits without errors. So, if the first number is less than the second number, then exit without errors (true) and echo the second number. This becomes the next version number.&lt;/p&gt;
+
+&lt;p&gt;Basically you can think of this as getting the current version number, then comparing this to a list of all possible version numbers, starting with the lowest number. When the current version is greater than the possible version number, do nothing. When the current version is not less than the possible version number, then the possible version number is greater, and therefore should be the next version to upgrade to. The break statement within the for loop tells the for loop to stop looping when it has found the next version number.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Few, that was a long winded explanation of the script. The two above functions, and accompanying explanation, could have been avoided by using a programming language (like Ruby, Python, or Perl) instead of a shell script because they handle floating point comparisons naturally.&lt;/p&gt;
+
+&lt;p&gt;So, just to summarize, if you have Omeka and Neatline installed already, and would like to upgrade to the latest version, then you can run this script on the server where Omeka is installed. It requires that you have git installed. All of the other programs it depends on are pretty standard.&lt;/p&gt;</content><author><name>ammon-shepherd</name></author><category term="awk" /><category term="bash" /><category term="neatline" /><category term="omeka" /><category term="Programming" /><category term="scripting" /><category term="upgrade" /><summary type="html">One of my first projects here at the Scholars’ Lab was to help update some Omeka/Neatline sites. These are sites we keep around as examples of our Neatline plugin for Omeka, and they were a few versions behind. While a pretty easy process to do by hand, having a script to take care of it makes it even easier for future upgrades, too. I call the script ONUS (Omeka Neatline Upgrade Script). While the script was written specifically for our purposes, it may be useful if you have an Omeka install using the Neatline plugin. It can be found here on github.com, feel free to use at your own risk.</summary></entry><entry><title type="html">Omeka, Neatline, Mac, development, oh my!</title><link href="/research%20and%20development/2014/08/18/omeka-neatline-mac-development-oh-my.html" rel="alternate" type="text/html" title="Omeka, Neatline, Mac, development, oh my!" /><published>2014-08-18T05:41:08-04:00</published><updated>2014-08-18T05:41:08-04:00</updated><id>/research%20and%20development/2014/08/18/omeka-neatline-mac-development-oh-my</id><content type="html" xml:base="/research%20and%20development/2014/08/18/omeka-neatline-mac-development-oh-my.html">&lt;p&gt;At the Scholars’ Lab, we’re big big advocates of Open Source. All of our projects are available freely and openly on &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;, and we’re always more than happy to accept pull requests. We’d like to be able to empower everyone to contribute to our projects as much as they’re able to and comfortable with.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, one of our flagship projects, &lt;a href=&quot;http://neatline.org/&quot;&gt;Neatline&lt;/a&gt;, isn’t easy to contribute to. There are a number of reasons for this, but one is that the development environment is not trivial to get set up. In order to address this and make it easier for others to contribute, we’ve developed an &lt;a href=&quot;http://www.ansible.com/&quot;&gt;Ansible&lt;/a&gt; playbook that takes a not-quite-stock Mac and sets up an instance of Omeka with the Neatline plugin available, as well as all the tools necessary for working on Neatline.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ansible.com/&quot;&gt;Ansible&lt;/a&gt; is a system for setting up and configuring systems. It’s often used to set up multiple servers—for instance, a database server and a static web server, both working with a dynamic web applications deployed on several computers. If you’re familiar with &lt;a href=&quot;http://www.getchef.com/&quot;&gt;Chef&lt;/a&gt; or &lt;a href=&quot;http://puppetlabs.com/&quot;&gt;Puppet&lt;/a&gt;, Ansible solves the same problems. In this case, we’ll use it to configure our local development workstation.&lt;/p&gt;
+
+&lt;p&gt;We’ve published these playbooks on &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt; in the &lt;a href=&quot;https://github.com/erochest/neatline.dev/tree/mac-ansible&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;neatline.dev&lt;/code&gt; repository, on the &lt;code class=&quot;highlighter-rouge&quot;&gt;mac-ansible&lt;/code&gt; branch&lt;/a&gt;. You can get this by cloning it to your local machine. (Since this is for getting started developing Neatline, I assume that you’re already comfortable with &lt;a href=&quot;http://git-scm.com/&quot;&gt;git&lt;/a&gt;. If not, &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;there&lt;/a&gt; &lt;a href=&quot;https://try.github.io/&quot;&gt;are&lt;/a&gt; &lt;a href=&quot;http://www.git-tower.com/learn/&quot;&gt;lots&lt;/a&gt; &lt;a href=&quot;http://gitimmersion.com/&quot;&gt;of&lt;/a&gt; &lt;a href=&quot;http://www.vogella.com/tutorials/Git/article.html&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;http://git-scm.com/book&quot;&gt;tutorials&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone --branch mac-ansible https://github.com/erochest/neatline.dev.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;In creating this, I’ve aimed for starting from a stock Mac. And I missed pretty badly. However, the necessary prerequisites are minimal. You’ll just need to have these things installed.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/xcode/id497799835&quot;&gt;XCode&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once those two are on your machine, you can install the other two dependencies. These are available through &lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;. So open Terminal and type these lines:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ brew install python
+$ brew install ansible
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s all. You should be ready to go.&lt;/p&gt;
+
+&lt;h2 id=&quot;settings&quot;&gt;Settings&lt;/h2&gt;
+
+&lt;p&gt;This project includes a number settings that you can change to customize your installation. Those are found in the file &lt;a href=&quot;https://github.com/erochest/neatline.dev/blob/mac-ansible/playbook.yaml&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;playbook.yaml&lt;/code&gt;&lt;/a&gt;. The relevant section is labelled &lt;code class=&quot;highlighter-rouge&quot;&gt;vars&lt;/code&gt;, and it allows you to set information about the Omeka database (&lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_db_user&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_db_password&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_db_name&lt;/code&gt;), which version of Omeka you wish to use (&lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_version&lt;/code&gt;), where you wish to install it (&lt;code class=&quot;highlighter-rouge&quot;&gt;omeka_dir&lt;/code&gt;), and where you want to point your browser to (&lt;code class=&quot;highlighter-rouge&quot;&gt;dev_hostname&lt;/code&gt;) as you’re working on the site. The defaults are:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vars:
+  db_user: root
+  db_password:
+  omeka_db_user: omeka
+  omeka_db_password: omeka
+  omeka_db_name: omeka
+  dev_hostname: omeka-neatline.dev
+  omeka_dir: &quot;/omeka/neatlinedev&quot;
+  omeka_version: stable-2.1
+  debug: true
+  neatline_repo: git@github.com:scholarslab/Neatline.git
+  php_version: 55
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Change these to reflect what you’d like your personal Omeka/Neatline installation to look like.&lt;/p&gt;
+
+&lt;p&gt;One option that I’ll call out in particular is &lt;code class=&quot;highlighter-rouge&quot;&gt;neatline_repo&lt;/code&gt;. This is the git repository that you’ll be working with. If you’re using github to host your project, you can &lt;a href=&quot;https://help.github.com/articles/fork-a-repo&quot;&gt;fork&lt;/a&gt; the primary Neatline repository (from the URL given above). And when you’ve completed your work, if you’d like to contribute back, you can send us a &lt;a href=&quot;https://help.github.com/articles/using-pull-requests&quot;&gt;pull request&lt;/a&gt; through the Github site.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up&quot;&gt;Setting Up&lt;/h2&gt;
+
+&lt;p&gt;Finally, we’re ready to actually create the system. This is quite easy. In the Terminal, from the &lt;code class=&quot;highlighter-rouge&quot;&gt;neatline.dev&lt;/code&gt; directory, run the &lt;code class=&quot;highlighter-rouge&quot;&gt;neatline-dev&lt;/code&gt; script.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd neatline.dev
+$ ./neatline-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now wait.&lt;/p&gt;
+
+&lt;p&gt;After your computer whirs away for a while, you’ll get your prompt back. When that happens, you should be able to point your browser to http://omeka-neatline.dev (in the example above). There you’ll see the Omeka installation form.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-just-happened&quot;&gt;What Just Happened?&lt;/h2&gt;
+
+&lt;p&gt;The Ansible playbook does a number of tasks.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;It installs all the dependencies that you’ll need, including &lt;a href=&quot;http://php.net/&quot;&gt;PHP&lt;/a&gt;, &lt;a href=&quot;http://nodejs.org/&quot;&gt;NodeJS&lt;/a&gt;, and &lt;a href=&quot;http://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It sets MySQL to start automatically when you log in, and it creates the Omeka MySQL user and database.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It configures &lt;a href=&quot;http://httpd.apache.org/&quot;&gt;Apache&lt;/a&gt; to work with PHP and to find your Omeka directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It downloads and configures &lt;a href=&quot;http://omeka.org/&quot;&gt;Omeka&lt;/a&gt; and turns on debugging.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It clones &lt;a href=&quot;http://neatline.org/&quot;&gt;Neatline&lt;/a&gt; into Omeka’s &lt;code class=&quot;highlighter-rouge&quot;&gt;plugin&lt;/code&gt; directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It initializes &lt;a href=&quot;https://github.com/nvie/gitflow&quot;&gt;git flow&lt;/a&gt; for working in Neatline and leaves you on the &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt; branch.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;And it installs the necessary JavaScript and PHP tools, including &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt;, &lt;a href=&quot;http://bower.io/&quot;&gt;Bower&lt;/a&gt;, &lt;a href=&quot;https://getcomposer.org/&quot;&gt;Composer&lt;/a&gt;, and &lt;a href=&quot;http://phpunit.de/&quot;&gt;PHPUnit&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After all that, it really needs a break.&lt;/p&gt;
+
+&lt;p&gt;You probably do too.&lt;/p&gt;
+
+&lt;h2 id=&quot;future&quot;&gt;Future&lt;/h2&gt;
+
+&lt;p&gt;Unfortunately, that’s only the first step that we need to take to make the Neatline code-base approachable. Some more things that we have planned include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Documentation on all the moving parts.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Documentation on the overall architecture of Neatline.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Documentation on the code. What’s where? If you wish to change something, where would you find it?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As we get those parts in place, we’ll keep you posted.&lt;/p&gt;</content><author><name>eric-rochester</name></author><summary type="html">At the Scholars’ Lab, we’re big big advocates of Open Source. All of our projects are available freely and openly on Github, and we’re always more than happy to accept pull requests. We’d like to be able to empower everyone to contribute to our projects as much as they’re able to and comfortable with.</summary></entry><entry><title type="html">Neatline 2.3</title><link href="/announcements/2014/07/28/neatline-2-3.html" rel="alternate" type="text/html" title="Neatline 2.3" /><published>2014-07-28T07:01:55-04:00</published><updated>2014-07-28T07:01:55-04:00</updated><id>/announcements/2014/07/28/neatline-2-3</id><content type="html" xml:base="/announcements/2014/07/28/neatline-2-3.html">&lt;p&gt;Today we’re happy to announce &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Neatline 2.3&lt;/a&gt;! This release includes a couple of nifty new features and, under the hood, a pretty big stack of bug fixes, performance tweaks, and improvements to the development workflow. The coolest new feature in 2.3 is a simple little addition that we’ve gotten a number of requests for in the last few months - the ability to “hard link” to individual records inside of an exhibit. In the new version, when you select a record in an exhibit, a little fragment gets tacked on to the end of the URL that points back to that record. For example, if the record has an ID of &lt;code class=&quot;highlighter-rouge&quot;&gt;16&lt;/code&gt;, the URL will change to something like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;www.omeka-site.org/neatline/show/exhibit**#records/16**&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, if someone goes directly to this URL, the exhibit will automatically select that record when the page loads, just as if the reader had manually clicked on it - the map will focus and zoom around the record, the popup bubble will appear, the timeline will scroll, and any other custom event bindings added by the exhibit’s theme will fire. This is nice because it makes it easier to use Neatline as a kind of geospatial “footnoting” system that can be referred to from external resources - sort of like the &lt;a href=&quot;http://www.scholarslab.org/announcements/neatline-text/&quot;&gt;Neatline Text&lt;/a&gt; extension, except the text doesn’t have to be housed inside of Omeka. Imagine you’re working on an article that makes reference to some geographic locations, and you want to plot them out in Neatline. This way you could put the text of the article anywhere on the web (a Wordpress blog, an online journal, etc.) and just link to the relevant parts of the Neatline exhibit using plain old anchor tags.&lt;/p&gt;
+
+&lt;p&gt;For example, check out this &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo&quot;&gt;simple little Neatline exhibit&lt;/a&gt;, which just plots out the locations of eight US cities. Then, click on these links to open up the same exhibit, this time focused on the individual cities: &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1526&quot;&gt;New York&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1525&quot;&gt;San Francisco&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1527&quot;&gt;Chicago&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1528&quot;&gt;Los Angeles&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1531&quot;&gt;Seattle&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1530&quot;&gt;Denver&lt;/a&gt;, &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1532&quot;&gt;Atlanta&lt;/a&gt;, and (but of course) &lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1529&quot;&gt;Charlottesville&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/record-links-demo#records/1525&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/hard-link1-1024x591.jpg&quot; alt=&quot;hard-link&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://github.com/scholarslab/Neatline/releases/tag/2.3.0&quot;&gt;change log&lt;/a&gt; for the full list of updates in 2.3, and grab the new production package from the &lt;a href=&quot;http://omeka.org/add-ons/plugins/neatline/&quot;&gt;Omeka addons repository&lt;/a&gt;. Thanks Jenifer Bartle, Jacki Musacchio, Rachel King, Lincoln Mullen, and Miriam Posner for helping us find bugs and brainstorm about features! As always, drop a note on the &lt;a href=&quot;https://github.com/scholarslab/Neatline/issues?direction=desc&amp;amp;sort=created&amp;amp;state=closed&quot;&gt;GitHub issue tracker&lt;/a&gt; if you run into problems or have ideas for new features.&lt;/p&gt;</content><author><name>david-mcclure</name></author><category term="neatline" /><summary type="html">Today we’re happy to announce Neatline 2.3! This release includes a couple of nifty new features and, under the hood, a pretty big stack of bug fixes, performance tweaks, and improvements to the development workflow. The coolest new feature in 2.3 is a simple little addition that we’ve gotten a number of requests for in the last few months - the ability to “hard link” to individual records inside of an exhibit. In the new version, when you select a record in an exhibit, a little fragment gets tacked on to the end of the URL that points back to that record. For example, if the record has an ID of 16, the URL will change to something like:</summary></entry><entry><title type="html">A (Digital) Declaration of Independence</title><link href="/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map/" rel="alternate" type="text/html" title="A (Digital) Declaration of Independence" /><published>2014-07-02T00:00:00-04:00</published><updated>2014-07-02T00:00:00-04:00</updated><id>/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map</id><content type="html" xml:base="/2014/07/02/a-digital-declaration-of-independence-with-text-painting-and-map/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=A+%28Digital%29+Declaration+of+Independence&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-07-02&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fgeospatial-and-temporal%2Fa-digital-declaration-of-independence-with-text-painting-and-map%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt; 
+&lt;em&gt;[Cross-posted from &lt;a href=&quot;http://dclure.org/essays/a-digital-declaration-of-independence-with-text-painting-and-map/&quot;&gt;dclure.org&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;launch-the-exhibit&quot;&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/declaration-of-independence&quot;&gt;Launch the Exhibit&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://neatline.dclure.org/neatline/show/declaration-of-independence&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/declaration-of-independence-1024x610.jpg&quot; alt=&quot;declaration-of-independence&quot; width=&quot;640&quot; height=&quot;381&quot; class=&quot;alignnone size-large wp-image-3927&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Way back in the spring of 2012, a couple months before we released the first version of Neatline, I drove up to Washington to give a little demo of the project to the folks at the Library of Congress. I had put together a couple of example exhibits for the presentation, but, the night before, I was bored and found myself brainstorming about Washington-themed projects. On a lark, I downloaded a &lt;a href=&quot;http://www.archives.gov/exhibits/charters/declaration_transcript.html&quot;&gt;scan of the 1823 facsimile of the Declaration of Independence&lt;/a&gt; from the National Archives website, and spent a couple hours tracing polygons around each one of the signatures at the bottom of the document. I showed the exhibit the next day, and had big plans to flesh it out and turn it into a real, showable project. But then I got swept up in the race to get the first release of Neatline out the door before DH2012 in Hamburg, and then sucked into the craziness of the summer conference season, and the project slipped down into the towering stack of things that I could never quite find time to work on.&lt;/p&gt;
+
+&lt;p&gt;For some reason, though, the idea popped back into my head a couple months ago – maybe because Menlo Park is submerged in a kind of permanent summer, and it pretty much always feels like a good time to eat ice cream and shoot off fireworks. After mulling it over for a couple weeks, I decided to resurrect it from the dead, spruce it up, and post it in time for the 4th of July. So, with two days to spare, here we go – an interactive edition of the Declaration of Independence, tightly coupled with three other “views” in an effort to add dimension to the original document:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A full-text, two-way-linked transcription of the manuscript and the signatures at the bottom. Click on sentences in the transcription to focus on the corresponding region of the scanned image, or click on annotated blocks on the image to scroll the text. 
+&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/07/transcript.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/transcript-1024x620.jpg&quot; alt=&quot;transcript&quot; width=&quot;640&quot; height=&quot;387&quot; class=&quot;alignnone size-large wp-image-3931&quot; /&gt;&lt;/a&gt; &amp;lt;/li&amp;gt;
+    &lt;ul&gt;
+      &lt;li&gt;An interactive edition of &lt;a href=&quot;http://en.wikipedia.org/wiki/Trumbull%27s_Declaration_of_Independence&quot;&gt;Trumbull’s “Declaration of Independence” painting&lt;/a&gt;, with each of the faces outlined and interactively linked with the corresponding signature on the document. 
+&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/07/painting1.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/painting1-1024x616.jpg&quot; alt=&quot;painting&quot; width=&quot;640&quot; height=&quot;385&quot; class=&quot;alignnone size-large wp-image-3940&quot; /&gt;&lt;/a&gt; &amp;lt;/li&amp;gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;All of which is plastered on top of a map that plots out each of the signers’ hometowns on a custom &lt;a href=&quot;https://www.mapbox.com/&quot;&gt;Mapbox&lt;/a&gt; layer, which makes it easy to see how the layout of the signatures maps on to the geographic layout of the colonies. Which, by extension, tracks the future division between Union and Confederate states in the Civil War – Georgia and the Carolinas look awful lonely over on the far left side of the document. 
+&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/07/map1.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/map1-1024x615.jpg&quot; alt=&quot;map&quot; width=&quot;640&quot; height=&quot;384&quot; class=&quot;alignnone size-large wp-image-3939&quot; /&gt;&lt;/a&gt; &amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; 
+Once I positioned the layers, annotated the signatures and faces, and plotted out the hometowns, I realized that I had painted myself into an interesting little corner from an information design standpoint – it was difficult to quickly move back and forth between the three main sections of the exhibit. In a sense, this is an inherent characteristic of deeply-zoomed interfaces. The ability to focus really closely on any one of the three visual grids – which is what makes it possible to mix them all together into a single environment – has the side effect of making the other two increasingly distant and inaccessible, more and more so the further down you go. For example, once you’ve focused in on Thomas Jefferson’s face in the Trumbull painting, it’s quite a chore to manually navigate to the corresponding signature on the document – you have to zoom back, pan the map up towards the scanned image, find the signature (often no easy task), and then zoom back down.&lt;/p&gt;
+
+            &lt;p&gt;This is especially annoying in this case, since this potential for &lt;em&gt;comparison&lt;/em&gt; is a big part of what’s interesting about the content. What I really wanted, I realized, was to be able to switch back and forth in a really simple, fluid way among the different instantiations of any individual person on the document, painting, and map – I wanted to be able to flip through them like a slideshow, to round up all the little partial representations of the person and hold them side-by-side in my head. So, as an experiment, I whipped up a little batch of custom UI components (built with the excellent &lt;a href=&quot;http://facebook.github.io/react/&quot;&gt;React&lt;/a&gt; library, which fits in like a dream with Neatline’s Javascript API) that provide a “toggling” interface for each individual signer, and the exhibit as a whole.&lt;/p&gt;
+
+            &lt;p&gt;By default, when you hit the page, three top-level buttons in the right corner of the window link to the the three main sections of the exhibit – the hometowns plotted along the eastern seaboard, the declaration over the midwest, and the painting over the southeast. In addition to the three individual buttons, there’s also a little “rotate” button that automatically cycles through the three regions, which makes it easy to toggle around without looking away from the map to move the cursor:&lt;/p&gt;
+
+            &lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/07/exhibit-buttons.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/exhibit-buttons.jpg&quot; alt=&quot;exhibit-buttons&quot; width=&quot;603&quot; height=&quot;138&quot; class=&quot;alignnone size-full wp-image-3937&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+            &lt;p&gt;More useful, though, it’s possible to bind any of the individual signers to the widget by clicking on the annotations. For example, if I click on Thomas Jefferson’s face in the painting, the name locks into place next to the buttons, which now point to the representations of that specific person in the exhibit – “Text” links to Jefferson’s signature, “Painting” to his face, and “Map” to Monticello:&lt;/p&gt;
+
+            &lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/07/signer-toggle.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/signer-toggle-1024x840.jpg&quot; alt=&quot;signer-toggle&quot; width=&quot;640&quot; height=&quot;525&quot; class=&quot;alignnone size-large wp-image-3942&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+            &lt;p&gt;Once you’ve activated one of the signers, click on the name to show an overlay with a picture and biography, pulled from a public domain book published by the National Park Service called Signers of the Declaration:&lt;/p&gt;
+
+            &lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/07/bio-overlay.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/bio-overlay-1024x624.jpg&quot; alt=&quot;bio-overlay&quot; width=&quot;640&quot; height=&quot;390&quot; class=&quot;alignnone size-large wp-image-3943&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+            &lt;p&gt;This is pretty straightforward on the map and document, where there’s always a one-to-one correspondence between an annotation and one of the signers. Things get more complicated on the map, though, where it’s possible for a single location to be associted with more than one signer. Philadelphia, for example, was home to Robert Morris, Benjamin Rush, Benjamin Franklin, John Morton, and George Clymer, so I had to write a little widget to make it possible to hone in on just one of the five after clicking the dot:&lt;/p&gt;
+
+            &lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/07/philadelphia.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/philadelphia-1024x377.jpg&quot; alt=&quot;philadelphia&quot; width=&quot;640&quot; height=&quot;235&quot; class=&quot;alignnone size-large wp-image-3945&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+            &lt;p&gt;Last but not least, each sentence in the document itself is annotated and wired up with the corresponding text transcription on the left – click on the image to scroll the text, or click on the text to focus the image:&lt;/p&gt;
+
+            &lt;p&gt;&lt;a href=&quot;http://dclure.org/wp-content/uploads/2014/07/text.jpg&quot;&gt;&lt;img src=&quot;http://dclure.org/wp-content/uploads/2014/07/text-1024x617.jpg&quot; alt=&quot;text&quot; width=&quot;640&quot; height=&quot;385&quot; class=&quot;alignnone size-large wp-image-3947&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+            &lt;p&gt;Happy fourth!&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>dm4fn</name></author><summary type="html">[Cross-posted from dclure.org] Launch the Exhibit Way back in the spring of 2012, a couple months before we released the first version of Neatline, I drove up to Washington to give a little demo of the project to the folks at the Library of Congress. I had put together a couple of example exhibits for&amp;hellip;. More.</summary></entry><entry><title type="html">Creating themes for individual Neatline exhibits</title><link href="/2014/04/01/creating-themes-for-individual-neatline-exhibits/" rel="alternate" type="text/html" title="Creating themes for individual Neatline exhibits" /><published>2014-04-01T00:00:00-04:00</published><updated>2014-04-01T00:00:00-04:00</updated><id>/2014/04/01/creating-themes-for-individual-neatline-exhibits</id><content type="html" xml:base="/2014/04/01/creating-themes-for-individual-neatline-exhibits/">&lt;p&gt;&lt;span class=&quot;Z3988&quot; title=&quot;ctx_ver=Z39.88-2004&amp;amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;amp;rft.type=&amp;amp;rft.format=text&amp;amp;rft.title=Creating+themes+for+individual+Neatline+exhibits&amp;amp;rft.source=Scholars%26%23039%3B+Lab&amp;amp;rft.date=2014-04-01&amp;amp;rft.identifier=http%3A%2F%2Fwww.scholarslab.org%2Fgeospatial-and-temporal%2Ftheming-neatline-exhibits%2F&amp;amp;rft.language=English&amp;amp;rft.subject=Geospatial+and+Temporal&amp;amp;rft.aulast=McClure&amp;amp;rft.aufirst=David&quot;&gt;&lt;/span&gt;
+Neatline makes it possible to create separate themes for individual exhibits, which is useful if you want to host a collection of self-contained Neatline projects on a single site. To get started, fork the &lt;a href=&quot;https://github.com/scholarslab/neatline-theme-template&quot;&gt;exhibit starter theme&lt;/a&gt;, which abstracts out the style, layout, and UX of the &lt;a href=&quot;http://dclure.org/logs/project-gemini-over-baja-california/&quot;&gt;Project Gemini over Baja California&lt;/a&gt; exhibit.&lt;/p&gt;
+
+&lt;p&gt;One of the coolest but most under-documented features in Neatline is the ability to create separate themes for each individual exhibit. Since Neatline exhibits are just one particular type of “view” inside of Omeka, it’s always been possible to customize the styling and layout at the level of the Omeka theme. Changes the the Omeka theme, though, propagate to all the exhibits on the site. In many cases, this is ideal – if you have a collection of closely-related Neatline projects, all part of the same thematic umbrella, it makes sense that they should all look more or less the same. For examples of this, check out Jeremy’s beautiful &lt;a href=&quot;https://github.com/scholarslab/astrolabe&quot;&gt;Astrolabe&lt;/a&gt; and &lt;a href=&quot;https://github.com/scholarslab/neatscape&quot;&gt;Neatscape&lt;/a&gt; themes for Omeka, which were designed with Neatline projects in mind.&lt;/p&gt;
+
+&lt;p&gt;In other cases, though, this can be a real hindrance. Sometimes it can make sense to host a number of self-contained Neatline exhibits in the same installation of Omeka. For example, imagine you’re using Neatline in a big lecture course, and you split the class up into 10-15 groups of students, all working on separate exhibits. As the semester draws to an end, some of the groups want to use the &lt;a href=&quot;http://www.scholarslab.org/announcements/neatline-text/&quot;&gt;NeatlineText&lt;/a&gt; plugin, and need a layout that positions the exhibit narrative on the side of the screen, flush with the edge of the window. But other groups are just threading the text content into the record bodies, and don’t want a big, empty container element taking up space on the screen. How to handle both at once? Or, for a concrete example, take a look at the &lt;a href=&quot;http://neatline.dclure.org/&quot;&gt;Neatline Labs&lt;/a&gt; site, which I use a sandbox for little Neatline-powered experiments and feature demos. By design, these projects are all totally different – different content, different layouts, different Javascript interactions, etc:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/03/panorama.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/03/panorama-1024x88.jpg&quot; alt=&quot;panorama&quot; width=&quot;1024&quot; height=&quot;88&quot; class=&quot;aligncenter size-large wp-image-10046&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It would be annoying to have to spin up a completely new instance of Omeka for each of these projects. To get around this, Neatline implements its own “sub-theming” system, piggybacking on top of the capabilities provided by Omeka, that makes it possible to customize part or all of the appearance, layout, or behavior of each exhibit on an individual basis. This is an opt-in system that can be mixed with the regular, site-wide theming system – if you have 10 Neatline exhibits on your site, you could write exhibit-specific themes for three of them, and leave the other seven unchanged, allowing them to continue to inherit the generic Omeka theme. And, within the three exhibit-specific themes, you have full control over which parts of the theme you override – for one, you could leave the layout unchanged, but modify the CSS; for another, you could leave the CSS the same but change the layout and add some custom Javascript interactions. Exhibit-specific themes are also highly portable – once you’ve built one to your liking, it can be adapted for new exhibits just by copying and renaming the directory.&lt;/p&gt;
+
+&lt;p&gt;I’ve held off on documenting this publicly because I wanted to be sure that the file structure and Javacsript APIs used in the themes worked well at scale – but at this point it’s all pretty battle tested, and I’m curious to see what other folks can come up with!&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started-creating-the-theme-directory&quot;&gt;Getting started: Creating the theme directory&lt;/h2&gt;
+
+&lt;p&gt;Neatline themes are created as directories that sit inside of the Omeka theme. For any given exhibit, Neatline will look for a theme directory that has the same name as the “URL slug” of the exhibit, the unique, plain-text identifier used to form the end of the exhibit’s public-facing URL. So, imagine you’ve got an exhibit called “Test Exhibit,” with a URL slug of &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test-exhibit&lt;/code&gt;&lt;/strong&gt;. To create a theme for the exhibit, create a directory called &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;test-exhibit&lt;/code&gt;&lt;/strong&gt; at this location relative to the root of your Omeka theme:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[omeka-theme]/neatline/exhibits/themes/test-exhibit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, here’s the layout of &lt;a href=&quot;https://github.com/davidmcclure/neatlight&quot;&gt;my fork of the Neatlight theme&lt;/a&gt;, with the theme directories for a handful of exhibits at &lt;a href=&quot;http://neatline.dclure.org/&quot;&gt;neatline.dclure.org&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tree.jpg&quot; alt=&quot;nltheme-tree&quot; width=&quot;313&quot; height=&quot;372&quot; class=&quot;aligncenter size-full wp-image-10040&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;anatomy-of-a-neatline-theme&quot;&gt;Anatomy of a Neatline theme&lt;/h2&gt;
+
+&lt;p&gt;Neatline themes consist of just four files: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;script.js&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;show.php&lt;/code&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;item.php&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;stylecss&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt;&lt;/h1&gt;
+
+&lt;p&gt;Use &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt;&lt;/strong&gt; to add custom CSS to the exhibit. Neatline loads this as the last stylesheet on the page, after the Omeka CSS and after the CSS provided by the Neatline core (which, if you want, can be omitted from the page by providing a custom &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;show.php&lt;/code&gt;&lt;/strong&gt; template – see below). &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt;&lt;/strong&gt; can be anything from a handful of simple rules to change fonts or colors up to a complete redesign of the page.&lt;/p&gt;
+
+&lt;h1 id=&quot;scriptjs&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;script.js&lt;/code&gt;&lt;/h1&gt;
+
+&lt;p&gt;Use &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;script.js&lt;/code&gt;&lt;/strong&gt; to add custom Javascript interactions to the page. Again, these can be as simple or complex as needed. The Neatline front-end application is a big chunk of code, and it’s a bit beyond the scope of this article to really dive into the API in detail. The gist of it, though, is that Neatline is structured as a bunch of little mini-applications, called “modules,” that communicate with one another using a &lt;a href=&quot;http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern&quot;&gt;pub-sub&lt;/a&gt; messaging system, powered by the superb &lt;a href=&quot;https://github.com/marionettejs/backbone.wreqr#event-aggregator&quot;&gt;EventAggregator component in the Marionette framework&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The cool thing about this architecture is that snippets of code in the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;script.js&lt;/code&gt;&lt;/strong&gt; file can hook directly into this messaging system and interact with Neatline just as if they were included in the core codebase – Neatline literally won’t know the difference. There’s really no limit to what you could do here – the entire Neatline editing environment, for instance, is implemented as a single module (containing lots and lots of nested sub-modules), and could theoretically be grafted onto Neatline completely inside of an exhibit theme. This makes it possible to wrap up a Neatline exhibit in pretty much any kind of interface without having to modify the internals.&lt;/p&gt;
+
+&lt;p&gt;That said, in most cases you’ll probably just need a few little snippets to add in some visual bells and whistles, or to manage complex layout tasks that are tough to accomplish in CSS. For example, here are a few snippets I used in the &lt;a href=&quot;http://dclure.org/logs/project-gemini-over-baja-california/&quot;&gt;Project Gemini over Baja California&lt;/a&gt; project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Position the text container on the left side of the screen and fill the height of the window:
+&amp;lt;/li&amp;gt;
+    &lt;ul&gt;
+      &lt;li&gt;Add an &lt;a href=&quot;http://ricostacruz.com/nprogress/&quot;&gt;NProgress&lt;/a&gt;-powered loading bar to the page:
+&amp;lt;/li&amp;gt;
+        &lt;ul&gt;
+          &lt;li&gt;Implement custom zooming buttons:
+&amp;lt;/li&amp;gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                &lt;p&gt;Add a “Loading Tiles…” spinner that displays when WMS imagery is being loaded from Geoserver:
+&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;
+For an example of a fully-fledged module, which follows the file layout conventions of the Neatline core, take a look at the &lt;a href=&quot;https://github.com/davidmcclure/neatlight/tree/master/neatline/exhibits/themes/gemini-over-baja-california/assets/javascripts/lines&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Lines&lt;/code&gt; module in the Gemini theme&lt;/a&gt;, which intercepts events broadcast by NeatlineText and draws the little yellow lines between the text and the map.&lt;/p&gt;
+
+                &lt;h1 id=&quot;showphp&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;show.php&lt;/code&gt;&lt;/h1&gt;
+
+                &lt;p&gt;By default, all Neatline exhibits are displayed using the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;show.php&lt;/code&gt;&lt;/strong&gt; that ships with the plugin. If you create a file called &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;show.php&lt;/code&gt;&lt;/strong&gt; in the exhibit theme, though, Neatline will use that file in place of the default. This makes it possible to completely customize the structure of the markup in any way you want. For example, if you look closely at some of the Jacascript examples above, you’ll notice that in a couple of places the code is selecting elements (things like &lt;code class=&quot;highlighter-rouge&quot;&gt;$('#wms-loader')&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;$('div.narrative')&lt;/code&gt;) that aren’t actually templated anywhere in the default &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;show.php&lt;/code&gt;&lt;/strong&gt;, which looks like this:&lt;/p&gt;
+
+                &lt;p&gt;This works, though, because I’m providing a custom &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;show.php&lt;/code&gt;&lt;/strong&gt; template that provides those elements (e.g., see the &lt;code class=&quot;highlighter-rouge&quot;&gt;#wms-loader&lt;/code&gt; element down near the bottom):&lt;/p&gt;
+
+                &lt;h1 id=&quot;itemphp&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;item.php&lt;/code&gt;&lt;/h1&gt;
+
+                &lt;p&gt;Last but not least, Neatline makes it possible to override the template that’s used to generate the metadata output for items displayed inside Neatline exhibits. By default, Neatline uses a simple template that pretty much just follows the layout of the regular item “show” pages in Omeka:&lt;/p&gt;
+
+                &lt;p&gt;But, imagine you had an exhibit that was filled with items that represent photographs, and, for the sake of cleanliness and visual economy, you &lt;em&gt;just&lt;/em&gt; want to display the item title and the image thumbnail. Just drop in a new &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;item.php&lt;/code&gt;&lt;/strong&gt; template that does exactly what you need:&lt;/p&gt;
+
+                &lt;p&gt;And Neatline will automatically use that template instead of the default. What if you need different templates for different items, though? For example, imagine that you actually have two types of items in the exhibit – the images, which just need the title and thumbnail, but also a set of letters, which are structured as “Text” type items with the transcriptions of the documents entered into the “Text” field. So, how to display both types of items in the exhibit, without resorting to a weird, Frankenstein template that accommodates both?&lt;/p&gt;
+
+                &lt;p&gt;First, add tags to the records in Neatline:&lt;/p&gt;
+
+                &lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/03/nltheme-tag-300x214.jpg&quot; alt=&quot;nltheme-tag&quot; width=&quot;300&quot; height=&quot;214&quot; class=&quot;aligncenter size-medium wp-image-10043&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+                &lt;p&gt;Then, just create two template in the exhibit theme – one called &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;item-image.php&lt;/code&gt;&lt;/strong&gt; (the same as above), the other called &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;item-letter.php&lt;/code&gt;&lt;/strong&gt;. In the letter template, just display the title and text:&lt;/p&gt;
+
+                &lt;p&gt;Neatline will automatically use the tag-specific templates for any records tagged with &lt;code class=&quot;highlighter-rouge&quot;&gt;image&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;letter&lt;/code&gt;, and fall back to the unadorned &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;item.php&lt;/code&gt;&lt;/strong&gt; template for records that aren’t tagged.&lt;/p&gt;
+
+                &lt;h2 id=&quot;starter-theme&quot;&gt;Starter theme&lt;/h2&gt;
+
+                &lt;p&gt;So far, we’ve just been entering all of our custom CSS and Javascript directly into the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;script.js&lt;/code&gt;&lt;/strong&gt; and files. This works fine for simple themes, but it can start to get a little clunky as the theme grows more complex – nobody likes to see a big heap of Javascript snippets, all doing different things, crammed into the same file. So, how to decompose &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;script.js&lt;/code&gt;&lt;/strong&gt; into separate files? One good solution is to use a task runner like &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt; to concatenate multiple source files into the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;style.css&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;script.js&lt;/code&gt;&lt;/strong&gt; files, which, instead of being edited directly, become compiled payload files that are updated automatically by the task runner.&lt;/p&gt;
+
+                &lt;p&gt;&lt;a href=&quot;http://static.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg&quot;&gt;&lt;img src=&quot;http://static.scholarslab.org/wp-content/uploads/2014/03/file-concatenation.jpg&quot; alt=&quot;file-concatenation&quot; width=&quot;233&quot; height=&quot;460&quot; class=&quot;aligncenter size-full wp-image-10050&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+                &lt;p&gt;To make it easy to get started, I’ve created a little starter theme, based on the theme used for the &lt;a href=&quot;http://dclure.org/logs/project-gemini-over-baja-california/&quot;&gt;Project Gemini over Baja California&lt;/a&gt; project, with all of the configuration and file structure in place to build out themes for exhibits that use the NeatlineText extension. This includes all of the layout, styling, and UX interactions from the Gemini project, like the little yellow lines that wire up the text with the map.&lt;/p&gt;
+
+                &lt;p&gt;&lt;a href=&quot;https://github.com/scholarslab/neatline-theme-template&quot;&gt;https://github.com/scholarslab/neatline-theme-template&lt;/a&gt;&lt;/p&gt;
+
+                &lt;p&gt;Just fork the repo, clone it into your Omeka theme, and theme into the sunset!&lt;/p&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>dm4fn</name></author><summary type="html">Neatline makes it possible to create separate themes for individual exhibits, which is useful if you want to host a collection of self-contained Neatline projects on a single site. To get started, fork the exhibit starter theme, which abstracts out the style, layout, and UX of the Project Gemini over Baja California exhibit. One&amp;hellip;. More.</summary></entry></feed>

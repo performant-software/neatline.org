@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+{% include head.html %}
+<script type="text/javascript" src="{{ "/assets/js/mobile-menu.js" | absolute_url }}"></script>
+</head>
+
+<body>
+<a href="#main" id="skipnav">Skip to main content</a>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            {% include header.html %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="background-color:#f8f9fa;">
+            <span class="fs-3"><button class="js-aux-nav js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span> 
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <nav class="sticky-top">
+            <div class="main-nav js-main-nav">
+                {% if page.collection == 'docs' or page.title == "Neatline for Omeka Classic" %}
+                <div class="sidebar-item">
+                    {% include nav.html %}                  
+                </div>
+                {% endif %} 
+                {% if page.collection == 'docs-s' or page.title == "Neatline for Omeka S" %}
+                <div class="sidebar-item-s">
+                    {% include nav-s.html %}
+                </div>
+                {% endif %}
+            </div>
+            </nav>
+        </div>
+        <div class="col-sm-9">
+            <div class="content-section">
+                <main id="main" class="main-content container js-main-content" role="main" >
+                {{ content }}  
+                
+                {% if page.collection == 'docs' or page.title == "Neatline for Omeka Classic" %}
+                {% include page-nav.html %} 
+                {% endif %}
+                </main>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<footer role="contentinfo">
+    {% include footer.html %}
+</footer>
+<script src="/assets/js/flex-nav.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="{{ "/assets/js/bootstrap/bootstrap.bundle.min.js" | absolute_url }}"></script>
+</body>
+</html>
+    
