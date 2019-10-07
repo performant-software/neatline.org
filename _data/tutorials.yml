@@ -34,7 +34,7 @@ nav:
       - style-tab-dates
       - style-tab-imagery
       - style-tab-visibility
-      - docs-TOC
+      - docs-toc
 
 label:
 - title: Tutorials
