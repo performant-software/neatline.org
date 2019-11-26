@@ -1,0 +1,83 @@
+---
+layout: page
+title: News
+permalink: /news/
+---
+
+<p class="fs-6 fw-300 text-center">
+	Keep up to date with Neatline news and blog posts. Follow us on Twitter <a href="https://twitter.com/neatline" target="_blank">@neatline</a>.
+</p>
+<!-- post layout: -->
+{% for post in site.posts limit:4 %}
+{% capture authorstring %}
+{% endcapture %}
+<section class="blog-gallery__item">
+	<div class="blog-item__metadata">
+		<div class="blog-meta__date">
+			<span class="blog-date__small">{{ post.date | date:"%m.%d.%Y" }}</span>
+			<span class="blog-date__big">{{ post.date | date:"%B %-d, %Y" }}</span>
+		</div>
+	</div>
+	<div class="blog-item__title">
+	<!-- <span>
+	{% if post.categories contains 'Events' %}
+		Events
+		{% elsif post.categories contains 'Job Announcements' %}
+		Job Announcements
+		{% elsif post.categories contains 'Announcements' %}
+		Announcements
+		{% elsif post.tags contains 'praxis program' %}
+		Praxis Program
+		{% elsif post.categories contains 'Grad Student Research' %}
+		Grad Student Research
+		{% elsif post.categories contains 'Experimental Humanities' %}
+		Experimenting
+		{% elsif post.categories contains 'Geospatial and Temporal' %}
+		Geospatial & Temporal
+		{% elsif post.categories contains 'Makerspace' %}
+		Makerspace
+		{% elsif post.categories contains 'Podcasts' %}
+		Podcast
+		{% elsif post.categories contains 'Research and Development' %}
+		Research & Development
+		{% elsif post.categories contains 'Technical Training' %}
+		Technical Training
+		{% elsif post.categories contains 'Visualization and Data Mining' %}
+		Visualization and Data Mining
+		{% elsif post.categories contains 'Digital Humanities' or post.tags contains 'Digital Humanities' or post.categories contains 'digital humanities' %}
+		Digital Humanities
+	{% else %}
+		Miscellany
+	{% endif %}
+	</span> -->
+	<a href="{{ site.baseurl }}{{ post.url }}" aria-label="{{ post.title }}" title="{{ post.title }}">{{ post.title | replace: ' - ', ': ' }}</a>
+	</div>
+	<!-- # pull quote, or 1st 25 words of post content. -->
+	{% if post.pull-quote %}
+	<div class="blog-item__quote">{{ post.pull-quote | prepend: '"' | append: '"' | smartify }}</div>
+	{% else %}
+	<div class="blog-item__quote">{{ post.content | truncatewords: 25 | markdownify | strip_html }}</div>
+	{% endif %}
+</section>
+{% endfor %} 
+<!-- end post -->
+
+<section id="previous_posts">
+	<h2>Previous Posts</h2>
+	<ul>
+	{% for post in site.posts offset:4 %}
+	{% capture authorstring %}
+	{% endcapture %}
+	{% assign currentdate = post.date | date: "%Y" %}
+	{% if currentdate != date %}
+		{% unless forloop.first %}</ul>{% endunless %}
+		<h3 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h3>
+		<ul>
+		{% assign date = currentdate %}
+	{% endif %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% if forloop.last %}</ul>{% endif %}
+
+	{% endfor %}
+	</ul>
+</section>
