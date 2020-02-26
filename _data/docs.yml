@@ -88,10 +88,12 @@ toc:
         url: /docs/docs-toc/
 
 toc-s:
-  - title: 
+  - title: Development Releases
     subfolderitems:
-      - page: Production-ready release and documentation in development
+      - page: Development Release v0.3.0
         url: /docs-s/
+      - page: Development Release v0.1.0
+        url: /docs-s/tag-v-0-1-0/
 
 
 toc-tutorials:

@@ -7,22 +7,22 @@
 <script src="https://cdn.levelaccess.net/accessjs/YW1wX3V2YTExMDA/access.js" type="text/javascript"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Neatline allows scholars, students, and curators to tell stories with maps and timelines.">
-<link rel="canonical" href="https://neatline.org//docs-s/">
+<link rel="canonical" href="http://localhost:4000/docs-s/">
 
-<link rel="icon" type="image/png" href="https://neatline.org//assets/images/favicon.png" >
-<link rel="apple-touch-icon" type="image/png" href="https://neatline.org//assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon.png" >
+<link rel="apple-touch-icon" type="image/png" href="http://localhost:4000/assets/images/apple-touch-icon.png">
 
 <!-- Style sheets -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic|Cabin:400,600,400italic" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://neatline.org//assets/css/style.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
 
 
 
 
-<script type="text/javascript" src="https://neatline.org//assets/js/mobile-menu.js"></script>
+<script type="text/javascript" src="http://localhost:4000/assets/js/mobile-menu.js"></script>
 </head>
 
 <body>
@@ -34,8 +34,8 @@
 <div class="flexnav-wrapper">
 	<div class="flexnav-main">
 		<div class="flexnav__home-icon">
-			<a href="https://neatline.org/" title="Neatline"> 
-				<img class="logo" src="https://neatline.org//assets/images/neatline-logo-rgb.png" alt="Neatline"/>
+			<a href="http://localhost:4000" title="Neatline"> 
+				<img class="logo" src="http://localhost:4000/assets/images/neatline-logo-rgb.png" alt="Neatline"/>
 			</a>  
 		</div>
 
@@ -186,21 +186,27 @@
                 <div class="sidebar-item-s">
                     <nav role="navigation" aria-label="Main navigation">
   <h4>
-    <a style="color:white; text-decoration:none; font-style:bold;" href="https://neatline.org//docs-s/">
+    <a style="color:white; text-decoration:none; font-style:bold;" href="http://localhost:4000/docs-s/">
       Neatline for Omeka S
     </a>
   </h4>
 
   
-  <h4></h4>
+  <h4>Development Releases</h4>
     <ul class="navigation-list">
       
         <li class="navigation-list-item active">
-          <a class="navigation-list-link active" href="/docs-s/">Production-ready release and documentation in development</a>
+          <a class="navigation-list-link active" href="/docs-s/">Development Release v0.3.0</a>
           
           <ul class="navigation-list-toc active">
               
           </ul>
+          
+
+        </li>
+      
+        <li class="navigation-list-item">
+          <a class="navigation-list-link" href="/docs-s/tag-v-0-1-0/">Development Release v0.1.0</a>
           
 
         </li>
@@ -218,27 +224,31 @@
         <div class="col-sm-9">
             <div class="content-section">
                 <main id="main" class="main-content container js-main-content" role="main" >
-                <h1 id="neatline-for-omeka-s-development-release-0x">Neatline for Omeka S: Development Release 0.x</h1>
+                <h1 id="neatline-for-omeka-s-development-release-v030">Neatline for Omeka S: Development Release v0.3.0</h1>
 
-<p>We’re happy to share a development release of Neatline for Omeka S. The version for this release is 0.1.0, so it’s not yet ready for production use. We’ll continue to work on the plugin, and do incremental 0.x releases until we’re ready to offer a stable, production-ready 1.0.</p>
+<p>Our current development release of Neatline for Omeka S: <a href="https://github.com/scholarslab/neatline-omeka-s/releases/tag/v0.3.0">version 0.3.0</a></p>
+
+<p>Major updates includes:</p>
+<ul>
+  <li>Compatibility with Omeka S 2.0 and higher</li>
+  <li>Requires Omeka S 2.0 or higher</li>
+</ul>
+
+<p>Neatline for Omeka S is still in development, and this version is not yet ready for production use. We are continuing work on the module, and will do incremental 0.x releases until we’re ready to offer a stable, production-ready 1.0 version. Currently, we are on schedule to release Neatline for Omeka S by September 2020. Please continue to check here for any updates.</p>
 
 <p>If you’re interested and willing to test out some beta software, check out our most recent release:</p>
 
 <ul>
-  <li><a href="https://github.com/scholarslab/neatline-omeka-s/releases">Neatline for Omeka S Development Release 0.x</a></li>
+  <li><a href="https://github.com/scholarslab/neatline-omeka-s/releases/tag/v0.3.0">Neatline for Omeka S Development Release v0.3.0</a></li>
 </ul>
 
-<p>Alternatively, if you like Docker, you can clone this Docker example, follow the README, and have a fresh Omeka S instance with the Neatline plugin referenced.</p>
+<p>Alternatively, if you like Docker, you can clone this Docker example, follow the README, and have a fresh Omeka S instance with the Neatline module referenced.</p>
 
 <ul>
   <li><a href="https://github.com/scholarslab/neatline-omeka-s-docker">Omeka S + Neatline 3 Docker</a></li>
 </ul>
 
-<p>The note on the 0.1.0 release lists some known issues. Additionally, we still have plenty of issues on Github to address. If you find an issue that is not already listed, we’d be grateful if you let us know about it by submitting a new issue on Github.</p>
-
-<p>Immeasurable thanks to <a href="https://www.performantsoftware.com/">Performant Software</a> for partnering with us on Neatline development, and to the <a href="https://www.neh.gov/divisions/odh">Office of Digital Humanities at the NEH</a> for our grant support. We’re grateful for such wonderful collaborators and supporters.</p>
-
-<p class="fs-4 fw-300"><a href="https://forum.omeka.org/t/neatline-0-1-0-for-omeka-s/8240">Omeka Community Forum</a></p>
+<p>We still have plenty of issues on Github to address. If you find an issue that is not already listed, we’d be grateful if you let us know about it by submitting a new issue on Github.</p>
   
                 
                 
@@ -309,7 +319,7 @@
 </footer>
 <script src="/assets/js/flex-nav.js" type="text/javascript" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://neatline.org//assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="http://localhost:4000/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
     
