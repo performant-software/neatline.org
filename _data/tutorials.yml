@@ -6,6 +6,7 @@ nav:
       - neatline-from-10000-meters
       - installing-neatline
       - upgrading-to-v2
+      - troubleshooting
       - exhibits-overview
       - creating-exhibits
       - map-based-exhibits
@@ -44,6 +45,7 @@ label:
       - Neatline Architecture
       - Installing Neatline
       - Upgrading Neatline to 2.0
+      - Troubleshooting
       - Exhibits Overview
       - Creating New Exhibits
       - Map-based Exhibits

@@ -11,6 +11,8 @@ toc:
         url: /docs/installing-neatline/
       - page: Upgrading Neatline to 2.0
         url: /docs/upgrading-to-v2/
+      - page: Troubleshooting
+        url: /docs/troubleshooting/
   - title: Working with Exhibits
     subfolderitems:
       - page: Exhibits Overview
