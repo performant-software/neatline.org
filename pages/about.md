@@ -56,8 +56,8 @@ Here are some examples of the kinds of projects that could be built (or have bee
 {: .text-center }
 Swell! Check out our [Exhibit Showcase][7] to see what others have built using Neatline.
 {: .text-center }
-<!-- Find a starting place for your project with our [Use Case Guides](/use-cases/).
-{: .text-center } -->
+Find a starting place for your project with our [Use Case Guides](/use-cases/).
+{: .text-center }
 <!-- Browse [Tutorials](/tutorials/) for step-by-step guides for beginners and advanced Neatline users.
 {: .text-center } -->
 Read the full documentation:
