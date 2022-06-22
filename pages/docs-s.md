@@ -4,6 +4,13 @@ permalink: /docs-s/
 title: Neatline for Omeka S
 ---
 
+# Status of Neatline Support
+Neatline user/developer support and development is on hiatus while we seek a different institution to take over its future maintenance, development, and support.
+
+We regret the difficulties this causes current users. Unfortunately, we do not have the resources to continue providing these public services at an acceptable level.
+
+We are unable to provide user or developer support, and will not be able to make further changes or updates to the code or documentation.
+
 # Neatline for Omeka S: Development Release v0.3.0
 
 Here's our most recent development release of Neatline for Omeka S: [version 0.3.0](https://github.com/scholarslab/neatline-omeka-s/releases/tag/v0.3.0)
