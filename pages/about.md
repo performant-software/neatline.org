@@ -9,6 +9,14 @@ Neatline is what you get when you cross archives and artifacts with timelines, m
 
 ---
 
+## Neatline's current status
+
+Neatline user/developer support and development is on hiatus while we seek a different institution to take over its future maintenance, development, and support.
+
+We regret the difficulties this causes current users. Unfortunately, we do not have the resources to continue providing these public services at an acceptable level.
+
+We are unable to provide user or developer support, and will not be able to make further changes or updates to the code or documentation.
+
 ## Why use Neatline?
 
 [Neatline][1] is a geotemporal exhibit-builder that allows you to create beautiful, complex maps, image annotations, and narrative sequences from [Omeka][2] collections of archives and artifacts, and to connect your maps and narratives with timelines that are more-than-usually sensitive to ambiguity and nuance. Neatline lets you make hand-crafted, interactive stories as interpretive expressions of a single document or a whole archival or cultural heritage collection. You can import these documents (georeferenced historical maps, manuscripts, high-res photographs, etc.) from an existing collection, or create a new digital archive, yourself. Every Neatline exhibit is your contribution to humanities scholarship, in the visual vernacular.
